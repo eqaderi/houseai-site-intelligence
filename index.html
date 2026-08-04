@@ -26,7 +26,7 @@
         // file:// privacy modes disable storage; the default markup stands.
       }
     </script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=p0-02">
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
@@ -81,7 +81,7 @@
         <div class="hero-copy">
           <p class="eyebrow" data-i18n="heroEyebrow">IMMUTABLE SITE VERSION · v1-three-fields</p>
           <h1 id="hero-title" data-i18n-html="heroTitle">A steep mountain site.<br><span>Now read in its real climate.</span></h1>
-          <p class="hero-summary" data-i18n="heroSummary">A bilingual evidence interface for a 487.428568 m² family-house site in Baneh Verdeh—combining verified geometry with traceable climate, sun, wind and regional hazards.</p>
+          <p class="hero-summary" data-i18n="heroSummary">A bilingual evidence interface for a 487.428568 m² family-house site at a probable project location near Baneh Verdeh—combining verified drawing geometry with traceable climate, sun, wind and regional hazards.</p>
           <div class="hero-actions">
             <a class="primary-button" href="#terrain">
               <span data-i18n="viewEvidence">Explore evidence</span>
@@ -90,12 +90,12 @@
             <span class="status-pill verified"><span class="status-dot"></span><span data-i18n="verified">Verified</span>&nbsp;<bdi data-metric="area">487.428568</bdi> m²</span>
           </div>
         </div>
-        <div class="hero-visual card-dark" data-i18n-aria-label="ariaHeroBoundary" aria-label="Animated real property boundary">
+        <div class="hero-visual card-dark" data-i18n-aria-label="ariaHeroBoundary" aria-label="Animated drawing-derived site boundary">
           <div class="canvas-label">
-            <span data-i18n="boundary">Unified boundary</span>
+            <span data-i18n="boundary">Unified drawing boundary</span>
             <small>Pt2 → Pt1 → Pt7 → Pt6 → Pt5 → Pt4 → Pt3</small>
           </div>
-          <canvas id="hero-site-canvas" role="img" data-i18n-aria-label="ariaBoundaryPlan" aria-label="North-up unified seven-point property boundary with Pt8 interior terrain point and southern road edge"></canvas>
+          <canvas id="hero-site-canvas" role="img" data-i18n-aria-label="ariaBoundaryPlan" aria-label="North-up unified seven-point drawing boundary with Pt8 interior terrain point and southern road edge"></canvas>
           <div class="hero-visual-footer">
             <span><i class="legend-line road-line"></i><span data-i18n="road">Road access</span> · Pt2–Pt1</span>
             <span><i class="legend-line fall-line"></i><span data-i18n="fall">Primary fall</span> · NE</span>
@@ -103,7 +103,7 @@
         </div>
         <div class="metric-rail" data-i18n-aria-label="ariaSiteMetrics" aria-label="Key site metrics">
           <article>
-            <span data-i18n="area">Verified plan area</span>
+            <span data-i18n="area">Verified drawing-plan area</span>
             <strong><bdi data-metric="area">487.428568</bdi> <small>m²</small></strong>
           </article>
           <article>
@@ -133,9 +133,9 @@
         <header class="section-header">
           <div>
             <p class="kicker" data-i18n="overviewKicker">The site at a glance</p>
-            <h2 id="overview-title" data-i18n="overviewTitle">One property, seven outer points, one steep terrain story</h2>
+            <h2 id="overview-title" data-i18n="overviewTitle">One drawing geometry, seven outer points, one steep terrain story</h2>
           </div>
-          <p data-i18n="overviewLead">The three source polygons have been unified without changing their verified combined area. Pt8 is retained only as an interior terrain point.</p>
+          <p data-i18n="overviewLead">The three source polygons have been unified without changing their verified combined drawing area. Pt8 is retained only as an interior terrain point; legal and cadastral status remain unresolved.</p>
         </header>
         <div class="overview-grid">
           <article class="story-card story-terrain">
@@ -191,9 +191,9 @@
         <header class="section-header">
           <div>
             <p class="kicker" data-i18n="surveyKicker">Source geometry</p>
-            <h2 id="survey-title" data-i18n="surveyTitle">From three survey polygons to one verified property</h2>
+            <h2 id="survey-title" data-i18n="surveyTitle">From three survey polygons to one verified drawing geometry</h2>
           </div>
-          <p data-i18n="surveyLead">The boundary story remains auditable: source polygons, point associations, side lengths, area checks and cryptographic hashes are all retained.</p>
+          <p data-i18n="surveyLead">The drawing-boundary story remains auditable: source polygons, point associations, side lengths, area checks and cryptographic hashes are retained. This verification is not cadastral or proof of ownership.</p>
         </header>
         <div class="survey-summary-grid">
           <article class="image-card">
@@ -252,6 +252,12 @@
               <div><dt>DXF · SHA-256</dt><dd id="dxf-hash"></dd></div>
             </dl>
             <a class="text-link" href="assets/data/site-base-SHA256SUMS.txt" target="_blank" rel="noopener" data-i18n="hashManifest">Open SHA-256 manifest</a>
+          </article>
+          <article class="legal-scope-note">
+            <span class="note-number">C</span>
+            <h3 data-i18n="legalScopeTitle">Drawing verification is not legal verification</h3>
+            <p id="property-verification-scope"></p>
+            <dl class="verification-list" id="property-verification-list"></dl>
           </article>
         </div>
       </section>
@@ -331,7 +337,7 @@
               <i></i>
               <span><bdi data-metric="elevationMin">1647.899 m</bdi></span>
             </div>
-            <p class="terrain-3d-fallback" id="terrain-3d-fallback" data-i18n="webglUnavailable" hidden>Interactive 3D is unavailable in this browser. The verified 2D terrain plan remains available below.</p>
+            <p class="terrain-3d-fallback" id="terrain-3d-fallback" data-i18n="webglUnavailable" hidden>Interactive 3D is unavailable in this browser. The drawing-derived 2D terrain plan remains available below.</p>
           </div>
           <div class="terrain-3d-footer">
             <p id="terrain-3d-hint" data-i18n="terrain3dHint">Drag to orbit · scroll or pinch to zoom · arrow keys also rotate</p>
@@ -342,7 +348,7 @@
         <div class="terrain-map-card">
           <div class="map-toolbar">
             <div>
-              <h3 data-i18n="boundary">Unified boundary</h3>
+              <h3 data-i18n="boundary">Unified drawing boundary</h3>
               <p data-i18n="boundaryCaption">Real survey geometry · north-up · road edge highlighted</p>
             </div>
             <div class="toggle-group">
@@ -350,7 +356,7 @@
               <label><input type="checkbox" id="label-toggle" checked><span data-i18n="toggleLabels">Point labels</span></label>
             </div>
           </div>
-          <canvas id="terrain-canvas" role="img" data-i18n-aria-label="ariaTerrainMap" aria-label="Interactive north-up terrain view with unified property boundary, TIN contours and measured elevations"></canvas>
+          <canvas id="terrain-canvas" role="img" data-i18n-aria-label="ariaTerrainMap" aria-label="Interactive north-up terrain view with unified drawing boundary, TIN contours and measured elevations"></canvas>
           <div class="map-legend">
             <span><i class="dot high"></i><bdi data-metric="elevationMax">1659.653 m</bdi></span>
             <span class="gradient-bar"></span>
@@ -584,7 +590,7 @@
             <div class="control-block">
               <label data-i18n="overlays">Overlays</label>
               <div class="toggle-group vertical">
-                <label><input id="solar-boundary-toggle" type="checkbox" checked><span data-i18n="boundary">Unified boundary</span></label>
+                <label><input id="solar-boundary-toggle" type="checkbox" checked><span data-i18n="boundary">Unified drawing boundary</span></label>
                 <label><input id="solar-contour-toggle" type="checkbox" checked><span data-i18n="toggleContours">Contours</span></label>
               </div>
             </div>

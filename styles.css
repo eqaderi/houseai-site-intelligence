@@ -1084,6 +1084,41 @@ td.numeric {
   color: var(--muted);
 }
 
+.evidence-notes .legal-scope-note {
+  min-height: 0;
+  grid-column: 1 / -1;
+}
+
+.verification-list {
+  display: grid;
+  margin: 28px 0 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) * 0.65);
+  background: var(--line);
+}
+
+.verification-list > div {
+  display: flex;
+  min-width: 0;
+  padding: 18px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--surface);
+}
+
+.verification-list dt {
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.verification-list dd {
+  margin: 0;
+}
+
 .note-number {
   position: absolute;
   inset-block-start: 28px;
@@ -3758,6 +3793,10 @@ footer > a:last-child {
   .overview-grid,
   .evidence-notes,
   .method-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .verification-list {
     grid-template-columns: 1fr;
   }
 

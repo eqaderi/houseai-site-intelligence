@@ -3,6 +3,62 @@
   "calculated_area_m2": 487.428567946226,
   "parcel_sum_m2": 487.42856794622605,
   "area_verification_passed": true,
+  "property_verification": {
+    "scope": {
+      "en": "Verification applies to geometry extracted from the supplied survey drawing and to its plan-area calculation. It does not establish a legal interest in land.",
+      "fa": "راستی‌آزمایی فقط به هندسه استخراج‌شده از نقشه برداشت ارائه‌شده و محاسبه مساحت پلان آن مربوط است و هیچ حق قانونی نسبت به زمین را اثبات نمی‌کند."
+    },
+    "items": [
+      {
+        "id": "drawing-geometry",
+        "label": {
+          "en": "Drawing geometry",
+          "fa": "هندسه ترسیمی"
+        },
+        "status": "verified"
+      },
+      {
+        "id": "plan-area-calculation",
+        "label": {
+          "en": "Plan-area calculation",
+          "fa": "محاسبه مساحت پلان"
+        },
+        "status": "verified"
+      },
+      {
+        "id": "legal-ownership",
+        "label": {
+          "en": "Legal ownership",
+          "fa": "مالکیت قانونی"
+        },
+        "status": "unresolved"
+      },
+      {
+        "id": "cadastral-boundary",
+        "label": {
+          "en": "Cadastral boundary",
+          "fa": "مرز ثبتی"
+        },
+        "status": "unresolved"
+      },
+      {
+        "id": "easements",
+        "label": {
+          "en": "Easements",
+          "fa": "حقوق ارتفاقی"
+        },
+        "status": "unresolved"
+      },
+      {
+        "id": "rights-of-way",
+        "label": {
+          "en": "Rights-of-way",
+          "fa": "حقوق عبور"
+        },
+        "status": "unresolved"
+      }
+    ]
+  },
   "outer_boundary_order": [
     "Pt2",
     "Pt1",

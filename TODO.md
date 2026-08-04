@@ -25,7 +25,7 @@ The dashboard is suitable for preliminary site strategy and consultant briefing.
 
 ## Progress snapshot
 
-- Product tasks complete: 2 / 57
+- Product tasks complete: 3 / 57
 - External investigations complete: 0 / 20
 - Current release stage: pre-design site intelligence
 - Architect decision status: site strategy may begin; concept design is blocked by the client brief, planning controls, certified survey data, road geometry, and preliminary ground assessment
@@ -38,8 +38,12 @@ The dashboard is suitable for preliminary site strategy and consultant briefing.
   - Evidence: canonical generator now emits `geolocation_status: "probable"`, `strong-probable` confidence, a probable project-location object, a `probable-not-certified` CRS state, the pre-design completion status, and five unresolved parcel-scale environmental modules; regenerated English/Persian JSON, bundle, hero, geography, status chips, and methodology use the same terminology.
   - Validation: `node scripts/generate-data.mjs`; `node scripts/validate-static.mjs` — 109/109; `node scripts/verify-solar-3d.mjs` — 506 positions and 213 interpolation intervals, zero failures; direct `file://` browser checks at 1440×1000 and 390×844 confirmed English/LTR and Persian/RTL parity, wrapped status content, local-only requests, and zero critical console errors.
   - Remaining limitation: surveyor CRS certification and parcel-scale field evidence remain unresolved by design. The pre-existing page-wide mobile overflow and vendored Three.js deprecation warning remain tracked under P1-01/P1-02 and P2-14.
-- [ ] **P0-02 — Distinguish drawing geometry from legal property verification.** Replace wording such as “verified boundary” where it could imply cadastral/title verification with “verified drawing geometry” or an equally precise term.
+- [x] **P0-02 — Distinguish drawing geometry from legal property verification.** Replace wording such as “verified boundary” where it could imply cadastral/title verification with “verified drawing geometry” or an equally precise term.
   - Acceptance: area calculation remains verified while legal ownership, cadastral boundary, easements, and rights-of-way remain explicitly unresolved.
+  - Completed 2026-08-04. Commit: `507806b`.
+  - Evidence: canonical site data now separates verified drawing geometry and plan-area calculation from four individually unresolved legal states: ownership, cadastral boundary, easements, and rights-of-way. English/Persian overview, survey, accessible labels, document metadata, investigation proxy, generated bundle, and Persian site summary use the same distinction; the Survey section renders a visible bilingual legal-scope card from the structured data.
+  - Validation: `node scripts/generate-data.mjs`; `node scripts/validate-static.mjs` — 110/110; `node scripts/verify-solar-3d.mjs` — 506 positions and 213 interpolation intervals, zero failures; Codex-controlled Chrome at 1440×1000 and 390×844 confirmed English/LTR and Persian/RTL content, correct six-state rendering, card containment, and no critical console errors.
+  - Remaining limitation: legal ownership, the cadastral boundary, easements, and rights-of-way require registry/cadastral investigation and remain unresolved by design. The pre-existing page-wide mobile overflow and vendored Three.js deprecation warning remain tracked under P1-01/P1-02 and P2-14.
 - [ ] **P0-03 — Add an architectural-readiness gate to the overview.** Present three visible states: usable now, preliminary only, and blocks concept design.
   - Acceptance: the gate names the evidence in each state and is equally complete in English and Persian.
 - [ ] **P0-04 — Add a structured client/project brief.** Record household composition, room program, target area, accessibility, privacy and cultural needs, budget, phasing, timeline, construction preferences, garage/workshop needs, energy/carbon goals, and future expansion.

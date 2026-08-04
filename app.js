@@ -173,6 +173,7 @@
     $("#project-status").textContent = local(data.project.status_label);
     $("#hero-location").textContent = local(data.project.probable_project_location);
     $("#survey-methodology").textContent = local(data.survey.methodology);
+    renderPropertyVerification();
     $("#geo-note").textContent = local(data.project.geolocation_note);
     $("#geo-next").textContent = local(data.geography.required_next);
     $("#climate-warning").textContent = local(data.climate.warning);
@@ -240,6 +241,19 @@
       const render = metrics[element.dataset.metric];
       if (render) element.textContent = render();
     });
+  }
+
+  function renderPropertyVerification() {
+    const verification = data.site.property_verification;
+    $("#property-verification-scope").textContent = local(verification.scope);
+    $("#property-verification-list").innerHTML = verification.items
+      .map((item) => `
+        <div>
+          <dt>${escapeHtml(local(item.label))}</dt>
+          <dd><span class="status-pill ${statusClass(item.status)}"><span class="status-dot"></span>${escapeHtml(statusLabel(item.status))}</span></dd>
+        </div>
+      `)
+      .join("");
   }
 
   function renderElevationStrip() {

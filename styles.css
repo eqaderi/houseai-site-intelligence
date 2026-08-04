@@ -1305,6 +1305,7 @@ td.numeric {
 }
 
 .terrain-3d-card {
+  min-width: 0;
   max-width: var(--max);
   margin: 0 auto 18px;
   color: #edf1ed;
@@ -1316,6 +1317,7 @@ td.numeric {
 }
 
 .terrain-3d-copy {
+  min-width: 0;
   display: grid;
   min-height: 132px;
   padding: 28px;
@@ -1346,6 +1348,7 @@ td.numeric {
 }
 
 .terrain-3d-toolbar {
+  min-width: 0;
   display: flex;
   flex-wrap: wrap;
   min-height: 76px;
@@ -1373,6 +1376,7 @@ td.numeric {
 }
 
 .terrain-3d-options {
+  min-width: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1684,6 +1688,7 @@ td.numeric {
 }
 
 .terrain-data-grid {
+  min-width: 0;
   display: grid;
   margin-bottom: 18px;
   grid-template-columns: minmax(0, 1.5fr) minmax(300px, 0.5fr);
@@ -1830,6 +1835,7 @@ td.numeric {
 }
 
 .terrain-insights {
+  min-width: 0;
   display: grid;
   margin-bottom: 18px;
   grid-template-columns: 1.35fr 0.65fr;
@@ -1837,6 +1843,8 @@ td.numeric {
 }
 
 .terrain-insights > article {
+  min-width: 0;
+  overflow: hidden;
   padding: clamp(26px, 4vw, 44px);
 }
 
@@ -4075,6 +4083,63 @@ footer > a:last-child {
 
   .terrain-3d-toolbar {
     padding: 12px;
+  }
+
+  /* Keep every terrain control inside the narrow viewport. The desktop
+     toolbar is intentionally dense; on a phone it becomes a small, readable
+     control sheet instead of a row that can push the document sideways. */
+  .terrain-3d-toolbar > *,
+  .terrain-3d-sun,
+  .terrain-sun-time,
+  .terrain-3d-options {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .terrain-view-control,
+  .terrain-sun-seasons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    border-radius: 14px;
+  }
+
+  .terrain-view-control button,
+  .terrain-sun-seasons button {
+    min-width: 0;
+    padding-inline: 7px;
+    white-space: normal;
+  }
+
+  .terrain-3d-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: stretch;
+  }
+
+  .terrain-3d-options > label,
+  .terrain-scale-label,
+  .terrain-reset {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .terrain-reset {
+    grid-column: 1 / -1;
+  }
+
+  .terrain-insights > article,
+  .terrain-data-grid > *,
+  .chart-card,
+  .profile-card-featured {
+    min-width: 0;
+  }
+
+  .risk-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .terrain-3d-options > label,

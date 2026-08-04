@@ -25,7 +25,7 @@ The dashboard is suitable for preliminary site strategy and consultant briefing.
 
 ## Progress snapshot
 
-- Product tasks complete: 3 / 57
+- Product tasks complete: 11 / 58
 - External investigations complete: 0 / 20
 - Current release stage: pre-design site intelligence
 - Architect decision status: site strategy may begin; concept design is blocked by the client brief, planning controls, certified survey data, road geometry, and preliminary ground assessment
@@ -44,19 +44,51 @@ The dashboard is suitable for preliminary site strategy and consultant briefing.
   - Evidence: canonical site data now separates verified drawing geometry and plan-area calculation from four individually unresolved legal states: ownership, cadastral boundary, easements, and rights-of-way. English/Persian overview, survey, accessible labels, document metadata, investigation proxy, generated bundle, and Persian site summary use the same distinction; the Survey section renders a visible bilingual legal-scope card from the structured data.
   - Validation: `node scripts/generate-data.mjs`; `node scripts/validate-static.mjs` — 110/110; `node scripts/verify-solar-3d.mjs` — 506 positions and 213 interpolation intervals, zero failures; Codex-controlled Chrome at 1440×1000 and 390×844 confirmed English/LTR and Persian/RTL content, correct six-state rendering, card containment, and no critical console errors.
   - Remaining limitation: legal ownership, the cadastral boundary, easements, and rights-of-way require registry/cadastral investigation and remain unresolved by design. The pre-existing page-wide mobile overflow and vendored Three.js deprecation warning remain tracked under P1-01/P1-02 and P2-14.
-- [ ] **P0-03 — Add an architectural-readiness gate to the overview.** Present three visible states: usable now, preliminary only, and blocks concept design.
+- [x] **P0-03 — Add an architectural-readiness gate to the overview.** Present three visible states: usable now, preliminary only, and blocks concept design.
   - Acceptance: the gate names the evidence in each state and is equally complete in English and Persian.
-- [ ] **P0-04 — Add a structured client/project brief.** Record household composition, room program, target area, accessibility, privacy and cultural needs, budget, phasing, timeline, construction preferences, garage/workshop needs, energy/carbon goals, and future expansion.
+  - Completed 2026-08-04. Commit: `11263b8`.
+  - Evidence: the overview renders all three states from `architectural-readiness.json`, with named evidence and matched English/Persian content.
+  - Validation: generator and 117/117 static checks passed; 506 solar positions and 213 interpolation intervals verified; browser QA confirmed three cards in English/LTR and Persian/RTL with no critical console errors.
+  - Remaining limitation: evidence explicitly placed in the blocking state still requires the listed client, survey, planning, access, and ground inputs.
+- [x] **P0-04 — Add a structured client/project brief.** Record household composition, room program, target area, accessibility, privacy and cultural needs, budget, phasing, timeline, construction preferences, garage/workshop needs, energy/carbon goals, and future expansion.
   - Acceptance: unanswered items render as unresolved; the dashboard does not infer answers.
-- [ ] **P0-05 — Remove concept ranking from the primary design story.** Do not identify A, B, or C as a winner or recommended direction while planning, survey, road, geotechnical, and client inputs are missing.
+  - Completed 2026-08-04. Commit: `11263b8`.
+  - Evidence: `client-brief.json` contains the twelve required fields as unresolved values; the overview renders all twelve without inferred answers in both languages.
+  - Validation: generator and 117/117 static checks passed; browser QA counted twelve fields after switching between English/LTR and Persian/RTL, with no critical console errors.
+  - Remaining limitation: every field remains unresolved until the client supplies and approves the brief.
+- [x] **P0-05 — Remove concept ranking from the primary design story.** Do not identify A, B, or C as a winner or recommended direction while planning, survey, road, geotechnical, and client inputs are missing.
   - Acceptance: concepts are absent from primary navigation and recommendation flows.
-- [ ] **P0-06 — Move retained concepts into a hidden rejected archive.** If the experiments remain, place them behind a closed disclosure labelled “Rejected and unvalidated concept experiments — not for selection.”
+  - Completed 2026-08-04. Commit: `11263b8`.
+  - Evidence: concepts have no selected option or published ranking and are absent from primary navigation, recommendations, and the 3D layer controls.
+  - Validation: generator and 117/117 static checks passed; browser QA confirmed no concept navigation or 3D toggle in either language and no critical console errors.
+  - Remaining limitation: the rejected experiments remain available only as historical archive material.
+- [x] **P0-06 — Move retained concepts into a hidden rejected archive.** If the experiments remain, place them behind a closed disclosure labelled “Rejected and unvalidated concept experiments — not for selection.”
   - Acceptance: no ranking, precise recommendation, or claim that vehicle access/courtyard drainage works; the archive is hidden by default in both languages.
-- [ ] **P0-07 — Demote unsupported room-placement advice.** Reframe bedroom, kitchen, service, office, courtyard, and similar typology assumptions as questions/options to test until the client brief exists.
-- [ ] **P0-08 — Demote garage/workshop placement confidence.** Keep it preliminary until road gradient, turning, gate, fire access, and construction access are measured.
-- [ ] **P0-09 — Reframe terrain precision.** Make clear that an eight-point, seven-facet TIN without surveyed breaklines cannot provide construction quantities.
+  - Completed 2026-08-04. Commit: `11263b8`.
+  - Evidence: the experiments sit in a closed bilingual disclosure labelled as rejected, unvalidated, and not for selection; unsupported workspace pass/fail claims are withheld.
+  - Validation: generator and 117/117 static checks passed; browser QA confirmed the archive is closed by default, can be opened deliberately, and shows no ranking or selection claim.
+  - Remaining limitation: the archive is retained for provenance and must not be treated as a design library.
+- [x] **P0-07 — Demote unsupported room-placement advice.** Reframe bedroom, kitchen, service, office, courtyard, and similar typology assumptions as questions/options to test until the client brief exists.
+  - Completed 2026-08-04. Commit: `11263b8`.
+  - Evidence: courtyard, bedroom, living, kitchen, and office entries are now questions to test and carry `requires-investigation` status in canonical recommendation data.
+  - Validation: generator and 117/117 static checks passed, including the room-placement gate; bilingual browser QA found no critical console errors.
+  - Remaining limitation: room placement cannot advance until the client brief and parcel-scale evidence exist.
+- [x] **P0-08 — Demote garage/workshop placement confidence.** Keep it preliminary until road gradient, turning, gate, fire access, and construction access are measured.
+  - Completed 2026-08-04. Commit: `11263b8`.
+  - Evidence: garage/workshop guidance is `requires-investigation` and names road grade/crossfall, gate, swept path, emergency access, and construction access as prerequisites.
+  - Validation: generator and 117/117 static checks passed, including the garage evidence gate; bilingual browser QA found no critical console errors.
+  - Remaining limitation: no garage position or access geometry is recommended before field measurement.
+- [x] **P0-09 — Reframe terrain precision.** Make clear that an eight-point, seven-facet TIN without surveyed breaklines cannot provide construction quantities.
   - Acceptance: one-metre contours, 0.1 m² platform areas, 0.5 m platform steps, and cut/fill outputs are labelled exploratory and not suitable for pricing.
-- [ ] **P0-10 — Make seismic design limitations lead the hazard story.** Lead with unavailable design spectrum, site class, and Standard 2800 parameters; place regional earthquake-event counts in expandable context.
+  - Completed 2026-08-04. Commit: `11263b8`.
+  - Evidence: terrain/platform data now describes the eight-point, seven-facet TIN, absent breaklines, contour/area/level precision, and cut/fill depth outputs as exploratory and unusable for quantities, tender, or pricing. The L–L profile also omits two invalid outside-parcel endpoint samples and visibly reports a 7.137 m fall over 24.798 m.
+  - Validation: generator and 117/117 static checks passed, including exact longitudinal metrics; browser QA confirmed the enlarged 430 px bilingual profile and summary values with no critical console errors.
+  - Remaining limitation: construction levels, retaining design, and quantities require a detailed topographic survey with breaklines.
+- [x] **P0-10 — Make seismic design limitations lead the hazard story.** Lead with unavailable design spectrum, site class, and Standard 2800 parameters; place regional earthquake-event counts in expandable context.
+  - Completed 2026-08-04. Commit: `11263b8`.
+  - Evidence: a bilingual seismic gate now leads the hazard section and withholds design use until the spectrum, Standard 2800 parameters, system/importance context, and geotechnical site class exist; regional event counts are expandable context only.
+  - Validation: generator and 117/117 static checks passed; browser QA confirmed the gate and seismic card lead the section in English/LTR and Persian/RTL, with the archive still closed and no critical console errors.
+  - Remaining limitation: all parcel-specific seismic design inputs remain a formal engineering investigation.
 
 ## P0 — Release integrity and privacy
 
@@ -97,6 +129,9 @@ The dashboard is suitable for preliminary site strategy and consultant briefing.
 - [ ] **P1-18 — Prioritize the investigations register.** Add owner/consultant, prerequisite, status, expected deliverable, dependency, and downloadable scope note.
 - [ ] **P1-19 — Move critical gates earlier.** Require legal/title boundary and preliminary ground/slope assessment before concept; treat utilities, road geometry, construction access, and logistics cost as early feasibility inputs.
 - [ ] **P1-20 — Add one bilingual architect handoff brief.** Summarize what may be used, what is provisional, what must not be used, immediate investigations, key geometry, and environmental implications.
+- [ ] **P1-21 — Rewrite all Persian content in plain, connected language.** Edit every visible Persian paragraph so it reads naturally, uses short connected sentences, avoids literal English sentence structure, and keeps terminology consistent without changing scientific meaning, status, values, or units.
+  - Acceptance: every visible Persian paragraph is reviewed in context and read aloud; navigation, summaries, technical cards, tables, warnings, environmental/planting evidence, investigations, documents, and sources remain functionally complete and equivalent to English; mixed-direction values remain isolated correctly.
+  - Progress 2026-08-04 (`11263b8`): navigation, section leads, readiness, client brief, terrain, seismic, archive, platform limitations, and other core P0 interface copy were rewritten and browser-reviewed in RTL. The longer environmental, planting, investigation, and source narratives still need a full editorial pass, terminology review, and read-aloud QA; the task therefore remains open.
 
 ## P2 — Information architecture and product focus
 

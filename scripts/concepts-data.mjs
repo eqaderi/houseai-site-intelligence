@@ -315,10 +315,15 @@ export function buildConcepts(surveyPoints) {
             width_m: stair.width,
           };
         }),
-        validation: option.validation.map((check) => ({
-          check: validationChecks[check.check] || bi(check.check, check.check),
-          passed: check.passed,
-        })),
+        // Workspace checks such as "vehicle access is workable" and "courtyard
+        // cannot trap drainage" depend on road, planning, ground and client
+        // evidence that is not available. They are deliberately not republished
+        // as passed validations in the rejected archive.
+        validation: [],
+        source_validation_withheld: bi(
+          "Workspace pass/fail claims are withheld because their required evidence is unresolved.",
+          "ادعاهای قبول/رد فضای کار منتشر نمی‌شوند، زیرا شواهد لازم برای آن‌ها حل‌نشده است.",
+        ),
       };
     })
     .sort((a, b) => a.letter.localeCompare(b.letter));
@@ -327,18 +332,19 @@ export function buildConcepts(surveyPoints) {
     // Not a selection and not part of the active document library. The same
     // meaning documents.rejected_concepts.included === false has always carried.
     unselected: true,
-    status: "preliminary-concept-massing",
+    rejected: true,
+    status: "rejected-unvalidated-experiment",
     selection: {
       selected: null,
-      compared_outcome: "option-c",
+      ranking_published: false,
       note: bi(
-        "Option C scores highest in the workspace comparison. That is a comparison outcome, not a decision: no design has been selected, and none of this geometry is coordinated for construction.",
-        "گزینه C در مقایسه کارگاهی بالاترین امتیاز را دارد. این نتیجه مقایسه است، نه تصمیم: هیچ طرحی انتخاب نشده و هیچ‌یک از این هندسه‌ها برای اجرا هماهنگ نشده است.",
+        "These early experiments were rejected. No option is ranked, selected or recommended, and none may be used to set a footprint, room arrangement, vehicle access or courtyard drainage strategy.",
+        "این آزمایش‌های اولیه رد شده‌اند. هیچ گزینه‌ای رتبه‌بندی، انتخاب یا توصیه نشده و هیچ‌کدام نباید برای تعیین سطح اشغال، چیدمان اتاق، دسترسی خودرو یا راهبرد زهکشی حیاط استفاده شود.",
       ),
     },
     caveat: bi(
-      "Preliminary massing only. Room rectangles come from the design workspace; heights are the underside of each bar's mono-pitch roof, because the concept data states no storey height. Nothing here is structural, serviced or permit-ready.",
-      "فقط حجم‌پردازی اولیه. مستطیل اتاق‌ها از فضای کار طراحی می‌آید و ارتفاع‌ها زیر سقف شیب‌دار هر نوار است، زیرا داده مفهومی ارتفاع طبقه را بیان نمی‌کند. هیچ بخشی از این سازه، تأسیسات یا مدارک پروانه نیست.",
+      "Archive only. The room rectangles and derived heights are unvalidated experiment data. They are not evidence, a design direction, a feasibility result, or a basis for construction, services, cost or permitting.",
+      "فقط بایگانی. مستطیل اتاق‌ها و ارتفاع‌های مشتق‌شده داده آزمایشی اعتبارسنجی‌نشده‌اند؛ نه شاهد، نه جهت طراحی، نه نتیجه امکان‌سنجی و نه مبنای ساخت، تأسیسات، هزینه یا مجوز هستند.",
     ),
     frame: {
       origin_point: "Pt2",

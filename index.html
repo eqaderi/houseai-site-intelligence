@@ -26,7 +26,7 @@
         // file:// privacy modes disable storage; the default markup stands.
       }
     </script>
-    <link rel="stylesheet" href="styles.css?v=p0-02">
+    <link rel="stylesheet" href="styles.css?v=p0-10b">
   </head>
   <body>
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
@@ -68,7 +68,6 @@
         <a href="#wind" data-i18n="wind">Wind</a>
         <a href="#hazards" data-i18n="hazards">Hazards &amp; engineering</a>
         <a href="#architecture" data-i18n="architecture">Architectural implications</a>
-        <a href="#concepts" data-i18n="concepts">Concept massing</a>
         <a href="#species" data-i18n="species">Trees &amp; planting</a>
         <a href="#investigations" data-i18n="investigations">Investigations needed</a>
         <a href="#documents" data-i18n="documents">Documents &amp; downloads</a>
@@ -137,6 +136,17 @@
           </div>
           <p data-i18n="overviewLead">The three source polygons have been unified without changing their verified combined drawing area. Pt8 is retained only as an interior terrain point; legal and cadastral status remain unresolved.</p>
         </header>
+        <section class="readiness-panel" aria-labelledby="readiness-title">
+          <header>
+            <div>
+              <p class="kicker" data-i18n="readinessKicker">Architectural readiness</p>
+              <h3 id="readiness-title" data-i18n="readinessTitle">What can move now—and what blocks concept design</h3>
+            </div>
+            <p data-i18n="readinessLead">A decision gate, not a completion badge. Each state names the evidence that sets its limit.</p>
+          </header>
+          <p class="readiness-summary" id="readiness-summary" role="status"></p>
+          <div class="readiness-grid" id="readiness-grid"></div>
+        </section>
         <div class="overview-grid">
           <article class="story-card story-terrain">
             <span class="story-index">01</span>
@@ -185,6 +195,17 @@
             </div>
           </article>
         </div>
+        <section class="client-brief-panel" aria-labelledby="client-brief-title">
+          <header>
+            <div>
+              <p class="kicker" data-i18n="clientBriefKicker">Client / project brief</p>
+              <h3 id="client-brief-title" data-i18n="clientBriefTitle">Twelve decisions the household still needs to make</h3>
+            </div>
+            <p data-i18n="clientBriefLead">Unanswered items stay unresolved; no program, budget or lifestyle requirement is inferred.</p>
+          </header>
+          <p id="client-brief-note"></p>
+          <dl class="client-brief-grid" id="client-brief-grid"></dl>
+        </section>
       </section>
 
       <section class="section section-tinted" id="survey" aria-labelledby="survey-title">
@@ -297,7 +318,6 @@
                 </select>
               </label>
               <label><input id="terrain-3d-trace" type="checkbox"><span data-i18n="shadowTrace">Shadow path</span></label>
-              <label><input id="terrain-3d-concepts" type="checkbox"><span data-i18n="showConcepts">Concept massing</span></label>
               <label><input id="terrain-3d-horizon" type="checkbox"><span data-i18n="showHorizon">Terrain horizon</span></label>
               <label><input id="terrain-3d-hillside" type="checkbox" checked><span data-i18n="showHillside">Surrounding hillside</span></label>
               <label><input id="terrain-3d-roads" type="checkbox" checked><span data-i18n="showRoads">Roads</span></label>
@@ -366,7 +386,7 @@
           </div>
         </div>
         <div class="terrain-data-grid">
-          <article class="chart-card profile-card">
+          <article class="chart-card profile-card profile-card-featured">
             <div class="chart-heading">
               <div>
                 <p class="kicker" data-i18n="profile">Interactive elevation profile</p>
@@ -377,8 +397,10 @@
                 <button type="button" data-section="transverse" data-i18n="transverse">West–east</button>
               </div>
             </div>
+            <div class="profile-summary" id="profile-summary"></div>
             <canvas id="profile-canvas" role="img" data-i18n-aria-label="ariaProfileChart" aria-label="Interactive terrain elevation profile"></canvas>
             <p class="chart-hint" data-i18n="hoverProfile">Move across the chart to inspect distance and elevation.</p>
+            <p class="source-note profile-scope" id="profile-scope"></p>
           </article>
           <article class="chart-card slopes-card">
             <div class="chart-heading">
@@ -399,6 +421,7 @@
             <div id="terrain-metrics" class="evidence-metrics"></div>
             <p class="source-note" id="terrain-metrics-note"></p>
             <h4 class="derived-heading" data-i18n="levelPlatform">Building on the level</h4>
+            <div class="platform-use-warning" id="platform-design-use" role="note"></div>
             <p class="source-note" id="platform-difference"></p>
             <div id="platform-metrics" class="evidence-metrics"></div>
             <div class="table-shell">
@@ -427,13 +450,13 @@
           <header>
             <p class="kicker" data-i18n="diagrams">Technical diagrams</p>
           </header>
-          <button class="diagram-thumb" type="button" data-lightbox="assets/diagrams/site-contours.png" data-alt-en="One-metre site terrain contours" data-alt-fa="خطوط تراز یک‌متری زمین">
-            <img src="assets/diagrams/site-contours.png" alt="One-metre site terrain contours" loading="lazy">
-            <span>01 · CONTOURS</span>
+          <button class="diagram-thumb" type="button" data-lightbox="assets/diagrams/site-contours.png" data-alt-en="Exploratory one-metre contours from the eight-point TIN—not for construction" data-alt-fa="خطوط تراز اکتشافی یک‌متری از TIN هشت‌نقطه‌ای—نامناسب برای اجرا">
+            <img src="assets/diagrams/site-contours.png" alt="Exploratory one-metre contours from the eight-point TIN—not for construction" loading="lazy">
+            <span>01 · EXPLORATORY CONTOURS</span>
           </button>
-          <button class="diagram-thumb wide" type="button" data-lightbox="assets/diagrams/site-sections.png" data-alt-en="Analytical south-north and west-east site sections" data-alt-fa="مقاطع تحلیلی جنوب-شمال و غرب-شرق">
-            <img src="assets/diagrams/site-sections.png" alt="Analytical south-north and west-east site sections" loading="lazy">
-            <span>02 · SECTIONS</span>
+          <button class="diagram-thumb wide" type="button" data-lightbox="assets/diagrams/site-sections.png" data-alt-en="Exploratory south–north and west–east TIN sections without surveyed breaklines" data-alt-fa="مقاطع اکتشافی جنوب–شمال و غرب–شرق TIN بدون شکست‌خط برداشت‌شده">
+            <img src="assets/diagrams/site-sections.png" alt="Exploratory south–north and west–east TIN sections without surveyed breaklines" loading="lazy">
+            <span>02 · EXPLORATORY SECTIONS</span>
           </button>
           <button class="diagram-thumb" type="button" data-lightbox="assets/diagrams/unified-site-top-view.png" data-alt-en="Unified site plan with terrain and preliminary study zones" data-alt-fa="پلان سایت یکپارچه با زمین و محدوده‌های اولیه مطالعه">
             <img src="assets/diagrams/unified-site-top-view.png" alt="Unified site plan with terrain and preliminary study zones" loading="lazy">
@@ -676,6 +699,7 @@
           </div>
           <p data-i18n="hazardsLead">Only terrain slope is verified at site scale. Drainage direction is preliminary; the remaining engineering and regional hazards have not been investigated.</p>
         </header>
+        <article class="seismic-gate" id="seismic-gate"></article>
         <div class="filter-bar" role="group" data-i18n-aria-label="ariaHazardFilter" aria-label="Hazard status filter">
           <span data-i18n="hazardFilter">Filter status</span>
           <button class="active" type="button" data-hazard-filter="all" data-i18n="all">All</button>
@@ -699,18 +723,16 @@
         <div id="recommendation-grid" class="recommendation-grid"></div>
       </section>
 
-      <!--
-        Concept massing. Deliberately after the evidence sections and before the
-        document library, because it is neither: no design has been selected, and
-        the geometry is a design study rather than surveyed or measured evidence.
-      -->
-      <section class="section concepts-section" id="concepts" aria-labelledby="concepts-title">
+      <details class="section rejected-archive rejected-concepts-archive" id="concepts">
+        <summary data-i18n="rejectedArchive">Rejected and unvalidated concept experiments — not for selection</summary>
+        <div class="archive-body" aria-labelledby="concepts-title">
+        <p class="archive-warning" data-i18n="rejectedNote">Closed by default. These experiments were rejected, are not ranked, and are not design recommendations or feasibility evidence.</p>
         <header class="section-header">
           <div>
-            <p class="kicker" data-i18n="conceptsKicker">Design study · nothing selected</p>
-            <h2 id="concepts-title" data-i18n="conceptsTitle">Three preliminary massings against the real slope</h2>
+            <p class="kicker" data-i18n="conceptsKicker">Archive only · rejected · unvalidated</p>
+            <h2 id="concepts-title" data-i18n="conceptsTitle">Three early experiments retained for audit only</h2>
           </div>
-          <p data-i18n="conceptsLead">Each option comes from the design workspace in its own road-aligned frame and is transformed onto the surveyed points. Compare them, then put one in the 3D view to see how the sun actually lands on it.</p>
+          <p data-i18n="conceptsLead">These room-and-massing experiments predate the required client, planning, road and ground evidence. They are shown only to preserve project history and must not be selected or treated as feasible.</p>
         </header>
         <p class="concepts-banner" id="concepts-banner" role="note"></p>
         <div class="concepts-switcher segmented-control" role="group" data-i18n-aria-label="ariaConceptOption" aria-label="Concept option">
@@ -745,7 +767,8 @@
           </article>
         </div>
         <p class="concepts-caveat" id="concepts-caveat"></p>
-      </section>
+        </div>
+      </details>
 
       <section class="section species-section" id="species" aria-labelledby="species-title">
         <header class="section-header">
@@ -853,10 +876,6 @@
           </label>
         </div>
         <div id="document-grid" class="document-grid"></div>
-        <details class="rejected-archive">
-          <summary data-i18n="rejectedArchive">Early rejected concept experiments</summary>
-          <p data-i18n="rejectedNote">Rejected house-plan concepts are not recommendations and are intentionally excluded from this dashboard’s active library.</p>
-        </details>
       </section>
 
       <section class="section section-tinted" id="methodology" aria-labelledby="methodology-title">
@@ -924,9 +943,9 @@
     <noscript>
       <div class="noscript">JavaScript is required for the interactive charts, language switch and searchable evidence tables. All source documents remain available under assets/.</div>
     </noscript>
-    <script src="data/data.js"></script>
+    <script src="data/data.js?v=p0-10b"></script>
     <script src="assets/vendor/three/three.min.js"></script>
-    <script src="terrain-3d.js"></script>
-    <script src="app.js"></script>
+    <script src="terrain-3d.js?v=p0-10b"></script>
+    <script src="app.js?v=p0-10b"></script>
   </body>
 </html>

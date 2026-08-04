@@ -1,0 +1,117 @@
+{
+  "status": "unresolved",
+  "note": {
+    "en": "No client-program answers are present in the verified project sources. Every field below is intentionally unresolved and must be completed with the household before concept design.",
+    "fa": "هیچ پاسخ برنامه‌ریزی کارفرما در منابع تأییدشده پروژه وجود ندارد. همه موارد زیر عمداً حل‌نشده‌اند و باید پیش از طراحی مفهومی با خانوار تکمیل شوند."
+  },
+  "fields": [
+    {
+      "id": "household",
+      "label": {
+        "en": "Household composition",
+        "fa": "ترکیب خانوار"
+      },
+      "status": "unresolved",
+      "value": null
+    },
+    {
+      "id": "room-program",
+      "label": {
+        "en": "Room and space program",
+        "fa": "برنامه فضاها و اتاق‌ها"
+      },
+      "status": "unresolved",
+      "value": null
+    },
+    {
+      "id": "target-area",
+      "label": {
+        "en": "Target internal and external areas",
+        "fa": "مساحت هدف داخلی و بیرونی"
+      },
+      "status": "unresolved",
+      "value": null
+    },
+    {
+      "id": "accessibility",
+      "label": {
+        "en": "Accessibility and ageing-in-place needs",
+        "fa": "دسترس‌پذیری و نیازهای سالمندی در محل"
+      },
+      "status": "unresolved",
+      "value": null
+    },
+    {
+      "id": "privacy-culture",
+      "label": {
+        "en": "Privacy, hosting and cultural needs",
+        "fa": "نیازهای حریم، پذیرایی و فرهنگی"
+      },
+      "status": "unresolved",
+      "value": null
+    },
+    {
+      "id": "budget",
+      "label": {
+        "en": "Budget range and cost priorities",
+        "fa": "بازه بودجه و اولویت‌های هزینه"
+      },
+      "status": "unresolved",
+      "value": null
+    },
+    {
+      "id": "phasing",
+      "label": {
+        "en": "Phasing and occupied-construction needs",
+        "fa": "فازبندی و نیازهای ساخت در زمان سکونت"
+      },
+      "status": "unresolved",
+      "value": null
+    },
+    {
+      "id": "timeline",
+      "label": {
+        "en": "Decision and construction timeline",
+        "fa": "زمان‌بندی تصمیم‌گیری و ساخت"
+      },
+      "status": "unresolved",
+      "value": null
+    },
+    {
+      "id": "construction",
+      "label": {
+        "en": "Construction system and material preferences",
+        "fa": "ترجیحات سیستم ساخت و مصالح"
+      },
+      "status": "unresolved",
+      "value": null
+    },
+    {
+      "id": "garage-workshop",
+      "label": {
+        "en": "Garage, workshop and vehicle requirements",
+        "fa": "نیازهای گاراژ، کارگاه و خودرو"
+      },
+      "status": "unresolved",
+      "value": null
+    },
+    {
+      "id": "energy-carbon",
+      "label": {
+        "en": "Energy, comfort and carbon goals",
+        "fa": "اهداف انرژی، آسایش و کربن"
+      },
+      "status": "unresolved",
+      "value": null
+    },
+    {
+      "id": "future-expansion",
+      "label": {
+        "en": "Future expansion and adaptability",
+        "fa": "توسعه آینده و انعطاف‌پذیری"
+      },
+      "status": "unresolved",
+      "value": null
+    }
+  ]
+}

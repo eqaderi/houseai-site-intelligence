@@ -28,6 +28,9 @@ const climate = readJson("climate.json");
 const solar = readJson("solar.json");
 const wind = readJson("wind.json");
 const hazards = readJson("hazards.json");
+const readiness = readJson("architectural-readiness.json");
+const clientBrief = readJson("client-brief.json");
+const recommendations = readJson("recommendations.json");
 const documents = readJson("documents.json");
 const en = readJson("translations.en.json");
 const fa = readJson("translations.fa.json");
@@ -64,7 +67,8 @@ pass(
 );
 pass(
   "Runtime data arrives as a global from a classic script",
-  /<script src="data\/data\.js"><\/script>/.test(html) && app.includes("window.HOUSEAI_DATA"),
+  /<script src="data\/data\.js(?:\?[^\"]+)?"><\/script>/.test(html)
+    && app.includes("window.HOUSEAI_DATA"),
 );
 
 const vendorHash = createHash("sha256")
@@ -279,17 +283,34 @@ pass(
 // the document registry. These assert the intent that ban stood for instead.
 const concepts = readJson("concepts.json");
 pass(
-  "Concept massing is marked unselected and is not a recommendation",
+  "Rejected concepts are unranked, unselected and absent from recommendations",
   concepts.unselected === true
+    && concepts.rejected === true
+    && concepts.status === "rejected-unvalidated-experiment"
     && concepts.selection.selected === null
-    && documents.rejected_concepts.included === false
-    && !JSON.stringify(readJson("recommendations.json")).includes("option-"),
+    && concepts.selection.ranking_published === false
+    && !("compared_outcome" in concepts.selection)
+    && documents.rejected_concepts.archive_included === true
+    && documents.rejected_concepts.active_library === false
+    && documents.rejected_concepts.hidden_by_default === true
+    && !JSON.stringify(recommendations).includes("option-"),
 );
 pass(
-  "Concept massing is off by default and lives outside the evidence sections",
-  !/id="terrain-3d-concepts"[^>]*\bchecked\b/.test(html)
-    && terrain3d.includes("conceptsHidden = true")
-    && html.indexOf('id="concepts"') > html.indexOf('id="architecture"'),
+  "Rejected concept archive is closed and absent from primary navigation and 3D controls",
+  /<details[^>]*class="[^"]*rejected-concepts-archive[^"]*"[^>]*id="concepts"/.test(html)
+    && !/<details[^>]*id="concepts"[^>]*\bopen\b/.test(html)
+    && !/<nav[\s\S]*href="#concepts"/.test(html)
+    && !html.includes('id="terrain-3d-concepts"')
+    && terrain3d.includes("conceptsHidden = true"),
+);
+pass(
+  "Rejected archive withholds unsupported workspace validations",
+  concepts.options.every((option) => option.validation.length === 0
+    && Boolean(option.source_validation_withheld?.en)
+    && Boolean(option.source_validation_withheld?.fa))
+    && !JSON.stringify(concepts).includes("scores highest")
+    && !JSON.stringify(concepts).includes("دسترسی خودرو کارآمد است")
+    && !JSON.stringify(concepts).includes("حیاط آب سطحی را محبوس نمی‌کند"),
 );
 // Heights are absent from the concept data, so every volume must say where its
 // height came from rather than carrying an invented storey height.
@@ -487,7 +508,7 @@ pass(
     // The caveat moved off a sprite plate over the terrain and into the section's
     // own evidence line, in both languages. It may not simply disappear.
     && /surveyed 38\.27% slope eased into a 90 m DEM/.test(en.terrain3dEvidence)
-    && /مدل رقومی ۹۰ متری/.test(fa.terrain3dEvidence)
+    && /مدل ارتفاعی ۹۰ متری/.test(fa.terrain3dEvidence)
     && !/DEM, not surveyed/.test(terrain3d),
 );
 // One road edge is surveyed and one is only reported. They may ship together only
@@ -505,7 +526,7 @@ pass(
     // Drawn in different materials, and the caption names the reported one.
     && /road\.status !== "client-reported"/.test(terrain3d)
     && /lower road client-reported/.test(en.terrain3dEvidence)
-    && /به گفتهٔ کارفرما/.test(fa.terrain3dEvidence)
+    && /گفته کارفرما/.test(fa.terrain3dEvidence)
     && en.showRoads && fa.showRoads,
 );
 // Vegetation is illustrative, so at least put it where the client asked: the trees
@@ -564,6 +585,32 @@ pass(
     && platform.balance_level_m < site.elevation.max_m
     && !/m3|m³|cubic|volume_m|حجم_/.test(JSON.stringify(platform))
     && en.levelPlatform && fa.levelPlatform && en.platformWithin && fa.platformWithin,
+);
+pass(
+  "Terrain platform outputs are explicitly exploratory and not for pricing",
+  platform.status === "preliminary-engineering-inference"
+    && platform.design_use.status === "exploratory-not-for-pricing"
+    && platform.level_step_m === 0.5
+    && platform.published_area_precision_m2 === 0.1
+    && /one-metre contours/.test(platform.design_use.note.en)
+    && /not for quantities or pricing/.test(platform.design_use.label.en)
+    && Boolean(platform.design_use.note.fa)
+    && html.includes('id="platform-design-use"'),
+);
+
+const longitudinal = terrain.sections.longitudinal;
+pass(
+  "Longitudinal L–L chart contains only valid in-parcel elevations",
+  longitudinal.distance_m.length === longitudinal.elevation_m.length
+    && longitudinal.elevation_m.every(Number.isFinite)
+    && longitudinal.distance_m[0] === 0
+    && longitudinal.omitted_outside_parcel_samples === 2
+    && longitudinal.start_elevation_m > longitudinal.end_elevation_m
+    && Math.abs(longitudinal.fall_m - 7.1368640650826) < 1e-9
+    && Math.abs(longitudinal.run_m - 24.79773009335622) < 1e-9
+    && html.includes('class="chart-card profile-card profile-card-featured"')
+    && html.includes('id="profile-summary"')
+    && /#profile-canvas\s*\{[^}]*height:\s*430px/.test(css),
 );
 /*
   Trees and planting.
@@ -1040,6 +1087,33 @@ pass(
     && !fa.surveyTitle.includes("ملک تأییدشده")
     && html.includes('id="property-verification-list"'),
 );
+pass(
+  "Architectural-readiness gate names all three bilingual decision states",
+  readiness.status === "concept-design-blocked"
+    && JSON.stringify(readiness.states.map((item) => item.id))
+      === '["usable-now","preliminary-only","blocks-concept"]'
+    && readiness.states.every((item) => item.evidence.length >= 4
+      && Boolean(item.label.en) && Boolean(item.label.fa)
+      && item.evidence.every((entry) => Boolean(entry.en) && Boolean(entry.fa)))
+    && html.includes('id="readiness-grid"'),
+);
+pass(
+  "Client brief exposes twelve unresolved fields without inferred answers",
+  clientBrief.status === "unresolved"
+    && clientBrief.fields.length === 12
+    && clientBrief.fields.every((item) => item.status === "unresolved" && item.value === null
+      && Boolean(item.label.en) && Boolean(item.label.fa))
+    && html.includes('id="client-brief-grid"'),
+);
+pass(
+  "Room and garage placement remains gated by brief and field evidence",
+  ["courtyard", "bedrooms", "living", "kitchen", "office", "garage"].every(
+    (id) => recommendations.items.find((item) => item.id === id)?.confidence === "requires-investigation",
+  )
+    && recommendations.items.find((item) => item.id === "garage")?.detail.en.includes("road longitudinal and crossfall grade")
+    && recommendations.items.find((item) => item.id === "garage")?.detail.en.includes("vehicle swept paths")
+    && recommendations.items.find((item) => item.id === "bedrooms")?.detail.en.includes("no room side is selected"),
+);
 pass("Seven-point outer boundary", site.outer_boundary_points.length === 7);
 pass("Pt8 is the only interior terrain point", JSON.stringify(site.interior_terrain_points) === '["Pt8"]');
 pass("Eight survey points", survey.points.length === 8);
@@ -1097,7 +1171,24 @@ pass(
   hazards.categories.some((item) => item.status === "regional-data")
     && hazards.categories.some((item) => item.status === "requires-field-investigation"),
 );
-pass("Rejected concepts are excluded", documents.rejected_concepts.included === false);
+pass(
+  "Seismic design limitations lead while event counts remain expandable context",
+  hazards.categories[0].id === "seismic"
+    && hazards.categories[0].status === "requires-field-investigation"
+    && hazards.seismic_gate.status === "blocks-structural-design"
+    && hazards.seismic_gate.missing_inputs.length === 3
+    && hazards.seismic_gate.finding.en.includes("Standard 2800 design spectrum")
+    && hazards.seismic_gate.finding.en.includes("geotechnical site class")
+    && hazards.seismic_gate.regional_context.counts.within_200_km > 0
+    && html.includes('id="seismic-gate"')
+    && app.includes("regional.counts.within_200_km"),
+);
+pass(
+  "Rejected concepts exist only in the closed archive",
+  documents.rejected_concepts.archive_included === true
+    && documents.rejected_concepts.active_library === false
+    && documents.rejected_concepts.hidden_by_default === true,
+);
 pass(
   "No rejected concept assets are bundled",
   !localRefs.some((reference) => /concept|option-[abc]/i.test(reference)),

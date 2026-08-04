@@ -174,6 +174,8 @@
     $("#hero-location").textContent = local(data.project.probable_project_location);
     $("#survey-methodology").textContent = local(data.survey.methodology);
     renderPropertyVerification();
+    renderArchitecturalReadiness();
+    renderClientBrief();
     $("#geo-note").textContent = local(data.project.geolocation_note);
     $("#geo-next").textContent = local(data.geography.required_next);
     $("#climate-warning").textContent = local(data.climate.warning);
@@ -183,6 +185,7 @@
     renderPolygons();
     renderPoints();
     renderTerrainData();
+    renderProfileMetadata();
     // Writes localized number tooltips, so it has to re-run on a language
     // change rather than only from init().
     renderElevationStrip();
@@ -253,6 +256,36 @@
           <dd><span class="status-pill ${statusClass(item.status)}"><span class="status-dot"></span>${escapeHtml(statusLabel(item.status))}</span></dd>
         </div>
       `)
+      .join("");
+  }
+
+  function renderArchitecturalReadiness() {
+    const readiness = data.architecturalReadiness;
+    if (!readiness) return;
+    $("#readiness-summary").textContent = local(readiness.summary);
+    $("#readiness-grid").innerHTML = readiness.states
+      .map((item, index) => `
+        <article class="readiness-card readiness-${escapeHtml(item.id)}">
+          <span class="readiness-index">0${index + 1}</span>
+          <div class="readiness-card-heading">
+            <h4>${escapeHtml(local(item.label))}</h4>
+            <span>${escapeHtml(local(item.purpose))}</span>
+          </div>
+          <ul>${item.evidence.map((entry) => `<li>${escapeHtml(local(entry))}</li>`).join("")}</ul>
+        </article>`)
+      .join("");
+  }
+
+  function renderClientBrief() {
+    const brief = data.clientBrief;
+    if (!brief) return;
+    $("#client-brief-note").textContent = local(brief.note);
+    $("#client-brief-grid").innerHTML = brief.fields
+      .map((item) => `
+        <div>
+          <dt>${escapeHtml(local(item.label))}</dt>
+          <dd><span class="status-pill unresolved"><span class="status-dot"></span>${escapeHtml(statusLabel(item.status))}</span></dd>
+        </div>`)
       .join("");
   }
 
@@ -731,6 +764,27 @@
   }
 
   function renderHazards() {
+    const seismic = data.hazards.seismic_gate;
+    if (seismic) {
+      const regional = seismic.regional_context;
+      $("#seismic-gate").innerHTML = `
+        <div class="seismic-gate-copy">
+          <span class="status-pill unresolved"><span class="status-dot"></span>${escapeHtml(statusLabel("unavailable"))}</span>
+          <h3>${escapeHtml(local(seismic.title))}</h3>
+          <p>${escapeHtml(local(seismic.finding))}</p>
+          <ul>${seismic.missing_inputs.map((item) => `<li>${escapeHtml(local(item))}</li>`).join("")}</ul>
+        </div>
+        <details>
+          <summary>${escapeHtml(local(regional.title))}</summary>
+          <p>${escapeHtml(local(regional.finding))}</p>
+          <dl>
+            <div><dt>≤ 50 km</dt><dd><bdi>${format(regional.counts.within_50_km, 0)}</bdi></dd></div>
+            <div><dt>≤ 100 km</dt><dd><bdi>${format(regional.counts.within_100_km, 0)}</bdi></dd></div>
+            <div><dt>≤ 200 km</dt><dd><bdi>${format(regional.counts.within_200_km, 0)}</bdi></dd></div>
+            <div><dt>M max</dt><dd><bdi>${format(regional.strongest.magnitude, 1)} · ${format(regional.strongest.distance_km, 1)} km</bdi></dd></div>
+          </dl>
+        </details>`;
+    }
     $("#hazard-grid").innerHTML = data.hazards.categories
       .map(
         (item, index) => `
@@ -849,6 +903,9 @@
           <span class="status-dot"></span>${escapeHtml(local(item.check))}
         </span>`)
       .join("");
+    if (!option.validation.length && option.source_validation_withheld) {
+      $("#concept-checks").innerHTML = `<p class="source-note">${escapeHtml(local(option.source_validation_withheld))}</p>`;
+    }
 
     const rows = [
       ["conceptInternalArea", "internal_area_m2", 2],
@@ -938,6 +995,9 @@
   function renderPlatform() {
     const platform = data.platform;
     if (!platform) return;
+    $("#platform-design-use").innerHTML = `
+      <strong>${escapeHtml(local(platform.design_use.label))}</strong>
+      <p>${escapeHtml(local(platform.design_use.note))}</p>`;
     $("#platform-difference").textContent = local(platform.difference_note);
     const best = platform.best_level_for_band["1.5"];
     $("#platform-metrics").innerHTML = [
@@ -1281,6 +1341,20 @@
     return local(data.terrain.sections[state.profile].label);
   }
 
+  function renderProfileMetadata() {
+    const section = data.terrain.sections[state.profile];
+    if (!section) return;
+    const startDirection = local(section.direction?.start);
+    const endDirection = local(section.direction?.end);
+    $("#profile-summary").innerHTML = [
+      metricRow(`${t("sectionStartElevation")} · ${startDirection}`, format(section.start_elevation_m, 3), "m"),
+      metricRow(`${t("sectionEndElevation")} · ${endDirection}`, format(section.end_elevation_m, 3), "m"),
+      metricRow(t("sectionFall"), format(section.fall_m, 3), "m"),
+      metricRow(t("sectionGrade"), format(section.average_grade_percent, 1), "%"),
+    ].join("");
+    $("#profile-scope").textContent = local(section.scope);
+  }
+
   function canvasSetup(canvas) {
     const rect = canvas.getBoundingClientRect();
     const ratio = Math.min(window.devicePixelRatio || 1, 2);
@@ -1519,9 +1593,13 @@
     const canvas = $("#profile-canvas");
     const { context, width, height } = canvasSetup(canvas);
     const section = data.terrain.sections[state.profile];
-    const distances = section.distance_m;
-    const elevations = section.elevation_m;
-    const padding = { top: 24, right: 18, bottom: 36, left: 56 };
+    const samples = section.distance_m
+      .map((distance, index) => ({ distance, elevation: section.elevation_m[index] }))
+      .filter((sample) => Number.isFinite(sample.distance) && Number.isFinite(sample.elevation));
+    if (samples.length < 2) return;
+    const distances = samples.map((sample) => sample.distance);
+    const elevations = samples.map((sample) => sample.elevation);
+    const padding = { top: 34, right: 28, bottom: 58, left: 72 };
     const innerW = width - padding.left - padding.right;
     const innerH = height - padding.top - padding.bottom;
     const minX = distances[0];
@@ -1539,9 +1617,9 @@
     context.strokeStyle = line;
     context.fillStyle = muted;
     context.lineWidth = 1;
-    context.font = canvasFont(400, 9);
+    context.font = canvasFont(500, width < 520 ? 10 : 11);
     context.textAlign = "right";
-    for (let value = minY; value <= maxY; value += 2) {
+    for (let value = minY; value <= maxY; value += 1) {
       const py = y(value);
       context.beginPath();
       context.moveTo(padding.left, py);
@@ -1574,15 +1652,32 @@
       else context.lineTo(px, py);
     });
     context.strokeStyle = moss;
-    context.lineWidth = 2.5;
+    context.lineWidth = 3.5;
     context.stroke();
 
     context.fillStyle = muted;
     context.textAlign = "center";
     for (let step = 0; step <= 4; step += 1) {
       const value = minX + ((maxX - minX) * step) / 4;
-      context.fillText(`${format(value, 1)} m`, x(value), height - 12);
+      context.fillText(`${format(value, 1)}`, x(value), height - 26);
     }
+
+    context.font = canvasFont(650, width < 520 ? 10 : 12);
+    context.fillStyle = moss;
+    context.textAlign = "left";
+    context.fillText(local(section.direction?.start), padding.left, height - 8);
+    context.textAlign = "right";
+    context.fillText(local(section.direction?.end), width - padding.right, height - 8);
+
+    context.fillStyle = muted;
+    context.font = canvasFont(500, width < 520 ? 9 : 10);
+    context.textAlign = "center";
+    context.fillText(t("distanceAxis"), padding.left + innerW / 2, height - 8);
+    context.save();
+    context.translate(14, padding.top + innerH / 2);
+    context.rotate(-Math.PI / 2);
+    context.fillText(t("elevationAxis"), 0, 0);
+    context.restore();
 
     if (state.profileHover != null) {
       const hoverIndex = Math.max(
@@ -2177,14 +2272,15 @@
         state.profileHover = null;
         $$("[data-section]").forEach((item) => item.classList.toggle("active", item === button));
         $("#profile-title").textContent = profileTitle();
+        renderProfileMetadata();
         drawProfile();
       });
     });
 
     $("#profile-canvas").addEventListener("pointermove", (event) => {
       const rect = event.currentTarget.getBoundingClientRect();
-      const paddingLeft = 56;
-      const paddingRight = 18;
+      const paddingLeft = 72;
+      const paddingRight = 28;
       state.profileHover = Math.max(
         0,
         Math.min(1, (event.clientX - rect.left - paddingLeft) / (rect.width - paddingLeft - paddingRight)),

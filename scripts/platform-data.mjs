@@ -134,7 +134,18 @@ export function buildPlatform(site, points, triangles, metrics) {
     ), levels[0]);
 
   return {
-    status: "verified-derived",
+    status: "preliminary-engineering-inference",
+    design_use: {
+      status: "exploratory-not-for-pricing",
+      label: {
+        en: "Exploratory terrain reading — not for quantities or pricing",
+        fa: "خوانش اکتشافی زمین — نامناسب برای متره یا قیمت‌گذاری",
+      },
+      note: {
+        en: "This eight-point, seven-facet TIN has no surveyed breaklines. Its one-metre contours, 0.5 m platform-level steps, areas rounded to 0.1 m², and cut/fill depths are exploratory sensitivity outputs only. They cannot establish construction levels, retaining geometry, earthwork quantities, tender quantities or price.",
+        fa: "این مدل فقط هشت نقطه و هفت وجه دارد و شکست‌خط‌های واقعی زمین در آن نیست. خطوط تراز یک‌متری، گام ۰٫۵ متری سکو، مساحت‌های ۰٫۱ مترمربعی و عمق برداشت یا خاک‌ریزی فقط برای مقایسه اولیه‌اند. از این اعداد برای تعیین تراز ساخت، دیوار حائل، حجم خاک، متره یا قیمت استفاده نکنید.",
+      },
+    },
     plan_area_m2: site.verified_area_m2,
     surface_area_m2: metrics.surface_area_m2,
     surface_excess_m2: round(metrics.surface_area_m2 - site.verified_area_m2, 4),
@@ -144,7 +155,7 @@ export function buildPlatform(site, points, triangles, metrics) {
     level_platform_area_basis: "plan",
     difference_note: {
       en: "The verified 487.428568 m² is a plan area — a horizontal projection, which is what planning coverage is measured in and what a level slab occupies. The ground's own tilted skin is 522.4189 m², 7.18% more. That excess is not extra buildable land: a level platform cut into a slope has plan area only. It is real in other ways — more topsoil to strip, more area to drain and to retain — but it never becomes floor.",
-      fa: "مساحت تأییدشدهٔ ۴۸۷٫۴۲۸۵۶۸ مترمربع مساحت افقی است — تصویر قائم روی صفحهٔ افق، همان چیزی که سطح اشغال در ضوابط با آن سنجیده می‌شود و همان که یک دال تراز اشغال می‌کند. پوستهٔ شیب‌دار خود زمین ۵۲۲٫۴۱۸۹ مترمربع است، ۷٫۱۸ درصد بیشتر. این مازاد زمین ساخت‌پذیر اضافه نیست: سکوی ترازی که در شیب بریده شود فقط مساحت افقی دارد. مازاد از جهات دیگر واقعی است — خاک نباتی بیشتر برای برداشت، سطح بیشتر برای زهکشی و حفاظت — اما هرگز به کف تبدیل نمی‌شود.",
+      fa: "مساحت ۴۸۷٫۴۲۸۵۶۸ مترمربع، مساحت افقی قطعه است؛ همان عددی که برای سطح اشغال استفاده می‌شود. سطح شیب‌دار زمین ۵۲۲٫۴۱۸۹ مترمربع است، یعنی ۷٫۱۸ درصد بیشتر. این تفاوت به معنی زمین قابل ساخت بیشتر نیست. فقط نشان می‌دهد سطح بیشتری برای خاک‌برداری سطحی، زهکشی و حفاظت وجود دارد.",
     },
     raster: {
       cell_m: CELL_M,
@@ -160,9 +171,11 @@ export function buildPlatform(site, points, triangles, metrics) {
     balance_level_m: round(balance, 3),
     balance_note: {
       en: "The area-weighted mean ground level. A platform at this height has equal mean cut and mean fill depth. It is not a recommendation and it carries no volume: cut and fill quantities need a survey this TIN's eight points cannot stand in for.",
-      fa: "تراز میانگین زمین با وزن مساحت. سکویی در این ارتفاع، عمق میانگین خاک‌برداری و خاک‌ریزی برابر دارد. این توصیه نیست و هیچ حجمی به همراه ندارد: حجم خاک‌برداری و خاک‌ریزی به برداشتی نیاز دارد که هشت نقطهٔ این TIN جانشین آن نمی‌شود.",
+      fa: "این عدد، میانگین تراز زمین با در نظر گرفتن مساحت است. در این تراز، میانگین عمق برداشت و خاک‌ریزی برابر می‌شود. این تراز پیشنهادی نیست و حجم خاک را نشان نمی‌دهد. برای محاسبه حجم به نقشه‌برداری دقیق‌تری نیاز است.",
     },
     depth_bands_m: DEPTH_BANDS_M,
+    level_step_m: LEVEL_STEP_M,
+    published_area_precision_m2: 0.1,
     levels,
     best_level_for_band: Object.fromEntries(DEPTH_BANDS_M.map((band) => {
       const entry = bestWithin(band);
@@ -170,7 +183,7 @@ export function buildPlatform(site, points, triangles, metrics) {
     })),
     limits: {
       en: "Every facet of this parcel is in the 33–50% slope band, so a level platform is a cut-and-fill decision at any position. These figures bound the depth involved; they are not a foundation design, a retaining design, or an earthwork estimate, and none of the three can be read out of them.",
-      fa: "همهٔ وجه‌های این قطعه در بازهٔ شیب ۳۳ تا ۵۰ درصد قرار دارند؛ پس سکوی تراز در هر موقعیتی یک تصمیم خاک‌برداری و خاک‌ریزی است. این اعداد عمق درگیر را محدود می‌کنند؛ طراحی پی، طراحی سازهٔ نگهبان یا برآورد خاکی نیستند و هیچ‌یک از این سه از آن‌ها استخراج نمی‌شود.",
+      fa: "شیب همه وجه‌های مدل بین ۳۳ تا ۵۰ درصد است. هر سکوی تراز به برداشت و خاک‌ریزی نیاز دارد. جدول فقط اندازه تقریبی عمق‌ها را نشان می‌دهد؛ از آن نمی‌توان پی، دیوار حائل یا مقدار عملیات خاکی را طراحی و محاسبه کرد.",
     },
   };
 }

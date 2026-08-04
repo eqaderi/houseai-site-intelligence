@@ -1,17 +1,18 @@
 {
   "unselected": true,
-  "status": "preliminary-concept-massing",
+  "rejected": true,
+  "status": "rejected-unvalidated-experiment",
   "selection": {
     "selected": null,
-    "compared_outcome": "option-c",
+    "ranking_published": false,
     "note": {
-      "en": "Option C scores highest in the workspace comparison. That is a comparison outcome, not a decision: no design has been selected, and none of this geometry is coordinated for construction.",
-      "fa": "گزینه C در مقایسه کارگاهی بالاترین امتیاز را دارد. این نتیجه مقایسه است، نه تصمیم: هیچ طرحی انتخاب نشده و هیچ‌یک از این هندسه‌ها برای اجرا هماهنگ نشده است."
+      "en": "These early experiments were rejected. No option is ranked, selected or recommended, and none may be used to set a footprint, room arrangement, vehicle access or courtyard drainage strategy.",
+      "fa": "این آزمایش‌های اولیه رد شده‌اند. هیچ گزینه‌ای رتبه‌بندی، انتخاب یا توصیه نشده و هیچ‌کدام نباید برای تعیین سطح اشغال، چیدمان اتاق، دسترسی خودرو یا راهبرد زهکشی حیاط استفاده شود."
     }
   },
   "caveat": {
-    "en": "Preliminary massing only. Room rectangles come from the design workspace; heights are the underside of each bar's mono-pitch roof, because the concept data states no storey height. Nothing here is structural, serviced or permit-ready.",
-    "fa": "فقط حجم‌پردازی اولیه. مستطیل اتاق‌ها از فضای کار طراحی می‌آید و ارتفاع‌ها زیر سقف شیب‌دار هر نوار است، زیرا داده مفهومی ارتفاع طبقه را بیان نمی‌کند. هیچ بخشی از این سازه، تأسیسات یا مدارک پروانه نیست."
+    "en": "Archive only. The room rectangles and derived heights are unvalidated experiment data. They are not evidence, a design direction, a feasibility result, or a basis for construction, services, cost or permitting.",
+    "fa": "فقط بایگانی. مستطیل اتاق‌ها و ارتفاع‌های مشتق‌شده داده آزمایشی اعتبارسنجی‌نشده‌اند؛ نه شاهد، نه جهت طراحی، نه نتیجه امکان‌سنجی و نه مبنای ساخت، تأسیسات، هزینه یا مجوز هستند."
   },
   "frame": {
     "origin_point": "Pt2",
@@ -579,71 +580,11 @@
           "width_m": 0.95
         }
       ],
-      "validation": [
-        {
-          "check": {
-            "en": "No geometry outside the property",
-            "fa": "هیچ حجمی بیرون از ملک نیست"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Temporary 1.5 m study margin respected",
-            "fa": "حاشیه مطالعاتی موقت ۱٫۵ متر رعایت شده"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "No overlapping rooms",
-            "fa": "هیچ اتاقی هم‌پوشانی ندارد"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Every space is reachable",
-            "fa": "همه فضاها دسترس‌پذیرند"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Door clearances are workable",
-            "fa": "فاصله آزاد درها کارآمد است"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Every bedroom has an exterior window",
-            "fa": "هر اتاق خواب پنجره بیرونی دارد"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Stair geometry is usable",
-            "fa": "هندسه پله قابل استفاده است"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Vehicle access is workable",
-            "fa": "دسترسی خودرو کارآمد است"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "The courtyard cannot trap drainage",
-            "fa": "حیاط آب سطحی را محبوس نمی‌کند"
-          },
-          "passed": true
-        }
-      ]
+      "validation": [],
+      "source_validation_withheld": {
+        "en": "Workspace pass/fail claims are withheld because their required evidence is unresolved.",
+        "fa": "ادعاهای قبول/رد فضای کار منتشر نمی‌شوند، زیرا شواهد لازم برای آن‌ها حل‌نشده است."
+      }
     },
     {
       "id": "option-b",
@@ -1110,71 +1051,11 @@
           "width_m": 1
         }
       ],
-      "validation": [
-        {
-          "check": {
-            "en": "No geometry outside the property",
-            "fa": "هیچ حجمی بیرون از ملک نیست"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Temporary 1.5 m study margin respected",
-            "fa": "حاشیه مطالعاتی موقت ۱٫۵ متر رعایت شده"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "No overlapping rooms",
-            "fa": "هیچ اتاقی هم‌پوشانی ندارد"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Every space is reachable",
-            "fa": "همه فضاها دسترس‌پذیرند"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Door clearances are workable",
-            "fa": "فاصله آزاد درها کارآمد است"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Every bedroom has an exterior window",
-            "fa": "هر اتاق خواب پنجره بیرونی دارد"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Stair geometry is usable",
-            "fa": "هندسه پله قابل استفاده است"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Vehicle access is workable",
-            "fa": "دسترسی خودرو کارآمد است"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "The courtyard cannot trap drainage",
-            "fa": "حیاط آب سطحی را محبوس نمی‌کند"
-          },
-          "passed": true
-        }
-      ]
+      "validation": [],
+      "source_validation_withheld": {
+        "en": "Workspace pass/fail claims are withheld because their required evidence is unresolved.",
+        "fa": "ادعاهای قبول/رد فضای کار منتشر نمی‌شوند، زیرا شواهد لازم برای آن‌ها حل‌نشده است."
+      }
     },
     {
       "id": "option-c",
@@ -1723,71 +1604,11 @@
           "width_m": 0.95
         }
       ],
-      "validation": [
-        {
-          "check": {
-            "en": "No geometry outside the property",
-            "fa": "هیچ حجمی بیرون از ملک نیست"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Temporary 1.5 m study margin respected",
-            "fa": "حاشیه مطالعاتی موقت ۱٫۵ متر رعایت شده"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "No overlapping rooms",
-            "fa": "هیچ اتاقی هم‌پوشانی ندارد"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Every space is reachable",
-            "fa": "همه فضاها دسترس‌پذیرند"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Door clearances are workable",
-            "fa": "فاصله آزاد درها کارآمد است"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Every bedroom has an exterior window",
-            "fa": "هر اتاق خواب پنجره بیرونی دارد"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Stair geometry is usable",
-            "fa": "هندسه پله قابل استفاده است"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "Vehicle access is workable",
-            "fa": "دسترسی خودرو کارآمد است"
-          },
-          "passed": true
-        },
-        {
-          "check": {
-            "en": "The courtyard cannot trap drainage",
-            "fa": "حیاط آب سطحی را محبوس نمی‌کند"
-          },
-          "passed": true
-        }
-      ]
+      "validation": [],
+      "source_validation_withheld": {
+        "en": "Workspace pass/fail claims are withheld because their required evidence is unresolved.",
+        "fa": "ادعاهای قبول/رد فضای کار منتشر نمی‌شوند، زیرا شواهد لازم برای آن‌ها حل‌نشده است."
+      }
     }
   ]
 }

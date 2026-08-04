@@ -816,6 +816,151 @@ html[lang="fa"] .kicker {
   font-variant-numeric: tabular-nums;
 }
 
+.readiness-panel,
+.client-brief-panel {
+  max-width: var(--max);
+  margin: 0 auto 24px;
+  padding: clamp(24px, 3vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 8px 28px rgba(25, 31, 28, 0.035);
+}
+
+.readiness-panel > header,
+.client-brief-panel > header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.6fr);
+  align-items: end;
+  gap: 28px;
+}
+
+.readiness-panel h3,
+.client-brief-panel h3 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(1.55rem, 2.6vw, 2.7rem);
+}
+
+.readiness-panel header > p,
+.client-brief-panel header > p,
+#client-brief-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.readiness-summary {
+  margin: 28px 0 18px;
+  padding: 16px 18px;
+  border-inline-start: 4px solid var(--danger);
+  color: var(--ink);
+  background: color-mix(in srgb, var(--danger) 7%, var(--surface));
+  font-size: 13px;
+  font-weight: 620;
+}
+
+.readiness-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.readiness-card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--paper);
+}
+
+.readiness-index {
+  color: var(--line-strong);
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.readiness-card-heading {
+  min-height: 96px;
+  margin-top: 24px;
+}
+
+.readiness-card h4 {
+  margin: 0 0 7px;
+  font-size: 1.35rem;
+}
+
+.readiness-card-heading span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 650;
+  text-transform: uppercase;
+}
+
+.readiness-card ul {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  gap: 9px;
+  list-style: none;
+}
+
+.readiness-card li {
+  padding-inline-start: 14px;
+  border-inline-start: 2px solid var(--line-strong);
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.readiness-usable-now {
+  border-top: 4px solid var(--moss);
+}
+
+.readiness-preliminary-only {
+  border-top: 4px solid var(--amber);
+}
+
+.readiness-blocks-concept {
+  border-top: 4px solid var(--danger);
+}
+
+.client-brief-panel {
+  margin-top: 24px;
+}
+
+#client-brief-note {
+  margin-top: 24px;
+}
+
+.client-brief-grid {
+  display: grid;
+  margin: 22px 0 0;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-inline-start: 1px solid var(--line);
+}
+
+.client-brief-grid > div {
+  display: flex;
+  min-height: 98px;
+  padding: 18px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  border-inline-end: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.client-brief-grid dt {
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.client-brief-grid dd {
+  margin: 0;
+  flex: 0 0 auto;
+}
+
 .warning-text {
   display: flex;
   align-items: center;
@@ -1592,7 +1737,53 @@ td.numeric {
 
 #profile-canvas {
   width: 100%;
-  height: 290px;
+  height: 430px;
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+}
+
+.profile-card-featured {
+  grid-column: 1 / -1;
+  padding: clamp(24px, 3vw, 42px);
+  border-top: 4px solid var(--moss);
+}
+
+.profile-card-featured #profile-title {
+  font-size: clamp(1.4rem, 2.2vw, 2.25rem);
+}
+
+.profile-summary {
+  display: grid;
+  margin-top: 22px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--line);
+  overflow: hidden;
+}
+
+.profile-summary > div {
+  padding: 14px 16px;
+  background: var(--surface);
+}
+
+.profile-summary span {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  text-transform: uppercase;
+}
+
+.profile-summary strong {
+  display: block;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.profile-scope {
   margin-top: 12px;
 }
 
@@ -1720,6 +1911,29 @@ td.numeric {
   content: "×";
   color: var(--clay);
   font-weight: 700;
+}
+
+.platform-use-warning {
+  margin: 14px 0 18px;
+  padding: 18px 20px;
+  border: 1px solid color-mix(in srgb, var(--danger) 42%, var(--line));
+  border-inline-start: 4px solid var(--danger);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--danger) 7%, var(--surface));
+}
+
+.platform-use-warning strong {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--danger);
+  font-size: 12px;
+}
+
+.platform-use-warning p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.65;
 }
 
 .diagram-gallery {
@@ -3103,6 +3317,120 @@ td.numeric {
   background: var(--ink);
 }
 
+.seismic-gate {
+  display: grid;
+  max-width: var(--max);
+  margin: 0 auto 22px;
+  grid-template-columns: minmax(0, 1.35fr) minmax(310px, 0.65fr);
+  border: 1px solid color-mix(in srgb, var(--danger) 45%, var(--line));
+  border-top: 5px solid var(--danger);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.seismic-gate-copy,
+.seismic-gate details {
+  padding: clamp(24px, 3vw, 38px);
+}
+
+.seismic-gate-copy h3 {
+  margin: 22px 0 12px;
+  font-size: clamp(1.45rem, 2vw, 2.15rem);
+}
+
+.seismic-gate-copy p,
+.seismic-gate-copy li,
+.seismic-gate details p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.seismic-gate-copy ul {
+  display: grid;
+  margin: 20px 0 0;
+  padding: 0;
+  gap: 8px;
+  list-style: none;
+}
+
+.seismic-gate-copy li {
+  padding-inline-start: 14px;
+  border-inline-start: 2px solid var(--danger);
+}
+
+.seismic-gate details {
+  border-inline-start: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.seismic-gate summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.seismic-gate dl {
+  display: grid;
+  margin: 18px 0 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+
+.seismic-gate dl div {
+  padding: 12px;
+  background: var(--surface);
+}
+
+.seismic-gate dt {
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.seismic-gate dd {
+  margin: 4px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .readiness-panel > header,
+  .client-brief-panel > header,
+  .seismic-gate {
+    grid-template-columns: 1fr;
+  }
+
+  .readiness-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .readiness-card-heading {
+    min-height: auto;
+  }
+
+  .client-brief-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .seismic-gate details {
+    border-inline-start: 0;
+    border-top: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 650px) {
+  .client-brief-grid,
+  .profile-summary {
+    grid-template-columns: 1fr;
+  }
+
+  #profile-canvas {
+    height: 380px;
+  }
+}
+
 .hazard-grid {
   display: grid;
   max-width: var(--max);
@@ -3359,6 +3687,34 @@ td.numeric {
   padding-bottom: 18px;
   margin: 0;
   font-size: 12px;
+}
+
+.rejected-concepts-archive {
+  margin-block: 58px;
+  border-color: color-mix(in srgb, var(--danger) 35%, var(--line));
+}
+
+.rejected-concepts-archive > summary {
+  padding: 22px 0;
+  color: var(--danger);
+  font-size: 14px;
+}
+
+.rejected-concepts-archive .archive-body {
+  padding: 12px 0 42px;
+}
+
+.rejected-concepts-archive .archive-warning {
+  margin-bottom: 30px;
+  padding: 18px;
+  border-inline-start: 4px solid var(--danger);
+  color: var(--ink);
+  background: color-mix(in srgb, var(--danger) 7%, var(--surface));
+  font-weight: 650;
+}
+
+.rejected-concepts-archive .section-header {
+  margin-bottom: 38px;
 }
 
 .source-table-card {

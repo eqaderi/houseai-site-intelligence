@@ -1,0 +1,103 @@
+{
+  "status": "concept-design-blocked",
+  "summary": {
+    "en": "Site strategy and consultant briefing may begin. Concept design must wait for the client brief, certified legal/survey evidence, planning controls, road geometry and preliminary ground assessment.",
+    "fa": "بررسی راهبرد سایت و هماهنگی مشاوران می‌تواند شروع شود. برای شروع طراحی مفهومی هنوز باید خواسته‌های خانواده، مدارک قانونی و نقشه‌برداری، ضوابط، وضعیت راه و شرایط اولیه زمین مشخص شود."
+  },
+  "states": [
+    {
+      "id": "usable-now",
+      "status": "usable-now",
+      "label": {
+        "en": "Usable now",
+        "fa": "قابل استفاده اکنون"
+      },
+      "purpose": {
+        "en": "Site strategy and consultant briefing",
+        "fa": "راهبرد سایت و توجیه مشاوران"
+      },
+      "evidence": [
+        {
+          "en": "Verified drawing geometry and 487.428568 m² plan-area calculation",
+          "fa": "هندسه ترسیمی و محاسبه مساحت پلان ۴۸۷٫۴۲۸۵۶۸ مترمربع"
+        },
+        {
+          "en": "Seven outer drawing points, Pt8 terrain point, Pt2–Pt1 road edge and drawing +Y north",
+          "fa": "هفت نقطه بیرونی نقشه، نقطه زمین Pt8، لبه راه Pt2–Pt1 و شمال ‎+Y نقشه"
+        },
+        {
+          "en": "Eight spot elevations and seven TIN facets for understanding the general northeast fall",
+          "fa": "هشت تراز نقطه‌ای و هفت وجه TIN برای شناخت افت عمومی شمال‌شرقی"
+        },
+        {
+          "en": "Traceable regional climate, solar, wind and hazard evidence for briefing—not design loads",
+          "fa": "شواهد قابل‌ردیابی منطقه‌ای اقلیم، خورشید، باد و مخاطرات برای توجیه—نه بارگذاری طراحی"
+        }
+      ]
+    },
+    {
+      "id": "preliminary-only",
+      "status": "preliminary-only",
+      "label": {
+        "en": "Preliminary only",
+        "fa": "فقط مقدماتی"
+      },
+      "purpose": {
+        "en": "Questions and options to test",
+        "fa": "پرسش‌ها و گزینه‌های قابل آزمون"
+      },
+      "evidence": [
+        {
+          "en": "Probable WGS 84 / UTM 38N interpretation and probable project location",
+          "fa": "تفسیر محتمل WGS 84 / UTM 38N و موقعیت محتمل پروژه"
+        },
+        {
+          "en": "Eight-point TIN, one-metre contours, sections and exploratory platform-depth table",
+          "fa": "TIN هشت‌نقطه‌ای، خطوط تراز یک‌متری، مقاطع و جدول اکتشافی عمق سکو"
+        },
+        {
+          "en": "Regional-grid climate, solar, wind, soil, geology and seismic context",
+          "fa": "زمینه شبکه‌ای منطقه‌ای اقلیم، خورشید، باد، خاک، زمین‌شناسی و زلزله"
+        },
+        {
+          "en": "Envelope, orientation, drainage and access hypotheses that still require local testing",
+          "fa": "فرضیه‌های پوسته، جهت‌گیری، زهکشی و دسترسی که هنوز به آزمون محلی نیاز دارند"
+        }
+      ]
+    },
+    {
+      "id": "blocks-concept",
+      "status": "blocks-concept",
+      "label": {
+        "en": "Blocks concept design",
+        "fa": "مانع طراحی مفهومی"
+      },
+      "purpose": {
+        "en": "Resolve before fixing a building footprint or plan",
+        "fa": "پیش از تثبیت سطح اشغال یا پلان حل شود"
+      },
+      "evidence": [
+        {
+          "en": "Client brief: household, program, target area, privacy, budget, phasing and future needs",
+          "fa": "شرح پروژه: خانوار، برنامه فیزیکی، مساحت هدف، حریم، بودجه، فازبندی و نیازهای آینده"
+        },
+        {
+          "en": "Certified cadastral/legal boundary, title, easements, rights-of-way and surveyor-certified CRS",
+          "fa": "مرز ثبتی/قانونی معتبر، سند، حقوق ارتفاقی و عبور و CRS تأییدشده توسط نقشه‌بردار"
+        },
+        {
+          "en": "Planning controls, setbacks, height, parking, fire access and permit route",
+          "fa": "ضوابط، عقب‌نشینی، ارتفاع، پارکینگ، دسترسی آتش‌نشانی و مسیر مجوز"
+        },
+        {
+          "en": "Detailed topography with breaklines plus road grade, gate and turning geometry",
+          "fa": "توپوگرافی دقیق با شکست‌خط‌ها و شیب راه، دروازه و هندسه گردش"
+        },
+        {
+          "en": "Preliminary geotechnical and slope-stability assessment",
+          "fa": "ارزیابی اولیه ژئوتکنیک و پایداری شیب"
+        }
+      ]
+    }
+  ]
+}

@@ -55,73 +55,73 @@
     {
       "id": "courtyard",
       "category": {
-        "en": "Courtyard",
-        "fa": "حیاط"
+        "en": "Courtyard question",
+        "fa": "پرسش حیاط"
       },
-      "confidence": "reasonable-inference",
+      "confidence": "requires-investigation",
       "detail": {
-        "en": "Any downslope courtyard must preserve positive drainage and avoid becoming a basin against retaining elements.",
-        "fa": "هر حیاط پایین‌دست باید زهکشی مثبت داشته باشد و کنار عناصر حائل به حوضچه تبدیل نشود."
+        "en": "Test whether the household wants a courtyard and what privacy, use and maintenance it must support; only then test locations that can drain positively without relying on an unverified retaining scheme.",
+        "fa": "ابتدا مشخص شود خانوار حیاط می‌خواهد یا نه و چه نیازهای حریم، استفاده و نگهداری دارد؛ سپس مکان‌هایی آزموده شود که بدون اتکا به طرح حائل تأییدنشده، زهکشی مثبت داشته باشند."
       }
     },
     {
       "id": "bedrooms",
       "category": {
-        "en": "Bedrooms",
-        "fa": "اتاق‌خواب‌ها"
+        "en": "Bedroom questions",
+        "fa": "پرسش‌های اتاق‌خواب"
       },
-      "confidence": "reasonable-inference",
+      "confidence": "requires-investigation",
       "detail": {
-        "en": "Favour quieter east or southeast exposure for morning light while avoiding exposed downslope fall hazards; confirm views and neighbours on site.",
-        "fa": "برای نور صبح، مواجهه آرام‌تر شرق یا جنوب‌شرق ترجیح داده شود و از خطر افت در پایین‌دست دور بماند؛ دید و همسایگی در محل کنترل شود."
+        "en": "Confirm bedroom count, occupants, privacy, accessibility, views and noise tolerance before testing any orientation; no room side is selected.",
+        "fa": "پیش از آزمودن هر جهت، تعداد اتاق‌خواب، کاربران، حریم، دسترس‌پذیری، دید و تحمل صدا مشخص شود؛ هیچ سمت اتاقی انتخاب نشده است."
       }
     },
     {
       "id": "living",
       "category": {
-        "en": "Living areas",
-        "fa": "فضاهای نشیمن"
+        "en": "Living-area questions",
+        "fa": "پرسش‌های فضای نشیمن"
       },
-      "confidence": "reasonable-inference",
+      "confidence": "requires-investigation",
       "detail": {
-        "en": "Use later design studies to connect primary living spaces to usable level outdoor terraces.",
-        "fa": "در مطالعات بعدی، فضاهای اصلی نشیمن به تراس‌های تراز و قابل استفاده متصل شوند."
+        "en": "Confirm household patterns, hosting, privacy and desired outdoor relationship before testing where living spaces could sit; no terrace or level is promised.",
+        "fa": "پیش از آزمودن محل فضاهای نشیمن، الگوی زندگی خانوار، پذیرایی، حریم و رابطه مطلوب با بیرون مشخص شود؛ هیچ تراس یا ترازی تضمین نشده است."
       }
     },
     {
       "id": "kitchen",
       "category": {
-        "en": "Kitchen",
-        "fa": "آشپزخانه"
+        "en": "Kitchen questions",
+        "fa": "پرسش‌های آشپزخانه"
       },
-      "confidence": "reasonable-inference",
+      "confidence": "requires-investigation",
       "detail": {
-        "en": "Combine morning or southern daylight with direct service access and a robust extract system; do not rely on grid-level wind alone for ventilation.",
-        "fa": "نور صبح یا جنوب با دسترسی خدماتی مستقیم و هواکش مطمئن ترکیب شود؛ برای تهویه فقط به باد شبکه‌ای تکیه نشود."
+        "en": "Confirm cooking pattern, separation, service access, storage, fuel and extract requirements before testing daylight or adjacency options.",
+        "fa": "پیش از آزمودن گزینه‌های نور یا مجاورت، الگوی آشپزی، میزان جداسازی، دسترسی خدماتی، انبارش، سوخت و نیازهای هواکش مشخص شود."
       }
     },
     {
       "id": "office",
       "category": {
-        "en": "Office",
-        "fa": "دفتر کار"
+        "en": "Office questions",
+        "fa": "پرسش‌های دفتر کار"
       },
-      "confidence": "reasonable-inference",
+      "confidence": "requires-investigation",
       "detail": {
-        "en": "Use north/east diffuse light or controlled south light and avoid low west sun glare; verify nearby road noise in use hours.",
-        "fa": "از نور پخشیده شمال/شرق یا نور کنترل‌شده جنوب استفاده و از خیرگی خورشید کم‌ارتفاع غرب پرهیز شود؛ صدای راه نزدیک در ساعات استفاده سنجیده شود."
+        "en": "Confirm users, working hours, acoustic privacy, glare tolerance and visitor access before testing orientation; road noise has not been measured.",
+        "fa": "پیش از آزمودن جهت، کاربران، ساعات کار، حریم صوتی، تحمل خیرگی و دسترسی مراجعان مشخص شود؛ صدای راه اندازه‌گیری نشده است."
       }
     },
     {
       "id": "garage",
       "category": {
-        "en": "Garage / workshop",
-        "fa": "گاراژ / کارگاه"
+        "en": "Garage / workshop gate",
+        "fa": "شرط گاراژ / کارگاه"
       },
-      "confidence": "strongly-supported",
+      "confidence": "requires-investigation",
       "detail": {
-        "en": "Keep early access studies close to the high southern Pt2–Pt1 road frontage; no exact gate is selected.",
-        "fa": "مطالعات اولیه دسترسی نزدیک برِ بلند جنوبی Pt2–Pt1 انجام شود؛ محل دقیق دروازه انتخاب نشده است."
+        "en": "Do not place a garage, workshop or gate yet. First measure road longitudinal and crossfall grade, gate geometry, vehicle swept paths, emergency access and construction access; the Pt2–Pt1 edge proves frontage only.",
+        "fa": "هنوز گاراژ، کارگاه یا دروازه جانمایی نشود. ابتدا شیب طولی و عرضی راه، هندسه دروازه، مسیر گردش خودرو، دسترسی اضطراری و دسترسی ساخت اندازه‌گیری شود؛ لبه Pt2–Pt1 فقط وجود برِ راه را نشان می‌دهد."
       }
     },
     {

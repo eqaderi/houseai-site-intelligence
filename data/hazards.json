@@ -1,5 +1,68 @@
 {
+  "seismic_gate": {
+    "status": "blocks-structural-design",
+    "title": {
+      "en": "Seismic design inputs are unavailable",
+      "fa": "ورودی‌های طراحی لرزه‌ای موجود نیست"
+    },
+    "finding": {
+      "en": "No applicable Standard 2800 design spectrum, seismic zone/base acceleration, importance factor or geotechnical site class has been established for this parcel. Regional earthquake counts describe context only and must not be used as structural design parameters.",
+      "fa": "اطلاعات لازم استاندارد ۲۸۰۰ برای این قطعه هنوز تهیه نشده است: طیف طراحی، شتاب مبنا، ضریب اهمیت و رده خاک ساختگاه را نداریم. فهرست زلزله‌های منطقه فقط برای شناخت کلی است و برای محاسبات سازه قابل استفاده نیست."
+    },
+    "missing_inputs": [
+      {
+        "en": "Applicable Standard 2800 design spectrum and seismic parameters",
+        "fa": "طیف طراحی و پارامترهای لرزه‌ای لازم استاندارد ۲۸۰۰"
+      },
+      {
+        "en": "Geotechnical site class from parcel investigation",
+        "fa": "رده ساختگاه ژئوتکنیکی از بررسی خود قطعه"
+      },
+      {
+        "en": "Structural system, importance category and code applicability",
+        "fa": "سیستم سازه‌ای، گروه اهمیت و دامنه کاربرد آیین‌نامه"
+      }
+    ],
+    "regional_context": {
+      "title": {
+        "en": "Regional earthquake catalogue—context only",
+        "fa": "فهرست منطقه‌ای زلزله—فقط برای زمینه"
+      },
+      "finding": {
+        "en": "The regional catalog contains 270 M≥4.5 events within 200 km; the strongest is M7.3 at about 37 km. Structural design requires the applicable Iranian code spectrum and a geotechnical site class.",
+        "fa": "فهرست منطقه‌ای شامل 270 رخداد با بزرگی ۴٫۵ یا بیشتر در شعاع ۲۰۰ کیلومتر است؛ قوی‌ترین رخداد با بزرگی 7.3 در فاصله تقریبی 37 کیلومتر بوده است. طراحی سازه به طیف آیین‌نامه‌ای ایران و رده خاک ژئوتکنیکی نیاز دارد."
+      },
+      "counts": {
+        "within_50_km": 23,
+        "within_100_km": 104,
+        "within_200_km": 270
+      },
+      "strongest": {
+        "id": "us2000bmcg",
+        "date": "2017-11-12",
+        "magnitude": 7.3,
+        "place": "29 km S of ?alabja, Iraq",
+        "latitude": 34.9109,
+        "longitude": 45.9592,
+        "depth_km": 19,
+        "distance_km": 36.8,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us2000bmcg"
+      }
+    }
+  },
   "categories": [
+    {
+      "id": "seismic",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Seismic design basis",
+        "fa": "مبنای طراحی لرزه‌ای"
+      },
+      "finding": {
+        "en": "Design spectrum, Standard 2800 parameters and geotechnical site class are unavailable. Obtain them before structural design; the regional catalogue below is not a substitute.",
+        "fa": "طیف طراحی، پارامترهای استاندارد ۲۸۰۰ و رده خاک ساختگاه موجود نیست. مهندس سازه پیش از طراحی به این اطلاعات نیاز دارد. فهرست زلزله‌های منطقه جای آن‌ها را نمی‌گیرد."
+      }
+    },
     {
       "id": "terrain-slope",
       "status": "verified",
@@ -22,18 +85,6 @@
       "finding": {
         "en": "All model facets descend generally northeast; discharge conditions are unknown.",
         "fa": "تمام سطوح مدل عموماً به شمال‌شرق نزول دارند؛ شرایط تخلیه ناشناخته است."
-      }
-    },
-    {
-      "id": "seismic",
-      "status": "regional-data",
-      "title": {
-        "en": "Seismic context",
-        "fa": "زمینه لرزه‌ای"
-      },
-      "finding": {
-        "en": "The regional catalog contains 270 M≥4.5 events within 200 km; the strongest is M7.3 at about 37 km. Structural design requires the applicable Iranian code spectrum and a geotechnical site class.",
-        "fa": "فهرست منطقه‌ای شامل 270 رخداد با بزرگی ۴٫۵ یا بیشتر در شعاع ۲۰۰ کیلومتر است؛ قوی‌ترین رخداد با بزرگی 7.3 در فاصله تقریبی 37 کیلومتر بوده است. طراحی سازه به طیف آیین‌نامه‌ای ایران و رده خاک ژئوتکنیکی نیاز دارد."
       }
     },
     {

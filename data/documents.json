@@ -37,12 +37,12 @@
     {
       "id": "contours",
       "title": {
-        "en": "Terrain contours",
-        "fa": "خطوط تراز زمین"
+        "en": "Exploratory terrain contours",
+        "fa": "خطوط تراز اکتشافی زمین"
       },
       "description": {
-        "en": "One-metre contours derived from the eight-point TIN.",
-        "fa": "خطوط تراز یک‌متری مشتق‌شده از TIN هشت‌نقطه‌ای."
+        "en": "One-metre contours derived from the eight-point TIN; not construction grading or pricing evidence.",
+        "fa": "خطوط تراز یک‌متری مشتق‌شده از TIN هشت‌نقطه‌ای؛ نامناسب برای تسطیح اجرایی یا قیمت‌گذاری."
       },
       "type": "PNG",
       "language": "neutral",
@@ -54,12 +54,12 @@
     {
       "id": "sections",
       "title": {
-        "en": "Site sections",
-        "fa": "مقاطع سایت"
+        "en": "Exploratory site sections",
+        "fa": "مقاطع اکتشافی سایت"
       },
       "description": {
-        "en": "Analytical south–north and west–east terrain sections.",
-        "fa": "مقاطع تحلیلی جنوب–شمال و غرب–شرق زمین."
+        "en": "Analytical south–north and west–east TIN sections; valid only within the parcel and without surveyed breaklines.",
+        "fa": "مقاطع تحلیلی جنوب–شمال و غرب–شرق TIN؛ فقط در محدوده قطعه و بدون شکست‌خط برداشت‌شده معتبرند."
       },
       "type": "PNG",
       "language": "neutral",
@@ -427,10 +427,13 @@
     }
   ],
   "rejected_concepts": {
-    "included": false,
+    "archive_included": true,
+    "active_library": false,
+    "hidden_by_default": true,
+    "status": "rejected-unvalidated-experiment",
     "note": {
-      "en": "Early house-plan experiments were rejected and are intentionally excluded from recommendations and the active document library.",
-      "fa": "آزمایش‌های اولیه پلان خانه رد شده‌اند و عمداً از توصیه‌ها و کتابخانه فعال اسناد کنار گذاشته شده‌اند."
+      "en": "Early house-plan experiments are retained only in a closed archive. They were rejected, are unvalidated, and are excluded from recommendations and the active document library.",
+      "fa": "آزمایش‌های اولیه پلان خانه فقط در بایگانی بسته نگهداری می‌شوند. آن‌ها ردشده و اعتبارسنجی‌نشده‌اند و از توصیه‌ها و کتابخانه فعال اسناد کنار گذاشته شده‌اند."
     }
   }
 }

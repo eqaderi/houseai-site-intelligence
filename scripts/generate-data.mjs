@@ -95,18 +95,18 @@ const project = {
   ),
   site_version: version.site_version,
   generated_on: "2026-07-30",
-  status: "site-and-regional-environmental-analysis-complete",
+  status: "pre-design-environmental-analysis-complete",
   status_label: bi(
-    "Site geometry verified · regional environmental evidence integrated",
-    "هندسه سایت تأیید شده · شواهد محیطی منطقه‌ای یکپارچه شد",
+    "Pre-design environmental analysis complete · parcel-scale verification remains open",
+    "تحلیل محیطی پیش‌طراحی تکمیل شده · راستی‌آزمایی در مقیاس قطعه همچنان باز است",
   ),
-  geolocation_confirmed: true,
+  geolocation_status: "probable",
   geolocation_confidence: "strong-probable",
   geolocation_note: bi(
-    "Interpreting the survey as WGS 84 / UTM zone 38N places every point coherently in Baneh Verdeh, Paveh County. This is strong probable geolocation, not a surveyor-certified CRS.",
-    "تفسیر نقشه به‌صورت WGS 84 / UTM زون ۳۸ شمالی، همه نقاط را به‌طور منسجم در بانه‌ورده شهرستان پاوه قرار می‌دهد. این موقعیت با اطمینان قوی و محتمل است، نه CRS تأییدشده نقشه‌بردار.",
+    "Interpreting the survey as WGS 84 / UTM zone 38N places every point coherently near Baneh Verdeh, Paveh County. This is a strong-probable project location for regional analysis; the CRS is not surveyor-certified.",
+    "تفسیر نقشه به‌صورت WGS 84 / UTM زون ۳۸ شمالی، همه نقاط را به‌طور منسجم در نزدیکی بانه‌ورده شهرستان پاوه قرار می‌دهد. این موقعیت پروژه برای تحلیل منطقه‌ای با اطمینان قوی محتمل است؛ CRS توسط نقشه‌بردار تأیید نشده است.",
   ),
-  location: geographyEvidence.confirmed_location,
+  probable_project_location: geographyEvidence.probable_project_location,
   coordinates: {
     latitude: siteGeolocation.latitude,
     longitude: siteGeolocation.longitude,
@@ -122,7 +122,11 @@ const project = {
     outer_boundary_points: 7,
     terrain_facets: unified.triangles.length,
     regional_environmental_modules: 5,
-    unresolved_environmental_modules: 0,
+    unresolved_environmental_modules: 5,
+    unresolved_environmental_note: bi(
+      "All five regional environmental modules still require parcel-scale verification before design decisions rely on them.",
+      "هر پنج ماژول محیطی منطقه‌ای پیش از اتکای تصمیم‌های طراحی به راستی‌آزمایی در مقیاس قطعه نیاز دارند.",
+    ),
   },
 };
 
@@ -953,7 +957,7 @@ const translationsEn = {
   preliminary: "Preliminary",
   unresolved: "Unresolved",
   unavailable: "Unavailable",
-  probable: "Strong probable",
+  probable: "Strong-probable · not certified",
   regionalEstimate: "Regional estimate",
   open: "Open",
   download: "Download",
@@ -974,7 +978,7 @@ const translationsEn = {
   methodology: "Sources & methodology",
   heroEyebrow: "IMMUTABLE SITE VERSION · v1-three-fields",
   heroTitle: "A steep mountain site.<br><span>Now read in its real climate.</span>",
-  heroSummary: "A bilingual evidence interface for a 487.428568 m² family-house site in Baneh Verdeh—combining verified geometry with traceable climate, sun, wind and regional hazards.",
+  heroSummary: "A bilingual evidence interface for a 487.428568 m² family-house site at a probable project location near Baneh Verdeh—combining verified geometry with traceable climate, sun, wind and regional hazards.",
   area: "Verified plan area",
   elevation: "Elevation range",
   relief: "Terrain relief",
@@ -985,8 +989,8 @@ const translationsEn = {
   north: "North",
   northValue: "Drawing +Y",
   status: "Project status",
-  geoStatus: "Geolocation",
-  geoUnresolved: "Strong probable",
+  geoStatus: "Geolocation confidence",
+  geoUnresolved: "Strong-probable · not certified",
   viewEvidence: "Explore evidence",
   overviewKicker: "The site at a glance",
   overviewTitle: "One property, seven outer points, one steep terrain story",
@@ -994,7 +998,7 @@ const translationsEn = {
   terrainStory: "Terrain story",
   terrainStoryText: "The road edge is high at Pt2/Pt1. All seven TIN facets descend generally northeast toward the low Pt5/Pt6 side.",
   evidenceState: "Evidence state",
-  evidenceStateText: "Geometry and terrain are verified. Geolocation is strong probable; environmental modules use cited regional grids and keep field-work limits visible.",
+  evidenceStateText: "Drawing geometry and the terrain model are verified. The probable project location rests on a strong-probable CRS interpretation that is not surveyor-certified; all five environmental modules remain preliminary at parcel scale.",
   boundary: "Unified boundary",
   boundaryCaption: "Real survey geometry · north-up · road edge highlighted",
   toggleContours: "Contours",
@@ -1046,13 +1050,14 @@ const translationsEn = {
   slopeRisks: "Cut, fill & drainage risks",
   modelLimits: "What this model cannot see",
   diagrams: "Technical diagrams",
-  geographyKicker: "Location confidence",
-  geographyTitle: "Baneh Verdeh, on a steep Zagros hillside",
-  geographyLead: "WGS 84 / UTM zone 38N resolves the parcel coherently in Paveh County. The match is strong probable and supports regional analysis, while cadastral use still needs survey control.",
+  geographyKicker: "Probable project location",
+  geographyTitle: "Probable location near Baneh Verdeh, on a steep Zagros hillside",
+  geographyLead: "Interpreting the survey as WGS 84 / UTM zone 38N places the parcel coherently near Baneh Verdeh in Paveh County. This supports a strong-probable project location for regional analysis, but the CRS is not surveyor-certified and cannot support cadastral use.",
   scaleStudies: "Context study scales",
   contextMap: "Offline context map",
-  locationLabel: "Probable location",
-  coordinateSystem: "Coordinate reference",
+  locationLabel: "Probable project location",
+  coordinateSystem: "Probable coordinate reference",
+  crsCertification: "Probable CRS · not surveyor-certified",
   missing: "Missing evidence",
   nextGate: "Certification boundary",
   climateKicker: "Environmental evidence",
@@ -1363,7 +1368,7 @@ const translationsFa = {
   preliminary: "اولیه",
   unresolved: "حل‌نشده",
   unavailable: "ناموجود",
-  probable: "محتمل با اطمینان قوی",
+  probable: "محتمل با اطمینان قوی · تأییدنشده",
   regionalEstimate: "برآورد منطقه‌ای",
   open: "باز کردن",
   download: "دریافت",
@@ -1384,7 +1389,7 @@ const translationsFa = {
   methodology: "منابع و روش‌شناسی",
   heroEyebrow: "نسخه تغییرناپذیر سایت · v1-three-fields",
   heroTitle: "سایتی کوهستانی و پرشیب.<br><span>اکنون در اقلیم واقعی خود.</span>",
-  heroSummary: "رابط شواهد دوزبانه برای سایت ۴۸۷٫۴۲۸۵۶۸ مترمربعی در بانه‌ورده؛ با هندسه تأییدشده و شواهد قابل‌ردیابی اقلیم، خورشید، باد و مخاطرات منطقه‌ای.",
+  heroSummary: "رابط شواهد دوزبانه برای سایت ۴۸۷٫۴۲۸۵۶۸ مترمربعی در موقعیت محتمل پروژه نزدیک بانه‌ورده؛ با هندسه تأییدشده و شواهد قابل‌ردیابی اقلیم، خورشید، باد و مخاطرات منطقه‌ای.",
   area: "مساحت تأییدشده",
   elevation: "دامنه ارتفاع",
   relief: "اختلاف تراز زمین",
@@ -1395,8 +1400,8 @@ const translationsFa = {
   north: "شمال",
   northValue: "جهت ‎+Y نقشه",
   status: "وضعیت پروژه",
-  geoStatus: "موقعیت جغرافیایی",
-  geoUnresolved: "محتمل با اطمینان قوی",
+  geoStatus: "اطمینان موقعیت جغرافیایی",
+  geoUnresolved: "محتمل با اطمینان قوی · تأییدنشده",
   viewEvidence: "بررسی شواهد",
   overviewKicker: "سایت در یک نگاه",
   overviewTitle: "یک ملک، هفت نقطه بیرونی و یک روایت پرشیب",
@@ -1404,7 +1409,7 @@ const translationsFa = {
   terrainStory: "روایت زمین",
   terrainStoryText: "لبه راه در Pt2/Pt1 بلند است. هر هفت سطح TIN عموماً به سمت شمال‌شرق و ضلع پایین Pt5/Pt6 نزول دارند.",
   evidenceState: "وضعیت شواهد",
-  evidenceStateText: "هندسه و زمین تأیید شده‌اند. موقعیت جغرافیایی با اطمینان قوی محتمل است؛ بخش‌های محیطی از شبکه‌های منطقه‌ای مستند استفاده می‌کنند و محدودیت بررسی میدانی را آشکار نگه می‌دارند.",
+  evidenceStateText: "هندسه ترسیمی و مدل زمین تأیید شده‌اند. موقعیت محتمل پروژه بر تفسیر CRS با اطمینان قوی تکیه دارد که توسط نقشه‌بردار تأیید نشده است؛ هر پنج ماژول محیطی در مقیاس قطعه همچنان اولیه‌اند.",
   boundary: "مرز یکپارچه",
   boundaryCaption: "هندسه واقعی نقشه‌برداری · شمال رو به بالا · لبه راه مشخص",
   toggleContours: "خطوط تراز",
@@ -1456,13 +1461,14 @@ const translationsFa = {
   slopeRisks: "خطرات خاک‌برداری، خاک‌ریزی و زهکشی",
   modelLimits: "آنچه مدل نمی‌بیند",
   diagrams: "نمودارهای فنی",
-  geographyKicker: "اطمینان مکانی",
-  geographyTitle: "بانه‌ورده، بر دامنه پرشیب زاگرس",
-  geographyLead: "WGS 84 / UTM زون ۳۸ شمالی، ملک را به‌طور منسجم در شهرستان پاوه قرار می‌دهد. این انطباق برای تحلیل منطقه‌ای با اطمینان قوی محتمل است، اما کاربرد ثبتی هنوز به نقطه کنترل نقشه‌برداری نیاز دارد.",
+  geographyKicker: "موقعیت محتمل پروژه",
+  geographyTitle: "موقعیت محتمل نزدیک بانه‌ورده، بر دامنه پرشیب زاگرس",
+  geographyLead: "تفسیر نقشه به‌صورت WGS 84 / UTM زون ۳۸ شمالی، قطعه را به‌طور منسجم نزدیک بانه‌ورده در شهرستان پاوه قرار می‌دهد. این تفسیر موقعیت پروژه را برای تحلیل منطقه‌ای با اطمینان قوی محتمل می‌سازد، اما CRS توسط نقشه‌بردار تأیید نشده و برای کاربرد ثبتی قابل اتکا نیست.",
   scaleStudies: "مقیاس‌های مطالعه زمینه",
   contextMap: "نقشه زمینه آفلاین",
-  locationLabel: "موقعیت محتمل",
-  coordinateSystem: "مرجع مختصات",
+  locationLabel: "موقعیت محتمل پروژه",
+  coordinateSystem: "مرجع مختصات محتمل",
+  crsCertification: "CRS محتمل · تأییدنشده توسط نقشه‌بردار",
   missing: "شواهد مفقود",
   nextGate: "مرز اعتبار",
   climateKicker: "شواهد محیطی",
@@ -2062,7 +2068,7 @@ fs.writeFileSync(
     `- اختلاف تراز: **${version.total_relief_m.toFixed(3)} متر**\n` +
     `- شیب سطوح TIN: **${Math.min(...unified.triangles.map((item) => item.slope_percent)).toFixed(2)}٪ تا ${Math.max(...unified.triangles.map((item) => item.slope_percent)).toFixed(2)}٪**\n` +
     `- جهت عمومی افت: **شمال‌شرق**\n\n` +
-    `- موقعیت محتمل: **بانه‌ورده، شهرستان پاوه، استان کرمانشاه**\n` +
+    `- موقعیت محتمل پروژه: **نزدیک بانه‌ورده، شهرستان پاوه، استان کرمانشاه**\n` +
     `- مرجع مختصات محتمل: **WGS 84 / UTM زون ۳۸ شمالی (EPSG:32638)**\n` +
     `- مرکز تقریبی: **${siteGeolocation.latitude.toFixed(8)}° N، ${siteGeolocation.longitude.toFixed(8)}° E**\n\n` +
     `## محدودیت‌های مهم\n\n` +
@@ -2089,7 +2095,7 @@ fs.writeFileSync(
     `## English\n\n` +
     `The survey coordinates are interpreted as WGS 84 / UTM zone 38N (EPSG:32638). The parcel centre converts to ` +
     `**${siteGeolocation.latitude.toFixed(8)}° N, ${siteGeolocation.longitude.toFixed(8)}° E**, matching Baneh Verdeh in OpenStreetMap. ` +
-    `This is a strong probable geolocation, not a surveyor-certified CRS.\n\n` +
+    `This is a strong-probable project location for regional analysis, not a surveyor-certified CRS.\n\n` +
     `Climate uses daily ERA5-Land data for 1991–2020 at approximately 11 km resolution. NASA POWER supplies the 2001–2020 monthly humidity, cloud and solar climatology. ` +
     `Wind roses use 87,672 hourly ERA5-Land records from 2011–2020, grouped into 16 directions and five speed classes. ` +
     `Solar positions use NOAA fractional-year equations and are precomputed at 10-minute intervals against a terrain horizon sampled from Copernicus GLO-90. ` +
@@ -2099,7 +2105,7 @@ fs.writeFileSync(
     `## فارسی\n\n` +
     `مختصات نقشه به‌صورت WGS 84 / UTM زون ۳۸ شمالی (EPSG:32638) تفسیر شده است. مرکز ملک به ` +
     `**${siteGeolocation.latitude.toFixed(8)} درجه شمالی و ${siteGeolocation.longitude.toFixed(8)} درجه شرقی** تبدیل می‌شود و با بانه‌ورده در OpenStreetMap انطباق دارد. ` +
-    `این موقعیت با اطمینان قوی محتمل است، اما CRS تأییدشده نقشه‌بردار نیست.\n\n` +
+    `این موقعیت پروژه برای تحلیل منطقه‌ای با اطمینان قوی محتمل است، اما CRS توسط نقشه‌بردار تأیید نشده است.\n\n` +
     `اقلیم از داده روزانه ERA5-Land در دوره ۱۹۹۱–۲۰۲۰ با تفکیک تقریبی ۱۱ کیلومتر استفاده می‌کند. NASA POWER اقلیم‌نمای ماهانه رطوبت، ابر و تابش ۲۰۰۱–۲۰۲۰ را تأمین می‌کند. ` +
     `گل‌بادها از ۸۷٬۶۷۲ رکورد ساعتی ERA5-Land در ۲۰۱۱–۲۰۲۰ و در ۱۶ جهت و پنج رده سرعت ساخته شده‌اند. ` +
     `موقعیت خورشید با معادلات سال‌کسری NOAA و گام ۱۰ دقیقه‌ای در برابر افق زمین برگرفته از Copernicus GLO-90 پیش‌محاسبه شده است. ` +

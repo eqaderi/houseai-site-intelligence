@@ -171,7 +171,7 @@
     });
 
     $("#project-status").textContent = local(data.project.status_label);
-    $("#hero-location").textContent = local(data.project.location);
+    $("#hero-location").textContent = local(data.project.probable_project_location);
     $("#survey-methodology").textContent = local(data.survey.methodology);
     $("#geo-note").textContent = local(data.project.geolocation_note);
     $("#geo-next").textContent = local(data.geography.required_next);
@@ -339,8 +339,8 @@
   }
 
   function renderEnvironmentalGates() {
-    $("#geo-location").textContent = local(data.geography.confirmed_location);
-    $("#geo-place").textContent = local(data.geography.confirmed_location);
+    $("#geo-location").textContent = local(data.geography.probable_project_location);
+    $("#geo-place").textContent = local(data.geography.probable_project_location);
     $("#geo-coordinates").innerHTML =
       `<bdi>${format(data.geography.center.latitude, 8)}° N · ${format(data.geography.center.longitude, 8)}° E</bdi>`;
     $("#geo-scales").innerHTML = data.geography.scales

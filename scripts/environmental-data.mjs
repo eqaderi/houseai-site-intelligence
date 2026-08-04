@@ -714,12 +714,13 @@ const naturalPoints = osm.nodes
 export const geographyEvidence = {
   availability: "available-probable-geolocation",
   confidence: "strong-probable",
-  confirmed_location: {
+  probable_project_location: {
     en: "Baneh Verdeh, Bayangan District, Paveh County, Kermanshah Province, Iran",
     fa: "بانه‌ورده، بخش باینگان، شهرستان پاوه، استان کرمانشاه، ایران",
     reverse_geocoder_label: nominatimRaw.display_name,
   },
   coordinate_reference_system: {
+    status: "probable-not-certified",
     assumed_source: "WGS 84 / UTM zone 38N",
     epsg: "EPSG:32638",
     evidence: bi(

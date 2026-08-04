@@ -5,8 +5,8 @@
     "epsg": "EPSG:32638",
     "name": "WGS 84 / UTM zone 38N",
     "note": {
-      "en": "Interpreting the survey as WGS 84 / UTM zone 38N places every point coherently in Baneh Verdeh, Paveh County. This is strong probable geolocation, not a surveyor-certified CRS.",
-      "fa": "تفسیر نقشه به‌صورت WGS 84 / UTM زون ۳۸ شمالی، همه نقاط را به‌طور منسجم در بانه‌ورده شهرستان پاوه قرار می‌دهد. این موقعیت با اطمینان قوی و محتمل است، نه CRS تأییدشده نقشه‌بردار."
+      "en": "Interpreting the survey as WGS 84 / UTM zone 38N places every point coherently near Baneh Verdeh, Paveh County. This is a strong-probable project location for regional analysis; the CRS is not surveyor-certified.",
+      "fa": "تفسیر نقشه به‌صورت WGS 84 / UTM زون ۳۸ شمالی، همه نقاط را به‌طور منسجم در نزدیکی بانه‌ورده شهرستان پاوه قرار می‌دهد. این موقعیت پروژه برای تحلیل منطقه‌ای با اطمینان قوی محتمل است؛ CRS توسط نقشه‌بردار تأیید نشده است."
     }
   },
   "points": [

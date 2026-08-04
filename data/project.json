@@ -10,18 +10,18 @@
   },
   "site_version": "v1-three-fields",
   "generated_on": "2026-07-30",
-  "status": "site-and-regional-environmental-analysis-complete",
+  "status": "pre-design-environmental-analysis-complete",
   "status_label": {
-    "en": "Site geometry verified · regional environmental evidence integrated",
-    "fa": "هندسه سایت تأیید شده · شواهد محیطی منطقه‌ای یکپارچه شد"
+    "en": "Pre-design environmental analysis complete · parcel-scale verification remains open",
+    "fa": "تحلیل محیطی پیش‌طراحی تکمیل شده · راستی‌آزمایی در مقیاس قطعه همچنان باز است"
   },
-  "geolocation_confirmed": true,
+  "geolocation_status": "probable",
   "geolocation_confidence": "strong-probable",
   "geolocation_note": {
-    "en": "Interpreting the survey as WGS 84 / UTM zone 38N places every point coherently in Baneh Verdeh, Paveh County. This is strong probable geolocation, not a surveyor-certified CRS.",
-    "fa": "تفسیر نقشه به‌صورت WGS 84 / UTM زون ۳۸ شمالی، همه نقاط را به‌طور منسجم در بانه‌ورده شهرستان پاوه قرار می‌دهد. این موقعیت با اطمینان قوی و محتمل است، نه CRS تأییدشده نقشه‌بردار."
+    "en": "Interpreting the survey as WGS 84 / UTM zone 38N places every point coherently near Baneh Verdeh, Paveh County. This is a strong-probable project location for regional analysis; the CRS is not surveyor-certified.",
+    "fa": "تفسیر نقشه به‌صورت WGS 84 / UTM زون ۳۸ شمالی، همه نقاط را به‌طور منسجم در نزدیکی بانه‌ورده شهرستان پاوه قرار می‌دهد. این موقعیت پروژه برای تحلیل منطقه‌ای با اطمینان قوی محتمل است؛ CRS توسط نقشه‌بردار تأیید نشده است."
   },
-  "location": {
+  "probable_project_location": {
     "en": "Baneh Verdeh, Bayangan District, Paveh County, Kermanshah Province, Iran",
     "fa": "بانه‌ورده، بخش باینگان، شهرستان پاوه، استان کرمانشاه، ایران",
     "reverse_geocoder_label": "Baneh Verdeh, دهستان شیوه سر, بخش باینگان, Paveh County, Kermanshah Province, Iran"
@@ -41,6 +41,10 @@
     "outer_boundary_points": 7,
     "terrain_facets": 7,
     "regional_environmental_modules": 5,
-    "unresolved_environmental_modules": 0
+    "unresolved_environmental_modules": 5,
+    "unresolved_environmental_note": {
+      "en": "All five regional environmental modules still require parcel-scale verification before design decisions rely on them.",
+      "fa": "هر پنج ماژول محیطی منطقه‌ای پیش از اتکای تصمیم‌های طراحی به راستی‌آزمایی در مقیاس قطعه نیاز دارند."
+    }
   }
 }

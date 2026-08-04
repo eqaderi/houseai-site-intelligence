@@ -1045,8 +1045,14 @@ pass(
 );
 pass(
   "Probable geolocation is explicit",
-  project.geolocation_confirmed === true
+  project.geolocation_status === "probable"
     && project.geolocation_confidence === "strong-probable"
+    && !("geolocation_confirmed" in project)
+    && project.status === "pre-design-environmental-analysis-complete"
+    && project.evidence_counts.unresolved_environmental_modules === 5
+    && geography.probable_project_location.en.includes("Baneh Verdeh")
+    && !("confirmed_location" in geography)
+    && geography.coordinate_reference_system.status === "probable-not-certified"
     && geography.coordinate_reference_system.epsg === "EPSG:32638",
 );
 pass(

@@ -25,7 +25,7 @@ The dashboard is suitable for preliminary site strategy and consultant briefing.
 
 ## Progress snapshot
 
-- Product tasks complete: 0 / 47
+- Product tasks complete: 1 / 57
 - External investigations complete: 0 / 20
 - Current release stage: pre-design site intelligence
 - Architect decision status: site strategy may begin; concept design is blocked by the client brief, planning controls, certified survey data, road geometry, and preliminary ground assessment
@@ -57,7 +57,10 @@ The dashboard is suitable for preliminary site strategy and consultant briefing.
 - [ ] **P0-12 — Add a repeatable public-release privacy check.** Reject names, private emails, phone numbers, account identifiers, absolute home paths, credentials, and personal source filenames from the publishable tree.
   - Acceptance: the check covers text, Git metadata used by the public mirror, raw OSM contact tags, downloadable documents, and common image metadata.
 - [ ] **P0-13 — Document the privacy boundary.** Explain that precise coordinates identify the studied site but do not identify an owner and are not evidence of ownership.
-- [ ] **P0-14 — Keep the reproducible source repository private.** Publish only a clean-history, dashboard-only mirror; never expose the private repository history, archived working files, original named source path, or personal commit metadata.
+- [x] **P0-14 — Keep the reproducible source repository private.** Publish only a clean-history, dashboard-only mirror; never expose the private repository history, archived working files, original named source path, or personal commit metadata.
+  - Completed 2026-08-04. Public mirror commit `5b51f61`; source completion record is the next backlog commit.
+  - Evidence: the source repository remains private; the public mirror contains only the 18 MB dashboard in one privacy-neutral root commit; GitHub Pages built successfully; the live HTML and data-bundle SHA-256 hashes match the sanitized release.
+  - Remaining limitation: GitHub necessarily displays the account that owns the public repository. Moving the mirror to a neutral organisation/account is required if repository-account separation is also desired.
 
 ## P1 — Responsive layout, navigation, and accessibility
 

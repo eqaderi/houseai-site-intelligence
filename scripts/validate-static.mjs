@@ -37,7 +37,8 @@ const htmlRefs = [...html.matchAll(/(?:src|href)="([^"]+)"/g)]
   .filter((reference) => !reference.startsWith("#"));
 const dataRefs = documents.items.map((item) => item.href);
 const localRefs = [...new Set([...htmlRefs, ...dataRefs])];
-const missing = localRefs.filter((reference) => !fs.existsSync(path.resolve(dashboard, reference)));
+const localPath = (reference) => decodeURIComponent(reference.split(/[?#]/, 1)[0]);
+const missing = localRefs.filter((reference) => !fs.existsSync(path.resolve(dashboard, localPath(reference))));
 pass("All local HTML and document references exist", missing.length === 0, missing.join(", "));
 
 // Scope: the runtime code we author. terrain-3d.js was previously unscanned —
@@ -1026,6 +1027,19 @@ pass(
 );
 pass("RTL styling is present", css.includes('html[dir="rtl"]'));
 pass("Verified site area", site.verified_area_m2 === 487.428568);
+pass(
+  "Drawing verification is separated from legal property status",
+  site.property_verification.items.find((item) => item.id === "drawing-geometry")?.status === "verified"
+    && site.property_verification.items.find((item) => item.id === "plan-area-calculation")?.status === "verified"
+    && ["legal-ownership", "cadastral-boundary", "easements", "rights-of-way"].every(
+      (id) => site.property_verification.items.find((item) => item.id === id)?.status === "unresolved",
+    )
+    && en.surveyTitle.includes("verified drawing geometry")
+    && fa.surveyTitle.includes("هندسه ترسیمی تأییدشده")
+    && !en.surveyTitle.includes("verified property")
+    && !fa.surveyTitle.includes("ملک تأییدشده")
+    && html.includes('id="property-verification-list"'),
+);
 pass("Seven-point outer boundary", site.outer_boundary_points.length === 7);
 pass("Pt8 is the only interior terrain point", JSON.stringify(site.interior_terrain_points) === '["Pt8"]');
 pass("Eight survey points", survey.points.length === 8);

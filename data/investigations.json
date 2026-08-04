@@ -101,12 +101,12 @@
         "fa": "اداره ثبت و نقشه‌بردار ثبتی"
       },
       "blocks": {
-        "en": "Any boundary-dependent setback, party wall or right of way",
-        "fa": "هر عقب‌نشینی، دیوار مشترک یا حق ارتفاق وابسته به مرز"
+        "en": "Any ownership, cadastral-boundary, easement or right-of-way-dependent decision",
+        "fa": "هر تصمیم وابسته به مالکیت، مرز ثبتی، حق ارتفاق یا حق عبور"
       },
       "proxy_available": {
-        "en": "A verified 487.428568 m² geometry derived from the survey drawing, which is a measurement rather than a title",
-        "fa": "هندسه تأییدشده ۴۸۷٫۴۲۸۵۶۸ مترمربع برگرفته از نقشه برداشت، که اندازه‌گیری است نه سند"
+        "en": "A verified 487.428568 m² drawing geometry and area calculation, which are measurements rather than a title or cadastral record",
+        "fa": "هندسه ترسیمی و محاسبه مساحت تأییدشده ۴۸۷٫۴۲۸۵۶۸ مترمربع، که اندازه‌گیری‌اند نه سند مالکیت یا سابقه ثبتی"
       }
     },
     {
@@ -435,8 +435,8 @@
         "fa": "موقعیت پارکینگ، شیب رمپ و هندسه گردش"
       },
       "proxy_available": {
-        "en": "A verified 10.270569 m road boundary length and its two end elevations, which give the edge but not the road's own gradient",
-        "fa": "طول تأییدشده ۱۰٫۲۷۰۵۶۹ متر مرز راه و تراز دو انتهای آن، که لبه را می‌دهد اما شیب خود راه را نه"
+        "en": "A verified 10.270569 m drawing-derived road-edge length and its two end elevations, which give the edge but not the road's own gradient or legal extent",
+        "fa": "طول ترسیمی تأییدشده ۱۰٫۲۷۰۵۶۹ متر برای لبه راه و تراز دو انتهای آن، که لبه را می‌دهد اما شیب خود راه یا محدوده قانونی آن را نه"
       }
     },
     {
@@ -457,8 +457,8 @@
         "fa": "اجراپذیری هر طرح روی شیب ۴۰ درصد با تنها ۱۰ متر بر راه"
       },
       "proxy_available": {
-        "en": "The verified geometry shows the constraint but does not resolve it",
-        "fa": "هندسه تأییدشده محدودیت را نشان می‌دهد اما آن را حل نمی‌کند"
+        "en": "The verified drawing geometry shows the constraint but does not resolve it",
+        "fa": "هندسه ترسیمی تأییدشده محدودیت را نشان می‌دهد اما آن را حل نمی‌کند"
       }
     },
     {

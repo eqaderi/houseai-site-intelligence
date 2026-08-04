@@ -7,8 +7,8 @@
         "fa": "نمای بالای سایت یکپارچه"
       },
       "description": {
-        "en": "Neutral plan showing the seven-point outer boundary, Pt8 terrain hub, road edge, north and study zones.",
-        "fa": "پلان خنثی شامل مرز هفت‌نقطه‌ای، نقطه داخلی Pt8، لبه راه، شمال و محدوده‌های مطالعاتی."
+        "en": "Neutral plan showing the seven-point drawing boundary, Pt8 terrain hub, road edge, north and study zones.",
+        "fa": "پلان خنثی شامل مرز ترسیمی هفت‌نقطه‌ای، نقطه داخلی Pt8، لبه راه، شمال و محدوده‌های مطالعاتی."
       },
       "type": "PNG",
       "language": "neutral",
@@ -105,12 +105,12 @@
     {
       "id": "summary-fa",
       "title": {
-        "en": "Verified site summary — Persian",
-        "fa": "خلاصه تأییدشده سایت — فارسی"
+        "en": "Verified drawing-geometry summary — Persian",
+        "fa": "خلاصه هندسه ترسیمی تأییدشده — فارسی"
       },
       "description": {
-        "en": "Persian summary generated only from verified site values and explicit limitations.",
-        "fa": "خلاصه فارسی تولیدشده صرفاً از مقادیر تأییدشده و محدودیت‌های صریح."
+        "en": "Persian summary generated from verified drawing values and explicit legal and technical limitations.",
+        "fa": "خلاصه فارسی تولیدشده از مقادیر ترسیمی تأییدشده و محدودیت‌های صریح قانونی و فنی."
       },
       "type": "MD",
       "language": "fa",
@@ -211,8 +211,8 @@
         "fa": "مدل یکپارچه FreeCAD"
       },
       "description": {
-        "en": "Validated unified boundary, TIN, contours, sections and study zones.",
-        "fa": "مرز یکپارچه، TIN، خطوط تراز، مقاطع و محدوده‌های مطالعاتی تأییدشده."
+        "en": "Validated drawing geometry, TIN, contours, sections and study zones.",
+        "fa": "هندسه ترسیمی، TIN، خطوط تراز، مقاطع و محدوده‌های مطالعاتی تأییدشده."
       },
       "type": "FCStd",
       "language": "neutral",
@@ -241,12 +241,12 @@
     {
       "id": "boundaries-dxf",
       "title": {
-        "en": "Validated site boundaries",
-        "fa": "مرزهای تأییدشده سایت"
+        "en": "Validated drawing boundaries",
+        "fa": "مرزهای ترسیمی تأییدشده"
       },
       "description": {
-        "en": "ASCII R2013 DXF containing 3D boundaries and survey points.",
-        "fa": "فایل DXF نوع ASCII R2013 شامل مرزهای سه‌بعدی و نقاط نقشه‌برداری."
+        "en": "ASCII R2013 DXF containing drawing-derived 3D boundaries and survey points; it is not a cadastral record.",
+        "fa": "فایل DXF نوع ASCII R2013 شامل مرزهای سه‌بعدی برگرفته از نقشه و نقاط برداشت است؛ این فایل سابقه ثبتی نیست."
       },
       "type": "DXF",
       "language": "neutral",

@@ -106,9 +106,9 @@ The dashboard is suitable for preliminary site strategy and consultant briefing.
 
 - [ ] **P1-01 — Fix mobile horizontal overflow in Terrain.** At 390 px the document must not grow to approximately 690 px; terrain insight/table cards and 3D controls must remain within the viewport.
   - Acceptance: `document.documentElement.scrollWidth <= window.innerWidth` at 320, 360, 390, and 430 px in both languages.
-  - Progress 2026-08-04 (uncommitted): terrain cards, chart shells, toolbar groups, and risk rows now carry narrow-layout containment and the 3D toolbar no longer relies on a single horizontal row. The exact 320/360/390/430 px browser assertions still need to be run in the connected Chrome QA surface before this can be marked complete.
+  - Progress 2026-08-04 (`1bd5dfa`): terrain cards, chart shells, toolbar groups, and risk rows now carry narrow-layout containment and the 3D toolbar no longer relies on a single horizontal row. The exact 320/360/390/430 px browser assertions still need to be run in the connected Chrome QA surface before this can be marked complete.
 - [ ] **P1-02 — Make the 3D mobile toolbar usable.** Wrap or stack viewpoint, vertical-scale, layer, and time controls without clipping or off-screen content.
-  - Progress 2026-08-04 (uncommitted): at ≤650 px the viewpoint and season controls become readable grids, layer controls become a two-column sheet, reset spans the sheet, and the sun time row is width-contained. Narrow-browser visual confirmation remains part of P1-01/P1-10.
+  - Progress 2026-08-04 (`1bd5dfa`): at ≤650 px the viewpoint and season controls become readable grids, layer controls become a two-column sheet, reset spans the sheet, and the sun time row is width-contained. Narrow-browser visual confirmation remains part of P1-01/P1-10.
 - [ ] **P1-03 — Expand desktop navigation.** Make Geography, Climate, Wind, Hazards, Architecture, Investigations, Sources, and other major sections discoverable without relying on mobile navigation.
 - [ ] **P1-04 — Add programmatic selected states.** Climate, solar, wind, hazard, 3D, and other segmented controls must expose `aria-pressed`, `aria-selected`, or the correct equivalent.
 - [ ] **P1-05 — Give the mobile menu an accessible name.** The icon-only state must retain a localized accessible label.
@@ -134,7 +134,7 @@ The dashboard is suitable for preliminary site strategy and consultant briefing.
 - [ ] **P1-21 — Rewrite all Persian content in plain, connected language.** Edit every visible Persian paragraph so it reads naturally, uses short connected sentences, avoids literal English sentence structure, and keeps terminology consistent without changing scientific meaning, status, values, or units.
   - Acceptance: every visible Persian paragraph is reviewed in context and read aloud; navigation, summaries, technical cards, tables, warnings, environmental/planting evidence, investigations, documents, and sources remain functionally complete and equivalent to English; mixed-direction values remain isolated correctly.
   - Progress 2026-08-04 (`11263b8`): navigation, section leads, readiness, client brief, terrain, seismic, archive, platform limitations, and other core P0 interface copy were rewritten and browser-reviewed in RTL. The longer environmental, planting, investigation, and source narratives still need a full editorial pass, terminology review, and read-aloud QA; the task therefore remains open.
-  - Progress 2026-08-04 (uncommitted): climate, solar, wind, hazard, architecture, documents, methodology, investigations, and planting section leads were edited for shorter, connected Persian sentences. The generated hazard, investigation, source, species, and document records still need a complete in-context read-aloud pass.
+  - Progress 2026-08-04 (`1bd5dfa`): climate, solar, wind, hazard, architecture, documents, methodology, investigations, and planting section leads were edited for shorter, connected Persian sentences. The generated hazard, investigation, source, species, and document records still need a complete in-context read-aloud pass.
 
 ## P2 — Information architecture and product focus
 

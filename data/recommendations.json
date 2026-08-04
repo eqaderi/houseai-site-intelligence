@@ -1,0 +1,238 @@
+{
+  "disclaimer": {
+    "en": "Site-analysis implications only. No final floor plan, structural system or legal approval is recommended.",
+    "fa": "صرفاً پیامدهای تحلیل سایت؛ هیچ پلان نهایی، سیستم سازه‌ای یا تأیید قانونی توصیه نمی‌شود."
+  },
+  "items": [
+    {
+      "id": "site-placement",
+      "category": {
+        "en": "Site placement",
+        "fa": "جانمایی"
+      },
+      "confidence": "strongly-supported",
+      "detail": {
+        "en": "Study a contour-parallel, stepped placement to reduce cross-slope width and grading exposure.",
+        "fa": "جانمایی پلکانی و موازی خطوط تراز بررسی شود تا عرض متقاطع شیب و حجم تسطیح کاهش یابد."
+      }
+    },
+    {
+      "id": "orientation",
+      "category": {
+        "en": "Orientation",
+        "fa": "جهت‌گیری"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Test a contour-parallel building with controlled southern solar access; protect west and southwest façades from hot summer afternoon sun.",
+        "fa": "ساختمان موازی خطوط تراز با دسترسی کنترل‌شده خورشید جنوب بررسی شود؛ نماهای غرب و جنوب‌غرب از آفتاب داغ عصر تابستان محافظت شوند."
+      }
+    },
+    {
+      "id": "daylight",
+      "category": {
+        "en": "Daylight",
+        "fa": "نور روز"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "The measured terrain horizon leaves winter southern light available; reserve it, then verify neighbour obstruction and the parcel's own slope before sizing openings.",
+        "fa": "افق زمینِ اندازه‌گیری‌شده نور جنوبی زمستان را در دسترس می‌گذارد؛ آن را حفظ و پیش از اندازه‌گذاری بازشو، موانع همسایه و شیب خود قطعه کنترل شود."
+      }
+    },
+    {
+      "id": "windows",
+      "category": {
+        "en": "Windows",
+        "fa": "پنجره‌ها"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Prioritise controllable south and east daylight; limit unprotected west glazing and keep openings adjustable until a parcel wind check is complete.",
+        "fa": "نور قابل‌کنترل جنوب و شرق در اولویت باشد؛ شیشه غربی بدون حفاظت محدود و بازشوها تا کنترل باد ملک قابل تنظیم بمانند."
+      }
+    },
+    {
+      "id": "courtyard",
+      "category": {
+        "en": "Courtyard",
+        "fa": "حیاط"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Any downslope courtyard must preserve positive drainage and avoid becoming a basin against retaining elements.",
+        "fa": "هر حیاط پایین‌دست باید زهکشی مثبت داشته باشد و کنار عناصر حائل به حوضچه تبدیل نشود."
+      }
+    },
+    {
+      "id": "bedrooms",
+      "category": {
+        "en": "Bedrooms",
+        "fa": "اتاق‌خواب‌ها"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Favour quieter east or southeast exposure for morning light while avoiding exposed downslope fall hazards; confirm views and neighbours on site.",
+        "fa": "برای نور صبح، مواجهه آرام‌تر شرق یا جنوب‌شرق ترجیح داده شود و از خطر افت در پایین‌دست دور بماند؛ دید و همسایگی در محل کنترل شود."
+      }
+    },
+    {
+      "id": "living",
+      "category": {
+        "en": "Living areas",
+        "fa": "فضاهای نشیمن"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Use later design studies to connect primary living spaces to usable level outdoor terraces.",
+        "fa": "در مطالعات بعدی، فضاهای اصلی نشیمن به تراس‌های تراز و قابل استفاده متصل شوند."
+      }
+    },
+    {
+      "id": "kitchen",
+      "category": {
+        "en": "Kitchen",
+        "fa": "آشپزخانه"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Combine morning or southern daylight with direct service access and a robust extract system; do not rely on grid-level wind alone for ventilation.",
+        "fa": "نور صبح یا جنوب با دسترسی خدماتی مستقیم و هواکش مطمئن ترکیب شود؛ برای تهویه فقط به باد شبکه‌ای تکیه نشود."
+      }
+    },
+    {
+      "id": "office",
+      "category": {
+        "en": "Office",
+        "fa": "دفتر کار"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Use north/east diffuse light or controlled south light and avoid low west sun glare; verify nearby road noise in use hours.",
+        "fa": "از نور پخشیده شمال/شرق یا نور کنترل‌شده جنوب استفاده و از خیرگی خورشید کم‌ارتفاع غرب پرهیز شود؛ صدای راه نزدیک در ساعات استفاده سنجیده شود."
+      }
+    },
+    {
+      "id": "garage",
+      "category": {
+        "en": "Garage / workshop",
+        "fa": "گاراژ / کارگاه"
+      },
+      "confidence": "strongly-supported",
+      "detail": {
+        "en": "Keep early access studies close to the high southern Pt2–Pt1 road frontage; no exact gate is selected.",
+        "fa": "مطالعات اولیه دسترسی نزدیک برِ بلند جنوبی Pt2–Pt1 انجام شود؛ محل دقیق دروازه انتخاب نشده است."
+      }
+    },
+    {
+      "id": "roof",
+      "category": {
+        "en": "Roof",
+        "fa": "بام"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Coordinate roof drainage with the strong northeast fall and a confirmed legal discharge route.",
+        "fa": "زهکشی بام با افت شدید شمال‌شرقی و مسیر قانونی تخلیه هماهنگ شود."
+      }
+    },
+    {
+      "id": "ventilation",
+      "category": {
+        "en": "Ventilation",
+        "fa": "تهویه"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Provide cross-ventilation paths that can use summer westerlies but remain closable for cold easterly winter flow; confirm with on-site anemometry.",
+        "fa": "مسیر تهویه متقاطع برای استفاده از باد غربی تابستان فراهم و در برابر جریان سرد شرقی زمستان قابل‌بستن باشد؛ با بادسنجی محلی تأیید شود."
+      }
+    },
+    {
+      "id": "shading",
+      "category": {
+        "en": "Shading",
+        "fa": "سایه‌اندازی"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Use horizontal control on south glazing and stronger external vertical or operable protection on west/southwest façades.",
+        "fa": "برای شیشه جنوب کنترل افقی و برای نماهای غرب/جنوب‌غرب حفاظت عمودی یا متحرک بیرونی قوی‌تر به‌کار رود."
+      }
+    },
+    {
+      "id": "drainage",
+      "category": {
+        "en": "Drainage",
+        "fa": "زهکشی"
+      },
+      "confidence": "strongly-supported",
+      "detail": {
+        "en": "Intercept and safely convey runoff; avoid concentration toward neighbours or behind retaining walls.",
+        "fa": "رواناب مهار و ایمن هدایت شود؛ از تمرکز آن به سمت همسایه یا پشت دیوار حائل جلوگیری شود."
+      }
+    },
+    {
+      "id": "retaining",
+      "category": {
+        "en": "Retaining strategy",
+        "fa": "راهبرد حائل"
+      },
+      "confidence": "strongly-supported",
+      "detail": {
+        "en": "Expect retaining sensitivity and prefer staged geotechnical and civil input before fixing levels.",
+        "fa": "حساسیت حائل جدی گرفته شود و پیش از تثبیت ترازها، نظر مرحله‌ای ژئوتکنیک و عمران اخذ شود."
+      }
+    },
+    {
+      "id": "landscaping",
+      "category": {
+        "en": "Landscaping",
+        "fa": "محوطه‌سازی"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Use erosion-conscious planting and keep drainage paths inspectable.",
+        "fa": "کاشت با توجه به فرسایش انجام و مسیرهای زهکشی قابل بازرسی نگه داشته شوند."
+      }
+    },
+    {
+      "id": "solar-energy",
+      "category": {
+        "en": "Solar energy",
+        "fa": "انرژی خورشیدی"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "The regional annual resource is about 5.33 kWh/m²/day; reserve an unshaded south-facing roof zone and run a horizon-aware yield model before procurement.",
+        "fa": "منبع منطقه‌ای سالانه حدود 5.33 کیلووات‌ساعت بر مترمربع در روز است؛ بخشی بدون سایه و رو به جنوب روی بام حفظ و پیش از خرید، مدل بازده با افق واقعی اجرا شود."
+      }
+    },
+    {
+      "id": "investigations",
+      "category": {
+        "en": "Further investigations",
+        "fa": "بررسی‌های بعدی"
+      },
+      "confidence": "strongly-supported",
+      "detail": {
+        "en": "Certify the CRS against a control point; obtain detailed topography, geotechnical boreholes/test pits, retaining/drainage design, legal discharge evidence, local snow/wind confirmation and the applicable Iranian seismic design parameters.",
+        "fa": "CRS با نقطه کنترل تأیید شود؛ توپوگرافی دقیق، گمانه/چاهک ژئوتکنیک، طراحی حائل/زهکشی، مدرک تخلیه قانونی، تأیید محلی برف/باد و پارامترهای لرزه‌ای آیین‌نامه ایران تهیه شود."
+      }
+    }
+  ],
+  "confidence_legend": {
+    "strongly-supported": {
+      "en": "Strongly supported",
+      "fa": "با پشتوانه قوی"
+    },
+    "reasonable-inference": {
+      "en": "Reasonable preliminary inference",
+      "fa": "استنباط اولیه معقول"
+    },
+    "requires-investigation": {
+      "en": "Requires additional local investigation",
+      "fa": "نیازمند بررسی محلی بیشتر"
+    }
+  }
+}

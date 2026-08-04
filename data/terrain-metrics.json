@@ -1,0 +1,142 @@
+{
+  "status": "verified-derived",
+  "facets": [
+    {
+      "id": 1,
+      "points": [
+        "Pt8",
+        "Pt1",
+        "Pt7"
+      ],
+      "plan_area_m2": 57.4941,
+      "surface_area_m2": 60.9257,
+      "slope_percent": 35.06163250963325,
+      "aspect": "northeast"
+    },
+    {
+      "id": 2,
+      "points": [
+        "Pt8",
+        "Pt7",
+        "Pt6"
+      ],
+      "plan_area_m2": 60.3163,
+      "surface_area_m2": 64.9108,
+      "slope_percent": 39.768397989810964,
+      "aspect": "northeast"
+    },
+    {
+      "id": 3,
+      "points": [
+        "Pt8",
+        "Pt6",
+        "Pt5"
+      ],
+      "plan_area_m2": 65.7063,
+      "surface_area_m2": 70.8513,
+      "slope_percent": 40.3405111453427,
+      "aspect": "northeast"
+    },
+    {
+      "id": 4,
+      "points": [
+        "Pt8",
+        "Pt5",
+        "Pt4"
+      ],
+      "plan_area_m2": 79.787,
+      "surface_area_m2": 85.8047,
+      "slope_percent": 39.56404882486654,
+      "aspect": "northeast"
+    },
+    {
+      "id": 5,
+      "points": [
+        "Pt8",
+        "Pt4",
+        "Pt3"
+      ],
+      "plan_area_m2": 80.5434,
+      "surface_area_m2": 88.0053,
+      "slope_percent": 44.03106871127578,
+      "aspect": "northeast"
+    },
+    {
+      "id": 6,
+      "points": [
+        "Pt8",
+        "Pt3",
+        "Pt2"
+      ],
+      "plan_area_m2": 70.4225,
+      "surface_area_m2": 74.5001,
+      "slope_percent": 34.51924061568701,
+      "aspect": "northeast"
+    },
+    {
+      "id": 7,
+      "points": [
+        "Pt8",
+        "Pt2",
+        "Pt1"
+      ],
+      "plan_area_m2": 73.159,
+      "surface_area_m2": 77.421,
+      "slope_percent": 34.627480115246385,
+      "aspect": "northeast"
+    }
+  ],
+  "plan_area_m2": 487.4286,
+  "surface_area_m2": 522.4189,
+  "surface_to_plan_ratio": 1.0718,
+  "slope_classes": [
+    {
+      "id": "under-15",
+      "from_percent": 0,
+      "to_percent": 15,
+      "facet_count": 0,
+      "plan_area_m2": 0,
+      "share_percent": 0
+    },
+    {
+      "id": "15-25",
+      "from_percent": 15,
+      "to_percent": 25,
+      "facet_count": 0,
+      "plan_area_m2": 0,
+      "share_percent": 0
+    },
+    {
+      "id": "25-33",
+      "from_percent": 25,
+      "to_percent": 33,
+      "facet_count": 0,
+      "plan_area_m2": 0,
+      "share_percent": 0
+    },
+    {
+      "id": "33-50",
+      "from_percent": 33,
+      "to_percent": 50,
+      "facet_count": 7,
+      "plan_area_m2": 487.4286,
+      "share_percent": 100
+    },
+    {
+      "id": "over-50",
+      "from_percent": 50,
+      "to_percent": null,
+      "facet_count": 0,
+      "plan_area_m2": 0,
+      "share_percent": 0
+    }
+  ],
+  "note": {
+    "en": "Every facet of the parcel falls in one slope band. There is no gentle corner to place a building on, so any platform is a cut-and-fill decision rather than a siting choice.",
+    "fa": "همه وجه‌های قطعه در یک بازه شیب قرار می‌گیرند. هیچ گوشه ملایمی برای استقرار ساختمان وجود ندارد؛ بنابراین هر سکو یک تصمیم خاک‌برداری و خاک‌ریزی است، نه یک انتخاب مکان‌یابی."
+  },
+  "excluded": {
+    "en": "Cut and fill quantities are deliberately absent. An eight-point TIN cannot support them, and a volume in cubic metres becomes a price.",
+    "fa": "حجم خاک‌برداری و خاک‌ریزی عمداً ارائه نشده است. یک TIN هشت‌نقطه‌ای پشتیبان آن نیست و حجم برحسب مترمکعب تبدیل به قیمت می‌شود."
+  }
+}

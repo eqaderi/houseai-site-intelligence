@@ -1,0 +1,108 @@
+{
+  "verifier": "Node.js independent CSV recomputation",
+  "polygons": {
+    "Polygon A": {
+      "passed": true,
+      "area_m2": 160.33038740382773,
+      "horizontal_perimeter_m": 50.994681656909606,
+      "slope_perimeter_m": 53.286464600227255,
+      "horizontal_sides_m": [
+        11.86518890719852,
+        14.605412754400222,
+        10.930167659179105,
+        13.593912336131755
+      ],
+      "slope_sides_m": [
+        11.940615888785077,
+        15.61372734891949,
+        10.991549711381218,
+        14.740571651141472
+      ],
+      "bounds": {
+        "width_x_m": 15.639193948009051,
+        "height_y_m": 17.77372752688825,
+        "relief_z_m": 6.8599999999999
+      },
+      "checks": {
+        "area": true,
+        "horizontal_perimeter": true,
+        "slope_perimeter": true,
+        "width_x": true,
+        "height_y": true,
+        "relief_z": true,
+        "every_horizontal_side": true,
+        "every_slope_side": true
+      }
+    },
+    "Polygon B": {
+      "passed": true,
+      "area_m2": 126.0225559023682,
+      "horizontal_perimeter_m": 46.703086169888046,
+      "slope_perimeter_m": 48.84364522683427,
+      "horizontal_sides_m": [
+        8.007574289778013,
+        15.080099125410877,
+        9.010000000298938,
+        14.605412754400222
+      ],
+      "slope_sides_m": [
+        8.072782791969201,
+        16.08144227462879,
+        9.075692811316786,
+        15.61372734891949
+      ],
+      "bounds": {
+        "width_x_m": 13.323718658997677,
+        "height_y_m": 17.310493464116007,
+        "relief_z_m": 6.610000000000127
+      },
+      "checks": {
+        "area": true,
+        "horizontal_perimeter": true,
+        "slope_perimeter": true,
+        "width_x": true,
+        "height_y": true,
+        "relief_z": true,
+        "every_horizontal_side": true,
+        "every_slope_side": true
+      }
+    },
+    "Polygon C": {
+      "passed": true,
+      "area_m2": 201.07562464468293,
+      "horizontal_perimeter_m": 59.14054694117822,
+      "slope_perimeter_m": 60.86060533897151,
+      "horizontal_sides_m": [
+        11.86518890719852,
+        11.885729046980881,
+        10.27056926986414,
+        17.11148542735667,
+        8.007574289778013
+      ],
+      "slope_sides_m": [
+        11.940615888785077,
+        12.47962222898777,
+        10.274662677045784,
+        18.09292175218368,
+        8.072782791969201
+      ],
+      "bounds": {
+        "width_x_m": 22.550307395053096,
+        "height_y_m": 17.579034544993192,
+        "relief_z_m": 6.16800000000012
+      },
+      "checks": {
+        "area": true,
+        "horizontal_perimeter": true,
+        "slope_perimeter": true,
+        "width_x": true,
+        "height_y": true,
+        "relief_z": true,
+        "every_horizontal_side": true,
+        "every_slope_side": true
+      }
+    }
+  },
+  "passed": true,
+  "polygon_count": 3
+}

@@ -1,0 +1,43 @@
+{
+  "status": "illustrative-only",
+  "origin_point": "Pt8",
+  "coordinates": "metres east and north of the origin point, survey grid",
+  "trees": [
+    {
+      "id": "tree-1",
+      "east_m": 3.5,
+      "north_m": 10.5,
+      "height_m": 5.5,
+      "crown_radius_m": 1.87
+    },
+    {
+      "id": "tree-2",
+      "east_m": 7,
+      "north_m": 7,
+      "height_m": 4,
+      "crown_radius_m": 1.36
+    },
+    {
+      "id": "tree-3",
+      "east_m": -3.5,
+      "north_m": 10.5,
+      "height_m": 7,
+      "crown_radius_m": 2.38
+    },
+    {
+      "id": "tree-4",
+      "east_m": 0,
+      "north_m": 7,
+      "height_m": 5,
+      "crown_radius_m": 1.7
+    }
+  ],
+  "label": {
+    "en": "Illustrative planting",
+    "fa": "درختان نمایشی"
+  },
+  "note": {
+    "en": "These trees are not survey data and not a planting proposal. No vegetation inside the parcel is recorded in any bundled source. They exist so the sun study casts shadows against something of building height, and they are excluded from every measured figure on this page.",
+    "fa": "این درختان نه داده برداشت‌شده‌اند و نه پیشنهاد کاشت. هیچ پوشش گیاهی درون قطعه در هیچ منبع همراه ثبت نشده است. آن‌ها فقط برای آن‌اند که مطالعه خورشیدی سایه‌ای در ارتفاع ساختمان داشته باشد و از همه اعداد اندازه‌گیری‌شده این صفحه بیرون‌اند."
+  }
+}

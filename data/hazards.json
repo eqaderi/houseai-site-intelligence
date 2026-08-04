@@ -1,0 +1,360 @@
+{
+  "categories": [
+    {
+      "id": "terrain-slope",
+      "status": "verified",
+      "title": {
+        "en": "Terrain slope",
+        "fa": "شیب زمین"
+      },
+      "finding": {
+        "en": "TIN facets range from 34.52% to 44.03%.",
+        "fa": "شیب سطوح TIN بین ۳۴٫۵۲٪ تا ۴۴٫۰۳٪ است."
+      }
+    },
+    {
+      "id": "surface-drainage",
+      "status": "preliminary-inference",
+      "title": {
+        "en": "Surface drainage",
+        "fa": "زهکشی سطحی"
+      },
+      "finding": {
+        "en": "All model facets descend generally northeast; discharge conditions are unknown.",
+        "fa": "تمام سطوح مدل عموماً به شمال‌شرق نزول دارند؛ شرایط تخلیه ناشناخته است."
+      }
+    },
+    {
+      "id": "seismic",
+      "status": "regional-data",
+      "title": {
+        "en": "Seismic context",
+        "fa": "زمینه لرزه‌ای"
+      },
+      "finding": {
+        "en": "The regional catalog contains 270 M≥4.5 events within 200 km; the strongest is M7.3 at about 37 km. Structural design requires the applicable Iranian code spectrum and a geotechnical site class.",
+        "fa": "فهرست منطقه‌ای شامل 270 رخداد با بزرگی ۴٫۵ یا بیشتر در شعاع ۲۰۰ کیلومتر است؛ قوی‌ترین رخداد با بزرگی 7.3 در فاصله تقریبی 37 کیلومتر بوده است. طراحی سازه به طیف آیین‌نامه‌ای ایران و رده خاک ژئوتکنیکی نیاز دارد."
+      }
+    },
+    {
+      "id": "geology",
+      "status": "regional-data",
+      "title": {
+        "en": "Geology",
+        "fa": "زمین‌شناسی"
+      },
+      "finding": {
+        "en": "Regional mapping identifies the undivided Bangestan Group—mainly Cretaceous limestone and shale. Outcrop, weathering, bedding and discontinuities at the parcel remain unverified.",
+        "fa": "نقشه‌برداری منطقه‌ای گروه تفکیک‌نشده بنگستان را—عمدتاً سنگ‌آهک و شیل کرتاسه—نشان می‌دهد. رخنمون، هوازدگی، لایه‌بندی و درزه‌ها در خود ملک تأیید نشده‌اند."
+      }
+    },
+    {
+      "id": "soils",
+      "status": "regional-data",
+      "title": {
+        "en": "Likely soils",
+        "fa": "خاک‌های محتمل"
+      },
+      "finding": {
+        "en": "SoilGrids suggests a fine-textured topsoil near 37.5% clay, 39.5% silt and 23% sand, but uncertainty is wide and mapped soil cannot establish bearing capacity or fill quality.",
+        "fa": "SoilGrids خاک سطحی ریزدانه‌ای با حدود 37.5٪ رس، 39.5٪ سیلت و 23٪ ماسه پیشنهاد می‌کند؛ اما عدم‌قطعیت زیاد است و خاک نقشه‌ای ظرفیت باربری یا کیفیت خاک‌ریزی را تعیین نمی‌کند."
+      }
+    },
+    {
+      "id": "flood",
+      "status": "preliminary-inference",
+      "title": {
+        "en": "Flood and flash-flood",
+        "fa": "سیلاب و سیلاب ناگهانی"
+      },
+      "finding": {
+        "en": "The parcel is steep and not mapped as a river channel in the local OSM extract, but intense winter–spring rain and snowmelt can create rapid overland flow. Confirm culverts, upstream catchment and legal discharge.",
+        "fa": "ملک پرشیب است و در برداشت محلی OSM به‌عنوان مجرای رودخانه ثبت نشده؛ با این حال بارش شدید زمستان/بهار و ذوب برف می‌تواند رواناب سریع ایجاد کند. آبروها، حوضه بالادست و تخلیه قانونی بررسی شود."
+      }
+    },
+    {
+      "id": "erosion",
+      "status": "preliminary-inference",
+      "title": {
+        "en": "Erosion",
+        "fa": "فرسایش"
+      },
+      "finding": {
+        "en": "34.52–44.03% modeled slopes plus concentrated runoff make disturbed soil erosion-sensitive; construction-phase sediment control is warranted.",
+        "fa": "شیب مدل‌شده ۳۴٫۵۲ تا ۴۴٫۰۳٪ همراه رواناب متمرکز، خاک دست‌خورده را فرسایش‌پذیر می‌کند؛ کنترل رسوب در زمان ساخت لازم است."
+      }
+    },
+    {
+      "id": "landslide",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Landslide indicators",
+        "fa": "نشانه‌های زمین‌لغزش"
+      },
+      "finding": {
+        "en": "Regional limestone/shale and steep relief justify a geomorphology and discontinuity check, but no landslide scar or stability factor is established for the parcel.",
+        "fa": "سنگ‌آهک/شیل منطقه‌ای و ناهمواری پرشیب، بررسی ژئومورفولوژی و ناپیوستگی را توجیه می‌کند؛ اما هیچ اسکار لغزش یا ضریب پایداری برای ملک مشخص نشده است."
+      }
+    },
+    {
+      "id": "frost-snow",
+      "status": "regional-data",
+      "title": {
+        "en": "Frost and snow",
+        "fa": "یخبندان و برف"
+      },
+      "finding": {
+        "en": "The 1991–2020 grid averages about 84 frost days and 156 cm snowfall per year. Verify local roof snow load, drifting and frost depth under Iranian standards.",
+        "fa": "شبکه ۱۹۹۱–۲۰۲۰ به‌طور میانگین حدود 84 روز یخبندان و 156 سانتی‌متر برف سالانه نشان می‌دهد. بار برف بام، انباشت بادرفتی و عمق یخبندان طبق استانداردهای ایران کنترل شود."
+      }
+    },
+    {
+      "id": "wind",
+      "status": "regional-data",
+      "title": {
+        "en": "Wind exposure",
+        "fa": "مواجهه با باد"
+      },
+      "finding": {
+        "en": "ERA5-Land indicates E as the annual grid-level prevailing direction with 1.7 m/s mean speed; mountain channeling may differ on site.",
+        "fa": "ERA5-Land جهت E را جهت غالب سالانه شبکه‌ای با سرعت میانگین 1.7 متر بر ثانیه نشان می‌دهد؛ کانالیزه‌شدن کوهستانی ممکن است در محل متفاوت باشد."
+      }
+    },
+    {
+      "id": "groundwater",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Groundwater",
+        "fa": "آب زیرزمینی"
+      },
+      "finding": {
+        "en": "No borehole, spring interception or seasonal groundwater level exists for the parcel. Investigate before excavation and retaining design.",
+        "fa": "هیچ گمانه، ثبت برخورد با چشمه یا تراز فصلی آب زیرزمینی برای ملک وجود ندارد. پیش از گودبرداری و طراحی حائل بررسی شود."
+      }
+    },
+    {
+      "id": "wildfire",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Wildfire and other hazards",
+        "fa": "آتش‌سوزی طبیعی و سایر مخاطرات"
+      },
+      "finding": {
+        "en": "Hot, dry summers and mountain vegetation justify defensible-space and emergency-access review; no parcel-scale fuel or fire-history survey is available.",
+        "fa": "تابستان گرم و خشک و پوشش گیاهی کوهستانی، بررسی حریم ایمن و دسترسی اضطراری را توجیه می‌کند؛ برداشت سوخت یا سابقه آتش در مقیاس ملک موجود نیست."
+      }
+    }
+  ],
+  "evidence": {
+    "seismic": {
+      "status": "regional-data",
+      "query": "USGS catalog; M≥4.5; radius 200 km; 1900-01-01 to 2026-07-30",
+      "counts": {
+        "within_50_km": 23,
+        "within_100_km": 104,
+        "within_200_km": 270
+      },
+      "strongest": {
+        "id": "us2000bmcg",
+        "date": "2017-11-12",
+        "magnitude": 7.3,
+        "place": "29 km S of ?alabja, Iraq",
+        "latitude": 34.9109,
+        "longitude": 45.9592,
+        "depth_km": 19,
+        "distance_km": 36.8,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us2000bmcg"
+      },
+      "nearest_m5_or_greater": {
+        "id": "us2000bmcg",
+        "date": "2017-11-12",
+        "magnitude": 7.3,
+        "place": "29 km S of ?alabja, Iraq",
+        "latitude": 34.9109,
+        "longitude": 45.9592,
+        "depth_km": 19,
+        "distance_km": 36.8,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us2000bmcg"
+      },
+      "finding": {
+        "en": "The regional catalog contains 270 M≥4.5 events within 200 km; the strongest is M7.3 at about 37 km. Structural design requires the applicable Iranian code spectrum and a geotechnical site class.",
+        "fa": "فهرست منطقه‌ای شامل 270 رخداد با بزرگی ۴٫۵ یا بیشتر در شعاع ۲۰۰ کیلومتر است؛ قوی‌ترین رخداد با بزرگی 7.3 در فاصله تقریبی 37 کیلومتر بوده است. طراحی سازه به طیف آیین‌نامه‌ای ایران و رده خاک ژئوتکنیکی نیاز دارد."
+      }
+    },
+    "geology": {
+      "status": "regional-data",
+      "unit": "Kazhdumi Formation; Sarvak Formation; Surgah Formation; Ilam Formation",
+      "age": "Mesozoic",
+      "description": "Undivided Bangestan Group, mainly limestone and shale, Albian to Companian, comprising the following formations: Kazhdumi, Sarvak, Surgah and Ilam",
+      "source_scale": "1:1,000,000",
+      "finding": {
+        "en": "Regional mapping identifies the undivided Bangestan Group—mainly Cretaceous limestone and shale. Outcrop, weathering, bedding and discontinuities at the parcel remain unverified.",
+        "fa": "نقشه‌برداری منطقه‌ای گروه تفکیک‌نشده بنگستان را—عمدتاً سنگ‌آهک و شیل کرتاسه—نشان می‌دهد. رخنمون، هوازدگی، لایه‌بندی و درزه‌ها در خود ملک تأیید نشده‌اند."
+      }
+    },
+    "soils": {
+      "status": "regional-data",
+      "spatial_resolution": "250 m",
+      "clay": [
+        {
+          "depth": "0-5cm",
+          "mean": 37.5,
+          "q05": 3.1,
+          "q95": 78.2,
+          "unit": "%"
+        },
+        {
+          "depth": "5-15cm",
+          "mean": 37.5,
+          "q05": 3.1,
+          "q95": 78.2,
+          "unit": "%"
+        },
+        {
+          "depth": "15-30cm",
+          "mean": 35.8,
+          "q05": 2.2,
+          "q95": 78.5,
+          "unit": "%"
+        }
+      ],
+      "sand": [
+        {
+          "depth": "0-5cm",
+          "mean": 23,
+          "q05": 8.8,
+          "q95": 48.1,
+          "unit": "%"
+        },
+        {
+          "depth": "5-15cm",
+          "mean": 22.7,
+          "q05": 7.9,
+          "q95": 47.6,
+          "unit": "%"
+        },
+        {
+          "depth": "15-30cm",
+          "mean": 23.1,
+          "q05": 7.9,
+          "q95": 48.7,
+          "unit": "%"
+        }
+      ],
+      "silt": [
+        {
+          "depth": "0-5cm",
+          "mean": 39.5,
+          "q05": 5,
+          "q95": 79.7,
+          "unit": "%"
+        },
+        {
+          "depth": "5-15cm",
+          "mean": 39.8,
+          "q05": 5,
+          "q95": 79.7,
+          "unit": "%"
+        },
+        {
+          "depth": "15-30cm",
+          "mean": 41.1,
+          "q05": 4.6,
+          "q95": 78.8,
+          "unit": "%"
+        }
+      ],
+      "ph": [
+        {
+          "depth": "0-5cm",
+          "mean": 7.6,
+          "q05": 6.6,
+          "q95": 8,
+          "unit": "-"
+        },
+        {
+          "depth": "5-15cm",
+          "mean": 7.7,
+          "q05": 6.8,
+          "q95": 8,
+          "unit": "-"
+        },
+        {
+          "depth": "15-30cm",
+          "mean": 7.7,
+          "q05": 6.8,
+          "q95": 8,
+          "unit": "-"
+        }
+      ],
+      "bulk_density": [
+        {
+          "depth": "0-5cm",
+          "mean": 1.29,
+          "q05": 0.85,
+          "q95": 1.8,
+          "unit": "kg/dm³"
+        },
+        {
+          "depth": "5-15cm",
+          "mean": 1.35,
+          "q05": 0.85,
+          "q95": 1.8,
+          "unit": "kg/dm³"
+        },
+        {
+          "depth": "15-30cm",
+          "mean": 1.4,
+          "q05": 0.89,
+          "q95": 1.8,
+          "unit": "kg/dm³"
+        }
+      ],
+      "organic_carbon": [
+        {
+          "depth": "0-5cm",
+          "mean": 21.4,
+          "q05": 0.6,
+          "q95": 78.8,
+          "unit": "g/kg"
+        },
+        {
+          "depth": "5-15cm",
+          "mean": 5.6,
+          "q05": 0.6,
+          "q95": 19,
+          "unit": "g/kg"
+        },
+        {
+          "depth": "15-30cm",
+          "mean": 9.5,
+          "q05": 0.5,
+          "q95": 24.3,
+          "unit": "g/kg"
+        }
+      ],
+      "finding": {
+        "en": "SoilGrids suggests a fine-textured topsoil near 37.5% clay, 39.5% silt and 23% sand, but uncertainty is wide and mapped soil cannot establish bearing capacity or fill quality.",
+        "fa": "SoilGrids خاک سطحی ریزدانه‌ای با حدود 37.5٪ رس، 39.5٪ سیلت و 23٪ ماسه پیشنهاد می‌کند؛ اما عدم‌قطعیت زیاد است و خاک نقشه‌ای ظرفیت باربری یا کیفیت خاک‌ریزی را تعیین نمی‌کند."
+      }
+    }
+  },
+  "status_legend": {
+    "verified": {
+      "en": "Verified",
+      "fa": "تأییدشده"
+    },
+    "regional-data": {
+      "en": "Regional data",
+      "fa": "داده منطقه‌ای"
+    },
+    "preliminary-inference": {
+      "en": "Preliminary inference",
+      "fa": "استنباط اولیه"
+    },
+    "requires-field-investigation": {
+      "en": "Requires field investigation",
+      "fa": "نیازمند بررسی میدانی"
+    }
+  }
+}

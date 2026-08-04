@@ -1,0 +1,74 @@
+{
+  "origin_point": "Pt8",
+  "coordinates": "metres east and north of the origin point, survey grid",
+  "roads": [
+    {
+      "id": "road-upper",
+      "derived_from_edge": "Pt2–Pt1",
+      "edge_length_m": 10.270569,
+      "width_m": 4,
+      "width_status": "illustrative",
+      "offset_from_boundary_m": 1.2,
+      "level_elevation_m": 1659.508,
+      "max_cut_or_fill_drawn_m": 6,
+      "batter_ratio": 1.2,
+      "level_note": {
+        "en": "The carriageway is drawn level, at the mean of the two surveyed elevations on its own boundary edge. Where the hillside stands above that level the drawing shows a cut face, and where it falls below it shows fill. No earthwork quantity is stated or implied — an eight-point TIN cannot support one.",
+        "fa": "سواره‌رو تراز ترسیم شده است، در میانگین دو تراز برداشت‌شده روی همان لبهٔ مرزی خودش. جایی که دامنه بالاتر از این تراز باشد، ترسیم یک برش نشان می‌دهد و جایی که پایین‌تر باشد، خاک‌ریز. هیچ حجم خاکی بیان یا القا نمی‌شود — TIN هشت‌نقطه‌ای پشتیبان چنین عددی نیست."
+      },
+      "centreline": [
+        [
+          -36.32,
+          8.282
+        ],
+        [
+          9.12,
+          -30.901
+        ]
+      ],
+      "status": "surveyed-edge-illustrative-width",
+      "label": {
+        "en": "Upper road · surveyed frontage",
+        "fa": "راه بالایی · برِ برداشت‌شده"
+      },
+      "note": {
+        "en": "The line and the side are surveyed: this is the Pt2–Pt1 road boundary, 10.270569 m of frontage on the high edge of the field. The 4 m width and the length drawn are illustrative — no bundled source records a carriageway — and the strip is laid outside the boundary, never over it.",
+        "fa": "خط و سمت آن برداشت‌شده است: این همان مرز راه Pt2–Pt1 است، ۱۰٫۲۷۰۵۶۹ متر بر در لبهٔ بالای زمین. عرض ۴ متر و طول ترسیم‌شده نمایشی‌اند — هیچ منبع همراهی سواره‌رو را ثبت نکرده — و نوار بیرون مرز کشیده شده، نه روی آن."
+      }
+    },
+    {
+      "id": "road-lower",
+      "derived_from_edge": "Pt5–Pt6",
+      "edge_length_m": 9.01,
+      "width_m": 3.5,
+      "width_status": "illustrative",
+      "offset_from_boundary_m": 1.2,
+      "level_elevation_m": 1648.444,
+      "max_cut_or_fill_drawn_m": 6,
+      "batter_ratio": 1.2,
+      "level_note": {
+        "en": "The carriageway is drawn level, at the mean of the two surveyed elevations on its own boundary edge. Where the hillside stands above that level the drawing shows a cut face, and where it falls below it shows fill. No earthwork quantity is stated or implied — an eight-point TIN cannot support one.",
+        "fa": "سواره‌رو تراز ترسیم شده است، در میانگین دو تراز برداشت‌شده روی همان لبهٔ مرزی خودش. جایی که دامنه بالاتر از این تراز باشد، ترسیم یک برش نشان می‌دهد و جایی که پایین‌تر باشد، خاک‌ریز. هیچ حجم خاکی بیان یا القا نمی‌شود — TIN هشت‌نقطه‌ای پشتیبان چنین عددی نیست."
+      },
+      "centreline": [
+        [
+          -17.225,
+          26.468
+        ],
+        [
+          37.917,
+          2.817
+        ]
+      ],
+      "status": "client-reported",
+      "label": {
+        "en": "Lower road · client-reported",
+        "fa": "راه پایینی · به گفتهٔ کارفرما"
+      },
+      "note": {
+        "en": "Reported by the client, not surveyed and not in any bundled source. The survey records exactly one road boundary, the upper one. This strip follows the downhill Pt5–Pt6 boundary because that is the edge described; its position, width and length are all unverified.",
+        "fa": "به گفتهٔ کارفرما؛ برداشت نشده و در هیچ منبع همراه نیست. نقشه‌برداری تنها یک مرز راه ثبت کرده و آن مرز بالایی است. این نوار مرز سراشیب Pt5–Pt6 را دنبال می‌کند چون همان لبه توصیف شده است؛ موقعیت، عرض و طول آن هیچ‌یک تأیید نشده‌اند."
+      }
+    }
+  ]
+}

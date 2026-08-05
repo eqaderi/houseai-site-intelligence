@@ -1,0 +1,3346 @@
+{
+  "availability": "available-precomputed",
+  "confidence": "calculated-from-probable-geolocation",
+  "method": "NOAA fractional-year solar-position equations; season arcs precomputed at 10-minute intervals, monthly days at 30 minutes",
+  "assumptions": {
+    "horizon": "DEM-derived terrain horizon (Copernicus GLO-90); see horizon.json",
+    "atmospheric_refraction": "standard sunrise/sunset zenith 90.833°",
+    "timezone": "Asia/Tehran",
+    "utc_offset_hours": 3.5,
+    "obstructions": "not modelled"
+  },
+  "controls": {
+    "seasons": [
+      "winter",
+      "equinox",
+      "summer"
+    ],
+    "times": "precomputed 10-minute local-clock steps, linearly interpolated between them",
+    "interpolation": {
+      "method": "linear between precomputed samples",
+      "step_minutes": 10,
+      "max_altitude_deviation_deg": 0.11,
+      "max_azimuth_deviation_deg": 0.23
+    },
+    "test_objects": [
+      {
+        "id": "pole",
+        "height_m": 2,
+        "label": {
+          "en": "2 m pole",
+          "fa": "میله ۲ متری"
+        }
+      },
+      {
+        "id": "wall",
+        "height_m": 3,
+        "label": {
+          "en": "3 m wall",
+          "fa": "دیوار ۳ متری"
+        }
+      },
+      {
+        "id": "generic-volume",
+        "height_m": 3,
+        "label": {
+          "en": "3 m test volume",
+          "fa": "حجم آزمایشی ۳ متری"
+        }
+      }
+    ],
+    "overlays": [
+      "property-boundary",
+      "contours"
+    ],
+    "enabled": true
+  },
+  "seasons": [
+    {
+      "id": "winter",
+      "label": {
+        "en": "Winter solstice",
+        "fa": "انقلاب زمستانی"
+      },
+      "date": "2026-12-21",
+      "sunrise": "07:28",
+      "sunset": "17:16",
+      "solar_noon": "12:22",
+      "day_length_hours": 9.8,
+      "sunrise_azimuth_deg": 118.6,
+      "sunset_azimuth_deg": 241.4,
+      "noon_altitude_deg": 31.6,
+      "positions": [
+        {
+          "clock_hour": 7.6667,
+          "altitude_deg": 1.3,
+          "azimuth_deg": 120,
+          "horizon_deg": 5.22,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 7.8333,
+          "altitude_deg": 3,
+          "azimuth_deg": 121.5,
+          "horizon_deg": 5.54,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 8,
+          "altitude_deg": 4.8,
+          "azimuth_deg": 123,
+          "horizon_deg": 5.85,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 8.1667,
+          "altitude_deg": 6.5,
+          "azimuth_deg": 124.6,
+          "horizon_deg": 6.19,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8.3333,
+          "altitude_deg": 8.1,
+          "azimuth_deg": 126.2,
+          "horizon_deg": 6.35,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 9.8,
+          "azimuth_deg": 127.8,
+          "horizon_deg": 6.46,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8.6667,
+          "altitude_deg": 11.4,
+          "azimuth_deg": 129.5,
+          "horizon_deg": 6.58,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8.8333,
+          "altitude_deg": 12.9,
+          "azimuth_deg": 131.2,
+          "horizon_deg": 6.72,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 14.5,
+          "azimuth_deg": 132.9,
+          "horizon_deg": 6.87,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.1667,
+          "altitude_deg": 15.9,
+          "azimuth_deg": 134.8,
+          "horizon_deg": 7.04,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.3333,
+          "altitude_deg": 17.4,
+          "azimuth_deg": 136.6,
+          "horizon_deg": 6.92,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 18.7,
+          "azimuth_deg": 138.5,
+          "horizon_deg": 6.75,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.6667,
+          "altitude_deg": 20.1,
+          "azimuth_deg": 140.5,
+          "horizon_deg": 6.52,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.8333,
+          "altitude_deg": 21.3,
+          "azimuth_deg": 142.6,
+          "horizon_deg": 6.12,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 22.6,
+          "azimuth_deg": 144.7,
+          "horizon_deg": 5.73,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.1667,
+          "altitude_deg": 23.7,
+          "azimuth_deg": 146.8,
+          "horizon_deg": 5.45,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.3333,
+          "altitude_deg": 24.8,
+          "azimuth_deg": 149,
+          "horizon_deg": 5.18,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 25.8,
+          "azimuth_deg": 151.3,
+          "horizon_deg": 5.56,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.6667,
+          "altitude_deg": 26.8,
+          "azimuth_deg": 153.6,
+          "horizon_deg": 6.46,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.8333,
+          "altitude_deg": 27.6,
+          "azimuth_deg": 156,
+          "horizon_deg": 7.34,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 28.4,
+          "azimuth_deg": 158.5,
+          "horizon_deg": 8.19,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.1667,
+          "altitude_deg": 29.1,
+          "azimuth_deg": 161,
+          "horizon_deg": 8.96,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.3333,
+          "altitude_deg": 29.8,
+          "azimuth_deg": 163.5,
+          "horizon_deg": 9.6,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 30.3,
+          "azimuth_deg": 166.1,
+          "horizon_deg": 10.13,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.6667,
+          "altitude_deg": 30.7,
+          "azimuth_deg": 168.7,
+          "horizon_deg": 10.47,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.8333,
+          "altitude_deg": 31.1,
+          "azimuth_deg": 171.3,
+          "horizon_deg": 10.82,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 31.4,
+          "azimuth_deg": 174,
+          "horizon_deg": 11.2,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.1667,
+          "altitude_deg": 31.5,
+          "azimuth_deg": 176.7,
+          "horizon_deg": 11.21,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.3333,
+          "altitude_deg": 31.6,
+          "azimuth_deg": 179.3,
+          "horizon_deg": 11.02,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 31.6,
+          "azimuth_deg": 182,
+          "horizon_deg": 11.32,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.6667,
+          "altitude_deg": 31.5,
+          "azimuth_deg": 184.7,
+          "horizon_deg": 11.8,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.8333,
+          "altitude_deg": 31.2,
+          "azimuth_deg": 187.4,
+          "horizon_deg": 11.78,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 30.9,
+          "azimuth_deg": 190.1,
+          "horizon_deg": 11.67,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.1667,
+          "altitude_deg": 30.5,
+          "azimuth_deg": 192.7,
+          "horizon_deg": 10.6,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.3333,
+          "altitude_deg": 30,
+          "azimuth_deg": 195.3,
+          "horizon_deg": 9.66,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 29.5,
+          "azimuth_deg": 197.8,
+          "horizon_deg": 9.78,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.6667,
+          "altitude_deg": 28.8,
+          "azimuth_deg": 200.3,
+          "horizon_deg": 9.91,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.8333,
+          "altitude_deg": 28,
+          "azimuth_deg": 202.8,
+          "horizon_deg": 10.15,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 27.2,
+          "azimuth_deg": 205.2,
+          "horizon_deg": 10.33,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.1667,
+          "altitude_deg": 26.3,
+          "azimuth_deg": 207.6,
+          "horizon_deg": 9.99,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.3333,
+          "altitude_deg": 25.3,
+          "azimuth_deg": 209.9,
+          "horizon_deg": 9.66,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 24.2,
+          "azimuth_deg": 212.1,
+          "horizon_deg": 9.11,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.6667,
+          "altitude_deg": 23.1,
+          "azimuth_deg": 214.3,
+          "horizon_deg": 8.55,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.8333,
+          "altitude_deg": 21.9,
+          "azimuth_deg": 216.4,
+          "horizon_deg": 8.12,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 20.7,
+          "azimuth_deg": 218.5,
+          "horizon_deg": 7.75,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.1667,
+          "altitude_deg": 19.4,
+          "azimuth_deg": 220.5,
+          "horizon_deg": 7.29,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.3333,
+          "altitude_deg": 18,
+          "azimuth_deg": 222.5,
+          "horizon_deg": 6.51,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 16.6,
+          "azimuth_deg": 224.3,
+          "horizon_deg": 5.81,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.6667,
+          "altitude_deg": 15.2,
+          "azimuth_deg": 226.2,
+          "horizon_deg": 5.68,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.8333,
+          "altitude_deg": 13.7,
+          "azimuth_deg": 228,
+          "horizon_deg": 5.88,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 12.1,
+          "azimuth_deg": 229.7,
+          "horizon_deg": 6.08,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16.1667,
+          "altitude_deg": 10.5,
+          "azimuth_deg": 231.4,
+          "horizon_deg": 6.02,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16.3333,
+          "altitude_deg": 8.9,
+          "azimuth_deg": 233.1,
+          "horizon_deg": 5.92,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 7.3,
+          "azimuth_deg": 234.7,
+          "horizon_deg": 5.82,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16.6667,
+          "altitude_deg": 5.6,
+          "azimuth_deg": 236.2,
+          "horizon_deg": 5.63,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 16.8333,
+          "altitude_deg": 3.9,
+          "azimuth_deg": 237.8,
+          "horizon_deg": 5.4,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 2.1,
+          "azimuth_deg": 239.2,
+          "horizon_deg": 5.2,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 17.1667,
+          "altitude_deg": 0.3,
+          "azimuth_deg": 240.7,
+          "horizon_deg": 5.33,
+          "above_horizon": false
+        }
+      ],
+      "effective_first_sun": 8.1667,
+      "effective_last_sun": 16.5,
+      "solar_access_hours": 8.5,
+      "terrain_shaded_hours": 1.17,
+      "shaded_intervals": [
+        {
+          "from_hour": 7.6667,
+          "to_hour": 8.1667
+        },
+        {
+          "from_hour": 16.6667,
+          "to_hour": 17.1667
+        }
+      ]
+    },
+    {
+      "id": "equinox",
+      "label": {
+        "en": "March equinox",
+        "fa": "اعتدال بهاری"
+      },
+      "date": "2026-03-20",
+      "sunrise": "06:30",
+      "sunset": "18:36",
+      "solar_noon": "12:33",
+      "day_length_hours": 12.09,
+      "sunrise_azimuth_deg": 90.3,
+      "sunset_azimuth_deg": 269.9,
+      "noon_altitude_deg": 54.6,
+      "positions": [
+        {
+          "clock_hour": 6.6667,
+          "altitude_deg": 1.2,
+          "azimuth_deg": 91.5,
+          "horizon_deg": 4.8,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 6.8333,
+          "altitude_deg": 3.2,
+          "azimuth_deg": 92.9,
+          "horizon_deg": 4.57,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 7,
+          "altitude_deg": 5.3,
+          "azimuth_deg": 94.4,
+          "horizon_deg": 4.33,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 7.1667,
+          "altitude_deg": 7.3,
+          "azimuth_deg": 95.8,
+          "horizon_deg": 4.5,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 7.3333,
+          "altitude_deg": 9.3,
+          "azimuth_deg": 97.3,
+          "horizon_deg": 5.01,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 7.5,
+          "altitude_deg": 11.4,
+          "azimuth_deg": 98.8,
+          "horizon_deg": 5.52,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 7.6667,
+          "altitude_deg": 13.4,
+          "azimuth_deg": 100.3,
+          "horizon_deg": 5.9,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 7.8333,
+          "altitude_deg": 15.4,
+          "azimuth_deg": 101.8,
+          "horizon_deg": 5.72,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8,
+          "altitude_deg": 17.4,
+          "azimuth_deg": 103.4,
+          "horizon_deg": 5.54,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8.1667,
+          "altitude_deg": 19.4,
+          "azimuth_deg": 105,
+          "horizon_deg": 5.35,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8.3333,
+          "altitude_deg": 21.4,
+          "azimuth_deg": 106.6,
+          "horizon_deg": 5.06,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 23.3,
+          "azimuth_deg": 108.3,
+          "horizon_deg": 4.76,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8.6667,
+          "altitude_deg": 25.3,
+          "azimuth_deg": 110,
+          "horizon_deg": 4.45,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8.8333,
+          "altitude_deg": 27.2,
+          "azimuth_deg": 111.8,
+          "horizon_deg": 4.71,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 29.1,
+          "azimuth_deg": 113.7,
+          "horizon_deg": 4.98,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.1667,
+          "altitude_deg": 30.9,
+          "azimuth_deg": 115.6,
+          "horizon_deg": 5.18,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.3333,
+          "altitude_deg": 32.8,
+          "azimuth_deg": 117.6,
+          "horizon_deg": 5.2,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 34.6,
+          "azimuth_deg": 119.7,
+          "horizon_deg": 5.22,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.6667,
+          "altitude_deg": 36.3,
+          "azimuth_deg": 121.8,
+          "horizon_deg": 5.6,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.8333,
+          "altitude_deg": 38,
+          "azimuth_deg": 124.1,
+          "horizon_deg": 6.08,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 39.7,
+          "azimuth_deg": 126.5,
+          "horizon_deg": 6.37,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.1667,
+          "altitude_deg": 41.3,
+          "azimuth_deg": 129,
+          "horizon_deg": 6.54,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.3333,
+          "altitude_deg": 42.9,
+          "azimuth_deg": 131.6,
+          "horizon_deg": 6.75,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 44.4,
+          "azimuth_deg": 134.4,
+          "horizon_deg": 7.01,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.6667,
+          "altitude_deg": 45.8,
+          "azimuth_deg": 137.3,
+          "horizon_deg": 6.85,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.8333,
+          "altitude_deg": 47.2,
+          "azimuth_deg": 140.4,
+          "horizon_deg": 6.53,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 48.5,
+          "azimuth_deg": 143.6,
+          "horizon_deg": 5.93,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.1667,
+          "altitude_deg": 49.6,
+          "azimuth_deg": 147,
+          "horizon_deg": 5.43,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.3333,
+          "altitude_deg": 50.7,
+          "azimuth_deg": 150.5,
+          "horizon_deg": 5.25,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 51.6,
+          "azimuth_deg": 154.2,
+          "horizon_deg": 6.69,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.6667,
+          "altitude_deg": 52.5,
+          "azimuth_deg": 158,
+          "horizon_deg": 8.02,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.8333,
+          "altitude_deg": 53.2,
+          "azimuth_deg": 162,
+          "horizon_deg": 9.21,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 53.8,
+          "azimuth_deg": 166.1,
+          "horizon_deg": 10.13,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.1667,
+          "altitude_deg": 54.2,
+          "azimuth_deg": 170.3,
+          "horizon_deg": 10.68,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.3333,
+          "altitude_deg": 54.4,
+          "azimuth_deg": 174.5,
+          "horizon_deg": 11.27,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 54.6,
+          "azimuth_deg": 178.8,
+          "horizon_deg": 11.06,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.6667,
+          "altitude_deg": 54.5,
+          "azimuth_deg": 183.1,
+          "horizon_deg": 11.52,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.8333,
+          "altitude_deg": 54.4,
+          "azimuth_deg": 187.4,
+          "horizon_deg": 11.78,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 54,
+          "azimuth_deg": 191.7,
+          "horizon_deg": 11.01,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.1667,
+          "altitude_deg": 53.5,
+          "azimuth_deg": 195.8,
+          "horizon_deg": 9.69,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.3333,
+          "altitude_deg": 52.9,
+          "azimuth_deg": 199.9,
+          "horizon_deg": 9.88,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 52.1,
+          "azimuth_deg": 203.8,
+          "horizon_deg": 10.24,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.6667,
+          "altitude_deg": 51.3,
+          "azimuth_deg": 207.5,
+          "horizon_deg": 10,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.8333,
+          "altitude_deg": 50.3,
+          "azimuth_deg": 211.2,
+          "horizon_deg": 9.34,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 49.1,
+          "azimuth_deg": 214.6,
+          "horizon_deg": 8.47,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.1667,
+          "altitude_deg": 47.9,
+          "azimuth_deg": 217.9,
+          "horizon_deg": 7.85,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.3333,
+          "altitude_deg": 46.6,
+          "azimuth_deg": 221.1,
+          "horizon_deg": 7.05,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 45.3,
+          "azimuth_deg": 224.1,
+          "horizon_deg": 5.89,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.6667,
+          "altitude_deg": 43.8,
+          "azimuth_deg": 226.9,
+          "horizon_deg": 5.76,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.8333,
+          "altitude_deg": 42.3,
+          "azimuth_deg": 229.6,
+          "horizon_deg": 6.06,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 40.7,
+          "azimuth_deg": 232.2,
+          "horizon_deg": 5.97,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.1667,
+          "altitude_deg": 39,
+          "azimuth_deg": 234.7,
+          "horizon_deg": 5.82,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.3333,
+          "altitude_deg": 37.3,
+          "azimuth_deg": 237,
+          "horizon_deg": 5.51,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 35.6,
+          "azimuth_deg": 239.2,
+          "horizon_deg": 5.2,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.6667,
+          "altitude_deg": 33.8,
+          "azimuth_deg": 241.4,
+          "horizon_deg": 5.59,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.8333,
+          "altitude_deg": 32,
+          "azimuth_deg": 243.4,
+          "horizon_deg": 6.31,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 30.2,
+          "azimuth_deg": 245.4,
+          "horizon_deg": 6.96,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16.1667,
+          "altitude_deg": 28.3,
+          "azimuth_deg": 247.3,
+          "horizon_deg": 7.28,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16.3333,
+          "altitude_deg": 26.4,
+          "azimuth_deg": 249.1,
+          "horizon_deg": 7.58,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 24.5,
+          "azimuth_deg": 250.9,
+          "horizon_deg": 7.86,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16.6667,
+          "altitude_deg": 22.5,
+          "azimuth_deg": 252.6,
+          "horizon_deg": 8.1,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16.8333,
+          "altitude_deg": 20.6,
+          "azimuth_deg": 254.3,
+          "horizon_deg": 8.35,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 18.6,
+          "azimuth_deg": 255.9,
+          "horizon_deg": 8.33,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 17.1667,
+          "altitude_deg": 16.6,
+          "azimuth_deg": 257.5,
+          "horizon_deg": 8.11,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 17.3333,
+          "altitude_deg": 14.6,
+          "azimuth_deg": 259,
+          "horizon_deg": 7.9,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 17.5,
+          "altitude_deg": 12.6,
+          "azimuth_deg": 260.6,
+          "horizon_deg": 7.84,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 17.6667,
+          "altitude_deg": 10.5,
+          "azimuth_deg": 262.1,
+          "horizon_deg": 8.05,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 17.8333,
+          "altitude_deg": 8.5,
+          "azimuth_deg": 263.5,
+          "horizon_deg": 8.24,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 18,
+          "altitude_deg": 6.5,
+          "azimuth_deg": 265,
+          "horizon_deg": 8.45,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 18.1667,
+          "altitude_deg": 4.4,
+          "azimuth_deg": 266.5,
+          "horizon_deg": 9.04,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 18.3333,
+          "altitude_deg": 2.4,
+          "azimuth_deg": 267.9,
+          "horizon_deg": 9.58,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 18.5,
+          "altitude_deg": 0.3,
+          "azimuth_deg": 269.3,
+          "horizon_deg": 10.13,
+          "above_horizon": false
+        }
+      ],
+      "effective_first_sun": 7,
+      "effective_last_sun": 17.8333,
+      "solar_access_hours": 11,
+      "terrain_shaded_hours": 1,
+      "shaded_intervals": [
+        {
+          "from_hour": 6.6667,
+          "to_hour": 7
+        },
+        {
+          "from_hour": 18,
+          "to_hour": 18.5
+        }
+      ]
+    },
+    {
+      "id": "summer",
+      "label": {
+        "en": "Summer solstice",
+        "fa": "انقلاب تابستانی"
+      },
+      "date": "2026-06-21",
+      "sunrise": "05:11",
+      "sunset": "19:41",
+      "solar_noon": "12:26",
+      "day_length_hours": 14.51,
+      "sunrise_azimuth_deg": 60.5,
+      "sunset_azimuth_deg": 299.5,
+      "noon_altitude_deg": 78.5,
+      "positions": [
+        {
+          "clock_hour": 5.3333,
+          "altitude_deg": 0.9,
+          "azimuth_deg": 61.6,
+          "horizon_deg": 6.01,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 5.5,
+          "altitude_deg": 2.7,
+          "azimuth_deg": 63,
+          "horizon_deg": 6.02,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 5.6667,
+          "altitude_deg": 4.5,
+          "azimuth_deg": 64.4,
+          "horizon_deg": 6.02,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 5.8333,
+          "altitude_deg": 6.4,
+          "azimuth_deg": 65.8,
+          "horizon_deg": 5.97,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 6,
+          "altitude_deg": 8.2,
+          "azimuth_deg": 67.1,
+          "horizon_deg": 5.89,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 6.1667,
+          "altitude_deg": 10.1,
+          "azimuth_deg": 68.4,
+          "horizon_deg": 5.82,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 6.3333,
+          "altitude_deg": 12.1,
+          "azimuth_deg": 69.7,
+          "horizon_deg": 5.74,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 6.5,
+          "altitude_deg": 14,
+          "azimuth_deg": 71,
+          "horizon_deg": 5.74,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 6.6667,
+          "altitude_deg": 15.9,
+          "azimuth_deg": 72.2,
+          "horizon_deg": 5.76,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 6.8333,
+          "altitude_deg": 17.9,
+          "azimuth_deg": 73.5,
+          "horizon_deg": 5.78,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 7,
+          "altitude_deg": 19.9,
+          "azimuth_deg": 74.7,
+          "horizon_deg": 5.8,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 7.1667,
+          "altitude_deg": 21.8,
+          "azimuth_deg": 75.9,
+          "horizon_deg": 5.68,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 7.3333,
+          "altitude_deg": 23.8,
+          "azimuth_deg": 77.2,
+          "horizon_deg": 5.51,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 7.5,
+          "altitude_deg": 25.8,
+          "azimuth_deg": 78.4,
+          "horizon_deg": 5.34,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 7.6667,
+          "altitude_deg": 27.8,
+          "azimuth_deg": 79.6,
+          "horizon_deg": 5.18,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 7.8333,
+          "altitude_deg": 29.9,
+          "azimuth_deg": 80.9,
+          "horizon_deg": 5.03,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8,
+          "altitude_deg": 31.9,
+          "azimuth_deg": 82.1,
+          "horizon_deg": 4.89,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8.1667,
+          "altitude_deg": 33.9,
+          "azimuth_deg": 83.4,
+          "horizon_deg": 4.74,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8.3333,
+          "altitude_deg": 36,
+          "azimuth_deg": 84.7,
+          "horizon_deg": 4.59,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 38,
+          "azimuth_deg": 86,
+          "horizon_deg": 4.66,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8.6667,
+          "altitude_deg": 40,
+          "azimuth_deg": 87.3,
+          "horizon_deg": 4.79,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 8.8333,
+          "altitude_deg": 42.1,
+          "azimuth_deg": 88.7,
+          "horizon_deg": 4.92,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 44.1,
+          "azimuth_deg": 90.1,
+          "horizon_deg": 5.03,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.1667,
+          "altitude_deg": 46.2,
+          "azimuth_deg": 91.6,
+          "horizon_deg": 4.79,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.3333,
+          "altitude_deg": 48.2,
+          "azimuth_deg": 93.1,
+          "horizon_deg": 4.54,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 50.3,
+          "azimuth_deg": 94.7,
+          "horizon_deg": 4.28,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.6667,
+          "altitude_deg": 52.3,
+          "azimuth_deg": 96.4,
+          "horizon_deg": 4.71,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 9.8333,
+          "altitude_deg": 54.3,
+          "azimuth_deg": 98.2,
+          "horizon_deg": 5.32,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 56.4,
+          "azimuth_deg": 100.1,
+          "horizon_deg": 5.92,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.1667,
+          "altitude_deg": 58.4,
+          "azimuth_deg": 102.1,
+          "horizon_deg": 5.69,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.3333,
+          "altitude_deg": 60.4,
+          "azimuth_deg": 104.3,
+          "horizon_deg": 5.43,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 62.3,
+          "azimuth_deg": 106.8,
+          "horizon_deg": 5.03,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.6667,
+          "altitude_deg": 64.3,
+          "azimuth_deg": 109.5,
+          "horizon_deg": 4.54,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 10.8333,
+          "altitude_deg": 66.2,
+          "azimuth_deg": 112.5,
+          "horizon_deg": 4.81,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 68.1,
+          "azimuth_deg": 115.9,
+          "horizon_deg": 5.18,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.1667,
+          "altitude_deg": 69.9,
+          "azimuth_deg": 119.8,
+          "horizon_deg": 5.22,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.3333,
+          "altitude_deg": 71.6,
+          "azimuth_deg": 124.4,
+          "horizon_deg": 6.14,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 73.3,
+          "azimuth_deg": 129.7,
+          "horizon_deg": 6.59,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.6667,
+          "altitude_deg": 74.8,
+          "azimuth_deg": 136,
+          "horizon_deg": 6.97,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 11.8333,
+          "altitude_deg": 76.1,
+          "azimuth_deg": 143.5,
+          "horizon_deg": 5.95,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 77.2,
+          "azimuth_deg": 152.2,
+          "horizon_deg": 5.91,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.1667,
+          "altitude_deg": 78,
+          "azimuth_deg": 162.2,
+          "horizon_deg": 9.26,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.3333,
+          "altitude_deg": 78.4,
+          "azimuth_deg": 173.2,
+          "horizon_deg": 11.09,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 78.4,
+          "azimuth_deg": 184.7,
+          "horizon_deg": 11.8,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.6667,
+          "altitude_deg": 78.1,
+          "azimuth_deg": 195.8,
+          "horizon_deg": 9.69,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 12.8333,
+          "altitude_deg": 77.3,
+          "azimuth_deg": 206.1,
+          "horizon_deg": 10.2,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 76.3,
+          "azimuth_deg": 215,
+          "horizon_deg": 8.37,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.1667,
+          "altitude_deg": 75,
+          "azimuth_deg": 222.7,
+          "horizon_deg": 6.43,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.3333,
+          "altitude_deg": 73.5,
+          "azimuth_deg": 229.2,
+          "horizon_deg": 6.02,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 71.9,
+          "azimuth_deg": 234.7,
+          "horizon_deg": 5.82,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.6667,
+          "altitude_deg": 70.2,
+          "azimuth_deg": 239.4,
+          "horizon_deg": 5.17,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 13.8333,
+          "altitude_deg": 68.4,
+          "azimuth_deg": 243.4,
+          "horizon_deg": 6.31,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 66.6,
+          "azimuth_deg": 246.9,
+          "horizon_deg": 7.21,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.1667,
+          "altitude_deg": 64.6,
+          "azimuth_deg": 250,
+          "horizon_deg": 7.73,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.3333,
+          "altitude_deg": 62.7,
+          "azimuth_deg": 252.8,
+          "horizon_deg": 8.13,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 60.7,
+          "azimuth_deg": 255.2,
+          "horizon_deg": 8.42,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.6667,
+          "altitude_deg": 58.7,
+          "azimuth_deg": 257.5,
+          "horizon_deg": 8.11,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 14.8333,
+          "altitude_deg": 56.7,
+          "azimuth_deg": 259.6,
+          "horizon_deg": 7.82,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 54.7,
+          "azimuth_deg": 261.5,
+          "horizon_deg": 7.97,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.1667,
+          "altitude_deg": 52.7,
+          "azimuth_deg": 263.3,
+          "horizon_deg": 8.22,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.3333,
+          "altitude_deg": 50.6,
+          "azimuth_deg": 265,
+          "horizon_deg": 8.45,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 48.6,
+          "azimuth_deg": 266.6,
+          "horizon_deg": 9.07,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.6667,
+          "altitude_deg": 46.6,
+          "azimuth_deg": 268.2,
+          "horizon_deg": 9.7,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 15.8333,
+          "altitude_deg": 44.5,
+          "azimuth_deg": 269.6,
+          "horizon_deg": 10.24,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 42.5,
+          "azimuth_deg": 271,
+          "horizon_deg": 10.49,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16.1667,
+          "altitude_deg": 40.4,
+          "azimuth_deg": 272.4,
+          "horizon_deg": 10.61,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16.3333,
+          "altitude_deg": 38.4,
+          "azimuth_deg": 273.8,
+          "horizon_deg": 10.73,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 36.3,
+          "azimuth_deg": 275.1,
+          "horizon_deg": 10.83,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16.6667,
+          "altitude_deg": 34.3,
+          "azimuth_deg": 276.4,
+          "horizon_deg": 10.78,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 16.8333,
+          "altitude_deg": 32.3,
+          "azimuth_deg": 277.6,
+          "horizon_deg": 10.74,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 30.2,
+          "azimuth_deg": 278.9,
+          "horizon_deg": 10.69,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 17.1667,
+          "altitude_deg": 28.2,
+          "azimuth_deg": 280.1,
+          "horizon_deg": 10.66,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 17.3333,
+          "altitude_deg": 26.2,
+          "azimuth_deg": 281.4,
+          "horizon_deg": 10.75,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 17.5,
+          "altitude_deg": 24.2,
+          "azimuth_deg": 282.6,
+          "horizon_deg": 10.83,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 17.6667,
+          "altitude_deg": 22.2,
+          "azimuth_deg": 283.8,
+          "horizon_deg": 10.92,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 17.8333,
+          "altitude_deg": 20.2,
+          "azimuth_deg": 285.1,
+          "horizon_deg": 11.01,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 18,
+          "altitude_deg": 18.2,
+          "azimuth_deg": 286.3,
+          "horizon_deg": 11.06,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 18.1667,
+          "altitude_deg": 16.3,
+          "azimuth_deg": 287.6,
+          "horizon_deg": 11.13,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 18.3333,
+          "altitude_deg": 14.3,
+          "azimuth_deg": 288.8,
+          "horizon_deg": 11.19,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 18.5,
+          "altitude_deg": 12.4,
+          "azimuth_deg": 290.1,
+          "horizon_deg": 11.26,
+          "above_horizon": true
+        },
+        {
+          "clock_hour": 18.6667,
+          "altitude_deg": 10.5,
+          "azimuth_deg": 291.4,
+          "horizon_deg": 11.34,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 18.8333,
+          "altitude_deg": 8.6,
+          "azimuth_deg": 292.7,
+          "horizon_deg": 11.43,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 19,
+          "altitude_deg": 6.7,
+          "azimuth_deg": 294,
+          "horizon_deg": 11.51,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 19.1667,
+          "altitude_deg": 4.9,
+          "azimuth_deg": 295.3,
+          "horizon_deg": 11.5,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 19.3333,
+          "altitude_deg": 3,
+          "azimuth_deg": 296.7,
+          "horizon_deg": 11.13,
+          "above_horizon": false
+        },
+        {
+          "clock_hour": 19.5,
+          "altitude_deg": 1.2,
+          "azimuth_deg": 298.1,
+          "horizon_deg": 10.76,
+          "above_horizon": false
+        }
+      ],
+      "effective_first_sun": 5.8333,
+      "effective_last_sun": 18.5,
+      "solar_access_hours": 12.84,
+      "terrain_shaded_hours": 1.5,
+      "shaded_intervals": [
+        {
+          "from_hour": 5.3333,
+          "to_hour": 5.8333
+        },
+        {
+          "from_hour": 18.6667,
+          "to_hour": 19.5
+        }
+      ]
+    }
+  ],
+  "monthly": [
+    {
+      "month": 1,
+      "label": {
+        "en": "Jan",
+        "fa": "ژانویه"
+      },
+      "date": "2026-01-21",
+      "sunrise": "07:30",
+      "sunset": "17:40",
+      "solar_noon": "12:35",
+      "day_length_hours": 10.17,
+      "sunrise_azimuth_deg": 114.4,
+      "sunset_azimuth_deg": 245.6,
+      "noon_altitude_deg": 34.9,
+      "positions": [
+        {
+          "clock_hour": 8,
+          "altitude_deg": 4.7,
+          "azimuth_deg": 118.6
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 9.9,
+          "azimuth_deg": 123.3
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 14.9,
+          "azimuth_deg": 128.4
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 19.6,
+          "azimuth_deg": 133.9
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 23.8,
+          "azimuth_deg": 140
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 27.4,
+          "azimuth_deg": 146.7
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 30.5,
+          "azimuth_deg": 153.9
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 32.8,
+          "azimuth_deg": 161.7
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 34.3,
+          "azimuth_deg": 170
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 34.9,
+          "azimuth_deg": 178.5
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 34.6,
+          "azimuth_deg": 187.1
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 33.4,
+          "azimuth_deg": 195.5
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 31.4,
+          "azimuth_deg": 203.4
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 28.6,
+          "azimuth_deg": 210.9
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 25.1,
+          "azimuth_deg": 217.8
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 21.1,
+          "azimuth_deg": 224.1
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 16.6,
+          "azimuth_deg": 229.8
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 11.7,
+          "azimuth_deg": 235.1
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 6.6,
+          "azimuth_deg": 239.9
+        },
+        {
+          "clock_hour": 17.5,
+          "altitude_deg": 1.1,
+          "azimuth_deg": 244.4
+        }
+      ],
+      "radiation_kwh_m2_day": 2.69
+    },
+    {
+      "month": 2,
+      "label": {
+        "en": "Feb",
+        "fa": "فوریه"
+      },
+      "date": "2026-02-21",
+      "sunrise": "07:05",
+      "sunset": "18:12",
+      "solar_noon": "12:39",
+      "day_length_hours": 11.11,
+      "sunrise_azimuth_deg": 103,
+      "sunset_azimuth_deg": 257.1,
+      "noon_altitude_deg": 44.2,
+      "positions": [
+        {
+          "clock_hour": 7.5,
+          "altitude_deg": 4.1,
+          "azimuth_deg": 106.3
+        },
+        {
+          "clock_hour": 8,
+          "altitude_deg": 9.9,
+          "azimuth_deg": 110.9
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 15.5,
+          "azimuth_deg": 115.7
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 20.9,
+          "azimuth_deg": 121
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 26.1,
+          "azimuth_deg": 126.8
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 30.8,
+          "azimuth_deg": 133.2
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 35,
+          "azimuth_deg": 140.4
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 38.6,
+          "azimuth_deg": 148.4
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 41.4,
+          "azimuth_deg": 157.3
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 43.3,
+          "azimuth_deg": 167
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 44.1,
+          "azimuth_deg": 177.1
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 43.9,
+          "azimuth_deg": 187.3
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 42.6,
+          "azimuth_deg": 197.3
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 40.3,
+          "azimuth_deg": 206.6
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 37.2,
+          "azimuth_deg": 215.2
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 33.3,
+          "azimuth_deg": 222.9
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 28.9,
+          "azimuth_deg": 229.7
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 24,
+          "azimuth_deg": 235.9
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 18.7,
+          "azimuth_deg": 241.4
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 13.2,
+          "azimuth_deg": 246.5
+        },
+        {
+          "clock_hour": 17.5,
+          "altitude_deg": 7.5,
+          "azimuth_deg": 251.2
+        },
+        {
+          "clock_hour": 18,
+          "altitude_deg": 1.6,
+          "azimuth_deg": 255.7
+        }
+      ],
+      "radiation_kwh_m2_day": 3.62
+    },
+    {
+      "month": 3,
+      "label": {
+        "en": "Mar",
+        "fa": "مارس"
+      },
+      "date": "2026-03-21",
+      "sunrise": "06:29",
+      "sunset": "18:36",
+      "solar_noon": "12:32",
+      "day_length_hours": 12.13,
+      "sunrise_azimuth_deg": 89.8,
+      "sunset_azimuth_deg": 270.3,
+      "noon_altitude_deg": 55,
+      "positions": [
+        {
+          "clock_hour": 7,
+          "altitude_deg": 5.5,
+          "azimuth_deg": 94.1
+        },
+        {
+          "clock_hour": 7.5,
+          "altitude_deg": 11.7,
+          "azimuth_deg": 98.5
+        },
+        {
+          "clock_hour": 8,
+          "altitude_deg": 17.7,
+          "azimuth_deg": 103.1
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 23.6,
+          "azimuth_deg": 108
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 29.4,
+          "azimuth_deg": 113.4
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 34.9,
+          "azimuth_deg": 119.4
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 40.1,
+          "azimuth_deg": 126.2
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 44.8,
+          "azimuth_deg": 134.2
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 48.8,
+          "azimuth_deg": 143.4
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 52,
+          "azimuth_deg": 154.1
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 54.2,
+          "azimuth_deg": 166.1
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 55,
+          "azimuth_deg": 178.9
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 54.4,
+          "azimuth_deg": 191.9
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 52.5,
+          "azimuth_deg": 204.1
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 49.5,
+          "azimuth_deg": 215
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 45.5,
+          "azimuth_deg": 224.5
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 40.9,
+          "azimuth_deg": 232.6
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 35.8,
+          "azimuth_deg": 239.7
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 30.4,
+          "azimuth_deg": 245.8
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 24.7,
+          "azimuth_deg": 251.3
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 18.8,
+          "azimuth_deg": 256.3
+        },
+        {
+          "clock_hour": 17.5,
+          "altitude_deg": 12.7,
+          "azimuth_deg": 260.9
+        },
+        {
+          "clock_hour": 18,
+          "altitude_deg": 6.6,
+          "azimuth_deg": 265.4
+        },
+        {
+          "clock_hour": 18.5,
+          "altitude_deg": 0.5,
+          "azimuth_deg": 269.7
+        }
+      ],
+      "radiation_kwh_m2_day": 4.79
+    },
+    {
+      "month": 4,
+      "label": {
+        "en": "Apr",
+        "fa": "آوریل"
+      },
+      "date": "2026-04-21",
+      "sunrise": "05:46",
+      "sunset": "19:01",
+      "solar_noon": "12:23",
+      "day_length_hours": 13.24,
+      "sunrise_azimuth_deg": 75.5,
+      "sunset_azimuth_deg": 284.6,
+      "noon_altitude_deg": 66.6,
+      "positions": [
+        {
+          "clock_hour": 6,
+          "altitude_deg": 1.9,
+          "azimuth_deg": 77.2
+        },
+        {
+          "clock_hour": 6.5,
+          "altitude_deg": 7.9,
+          "azimuth_deg": 81.4
+        },
+        {
+          "clock_hour": 7,
+          "altitude_deg": 14,
+          "azimuth_deg": 85.6
+        },
+        {
+          "clock_hour": 7.5,
+          "altitude_deg": 20.2,
+          "azimuth_deg": 89.8
+        },
+        {
+          "clock_hour": 8,
+          "altitude_deg": 26.3,
+          "azimuth_deg": 94.2
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 32.4,
+          "azimuth_deg": 98.9
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 38.4,
+          "azimuth_deg": 104.1
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 44.3,
+          "azimuth_deg": 110
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 50,
+          "azimuth_deg": 116.9
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 55.2,
+          "azimuth_deg": 125.4
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 59.9,
+          "azimuth_deg": 136
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 63.7,
+          "azimuth_deg": 149.4
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 66,
+          "azimuth_deg": 165.8
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 66.6,
+          "azimuth_deg": 184.1
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 65.2,
+          "azimuth_deg": 201.8
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 62.2,
+          "azimuth_deg": 217
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 58,
+          "azimuth_deg": 229.1
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 53,
+          "azimuth_deg": 238.7
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 47.5,
+          "azimuth_deg": 246.4
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 41.8,
+          "azimuth_deg": 252.8
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 35.8,
+          "azimuth_deg": 258.4
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 29.8,
+          "azimuth_deg": 263.3
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 23.7,
+          "azimuth_deg": 267.9
+        },
+        {
+          "clock_hour": 17.5,
+          "altitude_deg": 17.5,
+          "azimuth_deg": 272.2
+        },
+        {
+          "clock_hour": 18,
+          "altitude_deg": 11.4,
+          "azimuth_deg": 276.4
+        },
+        {
+          "clock_hour": 18.5,
+          "altitude_deg": 5.3,
+          "azimuth_deg": 280.5
+        }
+      ],
+      "radiation_kwh_m2_day": 5.8
+    },
+    {
+      "month": 5,
+      "label": {
+        "en": "May",
+        "fa": "مه"
+      },
+      "date": "2026-05-21",
+      "sunrise": "05:17",
+      "sunset": "19:24",
+      "solar_noon": "12:21",
+      "day_length_hours": 14.12,
+      "sunrise_azimuth_deg": 65,
+      "sunset_azimuth_deg": 295.1,
+      "noon_altitude_deg": 75.1,
+      "positions": [
+        {
+          "clock_hour": 5.5,
+          "altitude_deg": 1.5,
+          "azimuth_deg": 66.5
+        },
+        {
+          "clock_hour": 6,
+          "altitude_deg": 7.2,
+          "azimuth_deg": 70.6
+        },
+        {
+          "clock_hour": 6.5,
+          "altitude_deg": 13.1,
+          "azimuth_deg": 74.6
+        },
+        {
+          "clock_hour": 7,
+          "altitude_deg": 19.1,
+          "azimuth_deg": 78.5
+        },
+        {
+          "clock_hour": 7.5,
+          "altitude_deg": 25.1,
+          "azimuth_deg": 82.4
+        },
+        {
+          "clock_hour": 8,
+          "altitude_deg": 31.3,
+          "azimuth_deg": 86.4
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 37.4,
+          "azimuth_deg": 90.5
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 43.5,
+          "azimuth_deg": 95.1
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 49.6,
+          "azimuth_deg": 100.3
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 55.6,
+          "azimuth_deg": 106.4
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 61.4,
+          "azimuth_deg": 114.2
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 66.7,
+          "azimuth_deg": 124.7
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 71.3,
+          "azimuth_deg": 139.8
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 74.4,
+          "azimuth_deg": 161.6
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 74.9,
+          "azimuth_deg": 188.3
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 72.7,
+          "azimuth_deg": 212.6
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 68.7,
+          "azimuth_deg": 230.1
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 63.5,
+          "azimuth_deg": 242.2
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 57.9,
+          "azimuth_deg": 250.8
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 52,
+          "azimuth_deg": 257.5
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 45.9,
+          "azimuth_deg": 263
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 39.8,
+          "azimuth_deg": 267.8
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 33.7,
+          "azimuth_deg": 272.1
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 27.6,
+          "azimuth_deg": 276.2
+        },
+        {
+          "clock_hour": 17.5,
+          "altitude_deg": 21.5,
+          "azimuth_deg": 280.1
+        },
+        {
+          "clock_hour": 18,
+          "altitude_deg": 15.5,
+          "azimuth_deg": 283.9
+        },
+        {
+          "clock_hour": 18.5,
+          "altitude_deg": 9.6,
+          "azimuth_deg": 287.9
+        },
+        {
+          "clock_hour": 19,
+          "altitude_deg": 3.8,
+          "azimuth_deg": 291.9
+        }
+      ],
+      "radiation_kwh_m2_day": 7.08
+    },
+    {
+      "month": 6,
+      "label": {
+        "en": "Jun",
+        "fa": "ژوئن"
+      },
+      "date": "2026-06-21",
+      "sunrise": "05:11",
+      "sunset": "19:41",
+      "solar_noon": "12:26",
+      "day_length_hours": 14.51,
+      "sunrise_azimuth_deg": 60.5,
+      "sunset_azimuth_deg": 299.5,
+      "noon_altitude_deg": 78.5,
+      "positions": [
+        {
+          "clock_hour": 5.5,
+          "altitude_deg": 2.7,
+          "azimuth_deg": 63
+        },
+        {
+          "clock_hour": 6,
+          "altitude_deg": 8.2,
+          "azimuth_deg": 67.1
+        },
+        {
+          "clock_hour": 6.5,
+          "altitude_deg": 14,
+          "azimuth_deg": 71
+        },
+        {
+          "clock_hour": 7,
+          "altitude_deg": 19.9,
+          "azimuth_deg": 74.7
+        },
+        {
+          "clock_hour": 7.5,
+          "altitude_deg": 25.8,
+          "azimuth_deg": 78.4
+        },
+        {
+          "clock_hour": 8,
+          "altitude_deg": 31.9,
+          "azimuth_deg": 82.1
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 38,
+          "azimuth_deg": 86
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 44.1,
+          "azimuth_deg": 90.1
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 50.3,
+          "azimuth_deg": 94.7
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 56.4,
+          "azimuth_deg": 100.1
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 62.3,
+          "azimuth_deg": 106.8
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 68.1,
+          "azimuth_deg": 115.9
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 73.3,
+          "azimuth_deg": 129.7
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 77.2,
+          "azimuth_deg": 152.2
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 78.4,
+          "azimuth_deg": 184.7
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 76.3,
+          "azimuth_deg": 215
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 71.9,
+          "azimuth_deg": 234.7
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 66.6,
+          "azimuth_deg": 246.9
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 60.7,
+          "azimuth_deg": 255.2
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 54.7,
+          "azimuth_deg": 261.5
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 48.6,
+          "azimuth_deg": 266.6
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 42.5,
+          "azimuth_deg": 271
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 36.3,
+          "azimuth_deg": 275.1
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 30.2,
+          "azimuth_deg": 278.9
+        },
+        {
+          "clock_hour": 17.5,
+          "altitude_deg": 24.2,
+          "azimuth_deg": 282.6
+        },
+        {
+          "clock_hour": 18,
+          "altitude_deg": 18.2,
+          "azimuth_deg": 286.3
+        },
+        {
+          "clock_hour": 18.5,
+          "altitude_deg": 12.4,
+          "azimuth_deg": 290.1
+        },
+        {
+          "clock_hour": 19,
+          "altitude_deg": 6.7,
+          "azimuth_deg": 294
+        },
+        {
+          "clock_hour": 19.5,
+          "altitude_deg": 1.2,
+          "azimuth_deg": 298.1
+        }
+      ],
+      "radiation_kwh_m2_day": 8.39
+    },
+    {
+      "month": 7,
+      "label": {
+        "en": "Jul",
+        "fa": "ژوئیه"
+      },
+      "date": "2026-07-21",
+      "sunrise": "05:25",
+      "sunset": "19:37",
+      "solar_noon": "12:31",
+      "day_length_hours": 14.19,
+      "sunrise_azimuth_deg": 64.1,
+      "sunset_azimuth_deg": 295.8,
+      "noon_altitude_deg": 75.7,
+      "positions": [
+        {
+          "clock_hour": 5.5,
+          "altitude_deg": 0.1,
+          "azimuth_deg": 64.5
+        },
+        {
+          "clock_hour": 6,
+          "altitude_deg": 5.7,
+          "azimuth_deg": 68.7
+        },
+        {
+          "clock_hour": 6.5,
+          "altitude_deg": 11.5,
+          "azimuth_deg": 72.7
+        },
+        {
+          "clock_hour": 7,
+          "altitude_deg": 17.4,
+          "azimuth_deg": 76.6
+        },
+        {
+          "clock_hour": 7.5,
+          "altitude_deg": 23.4,
+          "azimuth_deg": 80.4
+        },
+        {
+          "clock_hour": 8,
+          "altitude_deg": 29.5,
+          "azimuth_deg": 84.3
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 35.7,
+          "azimuth_deg": 88.4
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 41.8,
+          "azimuth_deg": 92.7
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 47.9,
+          "azimuth_deg": 97.6
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 54,
+          "azimuth_deg": 103.3
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 59.8,
+          "azimuth_deg": 110.3
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 65.4,
+          "azimuth_deg": 119.6
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 70.4,
+          "azimuth_deg": 132.9
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 74.1,
+          "azimuth_deg": 152.6
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 75.7,
+          "azimuth_deg": 179.1
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 74.3,
+          "azimuth_deg": 205.9
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 70.6,
+          "azimuth_deg": 226
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 65.7,
+          "azimuth_deg": 239.6
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 60.2,
+          "azimuth_deg": 249.1
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 54.3,
+          "azimuth_deg": 256.3
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 48.3,
+          "azimuth_deg": 262
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 42.2,
+          "azimuth_deg": 266.9
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 36,
+          "azimuth_deg": 271.3
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 29.9,
+          "azimuth_deg": 275.4
+        },
+        {
+          "clock_hour": 17.5,
+          "altitude_deg": 23.8,
+          "azimuth_deg": 279.3
+        },
+        {
+          "clock_hour": 18,
+          "altitude_deg": 17.7,
+          "azimuth_deg": 283.1
+        },
+        {
+          "clock_hour": 18.5,
+          "altitude_deg": 11.8,
+          "azimuth_deg": 287
+        },
+        {
+          "clock_hour": 19,
+          "altitude_deg": 6,
+          "azimuth_deg": 291
+        },
+        {
+          "clock_hour": 19.5,
+          "altitude_deg": 0.3,
+          "azimuth_deg": 295.1
+        }
+      ],
+      "radiation_kwh_m2_day": 7.84
+    },
+    {
+      "month": 8,
+      "label": {
+        "en": "Aug",
+        "fa": "اوت"
+      },
+      "date": "2026-08-21",
+      "sunrise": "05:49",
+      "sunset": "19:08",
+      "solar_noon": "12:28",
+      "day_length_hours": 13.32,
+      "sunrise_azimuth_deg": 74.4,
+      "sunset_azimuth_deg": 285.4,
+      "noon_altitude_deg": 67.4,
+      "positions": [
+        {
+          "clock_hour": 6,
+          "altitude_deg": 1.5,
+          "azimuth_deg": 75.8
+        },
+        {
+          "clock_hour": 6.5,
+          "altitude_deg": 7.5,
+          "azimuth_deg": 80
+        },
+        {
+          "clock_hour": 7,
+          "altitude_deg": 13.5,
+          "azimuth_deg": 84.1
+        },
+        {
+          "clock_hour": 7.5,
+          "altitude_deg": 19.7,
+          "azimuth_deg": 88.3
+        },
+        {
+          "clock_hour": 8,
+          "altitude_deg": 25.8,
+          "azimuth_deg": 92.7
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 31.9,
+          "azimuth_deg": 97.3
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 38,
+          "azimuth_deg": 102.3
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 43.9,
+          "azimuth_deg": 108
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 49.6,
+          "azimuth_deg": 114.7
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 55,
+          "azimuth_deg": 122.9
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 59.9,
+          "azimuth_deg": 133.1
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 63.9,
+          "azimuth_deg": 146.2
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 66.5,
+          "azimuth_deg": 162.5
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 67.4,
+          "azimuth_deg": 181.2
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 66.3,
+          "azimuth_deg": 199.7
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 63.4,
+          "azimuth_deg": 215.6
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 59.3,
+          "azimuth_deg": 228.3
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 54.3,
+          "azimuth_deg": 238.2
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 48.9,
+          "azimuth_deg": 246.1
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 43.1,
+          "azimuth_deg": 252.6
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 37.2,
+          "azimuth_deg": 258.2
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 31.1,
+          "azimuth_deg": 263.2
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 25,
+          "azimuth_deg": 267.8
+        },
+        {
+          "clock_hour": 17.5,
+          "altitude_deg": 18.8,
+          "azimuth_deg": 272.1
+        },
+        {
+          "clock_hour": 18,
+          "altitude_deg": 12.7,
+          "azimuth_deg": 276.2
+        },
+        {
+          "clock_hour": 18.5,
+          "altitude_deg": 6.6,
+          "azimuth_deg": 280.4
+        },
+        {
+          "clock_hour": 19,
+          "altitude_deg": 0.6,
+          "azimuth_deg": 284.6
+        }
+      ],
+      "radiation_kwh_m2_day": 7.24
+    },
+    {
+      "month": 9,
+      "label": {
+        "en": "Sep",
+        "fa": "سپتامبر"
+      },
+      "date": "2026-09-21",
+      "sunrise": "06:11",
+      "sunset": "18:25",
+      "solar_noon": "12:18",
+      "day_length_hours": 12.23,
+      "sunrise_azimuth_deg": 88.3,
+      "sunset_azimuth_deg": 271.5,
+      "noon_altitude_deg": 56,
+      "positions": [
+        {
+          "clock_hour": 6.5,
+          "altitude_deg": 3.1,
+          "azimuth_deg": 90.8
+        },
+        {
+          "clock_hour": 7,
+          "altitude_deg": 9.3,
+          "azimuth_deg": 95.2
+        },
+        {
+          "clock_hour": 7.5,
+          "altitude_deg": 15.4,
+          "azimuth_deg": 99.7
+        },
+        {
+          "clock_hour": 8,
+          "altitude_deg": 21.4,
+          "azimuth_deg": 104.4
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 27.2,
+          "azimuth_deg": 109.5
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 32.9,
+          "azimuth_deg": 115.2
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 38.3,
+          "azimuth_deg": 121.6
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 43.3,
+          "azimuth_deg": 129
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 47.8,
+          "azimuth_deg": 137.6
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 51.5,
+          "azimuth_deg": 147.7
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 54.3,
+          "azimuth_deg": 159.3
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 55.8,
+          "azimuth_deg": 172.1
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 55.9,
+          "azimuth_deg": 185.5
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 54.6,
+          "azimuth_deg": 198.5
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 52.1,
+          "azimuth_deg": 210.3
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 48.5,
+          "azimuth_deg": 220.7
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 44.1,
+          "azimuth_deg": 229.5
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 39.2,
+          "azimuth_deg": 237.1
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 33.8,
+          "azimuth_deg": 243.6
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 28.2,
+          "azimuth_deg": 249.4
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 22.3,
+          "azimuth_deg": 254.6
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 16.4,
+          "azimuth_deg": 259.4
+        },
+        {
+          "clock_hour": 17.5,
+          "altitude_deg": 10.3,
+          "azimuth_deg": 263.9
+        },
+        {
+          "clock_hour": 18,
+          "altitude_deg": 4.1,
+          "azimuth_deg": 268.2
+        }
+      ],
+      "radiation_kwh_m2_day": 6.26
+    },
+    {
+      "month": 10,
+      "label": {
+        "en": "Oct",
+        "fa": "اکتبر"
+      },
+      "date": "2026-10-21",
+      "sunrise": "06:34",
+      "sunset": "17:44",
+      "solar_noon": "12:09",
+      "day_length_hours": 11.15,
+      "sunrise_azimuth_deg": 102.3,
+      "sunset_azimuth_deg": 257.5,
+      "noon_altitude_deg": 44.6,
+      "positions": [
+        {
+          "clock_hour": 7,
+          "altitude_deg": 4.3,
+          "azimuth_deg": 105.8
+        },
+        {
+          "clock_hour": 7.5,
+          "altitude_deg": 10.1,
+          "azimuth_deg": 110.3
+        },
+        {
+          "clock_hour": 8,
+          "altitude_deg": 15.8,
+          "azimuth_deg": 115.2
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 21.2,
+          "azimuth_deg": 120.5
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 26.3,
+          "azimuth_deg": 126.3
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 31.1,
+          "azimuth_deg": 132.7
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 35.3,
+          "azimuth_deg": 139.9
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 38.9,
+          "azimuth_deg": 148
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 41.8,
+          "azimuth_deg": 157
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 43.7,
+          "azimuth_deg": 166.7
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 44.6,
+          "azimuth_deg": 176.9
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 44.3,
+          "azimuth_deg": 187.2
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 43,
+          "azimuth_deg": 197.2
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 40.7,
+          "azimuth_deg": 206.7
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 37.5,
+          "azimuth_deg": 215.3
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 33.7,
+          "azimuth_deg": 223
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 29.2,
+          "azimuth_deg": 229.9
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 24.3,
+          "azimuth_deg": 236
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 19,
+          "azimuth_deg": 241.6
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 13.5,
+          "azimuth_deg": 246.7
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 7.7,
+          "azimuth_deg": 251.4
+        },
+        {
+          "clock_hour": 17.5,
+          "altitude_deg": 1.8,
+          "azimuth_deg": 255.8
+        }
+      ],
+      "radiation_kwh_m2_day": 4.47
+    },
+    {
+      "month": 11,
+      "label": {
+        "en": "Nov",
+        "fa": "نوامبر"
+      },
+      "date": "2026-11-21",
+      "sunrise": "07:05",
+      "sunset": "17:17",
+      "solar_noon": "12:11",
+      "day_length_hours": 10.21,
+      "sunrise_azimuth_deg": 114,
+      "sunset_azimuth_deg": 246,
+      "noon_altitude_deg": 35.3,
+      "positions": [
+        {
+          "clock_hour": 7.5,
+          "altitude_deg": 3.9,
+          "azimuth_deg": 117.4
+        },
+        {
+          "clock_hour": 8,
+          "altitude_deg": 9.2,
+          "azimuth_deg": 122.1
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 14.3,
+          "azimuth_deg": 127.1
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 19,
+          "azimuth_deg": 132.6
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 23.3,
+          "azimuth_deg": 138.6
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 27.1,
+          "azimuth_deg": 145.2
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 30.3,
+          "azimuth_deg": 152.4
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 32.8,
+          "azimuth_deg": 160.1
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 34.4,
+          "azimuth_deg": 168.4
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 35.2,
+          "azimuth_deg": 176.9
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 35.1,
+          "azimuth_deg": 185.5
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 34,
+          "azimuth_deg": 194
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 32.1,
+          "azimuth_deg": 202.1
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 29.4,
+          "azimuth_deg": 209.7
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 26,
+          "azimuth_deg": 216.7
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 22.1,
+          "azimuth_deg": 223.1
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 17.7,
+          "azimuth_deg": 229
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 12.9,
+          "azimuth_deg": 234.3
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 7.7,
+          "azimuth_deg": 239.2
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 2.3,
+          "azimuth_deg": 243.8
+        }
+      ],
+      "radiation_kwh_m2_day": 3.18
+    },
+    {
+      "month": 12,
+      "label": {
+        "en": "Dec",
+        "fa": "دسامبر"
+      },
+      "date": "2026-12-21",
+      "sunrise": "07:28",
+      "sunset": "17:16",
+      "solar_noon": "12:22",
+      "day_length_hours": 9.8,
+      "sunrise_azimuth_deg": 118.6,
+      "sunset_azimuth_deg": 241.4,
+      "noon_altitude_deg": 31.6,
+      "positions": [
+        {
+          "clock_hour": 8,
+          "altitude_deg": 4.8,
+          "azimuth_deg": 123
+        },
+        {
+          "clock_hour": 8.5,
+          "altitude_deg": 9.8,
+          "azimuth_deg": 127.8
+        },
+        {
+          "clock_hour": 9,
+          "altitude_deg": 14.5,
+          "azimuth_deg": 132.9
+        },
+        {
+          "clock_hour": 9.5,
+          "altitude_deg": 18.7,
+          "azimuth_deg": 138.5
+        },
+        {
+          "clock_hour": 10,
+          "altitude_deg": 22.6,
+          "azimuth_deg": 144.7
+        },
+        {
+          "clock_hour": 10.5,
+          "altitude_deg": 25.8,
+          "azimuth_deg": 151.3
+        },
+        {
+          "clock_hour": 11,
+          "altitude_deg": 28.4,
+          "azimuth_deg": 158.5
+        },
+        {
+          "clock_hour": 11.5,
+          "altitude_deg": 30.3,
+          "azimuth_deg": 166.1
+        },
+        {
+          "clock_hour": 12,
+          "altitude_deg": 31.4,
+          "azimuth_deg": 174
+        },
+        {
+          "clock_hour": 12.5,
+          "altitude_deg": 31.6,
+          "azimuth_deg": 182
+        },
+        {
+          "clock_hour": 13,
+          "altitude_deg": 30.9,
+          "azimuth_deg": 190.1
+        },
+        {
+          "clock_hour": 13.5,
+          "altitude_deg": 29.5,
+          "azimuth_deg": 197.8
+        },
+        {
+          "clock_hour": 14,
+          "altitude_deg": 27.2,
+          "azimuth_deg": 205.2
+        },
+        {
+          "clock_hour": 14.5,
+          "altitude_deg": 24.2,
+          "azimuth_deg": 212.1
+        },
+        {
+          "clock_hour": 15,
+          "altitude_deg": 20.7,
+          "azimuth_deg": 218.5
+        },
+        {
+          "clock_hour": 15.5,
+          "altitude_deg": 16.6,
+          "azimuth_deg": 224.3
+        },
+        {
+          "clock_hour": 16,
+          "altitude_deg": 12.1,
+          "azimuth_deg": 229.7
+        },
+        {
+          "clock_hour": 16.5,
+          "altitude_deg": 7.3,
+          "azimuth_deg": 234.7
+        },
+        {
+          "clock_hour": 17,
+          "altitude_deg": 2.1,
+          "azimuth_deg": 239.2
+        }
+      ],
+      "radiation_kwh_m2_day": 2.52
+    }
+  ],
+  "design_summary": {
+    "winter": {
+      "en": "Low southern winter sun offers useful gain, and the measured terrain horizon leaves it available; preserve controlled southern exposure.",
+      "fa": "خورشید کم‌ارتفاع جنوبی زمستان فرصت بهره حرارتی دارد؛ در صورت اجازه افق واقعی، مواجهه کنترل‌شده جنوبی حفظ شود."
+    },
+    "summer": {
+      "en": "High summer sun is readily shaded at noon, while west and southwest afternoon sun remains the overheating priority.",
+      "fa": "خورشید بلند تابستان در ظهر به‌راحتی سایه می‌شود؛ تابش عصرگاهی غرب و جنوب‌غرب اولویت کنترل بیش‌گرمایش است."
+    }
+  },
+  "warning": {
+    "en": "Sun positions are astronomical and the horizon is DEM-derived. Neither is a surveyed horizon, and neighbouring buildings are not modelled.",
+    "fa": "این ابزار مسیر نجومی خورشید/سایه است، نه شبیه‌سازی افق برداشت‌شده یا سایه‌اندازی بین ساختمان‌ها."
+  }
+}

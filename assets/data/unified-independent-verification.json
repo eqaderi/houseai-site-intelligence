@@ -1,0 +1,24 @@
+{
+  "verifier": "Independent Node.js outer-ring calculation from site-coordinates.csv",
+  "outer_order": [
+    "Pt2",
+    "Pt1",
+    "Pt7",
+    "Pt6",
+    "Pt5",
+    "Pt4",
+    "Pt3"
+  ],
+  "area_m2": 487.42856795087886,
+  "area_rounded_6": 487.428568,
+  "parcel_area_sum_m2": 487.428567946,
+  "perimeter_m": 87.88196286522236,
+  "requested_area_m2": 487.428568,
+  "checks": {
+    "rounds_to_requested": true,
+    "equals_parcel_sum": true,
+    "has_seven_outer_vertices": true,
+    "has_eight_survey_points": true
+  },
+  "passed": true
+}

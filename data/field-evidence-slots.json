@@ -1,0 +1,309 @@
+{
+  "status": "unresolved",
+  "intro": {
+    "en": "These slots stay empty until measured field evidence exists. Client-characterisation notes may appear under a slot without filling it — they are not surveys.",
+    "fa": "این جایگاه‌ها تا وجود شواهد میدانی اندازه‌گیری‌شده خالی می‌مانند. یادداشت توصیف کارفرما ممکن است زیر یک جایگاه بیاید بدون پر کردن آن — آن‌ها برداشت نیستند."
+  },
+  "groups": [
+    {
+      "id": "site-observation",
+      "title": {
+        "en": "Site observation media",
+        "fa": "رسانه مشاهده سایت"
+      },
+      "slots": [
+        {
+          "id": "site-photos",
+          "label": {
+            "en": "Site photographs",
+            "fa": "عکس‌های سایت"
+          },
+          "status": "unresolved"
+        },
+        {
+          "id": "panorama-360",
+          "label": {
+            "en": "360° panorama",
+            "fa": "پانورامای ۳۶۰ درجه"
+          },
+          "status": "unresolved"
+        },
+        {
+          "id": "neighbour-heights",
+          "label": {
+            "en": "Neighbouring buildings and heights",
+            "fa": "ساختمان‌ها و ارتفاع همسایه"
+          },
+          "status": "unresolved",
+          "note": {
+            "en": "Household: currently empty around the parcel — no houses built nearby. Confirm on site; photograph evidence still missing.",
+            "fa": "خانوار: اطراف قطعه فعلاً خالی است — خانه‌ای نزدیک ساخته نشده. در محل تأیید شود؛ شواهد عکسی هنوز نیست."
+          }
+        },
+        {
+          "id": "privacy-views",
+          "label": {
+            "en": "Privacy and view corridors",
+            "fa": "حریم و کریدور دید"
+          },
+          "status": "unresolved",
+          "note": {
+            "en": "Empty surroundings today reduce immediate overlooking risk; still record view corridors when the house sits high on the upper road.",
+            "fa": "خالی بودن اطراف امروز ریسک دید مستقیم را کم می‌کند؛ وقتی خانه بالا روی راه بالایی بنشیند، کریدور دید هنوز ثبت شود."
+          }
+        },
+        {
+          "id": "existing-trees",
+          "label": {
+            "en": "Existing trees and structures",
+            "fa": "درختان و سازه‌های موجود"
+          },
+          "status": "unresolved"
+        },
+        {
+          "id": "visible-utilities",
+          "label": {
+            "en": "Visible utilities",
+            "fa": "تأسیسات قابل‌مشاهده"
+          },
+          "status": "unresolved",
+          "note": {
+            "en": "Household: electricity, gas and water exist in the area but are not yet on the parcel. Photograph poles, pipes and valves on site; written provider enquiry still required.",
+            "fa": "خانوار: برق، گاز و آب در منطقه هست اما هنوز روی قطعه نیست. تیرها، لوله‌ها و شیرها را در محل عکس بگیرید؛ استعلام کتبی هنوز لازم است."
+          }
+        }
+      ]
+    },
+    {
+      "id": "road-access",
+      "title": {
+        "en": "Road and access",
+        "fa": "راه و دسترسی"
+      },
+      "slots": [
+        {
+          "id": "road-width",
+          "label": {
+            "en": "Road width",
+            "fa": "عرض راه"
+          },
+          "status": "unresolved",
+          "note": {
+            "en": "Upper Pt2–Pt1 is the main usable frontage for cars and fire access (10.270569 m length measured; 4 m width still illustrative). Lower road is rough/seasonal — possible utility route, not main entry.",
+            "fa": "Pt2–Pt1 بالایی بر اصلی قابل‌استفاده برای خودرو و آتش است (طول ۱۰٫۲۷۰۵۶۹ متر؛ عرض ۴ متر هنوز نمایشی). راه پایینی rough/فصلی — مسیر محتمل تأسیسات، نه ورود اصلی."
+          }
+        },
+        {
+          "id": "longitudinal-grade",
+          "label": {
+            "en": "Longitudinal grade",
+            "fa": "شیب طولی"
+          },
+          "status": "unresolved"
+        },
+        {
+          "id": "crossfall",
+          "label": {
+            "en": "Crossfall",
+            "fa": "شیب عرضی"
+          },
+          "status": "unresolved"
+        },
+        {
+          "id": "gate-position",
+          "label": {
+            "en": "Gate position",
+            "fa": "موقعیت دروازه"
+          },
+          "status": "unresolved",
+          "note": {
+            "en": "Preference: main gate on upper frontage for 2–3 cars. Optional lower gate with stairs for a necessary stop / house link. Neither position is surveyed.",
+            "fa": "ترجیح: دروازه اصلی روی بر بالایی برای دو–سه خودرو. دروازه اختیاری پایین با پله برای توقف ضروری / اتصال به خانه. هیچ‌کدام برداشت نشده."
+          }
+        },
+        {
+          "id": "swept-path",
+          "label": {
+            "en": "Turning swept path",
+            "fa": "مسیر جاروب گردش"
+          },
+          "status": "unresolved",
+          "note": {
+            "en": "Size for two or three cars at the upper entry once grade and width are measured.",
+            "fa": "پس از اندازه‌گیری شیب و عرض، برای دو یا سه خودرو در ورود بالایی اندازه شود."
+          }
+        },
+        {
+          "id": "emergency-access",
+          "label": {
+            "en": "Emergency access",
+            "fa": "دسترسی اضطراری"
+          },
+          "status": "unresolved",
+          "note": {
+            "en": "Household expects fire-service access from the upper road (more usable). Confirm clearance and approach with local requirements.",
+            "fa": "خانوار دسترسی آتش را از راه بالایی (قابل‌استفاده‌تر) انتظار دارد. فضای آزاد و مسیر نزدیک‌شدن را با ضوابط محلی تأیید کنید."
+          }
+        },
+        {
+          "id": "construction-access",
+          "label": {
+            "en": "Construction access",
+            "fa": "دسترسی کارگاهی"
+          },
+          "status": "unresolved"
+        }
+      ]
+    },
+    {
+      "id": "hydrology",
+      "title": {
+        "en": "Hydrology",
+        "fa": "هیدرولوژی"
+      },
+      "slots": [
+        {
+          "id": "upstream-catchment",
+          "label": {
+            "en": "Upstream catchment",
+            "fa": "حوضه بالادست"
+          },
+          "status": "unresolved"
+        },
+        {
+          "id": "concentrated-flows",
+          "label": {
+            "en": "Concentrated flows",
+            "fa": "جریان‌های متمرکز"
+          },
+          "status": "unresolved"
+        },
+        {
+          "id": "legal-outfall",
+          "label": {
+            "en": "Legal outfall",
+            "fa": "خروجی قانونی"
+          },
+          "status": "unresolved"
+        },
+        {
+          "id": "drainage-rights",
+          "label": {
+            "en": "Drainage rights",
+            "fa": "حقوق زهکشی"
+          },
+          "status": "unresolved"
+        },
+        {
+          "id": "parcel-flood",
+          "label": {
+            "en": "Parcel flood study",
+            "fa": "مطالعه سیل قطعه"
+          },
+          "status": "unresolved"
+        },
+        {
+          "id": "erosion-control",
+          "label": {
+            "en": "Erosion-control strategy",
+            "fa": "راهبرد کنترل فرسایش"
+          },
+          "status": "unresolved"
+        }
+      ]
+    },
+    {
+      "id": "utilities-logistics",
+      "title": {
+        "en": "Utilities and logistics",
+        "fa": "تأسیسات و لجستیک"
+      },
+      "slots": [
+        {
+          "id": "electricity",
+          "label": {
+            "en": "Electricity capacity and connection",
+            "fa": "ظرفیت و اتصال برق"
+          },
+          "status": "unresolved",
+          "note": {
+            "en": "Household: network exists around the area but not yet to the parcel. Capacity and meter point still need written utility answer.",
+            "fa": "خانوار: شبکه در منطقه هست اما هنوز به قطعه نرسیده. ظرفیت و محل کنتور هنوز پاسخ کتبی می‌خواهد."
+          }
+        },
+        {
+          "id": "water",
+          "label": {
+            "en": "Water capacity and connection",
+            "fa": "ظرفیت و اتصال آب"
+          },
+          "status": "unresolved",
+          "note": {
+            "en": "Household: water exists around the area but not yet to the parcel. Written provider enquiry required.",
+            "fa": "خانوار: آب در منطقه هست اما هنوز به قطعه نرسیده. استعلام کتبی لازم است."
+          }
+        },
+        {
+          "id": "wastewater",
+          "label": {
+            "en": "Wastewater",
+            "fa": "فاضلاب"
+          },
+          "status": "unresolved",
+          "note": {
+            "en": "Not described by the household — written provider enquiry required (or on-site treatment if no network).",
+            "fa": "خانوار توصیف نکرده — استعلام کتبی لازم است (یا تصفیه در محل اگر شبکه نباشد)."
+          }
+        },
+        {
+          "id": "communications",
+          "label": {
+            "en": "Communications",
+            "fa": "ارتباطات"
+          },
+          "status": "unresolved",
+          "note": {
+            "en": "Not described — written provider enquiry required.",
+            "fa": "توصیف نشده — استعلام کتبی لازم است."
+          }
+        },
+        {
+          "id": "connection-points",
+          "label": {
+            "en": "Connection points",
+            "fa": "نقاط اتصال"
+          },
+          "status": "unresolved",
+          "note": {
+            "en": "Household possibility: electricity, gas and water most probably approach from the lower road. Unconfirmed — providers must mark the real tie-in points. Gas is named as present in the area but not on the parcel.",
+            "fa": "احتمال خانوار: برق، گاز و آب احتمالاً از راه پایینی نزدیک می‌شوند. تأییدنشده — شرکت‌ها باید نقطه واقعی اتصال را مشخص کنند. گاز در منطقه گفته شده هست اما روی قطعه نیست."
+          }
+        },
+        {
+          "id": "staging",
+          "label": {
+            "en": "Construction staging",
+            "fa": "جانمایی کارگاهی"
+          },
+          "status": "unresolved"
+        },
+        {
+          "id": "delivery",
+          "label": {
+            "en": "Delivery constraints",
+            "fa": "محدودیت‌های تحویل"
+          },
+          "status": "unresolved"
+        },
+        {
+          "id": "cost-impact",
+          "label": {
+            "en": "Probable cost impacts",
+            "fa": "اثرهای احتمالی هزینه"
+          },
+          "status": "unresolved"
+        }
+      ]
+    }
+  ]
+}

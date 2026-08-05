@@ -1,0 +1,1101 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Offline bilingual survey, terrain and environmental evidence interface for Family House 001.">
+    <title>Family House 001 — Site Intelligence</title>
+    <!--
+      app.js is the last of four scripts, behind 670 KB of synchronous Three.js,
+      so a returning Persian reader saw the whole page laid out left-to-right
+      before it flipped. This sets direction and theme before the stylesheet is
+      even applied. It deliberately does not hide the page until JS runs: if
+      app.js throws, visible English beats a blank offline archival document.
+    -->
+    <script>
+      try {
+        var houseaiLang = localStorage.getItem("houseai-language");
+        var houseaiTheme = localStorage.getItem("houseai-theme");
+        if (houseaiLang) {
+          document.documentElement.lang = houseaiLang;
+          document.documentElement.dir = houseaiLang === "fa" ? "rtl" : "ltr";
+        }
+        if (houseaiTheme) document.documentElement.dataset.theme = houseaiTheme;
+      } catch (error) {
+        // file:// privacy modes disable storage; the default markup stands.
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css?v=p3">
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <header class="site-header" id="top">
+      <a class="brand" href="#overview" data-i18n-aria-label="ariaHome" aria-label="Site Intelligence home">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span>
+          <strong>HOUSEAI</strong>
+          <small data-i18n="project">SITE / 001</small>
+        </span>
+      </a>
+      <nav class="desktop-nav" data-i18n-aria-label="ariaPrimaryNav" aria-label="Primary navigation">
+        <a href="#overview" data-i18n="overview">Overview</a>
+        <a href="#survey" data-i18n="survey">Survey &amp; geometry</a>
+        <a href="#terrain" data-i18n="terrain">Terrain &amp; slope</a>
+        <a href="#geography" data-i18n="geography">Geographic context</a>
+        <a href="#climate" data-i18n="climate">Climate</a>
+        <a href="#solar" data-i18n="solar">Sun &amp; shadow</a>
+        <a href="#wind" data-i18n="wind">Wind</a>
+        <a href="#hazards" data-i18n="hazards">Hazards &amp; engineering</a>
+        <a href="#architecture" data-i18n="architecture">Architectural implications</a>
+        <a href="#species" data-i18n="species">Trees &amp; planting</a>
+        <a href="#field-evidence" data-i18n="fieldEvidenceTitle">Field evidence</a>
+        <a href="#future-analysis" data-i18n="futureAnalysisKicker">Future analysis</a>
+        <a href="#investigations" data-i18n="investigations">Investigations needed</a>
+        <a href="#documents" data-i18n="documents">Documents &amp; downloads</a>
+        <a href="#methodology" data-i18n="methodology">Sources &amp; methodology</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Toggle colour theme">
+          <span aria-hidden="true">◐</span>
+          <span class="action-label" data-i18n="theme">Theme</span>
+        </button>
+        <button class="language-button" id="language-toggle" type="button" data-i18n-aria-label="ariaSwitchLanguage" aria-label="Switch language">
+          <span data-i18n="language">FA</span>
+        </button>
+        <button class="icon-button menu-button" id="menu-toggle" type="button" data-i18n-aria-label="menu" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span aria-hidden="true">☰</span>
+          <span class="action-label" data-i18n="menu">Menu</span>
+        </button>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" data-i18n-aria-label="ariaMobileNav" aria-label="Mobile navigation" hidden>
+        <a href="#overview" data-i18n="overview">Overview</a>
+        <a href="#survey" data-i18n="survey">Survey &amp; geometry</a>
+        <a href="#terrain" data-i18n="terrain">Terrain &amp; slope</a>
+        <a href="#geography" data-i18n="geography">Geographic context</a>
+        <a href="#climate" data-i18n="climate">Climate</a>
+        <a href="#solar" data-i18n="solar">Sun &amp; shadow</a>
+        <a href="#wind" data-i18n="wind">Wind</a>
+        <a href="#hazards" data-i18n="hazards">Hazards &amp; engineering</a>
+        <a href="#architecture" data-i18n="architecture">Architectural implications</a>
+        <a href="#species" data-i18n="species">Trees &amp; planting</a>
+        <a href="#field-evidence" data-i18n="fieldEvidenceTitle">Field evidence</a>
+        <a href="#future-analysis" data-i18n="futureAnalysisKicker">Future analysis</a>
+        <a href="#investigations" data-i18n="investigations">Investigations needed</a>
+        <a href="#documents" data-i18n="documents">Documents &amp; downloads</a>
+        <a href="#methodology" data-i18n="methodology">Sources &amp; methodology</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <nav class="page-toc" id="page-toc" data-i18n-aria-label="tocLabel" aria-label="Section table of contents">
+        <p class="kicker" data-i18n="tocTitle">On this page</p>
+        <ol id="page-toc-list" class="page-toc-list"></ol>
+      </nav>
+      <section class="hero" id="overview" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">IMMUTABLE SITE VERSION · v1-three-fields</p>
+          <h1 id="hero-title" data-i18n-html="heroTitle">A steep mountain site.<br><span>Now read in its real climate.</span></h1>
+          <p class="hero-summary" data-i18n="heroSummary">A bilingual evidence interface for a 487.428568 m² family-house site at a probable project location near Baneh Verdeh—combining verified drawing geometry with traceable climate, sun, wind and regional hazards.</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#terrain">
+              <span data-i18n="viewEvidence">Explore evidence</span>
+              <span aria-hidden="true">↘</span>
+            </a>
+            <span class="status-pill verified"><span class="status-dot"></span><span data-i18n="verified">Verified</span>&nbsp;<bdi data-metric="area">487.428568</bdi> m²</span>
+          </div>
+        </div>
+        <div class="hero-visual card-dark" data-i18n-aria-label="ariaHeroBoundary" aria-label="Animated drawing-derived site boundary">
+          <div class="canvas-label">
+            <span data-i18n="boundary">Unified drawing boundary</span>
+            <small>Pt2 → Pt1 → Pt7 → Pt6 → Pt5 → Pt4 → Pt3</small>
+          </div>
+          <canvas id="hero-site-canvas" role="img" data-i18n-aria-label="ariaBoundaryPlan" aria-label="North-up unified seven-point drawing boundary with Pt8 interior terrain point and southern road edge"></canvas>
+          <div class="hero-visual-footer">
+            <span><i class="legend-line road-line"></i><span data-i18n="road">Road access</span> · Pt2–Pt1</span>
+            <span><i class="legend-line fall-line"></i><span data-i18n="fall">Primary fall</span> · NE</span>
+          </div>
+        </div>
+        <div class="metric-rail" data-i18n-aria-label="ariaSiteMetrics" aria-label="Key site metrics">
+          <article>
+            <span data-i18n="area">Verified drawing-plan area</span>
+            <strong><bdi data-metric="area">487.428568</bdi> <small>m²</small></strong>
+          </article>
+          <article>
+            <span data-i18n="elevation">Elevation range</span>
+            <strong><bdi data-metric="elevationRange">1647.899–1659.653</bdi> <small>m</small></strong>
+          </article>
+          <article>
+            <span data-i18n="relief">Terrain relief</span>
+            <strong><bdi data-metric="relief">11.754</bdi> <small>m</small></strong>
+          </article>
+          <article>
+            <span data-i18n="fall">Primary fall</span>
+            <strong data-i18n="fallValue">Northeast</strong>
+          </article>
+          <article>
+            <span data-i18n="road">Road access</span>
+            <strong data-i18n="roadValue">Pt2–Pt1 · south</strong>
+          </article>
+          <article>
+            <span data-i18n="north">North</span>
+            <strong data-i18n="northValue">Drawing +Y</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-overview" aria-labelledby="overview-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="overviewKicker">The site at a glance</p>
+            <h2 id="overview-title" data-i18n="overviewTitle">One drawing geometry, seven outer points, one steep terrain story</h2>
+          </div>
+          <p data-i18n="overviewLead">The three source polygons have been unified without changing their verified combined drawing area. Pt8 is retained only as an interior terrain point; legal and cadastral status remain unresolved.</p>
+        </header>
+        <section class="readiness-panel" aria-labelledby="readiness-title">
+          <header>
+            <div>
+              <p class="kicker" data-i18n="readinessKicker">Architectural readiness</p>
+              <h3 id="readiness-title" data-i18n="readinessTitle">What can move now—and what blocks concept design</h3>
+            </div>
+            <p data-i18n="readinessLead">A decision gate, not a completion badge. Each state names the evidence that sets its limit.</p>
+          </header>
+          <p class="readiness-summary" id="readiness-summary" role="status"></p>
+          <div class="readiness-grid" id="readiness-grid"></div>
+        </section>
+        <section class="handoff-panel" id="architect-handoff" aria-labelledby="handoff-title">
+          <header>
+            <div>
+              <p class="kicker" data-i18n="handoffKicker">Architect handoff</p>
+              <h3 id="handoff-title" data-i18n="handoffTitle">What may be used, what is provisional, and what must wait</h3>
+            </div>
+            <p data-i18n="handoffLead">One bilingual brief for the next designer. Numbers stay evidence; missing field work stays open.</p>
+          </header>
+          <div class="handoff-grid" id="handoff-grid"></div>
+        </section>
+        <div class="overview-grid">
+          <article class="story-card story-terrain">
+            <span class="story-index">01</span>
+            <h3 data-i18n="terrainStory">Terrain story</h3>
+            <p data-i18n="terrainStoryText">The road edge is high at Pt2/Pt1. All seven TIN facets descend generally northeast toward the low Pt5/Pt6 side.</p>
+            <div class="elevation-strip" id="elevation-strip" data-i18n-aria-label="ariaElevationStrip" aria-label="Elevation range strip"></div>
+          </article>
+          <article class="story-card">
+            <span class="story-index">02</span>
+            <h3 data-i18n="evidenceState">Evidence state</h3>
+            <p data-i18n="evidenceStateText">Drawing geometry and the terrain model are verified. The probable project location rests on a strong-probable CRS interpretation that is not surveyor-certified; all five environmental modules remain preliminary at parcel scale.</p>
+            <div class="evidence-meter" data-i18n-aria-label="ariaEvidenceStatus" aria-label="Evidence module status">
+              <span class="ready" data-i18n-title="survey" title="Survey"></span>
+              <span class="ready" data-i18n-title="terrain" title="Terrain"></span>
+              <span class="ready regional" data-i18n-title="geography" title="Geography"></span>
+              <span class="ready regional" data-i18n-title="climate" title="Climate"></span>
+              <span class="ready regional" data-i18n-title="solar" title="Solar"></span>
+              <span class="ready regional" data-i18n-title="wind" title="Wind"></span>
+              <span class="ready regional" data-i18n-title="hazards" title="Hazards"></span>
+            </div>
+          </article>
+          <article class="status-board">
+            <div>
+              <span data-i18n="status">Project status</span>
+              <strong id="project-status">Pre-design environmental analysis complete · parcel-scale verification remains open</strong>
+            </div>
+            <div>
+              <span data-i18n="geoStatus">Geolocation confidence</span>
+              <strong class="preliminary-text"><span class="status-dot"></span><span data-i18n="geoUnresolved">Strong-probable · not certified</span></strong>
+            </div>
+            <div>
+              <span data-i18n="locationLabel">Probable project location</span>
+              <strong id="hero-location">Baneh Verdeh · Paveh County · Iran</strong>
+            </div>
+            <div>
+              <span data-i18n="crsCertification">Probable CRS · not surveyor-certified</span>
+              <strong><bdi>WGS 84 / UTM 38N · EPSG:32638</bdi><br><bdi>34.971316° N · 46.355594° E</bdi></strong>
+            </div>
+            <div>
+              <span data-i18n="sevenOuter">7 outer points</span>
+              <strong>Pt2 → Pt1 → Pt7 → Pt6 → Pt5 → Pt4 → Pt3</strong>
+            </div>
+            <div>
+              <span data-i18n="oneInterior">Pt8 interior terrain point</span>
+              <strong><bdi>623747.303 / 3870701.321 / 1654.509 m</bdi></strong>
+            </div>
+          </article>
+        </div>
+        <section class="client-brief-panel" aria-labelledby="client-brief-title">
+          <header>
+            <div>
+              <p class="kicker" data-i18n="clientBriefKicker">Client / project brief</p>
+              <h3 id="client-brief-title" data-i18n="clientBriefTitle">Twelve decisions the household still needs to make</h3>
+            </div>
+            <p data-i18n="clientBriefLead">Unanswered items stay unresolved; no program, budget or lifestyle requirement is inferred.</p>
+          </header>
+          <p id="client-brief-note"></p>
+          <dl class="client-brief-grid" id="client-brief-grid"></dl>
+        </section>
+      </section>
+
+      <section class="section section-tinted" id="survey" aria-labelledby="survey-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="surveyKicker">Source geometry</p>
+            <h2 id="survey-title" data-i18n="surveyTitle">From three survey polygons to one verified drawing geometry</h2>
+          </div>
+          <p data-i18n="surveyLead">The drawing-boundary story remains auditable: source polygons, point associations, side lengths, area checks and cryptographic hashes are retained. This verification is not cadastral or proof of ownership.</p>
+        </header>
+        <div class="survey-summary-grid">
+          <article class="image-card">
+            <button class="image-open" type="button" data-lightbox="assets/diagrams/original-three-polygons.png" data-alt-en="Original three survey polygons with point elevations" data-alt-fa="سه چندضلعی اولیه نقشه‌برداری با تراز نقاط">
+              <img src="assets/diagrams/original-three-polygons.png" alt="Original three survey polygons with point elevations" loading="lazy">
+              <span class="expand-badge" aria-hidden="true">↗</span>
+            </button>
+            <div class="image-caption">
+              <strong data-i18n="originalPolygons">Original polygons</strong>
+              <span>A · 160.330387 m² &nbsp; B · 126.022556 m² &nbsp; C · 201.075625 m²</span>
+            </div>
+          </article>
+          <div class="polygon-cards" id="polygon-cards"></div>
+        </div>
+        <article class="callout-card association-callout" id="label-association-card" aria-labelledby="label-association-title">
+          <p class="kicker" data-i18n="labelAssociationTitle">Elevation-label association uncertainty</p>
+          <h3 id="label-association-title"><bdi id="label-association-max">3.875 m</bdi></h3>
+          <p id="label-association-note"></p>
+        </article>
+        <div class="table-card">
+          <div class="table-toolbar">
+            <div>
+              <p class="kicker" data-i18n="coordinates">Survey coordinates</p>
+              <h3>8 SurveyPoint labels</h3>
+            </div>
+            <label class="search-field">
+              <span aria-hidden="true">⌕</span>
+              <span class="sr-only" data-i18n="searchPoints">Search point or role</span>
+              <input type="search" id="point-search" data-i18n-placeholder="searchPoints" placeholder="Search point or role…">
+            </label>
+          </div>
+          <div class="table-scroll">
+            <table id="points-table">
+              <thead>
+                <tr>
+                  <th><button type="button" data-sort="id"><span data-i18n="point">Point</span><span aria-hidden="true">↕</span></button></th>
+                  <th><button type="button" data-sort="x_m"><span data-i18n="easting">X / Easting-like (m)</span><span aria-hidden="true">↕</span></button></th>
+                  <th><button type="button" data-sort="y_m"><span data-i18n="northing">Y / Northing-like (m)</span><span aria-hidden="true">↕</span></button></th>
+                  <th><button type="button" data-sort="latitude"><span data-i18n="latitude">Latitude</span><span aria-hidden="true">↕</span></button></th>
+                  <th><button type="button" data-sort="longitude"><span data-i18n="longitude">Longitude</span><span aria-hidden="true">↕</span></button></th>
+                  <th><button type="button" data-sort="elevation_m"><span data-i18n="level">Elevation (m)</span><span aria-hidden="true">↕</span></button></th>
+                  <th data-i18n="role">Role</th>
+                  <th><button type="button" data-sort="association_distance_m"><span data-i18n="association">Label offset (m)</span><span aria-hidden="true">↕</span></button></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="evidence-notes two-up">
+          <article>
+            <span class="note-number">A</span>
+            <h3 data-i18n="methodologyLabel">Survey methodology</h3>
+            <p id="survey-methodology"></p>
+          </article>
+          <article>
+            <span class="note-number">B</span>
+            <h3 data-i18n="sourceIntegrity">Source integrity</h3>
+            <dl class="hash-list">
+              <div><dt>DWG · SHA-256</dt><dd id="dwg-hash"></dd></div>
+              <div><dt>DXF · SHA-256</dt><dd id="dxf-hash"></dd></div>
+            </dl>
+            <a class="text-link" href="assets/data/site-base-SHA256SUMS.txt" target="_blank" rel="noopener" data-i18n="hashManifest">Open SHA-256 manifest</a>
+          </article>
+          <article class="legal-scope-note">
+            <span class="note-number">C</span>
+            <h3 data-i18n="legalScopeTitle">Drawing verification is not legal verification</h3>
+            <p id="property-verification-scope"></p>
+            <dl class="verification-list" id="property-verification-list"></dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="terrain" aria-labelledby="terrain-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="terrainKicker">Eight-point terrain model</p>
+            <h2 id="terrain-title" data-i18n="terrainTitle">11.754 metres of relief across a compact property</h2>
+          </div>
+          <p data-i18n="terrainLead">The verified spot elevations support a preliminary TIN, one-metre contours and two analytical sections—not construction earthwork quantities.</p>
+        </header>
+        <article class="terrain-3d-card" aria-labelledby="terrain-3d-title">
+          <div class="terrain-3d-copy">
+            <div>
+              <p class="kicker" data-i18n="terrain3dKicker">Surveyed terrain · interactive 3D</p>
+              <h3 id="terrain-3d-title" data-i18n="terrain3dTitle">Read the 11.754-metre fall in three dimensions</h3>
+            </div>
+            <p data-i18n="terrain3dLead">This surface uses only the eight surveyed spot elevations and seven verified TIN facets. Drag to orbit, scroll to zoom, and compare the road, boundary and contours.</p>
+          </div>
+          <div class="terrain-3d-toolbar">
+            <div class="segmented-control terrain-view-control" role="group" data-i18n-aria-label="ariaViewpoint" aria-label="3D terrain viewpoint">
+              <button class="active" type="button" data-terrain-view="perspective" data-i18n="perspectiveView" aria-pressed="true">Perspective</button>
+              <button type="button" data-terrain-view="top" data-i18n="topView" aria-pressed="false">Top</button>
+              <button type="button" data-terrain-view="road" data-i18n="roadView" aria-pressed="false">From road</button>
+              <button type="button" data-terrain-view="hillside" data-i18n="hillsideView" aria-pressed="false">Hillside</button>
+            </div>
+            <div class="terrain-3d-options">
+              <label><input id="terrain-3d-contours" type="checkbox" checked><span data-i18n="showContours">Contours</span></label>
+              <label><input id="terrain-3d-points" type="checkbox" checked><span data-i18n="showPoints">Survey points</span></label>
+              <label class="terrain-scale-label">
+                <span data-i18n="verticalScale">Vertical scale</span>
+                <select id="terrain-3d-scale" data-i18n-aria-label="verticalScale" aria-label="Vertical scale">
+                  <option value="1">1×</option>
+                  <option value="1.5">1.5×</option>
+                  <option value="2">2×</option>
+                </select>
+              </label>
+              <label><input id="terrain-3d-trace" type="checkbox"><span data-i18n="shadowTrace">Shadow path</span></label>
+              <label><input id="terrain-3d-horizon" type="checkbox"><span data-i18n="showHorizon">Terrain horizon</span></label>
+              <label><input id="terrain-3d-hillside" type="checkbox" checked><span data-i18n="showHillside">Surrounding hillside</span></label>
+              <label><input id="terrain-3d-roads" type="checkbox" checked><span data-i18n="showRoads">Roads</span></label>
+              <label><input id="terrain-3d-trees" type="checkbox" checked><span data-i18n="showTrees">Trees (illustrative)</span></label>
+              <label><input id="terrain-3d-concepts" type="checkbox"><span data-i18n="showConcepts">Concept studies</span></label>
+              <label><input id="terrain-3d-wind" type="checkbox"><span data-i18n="showWind">Prevailing wind</span></label>
+              <button class="secondary-button terrain-reset" id="terrain-3d-reset" type="button" data-i18n="resetView">Reset view</button>
+            </div>
+            <!-- Mirrors the solar explorer's controls onto the view that actually
+                 shows shadows, so the sun can be moved without leaving it. Both
+                 sets drive the same state through the data-solar-* hooks. -->
+            <div class="terrain-3d-sun" role="group" data-i18n-aria-label="ariaSunPosition" aria-label="Sun position">
+              <div class="segmented-control terrain-sun-seasons">
+                <button class="active" type="button" data-solar-season="winter" data-i18n="winter" aria-pressed="true">Winter solstice</button>
+                <button type="button" data-solar-season="equinox" data-i18n="equinox" aria-pressed="false">Equinox</button>
+                <button type="button" data-solar-season="summer" data-i18n="summer" aria-pressed="false">Summer solstice</button>
+              </div>
+              <div class="terrain-sun-time">
+                <button class="secondary-button solar-play" id="terrain-3d-play" type="button" data-solar-play aria-pressed="false">Play</button>
+                <input id="terrain-3d-time" type="range" data-solar-time step="any" data-i18n-aria-label="ariaSunTime" aria-label="Sun time of day" aria-valuetext="12:00">
+                <bdi data-solar-time-label>12:00</bdi>
+              </div>
+            </div>
+          </div>
+          <div
+            class="terrain-3d-stage"
+            id="terrain-3d-stage"
+            role="img"
+            tabindex="0"
+            aria-label="Interactive three-dimensional TIN terrain model from eight surveyed elevations"
+            aria-describedby="terrain-3d-hint terrain-3d-evidence"
+          >
+            <!-- No static north badge here: the stage orbits, so a fixed arrow
+                 stops pointing north as soon as the camera moves. North is
+                 indicated in-scene by an arrow and label that rotate with it. -->
+            <div class="terrain-3d-gradient" aria-hidden="true">
+              <span><bdi data-metric="elevationMax">1659.653 m</bdi></span>
+              <i></i>
+              <span><bdi data-metric="elevationMin">1647.899 m</bdi></span>
+            </div>
+            <p class="terrain-3d-fallback" id="terrain-3d-fallback" data-i18n="webglUnavailable" hidden>Interactive 3D is unavailable in this browser. The drawing-derived 2D terrain plan remains available below.</p>
+          </div>
+          <div class="terrain-3d-footer">
+            <p id="terrain-3d-hint" data-i18n="terrain3dHint">Drag to orbit · scroll or pinch to zoom · arrow keys also rotate</p>
+            <p id="terrain-3d-evidence" data-i18n="terrain3dEvidence">8 measured points · 7 TIN facets · hillside is the surveyed 38.27% slope eased into a 90 m DEM · trees illustrative · lower road client-reported</p>
+            <ul class="layer-provenance" id="layer-provenance" data-i18n-aria-label="layerProvenance" aria-label="3D layer evidence classes">
+              <li><span data-i18n="provMeasured">Measured / drawing-derived</span> — <span data-i18n="provMeasuredItems">TIN parcel, contours, survey points, upper road edge Pt2–Pt1</span></li>
+              <li><span data-i18n="provRegional">Regional</span> — <span data-i18n="provRegionalItems">Surrounding hillside beyond the surveyed plane (90 m DEM blend)</span></li>
+              <li><span data-i18n="provClient">Client-reported</span> — <span data-i18n="provClientItems">Lower road (not in the survey drawing)</span></li>
+              <li><span data-i18n="provIllustrative">Illustrative</span> — <span data-i18n="provIllustrativeItems">Trees and wind motion (not measured vegetation or parcel wind)</span></li>
+            </ul>
+            <p class="terrain-3d-withheld" id="terrain-3d-withheld" data-i18n="shadowWithheld" hidden>Vertical exaggeration active · metric shadow length and the shadow path are withheld</p>
+          </div>
+        </article>
+        <div class="terrain-map-card">
+          <div class="map-toolbar">
+            <div>
+              <h3 data-i18n="boundary">Unified drawing boundary</h3>
+              <p data-i18n="boundaryCaption">Real survey geometry · north-up · road edge highlighted</p>
+            </div>
+            <div class="toggle-group">
+              <label><input type="checkbox" id="contour-toggle" checked><span data-i18n="toggleContours">Contours</span></label>
+              <label><input type="checkbox" id="label-toggle" checked><span data-i18n="toggleLabels">Point labels</span></label>
+            </div>
+          </div>
+          <canvas id="terrain-canvas" role="img" data-i18n-aria-label="ariaTerrainMap" aria-label="Interactive north-up terrain view with unified drawing boundary, TIN contours and measured elevations"></canvas>
+          <div class="map-legend">
+            <span><i class="dot high"></i><bdi data-metric="elevationMax">1659.653 m</bdi></span>
+            <span class="gradient-bar"></span>
+            <span><i class="dot low"></i><bdi data-metric="elevationMin">1647.899 m</bdi></span>
+            <span class="legend-divider"></span>
+            <span><i class="legend-line road-line"></i>Pt2–Pt1 · <bdi data-metric="roadLength">10.270569 m</bdi></span>
+          </div>
+        </div>
+        <div class="terrain-data-grid">
+          <article class="chart-card profile-card profile-card-featured">
+            <div class="chart-heading">
+              <div>
+                <p class="kicker" data-i18n="profile">Interactive elevation profile</p>
+                <h3 id="profile-title">Longitudinal Section L–L (South–North)</h3>
+              </div>
+              <div class="segmented-control" role="group" data-i18n-aria-label="ariaSectionProfile" aria-label="Section profile">
+                <button class="active" type="button" data-section="longitudinal" data-i18n="longitudinal" aria-pressed="true">South–north</button>
+                <button type="button" data-section="transverse" data-i18n="transverse" aria-pressed="false">West–east</button>
+              </div>
+            </div>
+            <div class="profile-summary" id="profile-summary"></div>
+            <canvas id="profile-canvas" role="img" data-i18n-aria-label="ariaProfileChart" aria-label="Interactive terrain elevation profile"></canvas>
+            <p class="chart-hint" data-i18n="hoverProfile">Move across the chart to inspect distance and elevation.</p>
+            <p class="source-note profile-scope" id="profile-scope"></p>
+          </article>
+          <article class="chart-card slopes-card">
+            <div class="chart-heading">
+              <div>
+                <p class="kicker" data-i18n="slopeFacets">TIN facet slopes</p>
+                <h3><bdi>34.52%–44.03%</bdi></h3>
+              </div>
+              <span class="status-pill preliminary"><span class="status-dot"></span><span data-i18n="preliminary">Preliminary</span></span>
+            </div>
+            <div id="slope-bars" class="slope-bars"></div>
+          </article>
+        </div>
+        <div class="terrain-insights">
+          <article>
+            <p class="kicker" data-i18n="slopeRisks">Cut, fill &amp; drainage risks</p>
+            <div id="terrain-risks" class="risk-list"></div>
+            <h4 class="derived-heading" data-i18n="facetGeometry">Facet geometry</h4>
+            <div id="terrain-metrics" class="evidence-metrics"></div>
+            <p class="source-note" id="terrain-metrics-note"></p>
+            <h4 class="derived-heading" data-i18n="levelPlatform">Building on the level</h4>
+            <div class="platform-use-warning" id="platform-design-use" role="note"></div>
+            <p class="source-note" id="platform-difference"></p>
+            <div id="platform-metrics" class="evidence-metrics"></div>
+            <details class="disclosure-panel">
+              <summary data-i18n="platformDetails">Exploratory platform table (details)</summary>
+              <div class="table-shell">
+                <table id="platform-table" class="data-table">
+                  <thead>
+                    <tr>
+                      <th data-i18n="platformLevel">Platform level</th>
+                      <th data-i18n="platformCutArea">Area to cut</th>
+                      <th data-i18n="platformFillArea">Area to fill</th>
+                      <th data-i18n="platformMaxCut">Deepest cut</th>
+                      <th data-i18n="platformMaxFill">Deepest fill</th>
+                      <th data-i18n="platformWithin">Within ±1.5 m</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </details>
+            <p class="source-note" id="platform-note"></p>
+          </article>
+          <article class="limits-card">
+            <p class="kicker" data-i18n="modelLimits">What this model cannot see</p>
+            <ul id="terrain-limits"></ul>
+          </article>
+        </div>
+        <div class="diagram-gallery" data-i18n-aria-label="diagrams" aria-label="Terrain technical diagrams">
+          <header>
+            <p class="kicker" data-i18n="diagrams">Technical diagrams</p>
+          </header>
+          <button class="diagram-thumb" type="button" data-lightbox="assets/diagrams/site-contours.png" data-alt-en="Exploratory one-metre contours from the eight-point TIN—not for construction" data-alt-fa="خطوط تراز اکتشافی یک‌متری از TIN هشت‌نقطه‌ای—نامناسب برای اجرا">
+            <img src="assets/diagrams/site-contours.png" alt="Exploratory one-metre contours from the eight-point TIN—not for construction" loading="lazy">
+            <span>01 · EXPLORATORY CONTOURS</span>
+          </button>
+          <button class="diagram-thumb wide" type="button" data-lightbox="assets/diagrams/site-sections.png" data-alt-en="Exploratory south–north and west–east TIN sections without surveyed breaklines" data-alt-fa="مقاطع اکتشافی جنوب–شمال و غرب–شرق TIN بدون شکست‌خط برداشت‌شده">
+            <img src="assets/diagrams/site-sections.png" alt="Exploratory south–north and west–east TIN sections without surveyed breaklines" loading="lazy">
+            <span>02 · EXPLORATORY SECTIONS</span>
+          </button>
+          <button class="diagram-thumb" type="button" data-lightbox="assets/diagrams/unified-site-top-view.png" data-alt-en="Unified site plan with terrain and preliminary study zones" data-alt-fa="پلان سایت یکپارچه با زمین و محدوده‌های اولیه مطالعه">
+            <img src="assets/diagrams/unified-site-top-view.png" alt="Unified site plan with terrain and preliminary study zones" loading="lazy">
+            <span>03 · UNIFIED SITE</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="geography" aria-labelledby="geography-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="geographyKicker">Probable project location</p>
+            <h2 id="geography-title" data-i18n="geographyTitle">Probable location near Baneh Verdeh, on a steep Zagros hillside</h2>
+          </div>
+          <p data-i18n="geographyLead">Interpreting the survey as WGS 84 / UTM zone 38N places the parcel coherently near Baneh Verdeh in Paveh County. This supports a strong-probable project location for regional analysis, but the CRS is not surveyor-certified and cannot support cadastral use.</p>
+        </header>
+        <div class="geo-layout">
+          <article class="geo-map-card">
+            <div class="map-heading">
+              <div>
+                <p class="kicker" data-i18n="contextMap">Offline context map</p>
+                <h3 id="geo-location"></h3>
+              </div>
+              <span class="status-pill preliminary"><span class="status-dot"></span><span data-i18n="probable">Strong-probable · not certified</span></span>
+            </div>
+            <div class="geo-scale-controls segmented-control" role="group" data-i18n-aria-label="ariaGeoScale" aria-label="Map context scale">
+              <button class="active" type="button" data-geo-scale="250" aria-pressed="true"><bdi>250 m</bdi></button>
+              <button type="button" data-geo-scale="1000" aria-pressed="false"><bdi>1 km</bdi></button>
+              <button type="button" data-geo-scale="5000" aria-pressed="false"><bdi>5 km</bdi></button>
+              <button type="button" data-geo-scale="20000" aria-pressed="false"><bdi>20 km</bdi></button>
+            </div>
+            <div class="geo-map-wrap">
+              <canvas id="geo-map-canvas" role="img" data-i18n-aria-label="ariaContextMap" aria-label="Offline OpenStreetMap context showing the probable parcel location, roads, water and nearby settlements"></canvas>
+              <div class="map-scale-legend" aria-hidden="true">
+                <span><i class="scale-250"></i>250 m</span>
+                <span><i class="scale-1000"></i>1 km</span>
+                <span><i class="scale-5000"></i>5 km</span>
+                <span><i class="scale-20000"></i>20 km</span>
+              </div>
+            </div>
+            <p class="source-note" id="geo-scale-note" data-i18n="geoScaleNote">Context scales crop the same offline OSM extract around the probable centre. Features beyond the extract cannot appear.</p>
+            <dl class="geo-readout">
+              <div><dt data-i18n="coordinateSystem">Probable coordinate reference</dt><dd><bdi>EPSG:32638 · WGS 84 / UTM 38N</bdi></dd></div>
+              <div><dt>WGS 84</dt><dd id="geo-coordinates"></dd></div>
+              <div><dt data-i18n="locationLabel">Probable project location</dt><dd id="geo-place"></dd></div>
+            </dl>
+            <p class="source-note">© OpenStreetMap contributors · ODbL</p>
+          </article>
+          <article class="scale-card">
+            <p class="kicker" data-i18n="scaleStudies">Context study scales</p>
+            <div id="geo-scales" class="scale-list"></div>
+            <ul id="geo-exposures" class="geo-exposures"></ul>
+            <div class="evidence-gate">
+              <span data-i18n="nextGate">Certification boundary</span>
+              <p id="geo-note"></p>
+              <p id="geo-next"></p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="climate" aria-labelledby="climate-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="climateKicker">Environmental evidence</p>
+            <h2 id="climate-title" data-i18n="climateTitle">Cold wet winters. Hot dry summers.</h2>
+          </div>
+          <p data-i18n="climateLead">A 1991–2020 ERA5-Land baseline is combined with NASA POWER humidity, cloud and radiation climatology, with resolution and uncertainty kept visible.</p>
+        </header>
+        <div id="climate-summary" class="climate-summary"></div>
+        <article class="architect-climate" id="architect-climate" aria-labelledby="architect-climate-title">
+          <header>
+            <p class="kicker" data-i18n="architectClimateKicker">Architect climate brief</p>
+            <h3 id="architect-climate-title" data-i18n="architectClimateTitle">Heating, cooling and what monthly grids cannot decide</h3>
+          </header>
+          <div id="architect-climate-body" class="architect-climate-body"></div>
+        </article>
+        <div class="climate-layout">
+          <article class="climate-chart-card">
+            <div class="chart-toolbar">
+              <div>
+                <p class="kicker" data-i18n="monthlyClimate">Monthly climate</p>
+                <h3 id="climate-chart-title" data-i18n="temperatureAndRain">Temperature & precipitation</h3>
+              </div>
+              <div class="segmented-control" role="group" data-i18n-aria-label="ariaClimateView" aria-label="Climate chart view">
+                <button class="active" type="button" data-climate-view="temperature" data-i18n="temperatureAndRain" aria-pressed="true">Temperature & precipitation</button>
+                <button type="button" data-climate-view="solar" data-i18n="snowFrostSolar" aria-pressed="false">Snow, frost & solar resource</button>
+              </div>
+            </div>
+            <div class="climate-canvas-wrap">
+              <canvas id="climate-canvas" role="img" data-i18n-aria-label="monthlyClimate" aria-label="Monthly climate chart"></canvas>
+              <div id="climate-tooltip" class="chart-tooltip" hidden></div>
+            </div>
+            <div id="climate-legend" class="chart-legend"></div>
+            <p id="climate-warning" class="source-note"></p>
+          </article>
+          <article class="climate-evidence">
+            <div>
+              <p class="kicker" data-i18n="climateExtremes">Baseline extremes</p>
+              <div id="climate-extremes" class="evidence-metrics"></div>
+              <h4 class="derived-heading" data-i18n="degreeDays">Degree-days &amp; percentile temperatures</h4>
+              <div id="climate-derived" class="evidence-metrics"></div>
+              <p class="source-note" id="climate-derived-note"></p>
+            </div>
+            <div>
+              <p class="kicker" data-i18n="futureClimate">2031–2050 model range</p>
+              <div id="future-climate" class="future-models"></div>
+            </div>
+            <div>
+              <p class="kicker" data-i18n="requestedMetrics">Climate evidence coverage</p>
+              <div id="climate-fields"></div>
+            </div>
+          </article>
+        </div>
+        <div class="table-shell monthly-climate-table">
+          <table id="climate-table">
+            <thead>
+              <tr>
+                <th scope="col" data-i18n="colMonth">Month</th>
+                <th scope="col" data-i18n="colTempMean">T mean</th>
+                <th scope="col" data-i18n="colTempMax">T max</th>
+                <th scope="col" data-i18n="colTempMin">T min</th>
+                <th scope="col" data-i18n="colRain">Rain</th>
+                <th scope="col" data-i18n="colSnow">Snow</th>
+                <th scope="col" data-i18n="colHumidity">RH</th>
+                <th scope="col" data-i18n="colSolar">Solar</th>
+                <th scope="col" data-i18n="colFrost">Frost</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section solar-section" id="solar" aria-labelledby="solar-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="solarKicker">Solar integrity</p>
+            <h2 id="solar-title" data-i18n="solarTitle">A high summer arc, a valuable low winter sun</h2>
+          </div>
+          <p data-i18n="solarLead">Explore precomputed astronomical positions for the probable site coordinates against a terrain horizon sampled from a 90 m DEM. Neighbouring buildings and vegetation are still not modelled.</p>
+        </header>
+        <div class="solar-explorer">
+          <aside class="solar-controls" data-i18n-aria-label="ariaSolarControls" aria-label="Solar explorer controls">
+            <div class="control-block">
+              <label data-i18n="season">Season</label>
+              <div class="stacked-options">
+                <button class="active" type="button" data-solar-season="winter" aria-pressed="true"><span>21·12</span><b data-i18n="winter">Winter solstice</b></button>
+                <button type="button" data-solar-season="equinox" aria-pressed="false"><span>20·03</span><b data-i18n="equinox">Equinox</b></button>
+                <button type="button" data-solar-season="summer" aria-pressed="false"><span>21·06</span><b data-i18n="summer">Summer solstice</b></button>
+              </div>
+            </div>
+            <div class="control-block">
+              <label for="solar-time"><span data-i18n="timeOfDay">Time of day</span> · <bdi id="solar-time-label" data-solar-time-label>12:00</bdi></label>
+              <div class="solar-time-row">
+                <input id="solar-time" type="range" data-solar-time step="any" data-i18n-aria-label="timeOfDay" aria-label="Time of day" aria-valuetext="12:00">
+                <button class="secondary-button solar-play" id="solar-play" type="button" data-solar-play aria-pressed="false">Play</button>
+              </div>
+              <div class="range-labels"><span data-i18n="morning">Morning</span><span data-i18n="noon">Solar noon</span><span data-i18n="afternoon">Afternoon</span></div>
+            </div>
+            <div class="control-block">
+              <label data-i18n="testObject">Test object</label>
+              <div class="disabled-pills solar-object-options">
+                <button class="active" type="button" data-solar-object="pole" data-i18n="pole" aria-pressed="true">Pole</button>
+                <button type="button" data-solar-object="wall" data-i18n="wall" aria-pressed="false">Wall</button>
+                <button type="button" data-solar-object="generic-volume" data-i18n="volume" aria-pressed="false">Generic volume</button>
+              </div>
+            </div>
+            <div class="control-block">
+              <label data-i18n="overlays">Overlays</label>
+              <div class="toggle-group vertical">
+                <label><input id="solar-boundary-toggle" type="checkbox" checked><span data-i18n="boundary">Unified drawing boundary</span></label>
+                <label><input id="solar-contour-toggle" type="checkbox" checked><span data-i18n="toggleContours">Contours</span></label>
+              </div>
+            </div>
+          </aside>
+          <article class="solar-stage">
+            <div class="solar-canvas-wrap">
+              <canvas id="solar-canvas" role="img" data-i18n-aria-label="ariaSolarCanvas" aria-label="Precomputed seasonal sun path and test-object shadow"></canvas>
+            </div>
+            <div class="solar-lock">
+              <span class="lock-symbol" aria-hidden="true">☼</span>
+              <div>
+                <p class="kicker" data-i18n="locked">PRECOMPUTED EXPLORER</p>
+                <h3 data-i18n="lockedTitle">Astronomical shadow study</h3>
+                <p data-i18n="lockedText">Season, local time and test object update only precomputed solar positions. Mountain horizon and neighbouring buildings are not modelled.</p>
+              </div>
+            </div>
+            <div class="solar-output-list">
+              <span data-i18n="solarOutputs">Current solar readout</span>
+              <div id="solar-readout" class="solar-readout"></div>
+              <p class="solar-interpolation-note" id="solar-interpolation-note" hidden></p>
+              <p class="solar-design-limits" id="solar-design-limits" data-i18n="solarDesignLimits" role="note">Continuous values interpolate ten-minute samples. Neighbours, vegetation and a surveyed horizon are not modelled — only a DEM-derived terrain horizon.</p>
+            </div>
+          </article>
+        </div>
+        <div class="solar-insights">
+          <article><p class="kicker" data-i18n="winter">Winter solstice</p><p id="solar-winter-note"></p></article>
+          <article><p class="kicker" data-i18n="summer">Summer solstice</p><p id="solar-summer-note"></p></article>
+          <article><p class="kicker" data-i18n="horizonWarning">DEM-derived terrain horizon · no buildings or vegetation</p><p id="solar-warning"></p></article>
+          <article class="solar-access"><p class="kicker" data-i18n="effectiveSun">Effective sun on this day</p><div id="solar-access"></div><p class="source-note" id="solar-horizon-note"></p></article>
+        </div>
+        <div class="table-shell solar-monthly-table">
+          <table id="solar-table">
+            <thead>
+              <tr>
+                <th scope="col" data-i18n="colMonth">Month</th>
+                <th scope="col" data-i18n="colSunrise">Sunrise</th>
+                <th scope="col" data-i18n="colSunset">Sunset</th>
+                <th scope="col" data-i18n="colDayLength">Day</th>
+                <th scope="col" data-i18n="colNoonAltitude">Noon altitude</th>
+                <th scope="col" data-i18n="colSunriseAzimuth">Sunrise az.</th>
+                <th scope="col" data-i18n="colSunsetAzimuth">Sunset az.</th>
+                <th scope="col" data-i18n="colSolarResource">Solar resource</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section section-tinted" id="wind" aria-labelledby="wind-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="windKicker">Directional evidence</p>
+            <h2 id="wind-title">Regional easterlies shift toward summer westerlies</h2>
+          </div>
+          <p data-i18n="windLead">Seasonal roses use 87,672 hourly ERA5-Land records from 2011–2020. Local valley channeling remains a field-check item.</p>
+        </header>
+        <div id="wind-season-tabs" class="wind-season-tabs" role="group" data-i18n-aria-label="ariaWindSeason" aria-label="Wind season"></div>
+        <div class="wind-layout">
+          <article class="wind-chart-card">
+            <div class="wind-rose-live">
+              <canvas id="wind-canvas" role="img" data-i18n-aria-label="ariaWindRose" aria-label="Seasonal 16-direction wind rose"></canvas>
+            </div>
+            <p class="source-note" data-i18n="windSourceNote">10 m regional grid wind · direction is where wind comes from</p>
+          </article>
+          <article class="season-board">
+            <p class="kicker" data-i18n="noWind">Annual wind distribution</p>
+            <div id="wind-stats" class="wind-stats"></div>
+            <div id="wind-speed-bins" class="wind-speed-bins"></div>
+            <h4 class="derived-heading" data-i18n="gustReturn">Gust return periods</h4>
+            <div id="wind-return" class="evidence-metrics"></div>
+            <p class="source-note" id="wind-return-note"></p>
+            <div id="wind-notes" class="wind-notes"></div>
+            <p id="wind-warning" class="source-note"></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="hazards" aria-labelledby="hazards-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="hazardsKicker">Risk register</p>
+            <h2 id="hazards-title" data-i18n="hazardsTitle">Separate what is known from what needs fieldwork</h2>
+          </div>
+          <p data-i18n="hazardsLead">Only terrain slope is verified at site scale. Drainage direction is preliminary; the remaining engineering and regional hazards have not been investigated.</p>
+        </header>
+        <details class="disclosure-panel seismic-disclosure" open>
+          <summary data-i18n="seismicDetails">Regional seismic catalogue (context only)</summary>
+          <article class="seismic-gate" id="seismic-gate"></article>
+        </details>
+        <div class="filter-bar" role="group" data-i18n-aria-label="ariaHazardFilter" aria-label="Hazard status filter">
+          <span data-i18n="hazardFilter">Filter status</span>
+          <button class="active" type="button" data-hazard-filter="all" data-i18n="all" aria-pressed="true">All</button>
+          <button type="button" data-hazard-filter="verified" data-i18n="verified" aria-pressed="false">Verified</button>
+          <button type="button" data-hazard-filter="regional-data" data-i18n="regionalData" aria-pressed="false">Regional data</button>
+          <button type="button" data-hazard-filter="preliminary-inference" data-i18n="preliminary" aria-pressed="false">Preliminary</button>
+          <button type="button" data-hazard-filter="requires-field-investigation" data-i18n="fieldInvestigation" aria-pressed="false">Field investigation</button>
+        </div>
+        <div id="hazard-grid" class="hazard-grid"></div>
+      </section>
+
+      <section class="section section-dark" id="architecture" aria-labelledby="architecture-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="architectureKicker">Design intelligence, not a floor plan</p>
+            <h2 id="architecture-title" data-i18n="architectureTitle">What the evidence means for the next architect</h2>
+          </div>
+          <p data-i18n="architectureLead">Recommendations are deliberately grouped by confidence. They guide investigations and site response without presenting a final house design.</p>
+        </header>
+        <div id="confidence-legend" class="confidence-legend"></div>
+        <div id="recommendation-grid" class="recommendation-grid"></div>
+      </section>
+
+      <section class="section concepts-section" id="concepts" aria-labelledby="concepts-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="conceptsKicker">Preliminary studies · available for discussion</p>
+            <h2 id="concepts-title" data-i18n="conceptsTitle">Concept massing studies A, B and C</h2>
+          </div>
+          <p data-i18n="conceptsLead">Three FreeCAD massing options on the surveyed site, with metrics, isometrics and brief-fit notes. Use them with the completed household brief and architect handoff. None is a final selected design or a fixed construction footprint until field investigations close.</p>
+        </header>
+        <p class="concepts-banner" id="concepts-banner" role="note"></p>
+        <p class="concepts-overview" id="concepts-overview"></p>
+        <p class="concepts-comparison-note" id="concepts-comparison-note" hidden></p>
+        <div class="concepts-switcher segmented-control" role="group" data-i18n-aria-label="ariaConceptOption" aria-label="Concept option">
+          <button type="button" data-concept-option="option-a" aria-pressed="false">A</button>
+          <button type="button" data-concept-option="option-b" aria-pressed="false">B</button>
+          <button class="active" type="button" data-concept-option="option-c" aria-pressed="true">C</button>
+        </div>
+        <div class="concepts-grid">
+          <article class="concept-detail">
+            <h3 id="concept-title"></h3>
+            <p id="concept-concept" class="concept-tagline"></p>
+            <figure class="concept-isometric" id="concept-isometric-wrap" hidden>
+              <img id="concept-isometric" alt="" width="640" height="480" loading="lazy" decoding="async">
+            </figure>
+            <div class="concept-profile" id="concept-profile">
+              <h4 data-i18n="conceptWhatItIs">What this option is</h4>
+              <p id="concept-what"></p>
+              <h4 data-i18n="conceptHowItWorks">How it works on the slope</h4>
+              <p id="concept-how"></p>
+              <h4 data-i18n="conceptProgram">Rooms and program</h4>
+              <p id="concept-program"></p>
+              <h4 data-i18n="conceptStrengths">Strengths</h4>
+              <ul id="concept-strengths" class="concept-bullet-list"></ul>
+              <h4 data-i18n="conceptTradeoffs">Trade-offs</h4>
+              <ul id="concept-tradeoffs" class="concept-bullet-list"></ul>
+              <h4 data-i18n="conceptBriefFit">Fit with household brief</h4>
+              <p id="concept-brief-fit" class="concept-brief-fit"></p>
+            </div>
+            <h4 data-i18n="conceptLevelsTitle">Finished levels in this study</h4>
+            <dl id="concept-levels" class="concept-levels"></dl>
+            <h4 data-i18n="conceptChecksTitle">Study checks</h4>
+            <div id="concept-checks" class="concept-checks"></div>
+          </article>
+          <article class="concept-compare">
+            <h4 data-i18n="conceptCompareTitle">Side-by-side study metrics</h4>
+            <div class="table-shell">
+              <table id="concepts-table">
+                <thead>
+                  <tr>
+                    <th scope="col" data-i18n="colMetric">Metric</th>
+                    <!-- Option letters are identifiers, like Pt1 or EPSG:32638;
+                         they stay Latin in Persian. -->
+                    <th scope="col" data-i18n-exempt="identifier">A</th>
+                    <th scope="col" data-i18n-exempt="identifier">B</th>
+                    <th scope="col" data-i18n-exempt="identifier">C</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <p class="source-note" id="concept-frame-note"></p>
+            <p class="source-note" data-i18n="conceptMetricsNote">Internal area excludes garage and open courtyard. Footprint is the plan union of plates + garage. Figures are approximate FreeCAD study values.</p>
+          </article>
+        </div>
+        <p class="concepts-caveat" id="concepts-caveat"></p>
+      </section>
+
+      <section class="section species-section" id="species" aria-labelledby="species-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="speciesKicker">What will actually grow here</p>
+            <h2 id="species-title" data-i18n="speciesTitle">Eleven trees, tested against five things this site already measures</h2>
+          </div>
+          <p id="species-headline"></p>
+        </header>
+
+        <h3 class="block-title" data-i18n="speciesConstraints">The five constraints</h3>
+        <div class="species-constraints" id="species-constraints"></div>
+
+        <p class="source-note" id="species-rule"></p>
+
+        <h3 class="block-title" data-i18n="speciesFruitTitle">Fruit: what the frost record decides</h3>
+        <div class="species-fruit" id="species-fruit"></div>
+
+        <h3 class="block-title" data-i18n="plantingPrereqTitle">Planting prerequisites</h3>
+        <p class="source-note" id="planting-prereq-intro"></p>
+        <div class="evidence-slot-grid" id="planting-prerequisites"></div>
+
+        <h3 class="block-title" data-i18n="speciesShortlist">The shortlist</h3>
+        <div class="species-grid" id="species-shortlist-grid"></div>
+
+        <details class="disclosure-panel species-annex" id="species-annex">
+          <summary>
+            <span data-i18n="plantingAnnexTitle">Full species explorer — landscape annex</span>
+          </summary>
+          <p data-i18n="plantingAnnexLead">Main page keeps a short robust shortlist. Open the annex for the complete register, filters and do-not-plant list.</p>
+          <div class="filter-bar" role="group" data-i18n-aria-label="ariaSpeciesFilter" aria-label="Species verdict">
+            <span data-i18n="speciesFilter">Verdict</span>
+            <button class="active" type="button" data-species-filter="all" data-i18n="all" aria-pressed="true">All</button>
+            <button type="button" data-species-filter="fruit" data-i18n="speciesFruitingOnly" aria-pressed="false">Fruiting</button>
+            <button type="button" data-species-filter="pass" data-i18n="verdictPass" aria-pressed="false">Clears</button>
+            <button type="button" data-species-filter="marginal" data-i18n="verdictMarginal" aria-pressed="false">Marginal</button>
+            <button type="button" data-species-filter="fail" data-i18n="verdictFail" aria-pressed="false">Fails</button>
+          </div>
+          <div class="species-grid" id="species-grid"></div>
+          <h3 class="block-title" data-i18n="speciesAvoid">Do not plant these</h3>
+          <p data-i18n="speciesAvoidLead">Every one of these is fast-growing, and every one of them is what somebody recommends for exactly this brief.</p>
+          <div class="species-avoid" id="species-avoid"></div>
+          <h3 class="block-title" data-i18n="speciesAskLocally">Worth asking a nursery about</h3>
+          <div class="species-avoid" id="species-ask"></div>
+          <h3 class="block-title" data-i18n="speciesPlacement">Where a tree can stand</h3>
+          <div class="species-zones" id="species-placement"></div>
+          <h3 class="block-title" data-i18n="speciesCare">Getting them established</h3>
+          <div class="species-care" id="species-care"></div>
+          <p class="species-limits" id="species-limits" role="note"></p>
+        </details>
+      </section>
+
+      <section class="section" id="field-evidence" aria-labelledby="field-evidence-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="fieldEvidenceTitle">Field evidence still required</p>
+            <h2 id="field-evidence-title" data-i18n="fieldEvidenceTitle">Field evidence still required</h2>
+          </div>
+          <p data-i18n="fieldEvidenceLead">Empty slots until measured. Regional data does not fill them.</p>
+        </header>
+        <div id="field-evidence-groups" class="field-evidence-groups"></div>
+      </section>
+
+      <section class="section section-tinted" id="future-analysis" aria-labelledby="future-analysis-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="futureAnalysisKicker">Future analysis tracks</p>
+            <h2 id="future-analysis-title" data-i18n="futureAnalysisTitle">What becomes possible only after better evidence</h2>
+          </div>
+          <p data-i18n="futureAnalysisLead">These four tracks stay gated. Nothing here invents hourly comfort, neighbour shadows, a preferred envelope or design loads from the monthly and regional data already on the page.</p>
+        </header>
+        <div id="future-analysis-grid" class="future-analysis-grid"></div>
+      </section>
+
+      <section class="section section-dark" id="investigations" aria-labelledby="investigations-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="investigationsKicker">What this dashboard cannot compute</p>
+            <h2 id="investigations-title" data-i18n="investigationsTitle">Nineteen things that need a person, an instrument or a licence</h2>
+          </div>
+          <p id="investigations-intro"></p>
+        </header>
+        <div class="filter-bar" role="group" data-i18n-aria-label="ariaGateFilter" aria-label="Investigation gate">
+          <span data-i18n="gate">Gate</span>
+          <div class="disabled-pills" id="investigation-gates"></div>
+        </div>
+        <div class="table-shell">
+          <table id="investigations-table">
+            <thead>
+              <tr>
+                <th scope="col" data-i18n="colInvestigation">Investigation</th>
+                <th scope="col" data-i18n="colOwner">Owner / consultant</th>
+                <th scope="col" data-i18n="colPrerequisite">Prerequisite</th>
+                <th scope="col" data-i18n="colStatus">Status</th>
+                <th scope="col" data-i18n="colDeliverable">Expected deliverable</th>
+                <th scope="col" data-i18n="colDependency">Dependency</th>
+                <th scope="col" data-i18n="colScopeNote">Scope note</th>
+                <th scope="col" data-i18n="colBlocks">Blocks</th>
+                <th scope="col" data-i18n="colProxy">What stands in for it now</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section" id="documents" aria-labelledby="documents-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="documentsKicker">Project library</p>
+            <h2 id="documents-title" data-i18n="documentsTitle">Useful evidence, organised and local</h2>
+          </div>
+          <p data-i18n="documentsLead">Every listed item opens from this offline package. High-resolution technical diagrams and machine-readable data remain accessible.</p>
+        </header>
+        <div class="document-toolbar">
+          <label class="search-field">
+            <span aria-hidden="true">⌕</span>
+            <span class="sr-only" data-i18n="docSearch">Search documents</span>
+            <input type="search" id="document-search" data-i18n-placeholder="docSearch" placeholder="Search documents…">
+          </label>
+          <label>
+            <span data-i18n="docLanguage">Language</span>
+            <select id="document-language">
+              <option value="all" data-i18n="all">All</option>
+              <option value="en" data-i18n="english">English</option>
+              <option value="fa" data-i18n="persian">Persian</option>
+              <option value="neutral" data-i18n="neutral">Language-neutral</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="docType">File type</span>
+            <select id="document-type">
+              <option value="all" data-i18n="all">All</option>
+              <option value="image">PNG</option>
+              <option value="document">MD</option>
+              <option value="data">CSV / JSON / TXT</option>
+              <option value="model">FCStd / DXF</option>
+            </select>
+          </label>
+        </div>
+        <div id="document-grid" class="document-grid"></div>
+      </section>
+
+      <section class="section section-tinted" id="methodology" aria-labelledby="methodology-title">
+        <header class="section-header">
+          <div>
+            <p class="kicker" data-i18n="methodsKicker">Audit trail</p>
+            <h2 id="methodology-title" data-i18n="methodsTitle">Sources, limitations and reproducibility</h2>
+          </div>
+          <p data-i18n="methodsLead">The source register distinguishes verified project evidence from absent datasets. No external network resource is needed to inspect this dashboard.</p>
+        </header>
+        <div class="table-card source-table-card">
+          <div class="table-toolbar">
+            <div>
+              <p class="kicker" data-i18n="sourceRegister">Source register</p>
+              <h3 id="source-count"></h3>
+            </div>
+          </div>
+          <details class="disclosure-panel" open>
+            <summary data-i18n="sourcesDetails">Full source register (details)</summary>
+            <div class="table-scroll">
+              <table id="sources-table">
+                <thead>
+                  <tr>
+                    <th data-i18n="dataset">Dataset</th>
+                    <th data-i18n="organisation">Organisation</th>
+                    <th data-i18n="accessed">Accessed</th>
+                    <th data-i18n="resolution">Resolution</th>
+                    <th data-i18n="status">Status</th>
+                    <th data-i18n="limitation">Limitation</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </details>
+        </div>
+        <article class="claim-matrix-card">
+          <p class="kicker" data-i18n="claimMatrixTitle">Claim-to-source matrix</p>
+          <div class="table-scroll">
+            <table id="claim-matrix-table">
+              <thead>
+                <tr>
+                  <th data-i18n="claim">Claim</th>
+                  <th data-i18n="dataset">Source</th>
+                  <th data-i18n="resolution">Resolution</th>
+                  <th data-i18n="period">Period</th>
+                  <th data-i18n="accessed">Accessed</th>
+                  <th data-i18n="calculation">Calculation</th>
+                  <th data-i18n="confidence">Confidence</th>
+                  <th data-i18n="designUse">Design-use limit</th>
+                </tr>
+              </thead>
+              <tbody id="claim-matrix-body"></tbody>
+            </table>
+          </div>
+        </article>
+        <article class="raw-files-card">
+          <p class="kicker" data-i18n="rawFilesTitle">Raw environmental files</p>
+          <p class="source-note" id="raw-files-policy"></p>
+          <div id="raw-files-list" class="raw-files-list"></div>
+        </article>
+        <div class="method-grid">
+          <article>
+            <p class="kicker" data-i18n="calculationMethods">Calculation methods</p>
+            <ol id="method-list"></ol>
+          </article>
+          <article>
+            <p class="kicker" data-i18n="reproducibility">Reproducibility</p>
+            <dl class="repro-list">
+              <div><dt data-i18n="sourceVersion">Source version</dt><dd id="repro-site-version">v1-three-fields</dd></div>
+              <div><dt data-i18n="buildId">Build</dt><dd id="repro-build-id">dashboard-2026-08-05</dd></div>
+              <div><dt data-i18n="dashboardGenerator">Dashboard generator</dt><dd>scripts/generate-data.mjs</dd></div>
+              <div><dt data-i18n="generated">Generated</dt><dd id="repro-generated">2026-08-05</dd></div>
+              <div><dt data-i18n="networkDependency">Network dependency</dt><dd data-i18n="none">None</dd></div>
+            </dl>
+            <p class="source-note" id="canonical-build-note"></p>
+            <div class="privacy-boundary" id="privacy-boundary">
+              <p class="kicker" data-i18n="privacyBoundary">Privacy boundary</p>
+              <p id="privacy-boundary-text" data-i18n="privacyBoundaryLead">Precise coordinates identify the studied site for analysis. They do not identify an owner and are not evidence of ownership, title, or a cadastral boundary.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">H</span><span><strong>HOUSEAI</strong><small>FAMILY HOUSE 001</small></span></a>
+      <div class="footer-copy">
+        <p data-i18n="footerText">Offline evidence interface · no external requests · no final floor-plan recommendation</p>
+        <p class="footer-build" id="footer-build"></p>
+      </div>
+      <a href="#top" data-i18n-aria-label="ariaBackToTop" aria-label="Back to top">↑</a>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox">
+      <button class="lightbox-close" type="button" data-i18n-aria-label="ariaCloseImage" aria-label="Close image"><span aria-hidden="true">×</span><span data-i18n="close">Close</span></button>
+      <img id="lightbox-image" alt="">
+      <p id="lightbox-caption"></p>
+      <small data-i18n="lightboxHint">Press Escape to close</small>
+    </dialog>
+
+    <noscript>
+      <div class="noscript">JavaScript is required for the interactive charts, language switch and searchable evidence tables. All source documents remain available under assets/.</div>
+    </noscript>
+    <script src="data/data.js?v=p3"></script>
+    <script src="assets/vendor/three/three.min.js"></script>
+    <script src="terrain-3d.js?v=p3"></script>
+    <script src="app.js?v=p3"></script>
+  </body>
+</html>

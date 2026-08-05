@@ -1,0 +1,15 @@
+{
+  "generated_on": "2026-08-05",
+  "dashboard_version": "1.2.0",
+  "build_id": "dashboard-2026-08-05",
+  "site_version": "v1-three-fields",
+  "validation": {
+    "static_suite": "validate-static.mjs",
+    "solar_suite": "verify-solar-3d.mjs",
+    "responsive_suite": "verify-responsive.mjs",
+    "accessibility_suite": "verify-accessibility.mjs",
+    "privacy_suite": "verify-privacy.mjs",
+    "link_suite": "verify-links.mjs",
+    "offline_suite": "verify-offline.mjs"
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "source": {
+    "dwg": "site-base source/original-survey.dwg",
+    "dxf": "site-base source/survey-converted.dxf",
+    "dwg_sha256": "5d784e17a4efeeeae61235b729369ed28786317d6bacbeb2e529db6177309898",
+    "dxf_sha256": "4f9a98871c861b0de421126f6561c951cb35fa8725b0c04170e30de0c98f621e"
+  },
+  "polygons": [
+    {
+      "id": "A",
+      "name": "Polygon A",
+      "handle": "271",
+      "layer": "0",
+      "source_object_type": "LWPOLYLINE",
+      "source_closed_flag": false,
+      "source_repeated_endpoint": true,
+      "entity_elevation": 1655.558,
+      "vertices_xy": [
+        [
+          623736.7070000051,
+          3870706.66
+        ],
+        [
+          623747.3029420283,
+          3870701.320644192
+        ],
+        [
+          623752.3461939534,
+          3870715.027711411
+        ],
+        [
+          623742.2007102777,
+          3870719.094371719
+        ]
+      ],
+      "vertices": [
+        [
+          623736.7070000051,
+          3870706.66,
+          1655.849,
+          "Pt3"
+        ],
+        [
+          623747.3029420283,
+          3870701.320644192,
+          1654.509,
+          "Pt8"
+        ],
+        [
+          623752.3461939534,
+          3870715.027711411,
+          1648.989,
+          "Pt5"
+        ],
+        [
+          623742.2007102777,
+          3870719.094371719,
+          1650.149,
+          "Pt4"
+        ]
+      ],
+      "horizontal_sides": [
+        11.865188907302484,
+        14.605412754480618,
+        10.93016765993551,
+        13.593912335943568
+      ],
+      "slope_sides": [
+        11.940615888888383,
+        15.613727348994695,
+        10.991549712133397,
+        14.740571650967924
+      ],
+      "horizontal_perimeter": 50.99468165766218,
+      "slope_perimeter": 53.2864646009844,
+      "plan_area": 160.33038740936678,
+      "bounds": {
+        "min_x": 623736.7070000051,
+        "max_x": 623752.3461939534,
+        "min_y": 3870701.320644192,
+        "max_y": 3870719.094371719,
+        "min_z": 1648.989,
+        "max_z": 1655.849,
+        "width_x": 15.639193948358297,
+        "height_y": 17.77372752688825,
+        "relief_z": 6.8599999999999
+      },
+      "embedded_area_label": 160.33,
+      "embedded_area_delta": 0.0003874093667661782
+    },
+    {
+      "id": "B",
+      "name": "Polygon B",
+      "handle": "272",
+      "layer": "0",
+      "source_object_type": "LWPOLYLINE",
+      "source_closed_flag": false,
+      "source_repeated_endpoint": true,
+      "entity_elevation": 1655.558,
+      "vertices_xy": [
+        [
+          623747.3029420283,
+          3870701.320644192
+        ],
+        [
+          623754.4539255477,
+          3870697.717217947
+        ],
+        [
+          623760.626660687,
+          3870711.476096191
+        ],
+        [
+          623752.3461939534,
+          3870715.027711411
+        ]
+      ],
+      "vertices": [
+        [
+          623747.3029420283,
+          3870701.320644192,
+          1654.509,
+          "Pt8"
+        ],
+        [
+          623754.4539255477,
+          3870697.717217947,
+          1653.485,
+          "Pt7"
+        ],
+        [
+          623760.626660687,
+          3870711.476096191,
+          1647.899,
+          "Pt6"
+        ],
+        [
+          623752.3461939534,
+          3870715.027711411,
+          1648.989,
+          "Pt5"
+        ]
+      ],
+      "horizontal_sides": [
+        8.007574289258201,
+        15.080099125553835,
+        9.009999999870981,
+        14.605412754480618
+      ],
+      "slope_sides": [
+        8.07278279145359,
+        16.081442274762846,
+        9.075692810891926,
+        15.613727348994695
+      ],
+      "horizontal_perimeter": 46.70308616916363,
+      "slope_perimeter": 48.84364522610306,
+      "plan_area": 126.02255589621514,
+      "bounds": {
+        "min_x": 623747.3029420283,
+        "max_x": 623760.626660687,
+        "min_y": 3870697.717217947,
+        "max_y": 3870715.027711411,
+        "min_z": 1647.899,
+        "max_z": 1654.509,
+        "width_x": 13.323718658764847,
+        "height_y": 17.310493464116007,
+        "relief_z": 6.610000000000127
+      },
+      "embedded_area_label": 126.02,
+      "embedded_area_delta": 0.002555896215142184
+    },
+    {
+      "id": "C",
+      "name": "Polygon C",
+      "handle": "273",
+      "layer": "0",
+      "source_object_type": "LWPOLYLINE",
+      "source_closed_flag": true,
+      "source_repeated_endpoint": false,
+      "entity_elevation": 1603.558,
+      "vertices_xy": [
+        [
+          623747.3029420283,
+          3870701.320644192
+        ],
+        [
+          623736.7070000051,
+          3870706.66
+        ],
+        [
+          623731.9036181533,
+          3870695.788106064
+        ],
+        [
+          623739.6817193344,
+          3870689.080965455
+        ],
+        [
+          623754.4539255477,
+          3870697.717217947
+        ]
+      ],
+      "vertices": [
+        [
+          623747.3029420283,
+          3870701.320644192,
+          1654.509,
+          "Pt8"
+        ],
+        [
+          623736.7070000051,
+          3870706.66,
+          1655.849,
+          "Pt3"
+        ],
+        [
+          623731.9036181533,
+          3870695.788106064,
+          1659.653,
+          "Pt2"
+        ],
+        [
+          623739.6817193344,
+          3870689.080965455,
+          1659.363,
+          "Pt1"
+        ],
+        [
+          623754.4539255477,
+          3870697.717217947,
+          1653.485,
+          "Pt7"
+        ]
+      ],
+      "horizontal_sides": [
+        11.865188907302484,
+        11.885729046886786,
+        10.270569269952304,
+        17.111485426653168,
+        8.007574289258201
+      ],
+      "slope_sides": [
+        11.940615888888383,
+        12.479622228898155,
+        10.274662677133911,
+        18.092921751518343,
+        8.07278279145359
+      ],
+      "horizontal_perimeter": 59.14054694005294,
+      "slope_perimeter": 60.86060533789238,
+      "plan_area": 201.07562464064412,
+      "bounds": {
+        "min_x": 623731.9036181533,
+        "max_x": 623754.4539255477,
+        "min_y": 3870689.080965455,
+        "max_y": 3870706.66,
+        "min_z": 1653.485,
+        "max_z": 1659.653,
+        "width_x": 22.550307394354604,
+        "height_y": 17.579034544993192,
+        "relief_z": 6.16800000000012
+      },
+      "embedded_area_label": 201.07,
+      "embedded_area_delta": 0.005624640644128931
+    }
+  ],
+  "survey_points": [
+    {
+      "name": "Pt1",
+      "number": 1,
+      "x": 623739.6817193344,
+      "y": 3870689.080965455,
+      "z": 1659.363,
+      "label_insert_x": 623738.8281078343,
+      "label_insert_y": 3870688.136779822,
+      "association_distance": 1.2728468498211927,
+      "source_handle": "2AE",
+      "source_layer": "SurveyPoint",
+      "source_object_type": "MTEXT"
+    },
+    {
+      "name": "Pt2",
+      "number": 2,
+      "x": 623731.9036181533,
+      "y": 3870695.788106064,
+      "z": 1659.653,
+      "label_insert_x": 623728.947656911,
+      "label_insert_y": 3870696.12125715,
+      "association_distance": 2.9746758667703075,
+      "source_handle": "2AF",
+      "source_layer": "SurveyPoint",
+      "source_object_type": "MTEXT"
+    },
+    {
+      "name": "Pt3",
+      "number": 3,
+      "x": 623736.7070000051,
+      "y": 3870706.66,
+      "z": 1655.849,
+      "label_insert_x": 623732.8552034149,
+      "label_insert_y": 3870707.08511733,
+      "association_distance": 3.8751853782533336,
+      "source_handle": "2B0",
+      "source_layer": "SurveyPoint",
+      "source_object_type": "MTEXT"
+    },
+    {
+      "name": "Pt4",
+      "number": 4,
+      "x": 623742.2007102777,
+      "y": 3870719.094371719,
+      "z": 1650.149,
+      "label_insert_x": 623740.7267344703,
+      "label_insert_y": 3870719.879448674,
+      "association_distance": 1.6700151215891386,
+      "source_handle": "2B1",
+      "source_layer": "SurveyPoint",
+      "source_object_type": "MTEXT"
+    },
+    {
+      "name": "Pt5",
+      "number": 5,
+      "x": 623752.3461939534,
+      "y": 3870715.027711411,
+      "z": 1648.989,
+      "label_insert_x": 623752.1985370915,
+      "label_insert_y": 3870716.460844527,
+      "association_distance": 1.440719638592631,
+      "source_handle": "2B3",
+      "source_layer": "SurveyPoint",
+      "source_object_type": "MTEXT"
+    },
+    {
+      "name": "Pt6",
+      "number": 6,
+      "x": 623760.626660687,
+      "y": 3870711.476096191,
+      "z": 1647.899,
+      "label_insert_x": 623761.9911392697,
+      "label_insert_y": 3870711.970650903,
+      "association_distance": 1.4513394384486917,
+      "source_handle": "2B4",
+      "source_layer": "SurveyPoint",
+      "source_object_type": "MTEXT"
+    },
+    {
+      "name": "Pt7",
+      "number": 7,
+      "x": 623754.4539255477,
+      "y": 3870697.717217947,
+      "z": 1653.485,
+      "label_insert_x": 623754.6522240229,
+      "label_insert_y": 3870697.096321405,
+      "association_distance": 0.65179352645141,
+      "source_handle": "2B5",
+      "source_layer": "SurveyPoint",
+      "source_object_type": "MTEXT"
+    },
+    {
+      "name": "Pt8",
+      "number": 8,
+      "x": 623747.3029420283,
+      "y": 3870701.320644192,
+      "z": 1654.509,
+      "label_insert_x": 623745.4460633162,
+      "label_insert_y": 3870700.916289394,
+      "association_distance": 1.9003950521239086,
+      "source_handle": "2B6",
+      "source_layer": "SurveyPoint",
+      "source_object_type": "MTEXT"
+    }
+  ],
+  "metadata": {
+    "dxf_version": "AC1027",
+    "encoding": "cp1256",
+    "insunits_code": 6,
+    "measurement_code": 0,
+    "extmin": [
+      623728.8847606761,
+      3870687.205820738,
+      -0.1012945348629728
+    ],
+    "extmax": [
+      623764.686555998,
+      3870720.508353719,
+      1659.407050416176
+    ],
+    "latitude_header": 37.795,
+    "longitude_header": -122.394,
+    "northdirection_header": 0.0,
+    "geodata_object_count": 0,
+    "layers": [
+      {
+        "name": "0",
+        "color": 7,
+        "linetype": "Continuous"
+      },
+      {
+        "name": "SurveyPoint",
+        "color": 5,
+        "linetype": "Continuous"
+      },
+      {
+        "name": "Defpoints",
+        "color": 7,
+        "linetype": "Continuous"
+      }
+    ],
+    "modelspace_entity_counts": {
+      "DIMENSION": 9,
+      "LWPOLYLINE": 3,
+      "MTEXT": 11
+    },
+    "texts": [
+      {
+        "text": "area   201.07",
+        "layer": "0",
+        "handle": "290"
+      },
+      {
+        "text": " area   126.02",
+        "layer": "0",
+        "handle": "291"
+      },
+      {
+        "text": "area   160.33",
+        "layer": "0",
+        "handle": "292"
+      },
+      {
+        "text": "Pt1 / 1659.363",
+        "layer": "SurveyPoint",
+        "handle": "2AE"
+      },
+      {
+        "text": "Pt2 / 1659.653",
+        "layer": "SurveyPoint",
+        "handle": "2AF"
+      },
+      {
+        "text": "Pt3 / 1655.849",
+        "layer": "SurveyPoint",
+        "handle": "2B0"
+      },
+      {
+        "text": "Pt4 / 1650.149",
+        "layer": "SurveyPoint",
+        "handle": "2B1"
+      },
+      {
+        "text": "Pt5 / 1648.989",
+        "layer": "SurveyPoint",
+        "handle": "2B3"
+      },
+      {
+        "text": "Pt6 / 1647.899",
+        "layer": "SurveyPoint",
+        "handle": "2B4"
+      },
+      {
+        "text": "Pt7 / 1653.485",
+        "layer": "SurveyPoint",
+        "handle": "2B5"
+      },
+      {
+        "text": "Pt8 / 1654.509",
+        "layer": "SurveyPoint",
+        "handle": "2B6"
+      }
+    ],
+    "unreferenced_blocks": [
+      {
+        "name": "rrrrrrrrrrr",
+        "closed_polyline_count": 3,
+        "insert_count": 0,
+        "handles": [
+          "224",
+          "225",
+          "226"
+        ]
+      },
+      {
+        "name": "tttttttt",
+        "closed_polyline_count": 3,
+        "insert_count": 0,
+        "handles": [
+          "269",
+          "26A",
+          "26B"
+        ]
+      }
+    ]
+  }
+}

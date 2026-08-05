@@ -1,0 +1,157 @@
+{
+  "status": "complete",
+  "source": {
+    "en": "design-brief.md + household answers (2026-08-05)",
+    "fa": "design-brief.md + پاسخ‌های خانوار (۲۰۲۶-۰۸-۰۵)"
+  },
+  "note": {
+    "en": "All twelve brief fields are answered, including design-direction refinements (2026-08-05). Construction system is a climate-first briefing for the engineer — not a stamped structural system. Unlimited budget does not skip survey, geotech, utilities or permits.",
+    "fa": "هر دوازده فیلد شرح، شامل اصلاحات جهت طراحی (۲۰۲۶-۰۸-۰۵)، پاسخ داده شده‌اند. سیستم ساخت توجیه اقلیمی برای مهندس است — نه طرح سازه مُهرشده. بودجه نامحدود نقشه‌برداری، ژئوتکنیک، تأسیسات یا مجوز را حذف نمی‌کند."
+  },
+  "fields": [
+    {
+      "id": "household",
+      "label": {
+        "en": "Household composition",
+        "fa": "ترکیب خانوار"
+      },
+      "status": "from-brief",
+      "value": {
+        "en": "Family of six — house must be suitable for six people living together",
+        "fa": "خانواده شش‌نفره — خانه باید برای زندگی هم‌زمان شش نفر مناسب باشد"
+      }
+    },
+    {
+      "id": "room-program",
+      "label": {
+        "en": "Room and space program",
+        "fa": "برنامه فضاها و اتاق‌ها"
+      },
+      "status": "household-stated",
+      "value": {
+        "en": "Four naturally lit bedrooms: one master suite + three similar rooms. Acoustically separated home office (architect default). Semi-open kitchen to living with visual link and some separation (not fully open, not closed). Living and dining; open-to-sky courtyard; laundry; storage; two bathrooms. Outdoor nature-play for children; later water feature may be fountain or pool — architect proposes. Practical circulation for six.",
+        "fa": "چهار اتاق‌خواب با نور طبیعی: یک سوئیت والدین + سه اتاق مشابه. دفتر خانگی جدا از نظر صوتی (پیش‌فرض معمار). آشپزخانه نیمه‌باز به نشیمن با پیوند دیداری و کمی جداسازی (نه کاملاً باز، نه بسته). نشیمن و ناهارخوری؛ حیاط باز به آسمان؛ رختشوی‌خانه؛ انبار؛ دو سرویس. بازی کودکان در طبیعت؛ عنصر آبی بعدی فواره یا استخر — پیشنهاد معمار. گردش عملی برای شش نفر."
+      }
+    },
+    {
+      "id": "target-area",
+      "label": {
+        "en": "Target internal and external areas",
+        "fa": "مساحت هدف داخلی و بیرونی"
+      },
+      "status": "household-stated",
+      "value": {
+        "en": "No numeric floor-area target. Main house mass high near the upper road. Keep outdoor land for children in nature; later water feature optional (fountain or pool — architect proposes). Parcel plan area is the verified 487.428568 m² drawing figure — not a buildable-area target. Trade-offs balanced: comfort, outdoor play, car access and 1–2 year speed equally.",
+        "fa": "بدون هدف عددی زیربنا. حجم اصلی خانه بالا نزدیک راه بالایی. زمین بیرونی برای بازی کودکان در طبیعت؛ عنصر آبی بعدی اختیاری (فواره یا استخر — پیشنهاد معمار). مساحت پلان قطعه ۴۸۷٫۴۲۸۵۶۸ مترمربع ترسیمی تأییدشده است — نه هدف سطح اشغال. تعادل برابر: آسایش، بازی بیرون، دسترسی خودرو و سرعت ۱–۲ ساله."
+      }
+    },
+    {
+      "id": "accessibility",
+      "label": {
+        "en": "Accessibility and ageing-in-place needs",
+        "fa": "دسترس‌پذیری و نیازهای سالمندی در محل"
+      },
+      "status": "household-stated",
+      "value": {
+        "en": "Main everyday vehicle and pedestrian entrance from the upper road. Lower downhill gate with stairs is a nice-to-have only if the slope allows — study it; not a hard phase-1 requirement. Full ageing-in-place / step-free brief not specified; concept door and corridor minima remain a floor.",
+        "fa": "ورود روزمره خودرو و پیاده از راه بالایی. دروازه پایین با پله فقط در صورت امکان شیب مطلوب است — مطالعه شود؛ الزام سخت فاز ۱ نیست. شرح کامل سالمندی/بدون‌پله بیان نشده؛ حداقل در و راهرو شرح مفهومی کف است."
+      }
+    },
+    {
+      "id": "privacy-culture",
+      "label": {
+        "en": "Privacy, hosting and cultural needs",
+        "fa": "نیازهای حریم، پذیرایی و فرهنگی"
+      },
+      "status": "household-stated",
+      "value": {
+        "en": "Surroundings currently empty — no built neighbours (household; OSM has no nearby footprints). Outdoor nature-play for children is important. Semi-open kitchen/living suits everyday family life more than formal separation. No detailed hosting protocol stated.",
+        "fa": "اطراف فعلاً خالی — خانهٔ همسایه ساخته‌نشده (خانوار؛ OSM بدون ردپای نزدیک). بازی کودکان در طبیعت مهم است. آشپزخانه/نشیمن نیمه‌باز بیشتر با زندگی روزمره خانواده جور است تا جداسازی رسمی. پروتکل دقیق پذیرایی بیان نشده."
+      }
+    },
+    {
+      "id": "budget",
+      "label": {
+        "en": "Budget range and cost priorities",
+        "fa": "بازه بودجه و اولویت‌های هزینه"
+      },
+      "status": "household-stated",
+      "value": {
+        "en": "Treat budget as unlimited for design quality: prioritise thermal envelope, durability on a steep seismic site, and comfort over cheapest first cost. Unlimited budget does not remove geotech, utilities, survey or permit steps, and does not set a currency figure in this dashboard.",
+        "fa": "بودجه برای کیفیت طراحی نامحدود در نظر گرفته شود: اولویت با پوسته حرارتی، دوام روی سایت پرشیب لرزه‌خیز و آسایش است نه ارزان‌ترین هزینه اولیه. بودجه نامحدود ژئوتکنیک، تأسیسات، نقشه‌برداری یا مجوز را حذف نمی‌کند و رقم ارزی در این داشبورد ثبت نمی‌شود."
+      }
+    },
+    {
+      "id": "phasing",
+      "label": {
+        "en": "Phasing and occupied-construction needs",
+        "fa": "فازبندی و نیازهای ساخت در زمان سکونت"
+      },
+      "status": "household-stated",
+      "value": {
+        "en": "Primary house, upper garage/workshop band and essential outdoor access first. Optional lower gate only if slope allows. Fountain/pool and garden refinements may follow after move-in.",
+        "fa": "خانه اصلی، نوار گاراژ/کارگاه بالایی و دسترسی ضروری بیرون اول. دروازه پایین فقط اگر شیب اجازه دهد. فواره/استخر و تکمیل باغ می‌تواند بعد از سکونت باشد."
+      }
+    },
+    {
+      "id": "timeline",
+      "label": {
+        "en": "Decision and construction timeline",
+        "fa": "زمان‌بندی تصمیم‌گیری و ساخت"
+      },
+      "status": "household-stated",
+      "value": {
+        "en": "Primary house ready for occupation within one year if possible, two years at most. Later outdoor phases may follow after move-in.",
+        "fa": "خانه اصلی در صورت امکان ظرف یک سال برای سکونت آماده شود، حداکثر دو سال. فازهای بعدی محوطه می‌تواند بعد از سکونت باشد."
+      }
+    },
+    {
+      "id": "construction",
+      "label": {
+        "en": "Construction system and material preferences",
+        "fa": "ترجیحات سیستم ساخت و مصالح"
+      },
+      "status": "climate-briefing",
+      "value": {
+        "en": "Structure briefing: reinforced-concrete frame with insulated non-structural infill + continuous external thermal insulation and thermal-bridge control (engineer confirms after 2800 / Topic 6 / geotech). Character: simple modern, clean lines. Massing: two levels that split and step down the slope (not one flat platform; not a single tall block only). Not a stamped structural design.",
+        "fa": "توجیه سازه: قاب بتن‌آرمه با میان‌قاب عایق غیرسازه‌ای + عایق حرارتی پیوسته بیرونی و کنترل پل حرارتی (مهندس پس از ۲۸۰۰ / مبحث ۶ / ژئوتکنیک تأیید می‌کند). شخصیت: مدرن ساده، خطوط تمیز. حجم: دو تراز که روی شیب شکسته و پایین می‌روند (نه یک سکوی صاف؛ نه فقط یک بلوک بلند). طرح سازه مُهرشده نیست."
+      }
+    },
+    {
+      "id": "garage-workshop",
+      "label": {
+        "en": "Garage, workshop and vehicle requirements",
+        "fa": "نیازهای گاراژ، کارگاه و خودرو"
+      },
+      "status": "household-stated",
+      "value": {
+        "en": "Upper Pt2–Pt1 band: design for two covered cars as the base. Prefer an open-ended garage that opens toward the garden so a third car can fit when layout allows. Workshop/carpentry may share the same upper area — when one car is out there should be enough room for handwork (not necessarily a fully separate pavilion). Main vehicle and fire access from upper road. Lower gate + stairs: nice-to-have if slope allows, not a hard phase-1 requirement.",
+        "fa": "نوار بالایی Pt2–Pt1: طراحی برای دو خودرو سرپوشیده به‌عنوان پایه. ترجیح گاراژ باز به سمت باغ تا در صورت جا خودروی سوم هم بنشیند. کارگاه/نجاری می‌تواند همان فضای بالایی را شریک شود — وقتی یک خودرو بیرون است جا برای کار دستی باشد (لزوماً غرفه جدا نیست). ورود خودرو و آتش از راه بالایی. دروازه + پله پایین: مطلوب اگر شیب اجازه دهد، نه الزام سخت فاز ۱."
+      }
+    },
+    {
+      "id": "energy-carbon",
+      "label": {
+        "en": "Energy, comfort and carbon goals",
+        "fa": "اهداف انرژی، آسایش و کربن"
+      },
+      "status": "household-stated",
+      "value": {
+        "en": "High continuous insulation mandatory. Prefer gas heating when connected; AC only as backup — not 24/7. Summer comfort via shading (esp. west/southwest), limited unprotected west glass, night purge / cross-ventilation, courtyard airflow. Design roof ready for PV (reserve unshaded south-facing zone). No EPW energy model claimed here.",
+        "fa": "عایق پیوسته قوی الزامی. ترجیح گرمایش گاز پس از انشعاب؛ کولر فقط پشتیبان — نه ۲۴/۷. آسایش تابستان با سایه‌اندازی (به‌ویژه غرب/جنوب‌غرب)، محدود کردن شیشه غربی بدون حفاظت، تهویه شبانه/متقاطع، جریان حیاط. بام آماده PV (ناحیه جنوبی بدون سایه). هیچ مدل انرژی EPW اینجا ادعا نشده."
+      }
+    },
+    {
+      "id": "future-expansion",
+      "label": {
+        "en": "Future expansion and adaptability",
+        "fa": "توسعه آینده و انعطاف‌پذیری"
+      },
+      "status": "household-stated",
+      "value": {
+        "en": "Phased: later outdoor water (fountain or pool — architect proposes) and garden work after move-in. Roof PV-ready from the start. Flexible third-car / workshop use in the upper band. No second dwelling stated.",
+        "fa": "مرحله‌ای: عنصر آبی بعدی (فواره یا استخر — پیشنهاد معمار) و کار باغ بعد از سکونت. بام از ابتدا آماده PV. استفاده انعطاف‌پذیر خودروی سوم / کارگاه در نوار بالایی. واحد دوم بیان نشده."
+      }
+    }
+  ]
+}

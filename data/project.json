@@ -1,0 +1,60 @@
+{
+  "id": "design-001-family-house",
+  "title": {
+    "en": "Family House 001 — Site Intelligence",
+    "fa": "خانه خانوادگی ۰۰۱ — شناخت سایت"
+  },
+  "subtitle": {
+    "en": "Verified drawing geometry with traceable mountain-climate, solar, wind and hazard context",
+    "fa": "هندسه ترسیمی تأییدشده با زمینه قابل‌ردیابی اقلیم کوهستانی، خورشید، باد و مخاطرات"
+  },
+  "site_version": "v1-three-fields",
+  "generated_on": "2026-08-05",
+  "dashboard_version": "1.2.0",
+  "build_id": "dashboard-2026-08-05",
+  "canonical_build_note": {
+    "en": "One offline build. Switch English and Persian inside this package; do not compare alternate ports or stale cache-query copies as different content.",
+    "fa": "یک بسته آفلاین. انگلیسی و فارسی را داخل همین بسته عوض کنید؛ پورت‌های دیگر یا نشانی‌های کش‌شده قدیمی را محتوای جدا فرض نکنید."
+  },
+  "privacy_boundary": {
+    "en": "Precise coordinates identify the studied site for analysis. They do not identify an owner and are not evidence of ownership, title, or a cadastral boundary.",
+    "fa": "مختصات دقیق فقط سایت بررسی‌شده را برای تحلیل مشخص می‌کند. مالک را معرفی نمی‌کند و سند مالکیت، عنوان یا مرز ثبتی نیست."
+  },
+  "status": "pre-design-environmental-analysis-complete",
+  "status_label": {
+    "en": "Pre-design environmental analysis complete · parcel-scale verification remains open",
+    "fa": "تحلیل محیطی پیش‌طراحی تکمیل شده · راستی‌آزمایی در مقیاس قطعه همچنان باز است"
+  },
+  "geolocation_status": "probable",
+  "geolocation_confidence": "strong-probable",
+  "geolocation_note": {
+    "en": "Interpreting the survey as WGS 84 / UTM zone 38N places every point coherently near Baneh Verdeh, Paveh County. This is a strong-probable project location for regional analysis; the CRS is not surveyor-certified.",
+    "fa": "اگر مختصات نقشه را WGS 84 / UTM زون ۳۸ شمالی در نظر بگیریم، همه نقاط نزدیک بانه‌ورده در شهرستان پاوه قرار می‌گیرند. می‌توان از این موقعیت برای بررسی داده‌های منطقه‌ای استفاده کرد، اما نقشه‌بردار هنوز CRS را تأیید نکرده است."
+  },
+  "probable_project_location": {
+    "en": "Baneh Verdeh, Bayangan District, Paveh County, Kermanshah Province, Iran",
+    "fa": "بانه‌ورده، بخش باینگان، شهرستان پاوه، استان کرمانشاه، ایران",
+    "reverse_geocoder_label": "Baneh Verdeh, دهستان شیوه سر, بخش باینگان, Paveh County, Kermanshah Province, Iran"
+  },
+  "coordinates": {
+    "latitude": 34.97131638,
+    "longitude": 46.35559359,
+    "epsg": "EPSG:32638"
+  },
+  "design_scope": {
+    "en": "This interface supports site understanding. It does not recommend a final floor plan.",
+    "fa": "این رابط برای شناخت سایت است و هیچ پلان نهایی را توصیه نمی‌کند."
+  },
+  "evidence_counts": {
+    "verified_geometry": 8,
+    "survey_points": 8,
+    "outer_boundary_points": 7,
+    "terrain_facets": 7,
+    "regional_environmental_modules": 5,
+    "unresolved_environmental_modules": 5,
+    "unresolved_environmental_note": {
+      "en": "All five regional environmental modules still require parcel-scale verification before design decisions rely on them.",
+      "fa": "هر پنج ماژول محیطی منطقه‌ای پیش از اتکای تصمیم‌های طراحی به راستی‌آزمایی در مقیاس قطعه نیاز دارند."
+    }
+  }
+}

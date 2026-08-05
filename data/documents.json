@@ -1,0 +1,440 @@
+{
+  "items": [
+    {
+      "id": "unified-top",
+      "title": {
+        "en": "Unified site top view",
+        "fa": "نمای بالای سایت یکپارچه"
+      },
+      "description": {
+        "en": "Neutral plan showing the seven-point drawing boundary, Pt8 terrain hub, road edge, north and study zones.",
+        "fa": "پلان خنثی شامل مرز ترسیمی هفت‌نقطه‌ای، نقطه داخلی Pt8، لبه راه، شمال و محدوده‌های مطالعاتی."
+      },
+      "type": "PNG",
+      "language": "neutral",
+      "phase": "phase-1",
+      "status": "verified",
+      "href": "assets/diagrams/unified-site-top-view.png",
+      "kind": "image"
+    },
+    {
+      "id": "three-polygons",
+      "title": {
+        "en": "Original three polygons",
+        "fa": "سه چندضلعی اولیه"
+      },
+      "description": {
+        "en": "Original active survey polygons with point elevations.",
+        "fa": "چندضلعی‌های فعال اولیه نقشه‌برداری با تراز نقاط."
+      },
+      "type": "PNG",
+      "language": "neutral",
+      "phase": "phase-1",
+      "status": "verified",
+      "href": "assets/diagrams/original-three-polygons.png",
+      "kind": "image"
+    },
+    {
+      "id": "contours",
+      "title": {
+        "en": "Exploratory terrain contours",
+        "fa": "خطوط تراز اکتشافی زمین"
+      },
+      "description": {
+        "en": "One-metre contours derived from the eight-point TIN; not construction grading or pricing evidence.",
+        "fa": "خطوط تراز یک‌متری مشتق‌شده از TIN هشت‌نقطه‌ای؛ نامناسب برای تسطیح اجرایی یا قیمت‌گذاری."
+      },
+      "type": "PNG",
+      "language": "neutral",
+      "phase": "phase-2",
+      "status": "preliminary-inference",
+      "href": "assets/diagrams/site-contours.png",
+      "kind": "image"
+    },
+    {
+      "id": "sections",
+      "title": {
+        "en": "Exploratory site sections",
+        "fa": "مقاطع اکتشافی سایت"
+      },
+      "description": {
+        "en": "Analytical south–north and west–east TIN sections; valid only within the parcel and without surveyed breaklines.",
+        "fa": "مقاطع تحلیلی جنوب–شمال و غرب–شرق TIN؛ فقط در محدوده قطعه و بدون شکست‌خط برداشت‌شده معتبرند."
+      },
+      "type": "PNG",
+      "language": "neutral",
+      "phase": "phase-2",
+      "status": "preliminary-inference",
+      "href": "assets/diagrams/site-sections.png",
+      "kind": "image"
+    },
+    {
+      "id": "site-report-en",
+      "title": {
+        "en": "Survey geometry report",
+        "fa": "گزارش هندسه نقشه‌برداری"
+      },
+      "description": {
+        "en": "Sanitized English copy of the geometry extraction and verification report.",
+        "fa": "نسخه انگلیسی پالایش‌شده گزارش استخراج و تأیید هندسه."
+      },
+      "type": "MD",
+      "language": "en",
+      "phase": "phase-1",
+      "status": "verified",
+      "href": "assets/documents/site-report.en.md",
+      "kind": "document"
+    },
+    {
+      "id": "slope-report-en",
+      "title": {
+        "en": "Slope analysis report",
+        "fa": "گزارش تحلیل شیب"
+      },
+      "description": {
+        "en": "English unified-site terrain and slope report.",
+        "fa": "گزارش انگلیسی زمین و شیب سایت یکپارچه."
+      },
+      "type": "MD",
+      "language": "en",
+      "phase": "phase-2",
+      "status": "preliminary-inference",
+      "href": "assets/documents/slope-analysis.en.md",
+      "kind": "document"
+    },
+    {
+      "id": "summary-fa",
+      "title": {
+        "en": "Verified drawing-geometry summary — Persian",
+        "fa": "خلاصه هندسه ترسیمی تأییدشده — فارسی"
+      },
+      "description": {
+        "en": "Persian summary generated from verified drawing values and explicit legal and technical limitations.",
+        "fa": "خلاصه فارسی تولیدشده از مقادیر ترسیمی تأییدشده و محدودیت‌های صریح قانونی و فنی."
+      },
+      "type": "MD",
+      "language": "fa",
+      "phase": "phase-4",
+      "status": "verified-derived",
+      "href": "assets/documents/site-summary.fa.md",
+      "kind": "document"
+    },
+    {
+      "id": "coordinates",
+      "title": {
+        "en": "Coordinates and geometry table",
+        "fa": "جدول مختصات و هندسه"
+      },
+      "description": {
+        "en": "CSV export of polygon corners, survey points, sides, perimeters and areas.",
+        "fa": "خروجی CSV گوشه‌ها، نقاط، اضلاع، محیط‌ها و مساحت‌ها."
+      },
+      "type": "CSV",
+      "language": "neutral",
+      "phase": "phase-1",
+      "status": "verified",
+      "href": "assets/data/site-coordinates.csv",
+      "kind": "data"
+    },
+    {
+      "id": "site-json",
+      "title": {
+        "en": "Unified site analysis data",
+        "fa": "داده تحلیل سایت یکپارچه"
+      },
+      "description": {
+        "en": "Machine-readable TIN, contours, sections and zones.",
+        "fa": "داده ماشین‌خوان TIN، خطوط تراز، مقاطع و محدوده‌ها."
+      },
+      "type": "JSON",
+      "language": "neutral",
+      "phase": "phase-2",
+      "status": "verified-derived",
+      "href": "assets/data/unified-site-data.json",
+      "kind": "data"
+    },
+    {
+      "id": "survey-json",
+      "title": {
+        "en": "Survey analysis data",
+        "fa": "داده تحلیل نقشه‌برداری"
+      },
+      "description": {
+        "en": "Machine-readable original polygons, points and source metadata.",
+        "fa": "داده ماشین‌خوان چندضلعی‌ها، نقاط و متادیتای منبع."
+      },
+      "type": "JSON",
+      "language": "neutral",
+      "phase": "phase-1",
+      "status": "verified",
+      "href": "assets/data/site-analysis-data.json",
+      "kind": "data"
+    },
+    {
+      "id": "verification",
+      "title": {
+        "en": "Independent unified verification",
+        "fa": "تأیید مستقل سایت یکپارچه"
+      },
+      "description": {
+        "en": "Independent area and topology checks.",
+        "fa": "کنترل مستقل مساحت و توپولوژی."
+      },
+      "type": "JSON",
+      "language": "neutral",
+      "phase": "phase-2",
+      "status": "verified",
+      "href": "assets/data/unified-independent-verification.json",
+      "kind": "data"
+    },
+    {
+      "id": "hashes",
+      "title": {
+        "en": "Source integrity manifest",
+        "fa": "فهرست صحت منابع"
+      },
+      "description": {
+        "en": "SHA-256 manifest for the immutable site snapshot.",
+        "fa": "فهرست SHA-256 برای نسخه تغییرناپذیر سایت."
+      },
+      "type": "TXT",
+      "language": "neutral",
+      "phase": "phase-1",
+      "status": "verified",
+      "href": "assets/data/site-base-SHA256SUMS.txt",
+      "kind": "data"
+    },
+    {
+      "id": "unified-fcstd",
+      "title": {
+        "en": "Unified FreeCAD model",
+        "fa": "مدل یکپارچه FreeCAD"
+      },
+      "description": {
+        "en": "Validated drawing geometry, TIN, contours, sections and study zones.",
+        "fa": "هندسه ترسیمی، TIN، خطوط تراز، مقاطع و محدوده‌های مطالعاتی تأییدشده."
+      },
+      "type": "FCStd",
+      "language": "neutral",
+      "phase": "phase-2",
+      "status": "verified-derived",
+      "href": "assets/documents/unified-site.FCStd",
+      "kind": "model"
+    },
+    {
+      "id": "analysis-fcstd",
+      "title": {
+        "en": "Survey analysis FreeCAD model",
+        "fa": "مدل تحلیل نقشه‌برداری FreeCAD"
+      },
+      "description": {
+        "en": "Raw import retained for audit plus validated analysis objects.",
+        "fa": "ورودی خام برای ممیزی به همراه اشیای تحلیل تأییدشده."
+      },
+      "type": "FCStd",
+      "language": "neutral",
+      "phase": "phase-1",
+      "status": "verified",
+      "href": "assets/documents/site-analysis.FCStd",
+      "kind": "model"
+    },
+    {
+      "id": "boundaries-dxf",
+      "title": {
+        "en": "Validated drawing boundaries",
+        "fa": "مرزهای ترسیمی تأییدشده"
+      },
+      "description": {
+        "en": "ASCII R2013 DXF containing drawing-derived 3D boundaries and survey points; it is not a cadastral record.",
+        "fa": "فایل DXF نوع ASCII R2013 شامل مرزهای سه‌بعدی برگرفته از نقشه و نقاط برداشت است؛ این فایل سابقه ثبتی نیست."
+      },
+      "type": "DXF",
+      "language": "neutral",
+      "phase": "phase-1",
+      "status": "verified",
+      "href": "assets/documents/site-boundaries.dxf",
+      "kind": "model"
+    },
+    {
+      "id": "environmental-summary",
+      "title": {
+        "en": "Environmental evidence summary",
+        "fa": "خلاصه شواهد محیطی"
+      },
+      "description": {
+        "en": "Machine-readable geolocation, climate, solar, wind and regional-hazard evidence with limitations and source metadata.",
+        "fa": "شواهد ماشین‌خوان موقعیت، اقلیم، خورشید، باد و مخاطرات منطقه‌ای همراه محدودیت و متادیتای منبع."
+      },
+      "type": "JSON",
+      "language": "neutral",
+      "phase": "phase-4",
+      "status": "regional-data",
+      "href": "assets/data/environmental/environmental-summary.json",
+      "kind": "data"
+    },
+    {
+      "id": "environmental-methodology",
+      "title": {
+        "en": "Environmental methodology report",
+        "fa": "گزارش روش‌شناسی محیطی"
+      },
+      "description": {
+        "en": "Bilingual explanation of datasets, periods, resolution, calculations and unresolved field requirements.",
+        "fa": "شرح دوزبانه مجموعه‌داده‌ها، دوره‌ها، تفکیک، محاسبات و نیازهای میدانی حل‌نشده."
+      },
+      "type": "MD",
+      "language": "neutral",
+      "phase": "phase-4",
+      "status": "regional-data",
+      "href": "assets/documents/environmental-methodology.md",
+      "kind": "document"
+    },
+    {
+      "id": "era5-climate-raw",
+      "title": {
+        "en": "ERA5-Land daily climate source",
+        "fa": "منبع اقلیم روزانه ERA5-Land"
+      },
+      "description": {
+        "en": "Raw 1991–2020 daily regional grid response used for temperature, precipitation, snow, frost and extremes.",
+        "fa": "پاسخ خام شبکه منطقه‌ای روزانه ۱۹۹۱–۲۰۲۰ برای دما، بارش، برف، یخبندان و حدها."
+      },
+      "type": "JSON",
+      "language": "neutral",
+      "phase": "phase-4",
+      "status": "regional-data",
+      "href": "assets/data/environmental/raw/openmeteo-era5land-daily-1991-2020.json",
+      "kind": "data"
+    },
+    {
+      "id": "era5-wind-raw",
+      "title": {
+        "en": "ERA5-Land hourly wind source",
+        "fa": "منبع باد ساعتی ERA5-Land"
+      },
+      "description": {
+        "en": "Raw 2011–2020 hourly 10 m speed and direction response behind the wind roses.",
+        "fa": "پاسخ خام سرعت و جهت باد ساعتی ۱۰ متری ۲۰۱۱–۲۰۲۰ برای گل‌بادها."
+      },
+      "type": "JSON",
+      "language": "neutral",
+      "phase": "phase-4",
+      "status": "regional-data",
+      "href": "assets/data/environmental/raw/openmeteo-era5land-wind-hourly-2011-2020.json",
+      "kind": "data"
+    },
+    {
+      "id": "nasa-power-raw",
+      "title": {
+        "en": "NASA POWER climatology source",
+        "fa": "منبع اقلیم‌نمای NASA POWER"
+      },
+      "description": {
+        "en": "Raw 2001–2020 monthly humidity, cloud, radiation, temperature, precipitation and wind climatology.",
+        "fa": "اقلیم‌نمای خام ماهانه ۲۰۰۱–۲۰۲۰ رطوبت، ابر، تابش، دما، بارش و باد."
+      },
+      "type": "JSON",
+      "language": "neutral",
+      "phase": "phase-4",
+      "status": "regional-data",
+      "href": "assets/data/environmental/raw/nasa-power-climatology-2001-2020.json",
+      "kind": "data"
+    },
+    {
+      "id": "usgs-earthquakes-raw",
+      "title": {
+        "en": "USGS regional earthquake query",
+        "fa": "پرس‌وجوی زلزله منطقه‌ای USGS"
+      },
+      "description": {
+        "en": "Raw M≥4.5 catalog response for 200 km around the site through 30 July 2026.",
+        "fa": "پاسخ خام فهرست بزرگی ۴٫۵ و بیشتر در شعاع ۲۰۰ کیلومتر تا ۳۰ ژوئیه ۲۰۲۶."
+      },
+      "type": "JSON",
+      "language": "neutral",
+      "phase": "phase-4",
+      "status": "regional-data",
+      "href": "assets/data/environmental/raw/usgs-earthquakes-m45-200km-1900-2026.json",
+      "kind": "data"
+    },
+    {
+      "id": "species-images-raw",
+      "title": {
+        "en": "Species photograph provenance",
+        "fa": "پیشینه عکس گونه‌های گیاهی"
+      },
+      "description": {
+        "en": "Request manifest for the bundled tree photographs: resolved Wikipedia article, Commons file, licence, author and the SHA-256 of every image written into the package.",
+        "fa": "سند درخواست عکس‌های همراه درختان: مقاله ویکی‌پدیای بازیابی‌شده، فایل ویکی‌انبار، پروانه، پدیدآور و درهم‌ساز SHA-256 هر تصویری که در بسته نوشته شده است."
+      },
+      "type": "JSON",
+      "language": "neutral",
+      "phase": "phase-4",
+      "status": "regional-data",
+      "href": "assets/data/environmental/raw/wikipedia-species-images.json",
+      "kind": "data"
+    },
+    {
+      "id": "soilgrids-raw",
+      "title": {
+        "en": "SoilGrids site prediction",
+        "fa": "پیش‌بینی خاک SoilGrids"
+      },
+      "description": {
+        "en": "Raw 250 m predicted surface-soil properties and uncertainty intervals.",
+        "fa": "ویژگی‌های خام پیش‌بینی‌شده خاک سطحی در تفکیک ۲۵۰ متر همراه بازه عدم‌قطعیت."
+      },
+      "type": "JSON",
+      "language": "neutral",
+      "phase": "phase-4",
+      "status": "regional-data",
+      "href": "assets/data/environmental/raw/isric-soilgrids-site.json",
+      "kind": "data"
+    },
+    {
+      "id": "macrostrat-raw",
+      "title": {
+        "en": "Macrostrat regional geology query",
+        "fa": "پرس‌وجوی زمین‌شناسی Macrostrat"
+      },
+      "description": {
+        "en": "Raw regional geologic-unit response linked to the Iranian 1:1,000,000 source map.",
+        "fa": "پاسخ خام واحد زمین‌شناسی منطقه‌ای مرتبط با نقشه ۱:۱٬۰۰۰٬۰۰۰ ایران."
+      },
+      "type": "JSON",
+      "language": "neutral",
+      "phase": "phase-4",
+      "status": "regional-data",
+      "href": "assets/data/environmental/raw/macrostrat-geology-site.json",
+      "kind": "data"
+    },
+    {
+      "id": "osm-context-raw",
+      "title": {
+        "en": "OpenStreetMap local context extract",
+        "fa": "برداشت زمینه محلی OpenStreetMap"
+      },
+      "description": {
+        "en": "Raw OSM XML used to draw the offline roads, water and settlements context map.",
+        "fa": "XML خام OSM برای ترسیم آفلاین راه‌ها، آب و سکونتگاه‌ها."
+      },
+      "type": "XML",
+      "language": "neutral",
+      "phase": "phase-4",
+      "status": "regional-data",
+      "href": "assets/data/environmental/raw/openstreetmap-5km.xml",
+      "kind": "data"
+    }
+  ],
+  "rejected_concepts": {
+    "archive_included": true,
+    "active_library": false,
+    "hidden_by_default": false,
+    "status": "preliminary-studies-for-architect",
+    "revived": true,
+    "note": {
+      "en": "Three preliminary house-massing studies (A/B/C) are available for architect discussion. They are unselected and are not construction or permit documents.",
+      "fa": "سه مطالعه حجم خانه (A/B/C) برای گفتگو با معمار در دسترس است. انتخاب‌شده نیستند و سند ساخت یا مجوز نیستند."
+    }
+  }
+}

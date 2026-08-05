@@ -1,0 +1,128 @@
+{
+  "policy": {
+    "en": "Retained raw responses are project evidence. Contact-bearing tags are not shown as downloadable personal data; science dumps stay internal-only where they add no design use beyond the summarised register.",
+    "fa": "پاسخ‌های خام نگه داشته‌شده شواهد پروژه‌اند. برچسب‌های دارای تماس به‌عنوان داده شخصی قابل دانلود نشان داده نمی‌شوند؛ انبوه علمی هرجا استفاده طراحی فراتر از فهرست خلاصه ندارد، داخلی می‌ماند."
+  },
+  "files": [
+    {
+      "path": "assets/data/environmental/raw/openmeteo-era5land-daily-1991-2020.json",
+      "role": "internal-evidence",
+      "label": {
+        "en": "ERA5-Land daily climate raw",
+        "fa": "خام اقلیم روزانه ERA5-Land"
+      }
+    },
+    {
+      "path": "assets/data/environmental/raw/openmeteo-era5land-wind-hourly-2011-2020.json",
+      "role": "internal-evidence",
+      "label": {
+        "en": "ERA5-Land hourly wind raw",
+        "fa": "خام باد ساعتی ERA5-Land"
+      }
+    },
+    {
+      "path": "assets/data/environmental/raw/nasa-power-climatology-2001-2020.json",
+      "role": "internal-evidence",
+      "label": {
+        "en": "NASA POWER climatology raw",
+        "fa": "خام اقلیم‌نمای NASA POWER"
+      }
+    },
+    {
+      "path": "assets/data/environmental/raw/openmeteo-elevation-horizon-ring.json",
+      "role": "downloadable",
+      "label": {
+        "en": "Horizon DEM request manifest",
+        "fa": "مانیفست درخواست DEM افق"
+      }
+    },
+    {
+      "path": "assets/data/environmental/raw/openmeteo-elevation-local-grid.json",
+      "role": "downloadable",
+      "label": {
+        "en": "Local hillside DEM request manifest",
+        "fa": "مانیفست درخواست DEM دامنه"
+      }
+    },
+    {
+      "path": "assets/data/environmental/raw/osm-nominatim-reverse.json",
+      "role": "downloadable",
+      "label": {
+        "en": "Reverse geocoder response",
+        "fa": "پاسخ ژئوکد معکوس"
+      }
+    },
+    {
+      "path": "assets/data/environmental/raw/openstreetmap-5km.xml",
+      "role": "downloadable",
+      "label": {
+        "en": "OSM 5 km extract",
+        "fa": "عصاره ۵ کیلومتری OSM"
+      }
+    },
+    {
+      "path": "assets/data/environmental/raw/usgs-earthquakes-m45-200km-1900-2026.json",
+      "role": "internal-evidence",
+      "label": {
+        "en": "USGS regional earthquake catalogue",
+        "fa": "فهرست منطقه‌ای زلزله USGS"
+      }
+    },
+    {
+      "path": "assets/data/environmental/raw/macrostrat-geology-site.json",
+      "role": "internal-evidence",
+      "label": {
+        "en": "Macrostrat geology",
+        "fa": "زمین‌شناسی Macrostrat"
+      }
+    },
+    {
+      "path": "assets/data/environmental/raw/isric-soilgrids-site.json",
+      "role": "internal-evidence",
+      "label": {
+        "en": "SoilGrids properties",
+        "fa": "ویژگی‌های SoilGrids"
+      }
+    },
+    {
+      "path": "assets/data/environmental/raw/wikipedia-species-images.json",
+      "role": "downloadable",
+      "label": {
+        "en": "Species image licence manifest",
+        "fa": "مانیفست مجوز تصاویر گونه"
+      }
+    },
+    {
+      "path": "assets/data/environmental/raw/cmip6-ec-earth3p-hr-2001-2020.json",
+      "role": "internal-evidence",
+      "label": {
+        "en": "CMIP6 EC-Earth3P-HR baseline",
+        "fa": "خط پایه CMIP6 EC-Earth3P-HR"
+      }
+    },
+    {
+      "path": "assets/data/environmental/raw/cmip6-ec-earth3p-hr-2031-2050.json",
+      "role": "internal-evidence",
+      "label": {
+        "en": "CMIP6 EC-Earth3P-HR future",
+        "fa": "آینده CMIP6 EC-Earth3P-HR"
+      }
+    },
+    {
+      "path": "assets/data/environmental/raw/cmip6-mpi-esm1-2-xr-2001-2020.json",
+      "role": "internal-evidence",
+      "label": {
+        "en": "CMIP6 MPI-ESM1-2-XR baseline",
+        "fa": "خط پایه CMIP6 MPI-ESM1-2-XR"
+      }
+    },
+    {
+      "path": "assets/data/environmental/raw/cmip6-mpi-esm1-2-xr-2031-2050.json",
+      "role": "internal-evidence",
+      "label": {
+        "en": "CMIP6 MPI-ESM1-2-XR future",
+        "fa": "آینده CMIP6 MPI-ESM1-2-XR"
+      }
+    }
+  ]
+}

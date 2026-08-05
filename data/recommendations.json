@@ -1,0 +1,238 @@
+{
+  "disclaimer": {
+    "en": "Site-analysis implications only. No final floor plan, structural system or legal approval is recommended.",
+    "fa": "صرفاً پیامدهای تحلیل سایت؛ هیچ پلان نهایی، سیستم سازه‌ای یا تأیید قانونی توصیه نمی‌شود."
+  },
+  "items": [
+    {
+      "id": "site-placement",
+      "category": {
+        "en": "Site placement",
+        "fa": "جانمایی"
+      },
+      "confidence": "strongly-supported",
+      "detail": {
+        "en": "Study a contour-parallel, stepped placement to reduce cross-slope width and grading exposure.",
+        "fa": "جانمایی پلکانی و موازی خطوط تراز بررسی شود تا عرض متقاطع شیب و حجم تسطیح کاهش یابد."
+      }
+    },
+    {
+      "id": "orientation",
+      "category": {
+        "en": "Orientation",
+        "fa": "جهت‌گیری"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Test a contour-parallel building with controlled southern solar access; protect west and southwest façades from hot summer afternoon sun.",
+        "fa": "ساختمان موازی خطوط تراز با دسترسی کنترل‌شده خورشید جنوب بررسی شود؛ نماهای غرب و جنوب‌غرب از آفتاب داغ عصر تابستان محافظت شوند."
+      }
+    },
+    {
+      "id": "daylight",
+      "category": {
+        "en": "Daylight",
+        "fa": "نور روز"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "The measured terrain horizon leaves winter southern light available; reserve it, then verify neighbour obstruction and the parcel's own slope before sizing openings.",
+        "fa": "افق زمینِ اندازه‌گیری‌شده نور جنوبی زمستان را در دسترس می‌گذارد؛ آن را حفظ و پیش از اندازه‌گذاری بازشو، موانع همسایه و شیب خود قطعه کنترل شود."
+      }
+    },
+    {
+      "id": "windows",
+      "category": {
+        "en": "Windows",
+        "fa": "پنجره‌ها"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Prioritise controllable south and east daylight; limit unprotected west glazing and keep openings adjustable until a parcel wind check is complete.",
+        "fa": "نور قابل‌کنترل جنوب و شرق در اولویت باشد؛ شیشه غربی بدون حفاظت محدود و بازشوها تا کنترل باد ملک قابل تنظیم بمانند."
+      }
+    },
+    {
+      "id": "courtyard",
+      "category": {
+        "en": "Courtyard question",
+        "fa": "پرسش حیاط"
+      },
+      "confidence": "requires-investigation",
+      "detail": {
+        "en": "Household wants outdoor nature-play for children and may add a small fountain or pool later; the design brief also keeps an open-to-sky courtyard. Test drainage, safety fencing and frost/winter shutdown before fixing water features; no pool size or level is selected.",
+        "fa": "خانوار بازی کودکان در طبیعت می‌خواهد و ممکن است بعداً فواره یا استخر کوچک اضافه کند؛ شرح طراحی هم حیاط باز به آسمان دارد. پیش از تثبیت عنصر آبی، زهکشی، حصار ایمنی و تعطیلی زمستانی آزمون شود؛ هیچ اندازه یا تراز استخر انتخاب نشده."
+      }
+    },
+    {
+      "id": "bedrooms",
+      "category": {
+        "en": "Bedroom questions",
+        "fa": "پرسش‌های اتاق‌خواب"
+      },
+      "confidence": "requires-investigation",
+      "detail": {
+        "en": "Four bedrooms: master suite + three similar rooms for a household of six; house mass preferred high near the upper road. Confirm privacy, accessibility, views and noise tolerance before fixing orientations; no room side is selected yet.",
+        "fa": "چهار اتاق‌خواب: سوئیت والدین + سه اتاق مشابه برای خانوار شش‌نفره؛ حجم خانه ترجیحاً بالا نزدیک راه بالایی. پیش از تثبیت جهت، حریم، دسترس‌پذیری، دید و تحمل صدا تأیید شود؛ هنوز سمت اتاق انتخاب نشده."
+      }
+    },
+    {
+      "id": "living",
+      "category": {
+        "en": "Living-area questions",
+        "fa": "پرسش‌های فضای نشیمن"
+      },
+      "confidence": "requires-investigation",
+      "detail": {
+        "en": "Living spaces should suit six people and connect to outdoor nature-play. Prefer testing living/kitchen relationships on the high half of the parcel near the upper road; no terrace or finished level is promised.",
+        "fa": "فضاهای نشیمن باید برای شش نفر مناسب باشد و به بازی در طبیعت وصل شود. رابطه نشیمن/آشپزخانه در نیمه بالای قطعه نزدیک راه بالایی آزمون شود؛ هیچ تراس یا تراز تمام‌شده تضمین نشده."
+      }
+    },
+    {
+      "id": "kitchen",
+      "category": {
+        "en": "Kitchen questions",
+        "fa": "پرسش‌های آشپزخانه"
+      },
+      "confidence": "requires-investigation",
+      "detail": {
+        "en": "Household wants semi-open kitchen to living (visual link, some separation). Still confirm extract, gas/electric fuel after utility letters, storage and service access before fixing the plan.",
+        "fa": "خانوار آشپزخانه نیمه‌باز به نشیمن می‌خواهد (پیوند دیداری، کمی جداسازی). پیش از تثبیت پلان، هواکش، سوخت گاز/برق پس از نامه تأسیسات، انبارش و دسترسی خدماتی هنوز تأیید شود."
+      }
+    },
+    {
+      "id": "office",
+      "category": {
+        "en": "Office questions",
+        "fa": "پرسش‌های دفتر کار"
+      },
+      "confidence": "requires-investigation",
+      "detail": {
+        "en": "Keep an acoustically separated home office (household accepts architect default). Still check road noise, glare and visitor access before fixing orientation; road noise has not been measured.",
+        "fa": "دفتر خانگی جدا از نظر صوتی نگه داشته شود (خانوار پیش‌فرض معمار را می‌پذیرد). پیش از تثبیت جهت، صدای راه، خیرگی و دسترسی مراجعان هنوز کنترل شود؛ صدای راه اندازه‌گیری نشده."
+      }
+    },
+    {
+      "id": "garage",
+      "category": {
+        "en": "Garage / workshop gate",
+        "fa": "شرط گاراژ / کارگاه"
+      },
+      "confidence": "requires-investigation",
+      "detail": {
+        "en": "Household: two covered cars base at upper Pt2–Pt1; open-ended toward garden so a third car can fit if layout allows; workshop may share the same upper area when a bay is free; lower gate only if slope allows. Still measure road longitudinal and crossfall grade, gate geometry and vehicle swept paths before fixing the plan — preference is not a survey.",
+        "fa": "خانوار: دو خودرو سرپوشیده در Pt2–Pt1؛ باز به باغ تا خودروی سوم در صورت جا؛ کارگاه ممکن است همان فضای بالایی را وقتی یک جای خالی است شریک شود؛ دروازه پایین فقط اگر شیب اجازه دهد. پیش از تثبیت پلان، شیب طولی و عرضی راه، هندسه دروازه و مسیر گردش اندازه‌گیری شود — ترجیح برداشت نیست."
+      }
+    },
+    {
+      "id": "roof",
+      "category": {
+        "en": "Roof",
+        "fa": "بام"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Coordinate roof drainage with the strong northeast fall and a confirmed legal discharge route.",
+        "fa": "زهکشی بام با افت شدید شمال‌شرقی و مسیر قانونی تخلیه هماهنگ شود."
+      }
+    },
+    {
+      "id": "ventilation",
+      "category": {
+        "en": "Ventilation",
+        "fa": "تهویه"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Household wants summer comfort without AC 24/7: provide cross-ventilation and night-purge paths that can use cooler outdoor air, remain closable for cold easterly winter flow, and work with the courtyard; confirm with on-site anemometry.",
+        "fa": "خانوار آسایش تابستان بدون کولر ۲۴/۷ می‌خواهد: مسیر تهویه متقاطع و تخلیه شبانه برای هوای خنک بیرون، قابل‌بستن در برابر جریان سرد شرقی زمستان، و هماهنگ با حیاط؛ با بادسنجی محلی تأیید شود."
+      }
+    },
+    {
+      "id": "shading",
+      "category": {
+        "en": "Shading",
+        "fa": "سایه‌اندازی"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Mandatory for the comfort goal: horizontal control on south glazing and stronger external vertical or operable protection on west/southwest façades so the house is not baked in summer afternoons.",
+        "fa": "برای هدف آسایش الزامی است: کنترل افقی روی شیشه جنوب و حفاظت عمودی یا متحرک قوی‌تر روی نماهای غرب/جنوب‌غرب تا خانه در عصر تابستان پخته نشود."
+      }
+    },
+    {
+      "id": "drainage",
+      "category": {
+        "en": "Drainage",
+        "fa": "زهکشی"
+      },
+      "confidence": "strongly-supported",
+      "detail": {
+        "en": "Intercept and safely convey runoff; avoid concentration toward neighbours or behind retaining walls.",
+        "fa": "رواناب مهار و ایمن هدایت شود؛ از تمرکز آن به سمت همسایه یا پشت دیوار حائل جلوگیری شود."
+      }
+    },
+    {
+      "id": "retaining",
+      "category": {
+        "en": "Retaining strategy",
+        "fa": "راهبرد حائل"
+      },
+      "confidence": "strongly-supported",
+      "detail": {
+        "en": "Expect retaining sensitivity and prefer staged geotechnical and civil input before fixing levels.",
+        "fa": "حساسیت حائل جدی گرفته شود و پیش از تثبیت ترازها، نظر مرحله‌ای ژئوتکنیک و عمران اخذ شود."
+      }
+    },
+    {
+      "id": "landscaping",
+      "category": {
+        "en": "Landscaping",
+        "fa": "محوطه‌سازی"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "Use erosion-conscious planting and keep drainage paths inspectable.",
+        "fa": "کاشت با توجه به فرسایش انجام و مسیرهای زهکشی قابل بازرسی نگه داشته شوند."
+      }
+    },
+    {
+      "id": "solar-energy",
+      "category": {
+        "en": "Solar energy",
+        "fa": "انرژی خورشیدی"
+      },
+      "confidence": "reasonable-inference",
+      "detail": {
+        "en": "The regional annual resource is about 5.33 kWh/m²/day; reserve an unshaded south-facing roof zone and run a horizon-aware yield model before procurement.",
+        "fa": "منبع منطقه‌ای سالانه حدود 5.33 کیلووات‌ساعت بر مترمربع در روز است؛ بخشی بدون سایه و رو به جنوب روی بام حفظ و پیش از خرید، مدل بازده با افق واقعی اجرا شود."
+      }
+    },
+    {
+      "id": "investigations",
+      "category": {
+        "en": "Further investigations",
+        "fa": "بررسی‌های بعدی"
+      },
+      "confidence": "strongly-supported",
+      "detail": {
+        "en": "Certify the CRS against a control point; obtain detailed topography, geotechnical boreholes/test pits, retaining/drainage design, legal discharge evidence, local snow/wind confirmation and the applicable Iranian seismic design parameters.",
+        "fa": "CRS با نقطه کنترل تأیید شود؛ توپوگرافی دقیق، گمانه/چاهک ژئوتکنیک، طراحی حائل/زهکشی، مدرک تخلیه قانونی، تأیید محلی برف/باد و پارامترهای لرزه‌ای آیین‌نامه ایران تهیه شود."
+      }
+    }
+  ],
+  "confidence_legend": {
+    "strongly-supported": {
+      "en": "Strongly supported",
+      "fa": "با پشتوانه قوی"
+    },
+    "reasonable-inference": {
+      "en": "Reasonable preliminary inference",
+      "fa": "استنباط اولیه معقول"
+    },
+    "requires-investigation": {
+      "en": "Requires additional local investigation",
+      "fa": "نیازمند بررسی محلی بیشتر"
+    }
+  }
+}

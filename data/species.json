@@ -1,0 +1,2854 @@
+{
+  "status": "preliminary-inference",
+  "confidence": "published-horticultural-sources",
+  "title": {
+    "en": "Trees and planting",
+    "fa": "درختان و کاشت"
+  },
+  "purpose": {
+    "en": "A shortlist of trees for this parcel — for shade, and for fruit — each tested against the conditions this location is already measured or mapped for, with the sources it was drawn from. It is a shortlist to take to a nursery and an agricultural extension office, not a landscape design. Scope is deliberately trees only: the vines, shrubs, grasses and groundcover are a separate question. Grape is named under \"ask locally\" for that reason rather than left out, and the cover that holds a 38% cut face is what the erosion finding actually calls for — nothing in the bundled evidence supports naming a species for it here.",
+    "fa": "فهرست کوتاهی از درختان این قطعه — برای سایه و برای میوه — هر یک آزموده در برابر شرط‌هایی که این موقعیت پیش‌تر برای آن‌ها اندازه‌گیری یا نقشه‌برداری شده، همراه با منابعی که از آن‌ها برگرفته شده است. این فهرستی است برای بردن به نهالستان و مرکز جهاد کشاورزی، نه طرح محوطه. دامنه آگاهانه فقط درختان است: مو، درختچه، چمن و پوشش زمینی پرسشی جداگانه‌اند. انگور به همین دلیل زیر «از محلی‌ها بپرسید» نام برده شده نه حذف، و پوششی که جبهه برش ۳۸ درصدی را نگه می‌دارد همان چیزی است که یافته فرسایش واقعاً می‌خواهد — هیچ‌یک از شواهد همراه نام‌بردن گونه‌ای برای آن را اینجا پشتیبانی نمی‌کند."
+  },
+  "client_reported_note": {
+    "en": "Three species carry a \"grown here\" mark because you named them as doing well in the area: cherry, mulberry and walnut. That is recorded and shown, and it is deliberately not treated as a source — it cannot answer a test or change a verdict. It is worth taking seriously all the same: the Quercus brantii entry below is a published figure being plainly wrong about a tree that grows on these hills unwatered.",
+    "fa": "سه گونه نشان «اینجا کاشته می‌شود» دارند چون شما آن‌ها را به‌عنوان گونه‌هایی که در منطقه خوب می‌دهند نام بردید: گیلاس، توت و گردو. این ثبت و نمایش داده شده و آگاهانه منبع شمرده نمی‌شود — نمی‌تواند آزمونی را پاسخ دهد یا حکمی را عوض کند. با این حال جدی گرفتنش می‌ارزد: مدخل بلوط ایرانی در ادامه، عددی منتشرشده است که آشکارا درباره درختی که بی‌آبیاری روی همین تپه‌ها می‌روید اشتباه می‌کند."
+  },
+  "headline": {
+    "en": "Fast, tall and densely shading is available here. Unirrigated is not: June to September bring 4.8 mm of rain between them. Every fast shade tree on this list is a watered tree for its whole life, and that is a decision about the water supply before it is a decision about species.",
+    "fa": "سریع، بلند و پرسایه اینجا در دسترس است. بی‌آبیاری در دسترس نیست: خرداد تا شهریور در مجموع ۴٫۸ میلی‌متر باران دارد. هر درخت سایه‌انداز سریع‌رشد در این فهرست تا پایان عمرش درخت آبیاری‌شده است، و این پیش از آنکه تصمیمی درباره گونه باشد، تصمیمی درباره منبع آب است."
+  },
+  "constraints": {
+    "cold": {
+      "id": "cold",
+      "lowest_daily_min_c": -23.1,
+      "percentile_daily_min_c": -16.3,
+      "frost_days": 84,
+      "usda_zone": "6a",
+      "source": "climate.json · extremes_1991_2020.lowest_daily_min_c",
+      "title": {
+        "en": "Winter cold",
+        "fa": "سرمای زمستان"
+      },
+      "statement": {
+        "en": "The coldest daily minimum in the 30-year record for this location is -23.1 °C, with about 84 frost days a year. That temperature sits inside USDA zone 6a and within 0.2 °C of its cold edge, so a species rated only to zone 6b or 7 is not marginal here — it is a replant.",
+        "fa": "سردترین کمینه روزانه در رکورد ۳۰ ساله این موقعیت −۲۳٫۱ درجه سلسیوس است، با حدود ۸۴ روز یخبندان در سال. این دما درون پهنه 6a استاندارد USDA و در فاصله ۰٫۲ درجه از لبه سرد آن قرار دارد؛ پس گونه‌ای که فقط تا پهنه ۶b یا ۷ مقاوم است اینجا مرزی نیست، بلکه کاشت دوباره است."
+      }
+    },
+    "spring_frost": {
+      "id": "spring_frost",
+      "applies_to": "fruit",
+      "applies_to_note": {
+        "en": "Applies to the 12 fruit trees below, not to the whole list. A shade tree does not care what happens to a flower in April; the other five constraints apply to every species here.",
+        "fa": "این قید به ۱۲ درخت میوه زیر مربوط است، نه به کل فهرست. برای درخت سایه اهمیتی ندارد که در آوریل بر گل چه می‌آید؛ پنج قید دیگر برای همه گونه‌های اینجا برقرارند."
+      },
+      "last_frost_median": "04-05",
+      "last_frost_9_years_in_10": "04-17",
+      "last_frost_latest": "04-24",
+      "killing_frost_median": "03-25",
+      "killing_frost_latest": "04-24",
+      "april_lowest_daily_min_c": -10.7,
+      "frost_free_days_median": 231,
+      "dem_elevation_m": 1640,
+      "chill_hours": null,
+      "source": "climate.json · derived.spring_frost, from daily temperature_2m_min 1991–2020",
+      "title": {
+        "en": "Spring frost at flowering",
+        "fa": "یخبندان بهاره در گلدهی"
+      },
+      "statement": {
+        "en": "In the 30-year record the last night at or below 0 °C falls on 5 Apr in a median year, later than 17 Apr in one year of ten, and as late as 24 Apr. Nights at or below −2 °C run to 24 Apr, and April minima reach -10.7 °C. Full-bloom flowers of every pome and stone fruit on this list lose buds between −2.2 and −2.8 °C. So the question for a fruit tree here is not whether it survives the winter — it is whether it flowers before the last frost, and most of them do.",
+        "fa": "در رکورد ۳۰ ساله آخرین شب با دمای صفر یا کمتر در سال میانه در ۵ آوریل می‌افتد، در یک سال از ده دیرتر از ۱۷ آوریل، و تا ۲۴ آوریل هم دیده شده است. شب‌های منفی ۲ درجه و کمتر تا ۲۴ آوریل ادامه دارند و کمینه‌های فروردین به −۱۰٫۷ درجه می‌رسند. گل‌های تمام‌گلی هر میوه دانه‌دار و هسته‌دار این فهرست بین منفی ۲٫۲ تا منفی ۲٫۸ درجه جوانه از دست می‌دهند. پس پرسش یک درخت میوه اینجا این نیست که زمستان را می‌گذراند یا نه — این است که پیش از آخرین یخبندان گل می‌دهد یا نه، و بیشترشان می‌دهند."
+      },
+      "caveat": {
+        "en": "These dates are a floor on the risk, not a bound on it, and the reason is the same one that made the hourly wind fit unusable: the series is an area-averaged reanalysis cell. A single cell cannot resolve cold air draining downhill and pooling on a bench at night, and it averages a whole grid box of terrain into one minimum. The real last frost on this parcel is therefore at least as late as the date given, and the real minimum at least as cold — never the other way round. Treat a date here as the earliest a bud is safe, not the day it is.",
+        "fa": "این تاریخ‌ها کف خطرند، نه سقف آن، و دلیلش همان چیزی است که برازش باد ساعتی را بی‌استفاده کرد: این سری یک سلول بازتحلیل با میانگین پهنه‌ای است. یک سلول نمی‌تواند فرونشست شبانه هوای سرد و جمع‌شدنش روی یک سکو را تفکیک کند و یک جعبه کامل از زمین را به یک کمینه میانگین می‌گیرد. پس آخرین یخبندان واقعی این قطعه دست‌کم به‌اندازه تاریخ داده‌شده دیر است و کمینه واقعی دست‌کم به همان اندازه سرد — هرگز برعکس. هر تاریخ اینجا را زودترین زمان ایمنی جوانه بدانید، نه روز ایمنی آن."
+      },
+      "chill_note": {
+        "en": "Winter chill is not quantified here: chill hours are defined on hourly temperature and only the daily series is bundled. At this elevation, with the frost record below, chill accumulation is not the factor that limits temperate fruit here — the date of the last spring frost is.",
+        "fa": "سرمانیاز زمستانه اینجا کمّی نشده است: ساعات سرما بر پایه دمای ساعتی تعریف می‌شود و تنها سری روزانه همراه بسته شده است. در این ارتفاع و با رکورد یخبندان زیر، انباشت سرما عامل محدودکننده میوه معتدل اینجا نیست — تاریخ آخرین یخبندان بهاره است."
+      }
+    },
+    "drought": {
+      "id": "drought",
+      "annual_precipitation_mm": 760,
+      "summer_precipitation_mm": 4.8,
+      "summer_months": "June–September",
+      "summer_relative_humidity_percent": 22,
+      "hot_days_ge_30c": 82,
+      "highest_daily_max_c": 39.1,
+      "source": "climate.json · monthly precipitation and humidity",
+      "title": {
+        "en": "Summer drought",
+        "fa": "خشکی تابستان"
+      },
+      "statement": {
+        "en": "The year brings 760 mm of precipitation, which sounds generous until it is read by month: June to September together receive 4.8 mm at about 22% relative humidity, with 82 days a year above 30 °C. This is the constraint that decides the list. Fast growth and dense shade are bought with transpiration, and for four months there is nothing in the soil to transpire.",
+        "fa": "بارش سالانه ۷۶۰ میلی‌متر است که تا زمانی که ماه‌به‌ماه خوانده نشود سخاوتمند به نظر می‌رسد: خرداد تا شهریور در مجموع ۴٫۸ میلی‌متر دریافت می‌کند، با رطوبت نسبی حدود ۲۲ درصد و ۸۲ روز بالای ۳۰ درجه در سال. همین قید فهرست را تعیین می‌کند. رشد سریع و سایه انبوه با تعرق خریده می‌شود و چهار ماه چیزی در خاک برای تعرق نیست."
+      }
+    },
+    "soil": {
+      "id": "soil",
+      "ph": 7.6,
+      "clay_percent": 37.5,
+      "silt_percent": 39.5,
+      "sand_percent": 23,
+      "geology": "Kazhdumi Formation; Sarvak Formation; Surgah Formation; Ilam Formation",
+      "source": "SoilGrids point query (bundled) and regional geological mapping",
+      "title": {
+        "en": "Alkaline soil over limestone",
+        "fa": "خاک قلیایی روی سنگ‌آهک"
+      },
+      "statement": {
+        "en": "Mapped topsoil pH is 7.6, fine-textured at about 37.5% clay and 39.5% silt, over Cretaceous limestone and shale. Lime-loving species are at home; anything that needs acid ground will yellow between the leaf veins and stay yellow. Both figures are mapped, not sampled — a soil test is on the investigations register.",
+        "fa": "pH خاک سطحی نقشه‌شده ۷٫۶ است، ریزبافت با حدود ۳۷٫۵ درصد رس و ۳۹٫۵ درصد سیلت، روی سنگ‌آهک و شیل کرتاسه. گونه‌های آهک‌پسند اینجا در خانه‌اند؛ هر گونه‌ای که خاک اسیدی بخواهد میان رگبرگ‌ها زرد می‌شود و زرد می‌ماند. هر دو عدد نقشه‌ای‌اند نه نمونه‌برداری‌شده — آزمایش خاک در فهرست بررسی‌های لازم آمده است."
+      }
+    },
+    "exposure": {
+      "id": "exposure",
+      "observed_gust_kmh": 117,
+      "gust_50_year_kmh": 116.2,
+      "annual_snowfall_cm": 156.1,
+      "source": "climate.json · gust record and snowfall",
+      "title": {
+        "en": "Wind and snow loading",
+        "fa": "بار باد و برف"
+      },
+      "statement": {
+        "en": "The record holds a 117 km/h gust and about 156.1 cm of annual snowfall. The fastest-growing trees available — poplar, willow, black locust, paulownia — are also the weakest-wooded, and a limb failure over a house or a road is the failure mode that matters. Wet snow on a brittle crown does it as reliably as wind.",
+        "fa": "رکورد تندبادی ۱۱۷ کیلومتر بر ساعت و حدود ۱۵۶٫۱ سانتی‌متر برف سالانه دارد. سریع‌رشدترین درختان در دسترس — تبریزی، بید، اقاقیا، پائولونیا — سست‌چوب‌ترین‌ها هم هستند و شکست شاخه روی ساختمان یا جاده همان حالت خرابی است که اهمیت دارد. برف سنگین روی تاج شکننده همان کار را می‌کند که باد."
+      }
+    },
+    "space": {
+      "id": "space",
+      "plan_area_m2": 487.428568,
+      "slope_percent_range": [
+        34.52,
+        44.03
+      ],
+      "aspect": {
+        "en": "northeast",
+        "fa": "شمال‌شرقی"
+      },
+      "source": "site.json verified plan area and terrain-metrics.json slope range",
+      "title": {
+        "en": "How little room there is",
+        "fa": "چه اندازه جا کم است"
+      },
+      "statement": {
+        "en": "The parcel is 487.428568 m² in plan, on 34.52–44.03% ground facing northeast, and a house has to fit on it too. The widest crown on the list below is 30 m across, which covers 707 m² — 145% of the whole parcel, from one tree. Crown spread, not height, is what runs out here, and every species whose source publishes a spread carries the plan area its mature crown would occupy. Three of the orchard trees do not: on a fruit tree the final spread is set by the rootstock and the pruning, so it is withheld here rather than estimated, and it is a question for the nursery.",
+        "fa": "قطعه در پلان ۴۸۷٫۴۲۸۵۶۸ مترمربع است، روی زمینی با شیب ۳۴٫۵۲ تا ۴۴٫۰۳ درصد و جهت شمال‌شرقی، و ساختمان هم باید در آن جا بگیرد. پهن‌ترین تاج فهرست زیر ۳۰ متر گستره دارد که ۷۰۷ مترمربع را می‌پوشاند — ۱۴۵ درصد کل قطعه، از یک درخت. آنچه اینجا تمام می‌شود گستره تاج است نه ارتفاع، و هر گونه‌ای که منبعش گستره منتشر کرده، مساحت پلانی تاج بالغ خود را همراه دارد. سه درخت باغی چنین نیستند: در درخت میوه گستره نهایی را پایه و هرس تعیین می‌کند، پس اینجا به‌جای تخمین، منتشر نشده و پرسشی برای نهالستان است."
+      }
+    }
+  },
+  "fruit": {
+    "status": "preliminary-inference",
+    "count": 12,
+    "crops_cleanly": 1,
+    "clear_of_the_frost_window": 2,
+    "needs_a_pollination_partner": 2,
+    "headline": {
+      "en": "12 of the trees below are grown for a crop as well as for shade, and the record on this page reorders them completely. Winter hardiness is not what limits fruit here — spring frost is. The last night at or below 0 °C falls on 5 Apr in a median year and has been recorded as late as 24 Apr, while a flower at full bloom loses buds from about −2.2 °C. Only 2 of the 12 flower after the latest frost in the record. And 2 cannot set fruit from a single tree at all, which on 487 m² with a house on it is a question about room, not about horticulture.",
+      "fa": "۱۲ درخت از فهرست زیر علاوه بر سایه برای محصول هم کاشته می‌شوند و رکورد همین صفحه ترتیبشان را کاملاً عوض می‌کند. آنچه میوه را اینجا محدود می‌کند مقاومت زمستانی نیست — یخبندان بهاره است. آخرین شب با دمای صفر یا کمتر در سال میانه در ۵ آوریل می‌افتد و تا ۲۴ آوریل هم ثبت شده، در حالی که گل در تمام‌گلی از حدود منفی ۲٫۲ درجه جوانه از دست می‌دهد. فقط ۲ از ۱۲ گونه پس از دیرترین یخبندان رکورد گل می‌دهند. و ۲ گونه به‌هیچ‌وجه از یک درخت تنها میوه نمی‌بندند، که روی ۴۸۷ مترمربع با یک ساختمان بر آن پرسشی درباره جا است، نه درباره باغبانی."
+    },
+    "test_rule": {
+      "en": "Two tests, both separate from the survival verdict, and a crop verdict that can never be better than it. The bloom test compares the month a species starts flowering against the frost record: flowering before 5 Apr fails, flowering inside the month that holds the latest recorded frost (24 Apr) is marginal, and flowering after it passes. The pollination test asks whether one tree can set fruit alone — self-fertile passes, partially self-fertile is marginal, self-sterile fails, and \"fails\" means one tree flowers and sets nothing, not that the species cannot fruit. Where a bud-kill temperature is published for the fruit it is shown on the card; it is a bud-stage figure from an extension table, not a hardiness rating, and it does not exist for walnut, mulberry, fig, quince, almond or pomegranate.",
+      "fa": "دو آزمون، هر دو جدا از حکم بقا، و حکم محصولی که هرگز نمی‌تواند بهتر از آن باشد. آزمون گلدهی ماه شروع گل‌دادن گونه را با رکورد یخبندان مقایسه می‌کند: گلدهی پیش از ۵ آوریل رد است، گلدهی درون ماهی که دیرترین یخبندان ثبت‌شده (۲۴ آوریل) در آن است مرزی است، و گلدهی پس از آن قبول. آزمون گرده‌افشانی می‌پرسد آیا یک درخت تنها می‌تواند میوه ببندد — خودبارور قبول، نیمه‌خودبارور مرزی، خودناسازگار رد، و «رد» یعنی یک درخت گل می‌دهد و چیزی نمی‌بندد، نه اینکه گونه نمی‌تواند میوه بدهد. جایی که دمای تلفات جوانه برای میوه‌ای منتشر شده روی کارت نشان داده می‌شود؛ این عددی برای مرحله جوانه از جدول ترویجی است، نه رده مقاومت به سرما، و برای گردو، توت، انجیر، به، بادام و انار وجود ندارد."
+    },
+    "irrigation_note": {
+      "en": "Nothing changes about the water. A fruit tree is a shade tree that also has to fill fruit through July and August, which is the driest part of a rainless summer, and a tree short of water at that point drops the crop before it drops leaves. The register still publishes no irrigation quantity: that needs a soil test, a species list and a water source.",
+      "fa": "درباره آب چیزی عوض نمی‌شود. درخت میوه همان درخت سایه است که باید در تیر و مرداد میوه را هم پر کند، و آن خشک‌ترین بخش تابستانی بی‌باران است، و درختی که در آن نقطه کم‌آب باشد پیش از آنکه برگ بریزد محصول را می‌ریزد. این فهرست باز هم هیچ مقدار آبیاری منتشر نمی‌کند: آن به آزمایش خاک، فهرست گونه و منبع آب نیاز دارد."
+    },
+    "position_note": {
+      "en": "The one defence against spring frost that costs nothing is position, and it points the opposite way to everything else on this page. Cold air drains downhill and pools on the low ground on a still night, so the downhill north-east end — the cheapest place to put a large shade crown, and where the illustrative trees stand in the 3D study — is the worst place to put a flower bud. Fruit goes high and open on this parcel; shade goes low.",
+      "fa": "تنها دفاع بی‌هزینه در برابر یخبندان بهاره موقعیت است و جهتش خلاف هر چیز دیگر این صفحه است. هوای سرد سراشیب را پایین می‌رود و در شب آرام روی زمین پست جمع می‌شود، پس انتهای پایین شمال‌شرقی — کم‌هزینه‌ترین جای گذاشتن تاج سایه‌انداز بزرگ و جایی که درختان نمایشی مطالعه سه‌بعدی می‌ایستند — بدترین جای گذاشتن جوانه گل است. میوه در این قطعه بالا و باز می‌رود؛ سایه پایین."
+    },
+    "no_yield_note": {
+      "en": "No yield figure appears anywhere in this section, and none can be derived from it. Kilograms per tree depend on cultivar, rootstock, age, pruning, pollination, irrigation and the frost that year, and this register knows the cultivar of nothing.",
+      "fa": "هیچ عدد عملکردی در این بخش نیامده و از آن هم استخراج‌پذیر نیست. کیلوگرم در درخت به رقم، پایه، سن، هرس، گرده‌افشانی، آبیاری و یخبندان همان سال بستگی دارد و این فهرست رقم هیچ‌چیز را نمی‌داند."
+    }
+  },
+  "test_rule": {
+    "en": "Each species is tested against every constraint and its overall verdict is its weakest single test, never an average — a tree that freezes is not rescued by tolerating lime. The cold test compares the species' published hardiness limit against the -23.1 °C on record: at or below it passes, within 2.5 °C above it is marginal, warmer than that fails. \"Marginal\" means the tree lives through an ordinary winter here and loses wood or dies in the coldest one in thirty years.",
+    "fa": "هر گونه در برابر همه قیدها آزموده می‌شود و حکم کلی آن ضعیف‌ترین آزمون تک آن است، هرگز میانگین — درختی که یخ می‌زند با تحمل آهک نجات نمی‌یابد. آزمون سرما حد مقاومت منتشرشده گونه را با −۲۳٫۱ درجه ثبت‌شده مقایسه می‌کند: برابر یا کمتر قبول، تا ۲٫۵ درجه بالاتر مرزی، گرم‌تر از آن رد. «مرزی» یعنی درخت زمستان معمولی را می‌گذراند و در سردترین زمستان سی سال چوب از دست می‌دهد یا می‌میرد."
+  },
+  "verdict_legend": {
+    "pass": {
+      "en": "Clears every constraint the sources answer for",
+      "fa": "همه قیدهایی را که منابع پاسخ می‌دهند می‌گذراند"
+    },
+    "marginal": {
+      "en": "One constraint is close, contested, or met only conditionally",
+      "fa": "یک قید نزدیک، مورد اختلاف یا فقط مشروط برآورده است"
+    },
+    "fail": {
+      "en": "A published figure puts it outside a constraint",
+      "fa": "عددی منتشرشده آن را بیرون از یک قید می‌گذارد"
+    },
+    "unknown": {
+      "en": "The sources do not answer",
+      "fa": "منابع پاسخ نمی‌دهند"
+    }
+  },
+  "hardiness_derivation": {
+    "en": "Where a source states a temperature, that number is used. Where it gives only a USDA zone range, the figure is the warm edge of its coldest zone — zone 5 becomes −26.1 °C, not −28.9 °C — which is the conservative reading of a band. Derived values are marked as derived in the data.",
+    "fa": "جایی که منبع دما را صریح گفته، همان عدد به کار رفته است. جایی که فقط بازه پهنه USDA داده، عدد لبه گرم سردترین پهنه آن است — پهنه ۵ منفی ۲۶٫۱ درجه می‌شود نه منفی ۲۸٫۹ — که خوانش محافظه‌کارانه یک باند است. مقادیر استخراجی در داده‌ها با نشان derived مشخص شده‌اند."
+  },
+  "species": [
+    {
+      "id": "elaeagnus-angustifolia",
+      "latin": "Elaeagnus angustifolia",
+      "common": {
+        "en": "Russian olive / oleaster",
+        "fa": "سنجد"
+      },
+      "wikipedia": {
+        "en": "Elaeagnus angustifolia"
+      },
+      "role": {
+        "en": "Small tough tree, shelter belt, fruit",
+        "fa": "درخت کوچک سخت‌جان، بادشکن، میوه‌دار"
+      },
+      "deciduous": true,
+      "native_to_iran": true,
+      "mature_height_m": [
+        5,
+        7
+      ],
+      "crown_spread_m": [
+        5,
+        7
+      ],
+      "growth_rate": {
+        "class": "fast",
+        "source_text": "Fast",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -40,
+        "derived": false,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 2-8",
+        "source_text": "hardy to \"about -40°c\"",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "low",
+        "source_text": "\"Very drought and wind resistant\"",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "very",
+        "source_text": "\"can grow in very alkaline and saline soils\"; fixes atmospheric nitrogen through root nodules",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "pass",
+        "drought": "pass",
+        "soil": "pass",
+        "exposure": "pass"
+      },
+      "note": {
+        "en": "The only tree on this list that plausibly stands here without permanent irrigation: −40 °C, very drought and wind resistant, very alkaline and even saline ground, native to Iran, fast, and it fixes its own nitrogen. If the water supply turns out to be limited, the planting starts here and the big shade trees wait.",
+        "fa": "تنها درخت این فهرست که به‌طور معقول بدون آبیاری دائمی اینجا می‌ایستد: منفی ۴۰ درجه، بسیار مقاوم به خشکی و باد، زمین بسیار قلیایی و حتی شور، بومی ایران، سریع‌رشد، و نیتروژن خود را تثبیت می‌کند. اگر منبع آب محدود از آب دربیاید، کاشت از همین‌جا شروع می‌شود و درختان سایه بزرگ منتظر می‌مانند."
+      },
+      "caution": {
+        "en": "It is 7 m tall and 7 m across at most — about 38 m² of crown, an eighth of what a plane throws. This is shelter, hedge and fruit, not the shade tree the brief asked for. It is also aggressively naturalising outside its native range, which is a caution for anywhere it is not native, not for here.",
+        "fa": "حداکثر ۷ متر بلندی و ۷ متر گستره دارد — حدود ۳۸ مترمربع تاج، یک‌هشتم آنچه چنار می‌اندازد. این بادشکن، پرچین و میوه است، نه درخت سایه‌ای که در برنامه خواسته شده. بیرون از دامنه بومی‌اش هم به‌شدت وحشی می‌شود، که هشداری است برای جاهایی که بومی نیست، نه برای اینجا."
+      },
+      "sources": [
+        "pfaf",
+        "civilica-drought"
+      ],
+      "verdict": "pass",
+      "untested": [],
+      "crown_plan_area_m2": 38,
+      "crown_share_of_parcel_percent": 8,
+      "hardiness_zone_containing_limit": "4b",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Elaeagnus_angustifolia",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%B3%D9%86%D8%AC%D8%AF",
+      "image": {
+        "src": "assets/images/species/elaeagnus-angustifolia.jpg",
+        "author": "Katrin Schneider / korina.info",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Korina_2012-05-15_Elaeagnus_angustifolia_1.jpg",
+        "file": "File:Korina_2012-05-15_Elaeagnus_angustifolia_1.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "fraxinus-angustifolia",
+      "latin": "Fraxinus angustifolia",
+      "common": {
+        "en": "Narrow-leaved ash",
+        "fa": "زبان‌گنجشک"
+      },
+      "wikipedia": {
+        "en": "Fraxinus angustifolia"
+      },
+      "role": {
+        "en": "Large deciduous shade tree",
+        "fa": "درخت سایه‌انداز بزرگ برگ‌ریز"
+      },
+      "deciduous": true,
+      "native_to_iran": true,
+      "mature_height_m": [
+        20,
+        25
+      ],
+      "crown_spread_m": [
+        8,
+        12
+      ],
+      "growth_rate": {
+        "class": "fast",
+        "source_text": "Fast (PFAF growth-rate code F)",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -23.3,
+        "derived": true,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 5-9; hardy to UK zone 6",
+        "source_text": "USDA hardiness zone \"5-9\"; young spring growth is \"frost-tender\"",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "moderate",
+        "source_text": "Prefers \"dry or moist soil\"",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "very",
+        "source_text": "tolerates \"mildly acid, neutral and basic (mildly alkaline) soils and can grow in very alkaline soils\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "pass",
+        "drought": "pass",
+        "soil": "pass",
+        "exposure": "unknown"
+      },
+      "note": {
+        "en": "The most straightforward answer on this list on every count except the cold margin, which is two tenths of a degree and is set out in the caution below. It is fast, it reaches 20–25 m, it is native to western Asia, it is explicitly recorded as growing in very alkaline soil — which is what pH 7.7 over limestone asks for — and Persian-language selections for dry urban greenspace name it for exactly this. Its crown is narrower than a plane's, so it shades less ground per tree and costs less room.",
+        "fa": "سرراست‌ترین پاسخ این فهرست از هر نظر جز حاشیه سرما، که دو دهم درجه است و در هشدار پایین شرح داده شده. سریع است، به ۲۰ تا ۲۵ متر می‌رسد، بومی آسیای غربی است، به‌صراحت رشد در خاک بسیار قلیایی برایش ثبت شده — همان چیزی که pH ۷٫۷ روی سنگ‌آهک می‌خواهد — و گزینش‌های فارسی فضای سبز کم‌آب دقیقاً به همین دلیل نامش را می‌برند. تاجش از چنار باریک‌تر است، پس هر درخت سطح کمتری سایه می‌دهد و جای کمتری می‌گیرد."
+      },
+      "native_note": {
+        "en": "The species range is given as central and southern Europe, north-west Africa and south-west Asia. Iran enters it at subspecies level: subsp. oxycarpa runs \"southwest Asia east to northern Iran\" and subsp. syriaca covers the Middle East and West Asia. Iranian material is often sold under the synonym Fraxinus rotundifolia, which is worth knowing at a nursery counter.",
+        "fa": "دامنه گونه اروپای مرکزی و جنوبی، شمال‌غرب آفریقا و جنوب‌غرب آسیا آمده است. ایران در سطح زیرگونه وارد آن می‌شود: زیرگونه oxycarpa «از جنوب‌غرب آسیا تا شمال ایران» و زیرگونه syriaca خاورمیانه و غرب آسیا را می‌پوشاند. نهال ایرانی غالباً با نام مترادف Fraxinus rotundifolia فروخته می‌شود و دانستن این در پیشخوان نهالستان به کار می‌آید."
+      },
+      "caution": {
+        "en": "The cold margin is thin, and the arithmetic is worth seeing: a \"zone 5-9\" rating read at the warm end of zone 5 is −23.3 °C, against −23.1 °C on record. It passes by two tenths of a degree, which is a pass on paper and not a comfortable one — ask for locally grown stock rather than imported. Spring growth is also recorded as frost-tender, and the frost record on this page puts the last freeze at or below 0 °C in early April, later than that in one year of ten. No wind-firmness figure was found for it, so exposure is untested here rather than cleared.",
+        "fa": "حاشیه سرما تنگ است و دیدن حسابش می‌ارزد: رده «پهنه ۵ تا ۹» خوانده‌شده در انتهای گرم پهنه ۵ منفی ۲۳٫۳ درجه است، در برابر منفی ۲۳٫۱ درجه ثبت‌شده. با دو دهم درجه قبول می‌شود، که قبولی روی کاغذ است و راحت نیست — نهال پرورش‌یافته محلی بخواهید نه وارداتی. رشد بهاره‌اش هم حساس به یخبندان ثبت شده و رکورد یخبندان همین صفحه آخرین سرمای صفر یا کمتر را ابتدای آوریل می‌گذارد، و در یک سال از ده دیرتر از آن. هیچ عدد پایداری در باد برایش یافت نشد، پس مواجهه با باد اینجا آزموده‌نشده است نه تأییدشده."
+      },
+      "sources": [
+        "pfaf",
+        "tso",
+        "wikipedia-range",
+        "civilica-drought"
+      ],
+      "verdict": "pass",
+      "untested": [
+        "exposure"
+      ],
+      "crown_plan_area_m2": 113,
+      "crown_share_of_parcel_percent": 23,
+      "hardiness_zone_containing_limit": "6a",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Fraxinus_angustifolia",
+      "wikipedia_fa": null,
+      "image": {
+        "src": "assets/images/species/fraxinus-angustifolia.jpg",
+        "author": "No machine-readable author provided. MPF assumed (based on copyright claims).",
+        "licence": "CC BY 2.5",
+        "licence_url": "https://creativecommons.org/licenses/by/2.5",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Fraxinus_angustifolia_foliage.jpg",
+        "file": "File:Fraxinus_angustifolia_foliage.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "morus-alba",
+      "latin": "Morus alba",
+      "common": {
+        "en": "White mulberry",
+        "fa": "توت سفید"
+      },
+      "wikipedia": {
+        "en": "Morus alba"
+      },
+      "role": {
+        "en": "Medium deciduous shade tree with fruit",
+        "fa": "درخت سایه‌انداز میان‌اندازه برگ‌ریز و میوه‌دار"
+      },
+      "deciduous": true,
+      "native_to_iran": false,
+      "mature_height_m": [
+        12,
+        18
+      ],
+      "crown_spread_m": [
+        8,
+        10
+      ],
+      "growth_rate": {
+        "class": "medium",
+        "source_text": "\"medium rate\"",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -28.9,
+        "derived": true,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 4-10; \"Hardy to UK zone 4\"",
+        "source_text": "USDA hardiness zone \"4-10\"",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "moderate",
+        "source_text": "\"can tolerate drought\" though it \"prefers moist soil\"",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "mildly",
+        "source_text": "\"mildly acid, neutral and basic (mildly alkaline) soils\"; tolerates light, medium and heavy clay",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "pass",
+        "drought": "pass",
+        "soil": "pass",
+        "exposure": "pass"
+      },
+      "client_reported": true,
+      "fruit": {
+        "crop": {
+          "en": "Mulberries, ripening July to August",
+          "fa": "توت، رسیدن ژوئیه تا اوت"
+        },
+        "bloom_months": [
+          5,
+          5
+        ],
+        "bloom_source_text": "\"It is in flower in May, and the seeds ripen from July to August\"",
+        "bloom_source": "pfaf",
+        "self_fertile": "yes",
+        "self_fertile_source_text": "\"The species is monoecious … The plant is self-fertile\"; \"Mulberry flowers are wind-pollinated\"",
+        "self_fertile_source": "pfaf",
+        "bud_kill_c": null,
+        "rootstock": null,
+        "note": {
+          "en": "The best fruit answer on the whole register, and for a reason that has nothing to do with the fruit: it flowers in May, after the latest spring frost in the thirty-year record. Everything else here flowers into the frost window. It is also self-fertile and wind-pollinated, so one tree crops on its own — no pollination partner, no second crown to find room for.",
+          "fa": "بهترین پاسخ میوه‌ای کل این فهرست، به دلیلی که هیچ ربطی به میوه ندارد: در مه گل می‌دهد، پس از دیرترین یخبندان بهاره رکورد سی‌ساله. هر چیز دیگری در این فهرست درون پنجره یخبندان گل می‌دهد. خودبارور و بادگرده‌افشان هم هست، پس یک درخت تنها محصول می‌دهد — نه گونه گرده‌افشان لازم است نه جای تاج دومی باید پیدا شود."
+        }
+      },
+      "note": {
+        "en": "The courtyard tree of this whole region, and it earns the place: hardy from zone 4, drought-tolerant, happy on heavy clay, and explicitly recorded as tolerating strong winds. Fruit for a family of six is a real argument, and a mulberry's dense summer canopy over a terrace is the cheapest cooling on the site.",
+        "fa": "درخت حیاط تمام این منطقه، و جایش را می‌ارزد: از پهنه ۴ مقاوم، خشکی‌تحمل، سازگار با رس سنگین، و به‌صراحت تحمل بادهای قوی برایش ثبت شده. میوه برای خانواده‌ای شش‌نفره استدلال واقعی است و تاج انبوه تابستانی توت بر یک تراس، ارزان‌ترین خنک‌کننده این سایت است."
+      },
+      "caution": {
+        "en": "Growth is classed medium rather than fast, and it tops out well below the plane or the ash. The fruit stains hard surfaces and gets walked indoors — keep it off the paving you care about, not off the site.",
+        "fa": "رشدش میان‌رده است نه سریع، و سقف ارتفاعش خیلی پایین‌تر از چنار یا زبان‌گنجشک است. میوه سطوح سخت را لکه‌دار می‌کند و با پا به داخل می‌آید — از سنگ‌فرشی که برایتان مهم است دورش کنید، نه از سایت."
+      },
+      "sources": [
+        "pfaf",
+        "civilica-drought"
+      ],
+      "verdict": "pass",
+      "untested": [],
+      "crop_tests": {
+        "bloom_frost": "pass",
+        "pollination": "pass"
+      },
+      "crop_verdict": "pass",
+      "crown_plan_area_m2": 79,
+      "crown_share_of_parcel_percent": 16,
+      "hardiness_zone_containing_limit": "5a",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Morus_alba",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%AA%D9%88%D8%AA_%D8%B3%D9%81%DB%8C%D8%AF",
+      "image": {
+        "src": "assets/images/species/morus-alba.jpg",
+        "author": "Emőke Dénes",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Rosales_-_Morus_alba_-_3.jpg",
+        "file": "File:Rosales_-_Morus_alba_-_3.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "pinus-nigra",
+      "latin": "Pinus nigra",
+      "common": {
+        "en": "Austrian pine",
+        "fa": "کاج سیاه"
+      },
+      "wikipedia": {
+        "en": "Pinus nigra"
+      },
+      "role": {
+        "en": "Evergreen shelter belt",
+        "fa": "بادشکن همیشه‌سبز"
+      },
+      "deciduous": false,
+      "native_to_iran": false,
+      "mature_height_m": [
+        20,
+        30
+      ],
+      "crown_spread_m": [
+        6,
+        8
+      ],
+      "growth_rate": {
+        "class": "fast",
+        "source_text": "\"growing to 30 m (98ft) by 8 m (26ft)\" at a fast rate",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -34.4,
+        "derived": true,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 3-7",
+        "source_text": "USDA hardiness zone \"3-7\"",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "low",
+        "source_text": "\"Established plants tolerate drought\"",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "very",
+        "source_text": "\"can grow in very alkaline soils\"; thrives on chalk",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "pass",
+        "drought": "pass",
+        "soil": "pass",
+        "exposure": "pass"
+      },
+      "note": {
+        "en": "The answer to the winter wind rather than to the summer sun: \"very wind resistant\", drought-tolerant once established, thrives on lime, hardy from zone 3, and 30 m tall on a crown only 8 m wide — a shelter belt that costs almost no ground area.",
+        "fa": "پاسخ باد زمستان است نه خورشید تابستان: «بسیار مقاوم به باد»، پس از استقرار خشکی‌تحمل، سازگار با آهک، از پهنه ۳ مقاوم، و ۳۰ متر بلندی روی تاجی فقط ۸ متری — بادشکنی که تقریباً هیچ سطحی از زمین نمی‌گیرد."
+      },
+      "caution": {
+        "en": "Evergreen, which is the point and also the danger: a pine standing anywhere in the winter sun arc blocks the scarcest resource this parcel has. It belongs east or north-east, behind the winter sunrise line, and the conflict between those two is not resolved on this page.",
+        "fa": "همیشه‌سبز است، که هم هدف است و هم خطر: کاجی که در کمان خورشید زمستان بایستد کم‌یاب‌ترین منبع این قطعه را می‌بندد. جایش شرق یا شمال‌شرق است، پشت خط طلوع زمستان، و تضاد میان این دو در این صفحه حل نشده است."
+      },
+      "sources": [
+        "pfaf"
+      ],
+      "verdict": "pass",
+      "untested": [],
+      "crown_plan_area_m2": 50,
+      "crown_share_of_parcel_percent": 10,
+      "hardiness_zone_containing_limit": "4b",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Pinus_nigra",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%DA%A9%D8%A7%D8%AC_%D8%B3%DB%8C%D8%A7%D9%87",
+      "image": {
+        "src": "assets/images/species/pinus-nigra.jpg",
+        "author": "Przykuta",
+        "licence": "CC BY 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by/3.0",
+        "source_page": "https://commons.wikimedia.org/wiki/File:%C5%9Awierklaniec_pinus_nigra_12.06.2010_p.jpg",
+        "file": "File:Świerklaniec_pinus_nigra_12.06.2010_p.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "styphnolobium-japonicum",
+      "latin": "Styphnolobium japonicum",
+      "common": {
+        "en": "Pagoda tree",
+        "fa": "سوفورا (اقاقیای ژاپنی)"
+      },
+      "wikipedia": {
+        "en": "Styphnolobium japonicum"
+      },
+      "role": {
+        "en": "Large deciduous shade tree, late summer flower",
+        "fa": "درخت سایه‌انداز بزرگ برگ‌ریز با گل اواخر تابستان"
+      },
+      "deciduous": true,
+      "native_to_iran": false,
+      "mature_height_m": [
+        15,
+        20
+      ],
+      "crown_spread_m": [
+        12,
+        20
+      ],
+      "growth_rate": {
+        "class": "fast",
+        "source_text": "Fast",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -25,
+        "derived": false,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 4-9 in one source, \"Zone: 4 to 8\" in a second",
+        "source_text": "\"Hardy to about -25° when mature, but it can be damaged by severe frosts when it is young\" (PFAF); \"Zone: 4 to 8\" (Missouri Botanical Garden, which also records tolerance of \"heat and some drought\" once established)",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "moderate",
+        "source_text": "\"can tolerate drought\" once established",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "mildly",
+        "source_text": "\"mildly acid, neutral and basic (mildly alkaline) soils\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "pass",
+        "drought": "pass",
+        "soil": "pass",
+        "exposure": "unknown"
+      },
+      "note": {
+        "en": "A 20 m crown on a 20 m tree, fast, drought-tolerant once established, and rated to −25 °C when mature — nearly 2 °C of margin below the coldest night on record. It is also the one tree here that flowers heavily in late summer, when nothing else on the hillside is doing anything.",
+        "fa": "تاجی ۲۰ متری بر درختی ۲۰ متری، سریع‌رشد، پس از استقرار خشکی‌تحمل، و با مقاومت ثبت‌شده تا منفی ۲۵ درجه در بلوغ — نزدیک ۲ درجه حاشیه زیر سردترین شب ثبت‌شده. تنها درخت این فهرست است که اواخر تابستان پرگل می‌دهد، وقتی هیچ چیز دیگری در دامنه کاری نمی‌کند."
+      },
+      "caution": {
+        "en": "The −25 °C rating is for a mature tree; the same source says young plants are damaged by severe frost, so the first winters need shelter. It does not flower until it is thirty to forty years old, and the sap and green wood are recorded as strongly purgative — worth knowing with children around.",
+        "fa": "مقاومت منفی ۲۵ درجه برای درخت بالغ است؛ همان منبع می‌گوید نهال جوان از یخبندان شدید آسیب می‌بیند، پس زمستان‌های نخست به حفاظ نیاز دارد. تا سی چهل سالگی گل نمی‌دهد و شیره و چوب تازه‌اش به‌شدت مسهل ثبت شده — با بچه‌ها در اطراف، دانستنش می‌ارزد."
+      },
+      "sources": [
+        "pfaf",
+        "mbg",
+        "tso"
+      ],
+      "verdict": "pass",
+      "untested": [
+        "exposure"
+      ],
+      "crown_plan_area_m2": 314,
+      "crown_share_of_parcel_percent": 64,
+      "hardiness_zone_containing_limit": "5b",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Styphnolobium_japonicum",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%AA%D9%84%D8%AE%E2%80%8C%D8%A8%DB%8C%D8%A7%D9%86_%DA%98%D8%A7%D9%BE%D9%86%DB%8C",
+      "image": {
+        "src": "assets/images/species/styphnolobium-japonicum.jpg",
+        "author": "Jean-Pol GRANDMONT",
+        "licence": "CC BY 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by/3.0",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Sophora_japonica_JPG2Aa.jpg",
+        "file": "File:Sophora_japonica_JPG2Aa.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "acer-platanoides",
+      "latin": "Acer platanoides",
+      "common": {
+        "en": "Norway maple",
+        "fa": "افرای نروژی"
+      },
+      "wikipedia": {
+        "en": "Acer platanoides"
+      },
+      "role": {
+        "en": "Large deciduous shade tree",
+        "fa": "درخت سایه‌انداز بزرگ برگ‌ریز"
+      },
+      "deciduous": true,
+      "native_to_iran": false,
+      "mature_height_m": [
+        18,
+        21
+      ],
+      "crown_spread_m": [
+        12,
+        15
+      ],
+      "growth_rate": {
+        "class": "fast",
+        "source_text": "\"growing to 21 m (69ft) by 15 m (49ft) at a fast rate\"",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -34.4,
+        "derived": true,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 3-7",
+        "source_text": "USDA hardiness zone \"3-7\"",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "moderate",
+        "source_text": "\"prefers moist soil\"; drought tolerance not stated",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "very",
+        "source_text": "\"can grow in very alkaline soils\", with a caution that plants may develop iron-deficiency chlorosis in highly alkaline conditions",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "pass",
+        "drought": "marginal",
+        "soil": "marginal",
+        "exposure": "pass"
+      },
+      "note": {
+        "en": "By far the widest cold margin on the list — rated from zone 3, more than 11 °C below the coldest night on record — fast, 21 m tall with a 15 m crown, and recorded as wind-tolerant enough for shelterbelt use. Winter is simply not a risk for this tree here.",
+        "fa": "بزرگ‌ترین حاشیه سرمای این فهرست — از پهنه ۳، بیش از ۱۱ درجه پایین‌تر از سردترین شب ثبت‌شده — سریع‌رشد، ۲۱ متر بلندی با تاج ۱۵ متری، و به‌قدری بادتحمل ثبت شده که در کمربند بادشکن به کار می‌رود. زمستان برای این درخت اینجا خطر نیست."
+      },
+      "caution": {
+        "en": "Two real reservations. The same source that clears it for very alkaline soil warns of iron chlorosis in highly alkaline ground, and mapped pH here is 7.6–7.7 — so this is the species most likely to yellow between the veins if the soil test comes back high in free lime. And it prefers moist soil with no drought tolerance stated, which on a four-month rainless summer means it is the thirstiest safe bet rather than a tough one.",
+        "fa": "دو تردید واقعی. همان منبعی که آن را برای خاک بسیار قلیایی تأیید می‌کند، از زردی آهنی در زمین شدیداً قلیایی هشدار می‌دهد و pH نقشه‌شده اینجا ۷٫۶ تا ۷٫۷ است — پس اگر آزمایش خاک آهک آزاد بالا نشان دهد، همین گونه بیش از همه میان رگبرگ‌ها زرد می‌شود. و خاک مرطوب را می‌پسندد بدون آنکه تحمل خشکی برایش ذکر شده باشد، که در تابستان چهارماهه بی‌باران یعنی این پرآب‌ترین انتخاب مطمئن است، نه یک گونه سخت‌جان."
+      },
+      "sources": [
+        "pfaf"
+      ],
+      "verdict": "marginal",
+      "untested": [],
+      "crown_plan_area_m2": 177,
+      "crown_share_of_parcel_percent": 36,
+      "hardiness_zone_containing_limit": "4b",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Acer_platanoides",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%DA%A9%D8%B1%DA%A9%D9%81",
+      "image": {
+        "src": "assets/images/species/acer-platanoides.jpg",
+        "author": "Martin Bobka (= Martin120 )",
+        "licence": "CC BY-SA 2.5",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/2.5",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Spitz-Ahorn(mbo).jpg",
+        "file": "File:Spitz-Ahorn(mbo).jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "celtis-australis",
+      "latin": "Celtis australis",
+      "common": {
+        "en": "European nettle tree",
+        "fa": "تادار (داغداغان)"
+      },
+      "wikipedia": {
+        "en": "Celtis australis"
+      },
+      "role": {
+        "en": "Large deciduous shade tree",
+        "fa": "درخت سایه‌انداز بزرگ برگ‌ریز"
+      },
+      "deciduous": true,
+      "native_to_iran": false,
+      "mature_height_m": [
+        15,
+        20
+      ],
+      "crown_spread_m": [
+        8,
+        10
+      ],
+      "growth_rate": {
+        "class": "medium",
+        "source_text": "\"medium rate\"",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -26.1,
+        "derived": true,
+        "disputed": true,
+        "zone_text": "USDA hardiness zone 5-9, with a stated requirement for mild winters",
+        "source_text": "\"USDA Hardiness Zone: 5-9\"; \"This species requires mild winters if it is to succeed\" (PFAF); young growth \"cut back almost to the base by moderately severe frost\" in England (Trees and Shrubs Online)",
+        "source": "pfaf",
+        "dispute": {
+          "en": "A zone 5 rating and \"requires mild winters\" are not compatible, and the dendrological record of English plants being frost-cut to the base supports the second. The zone number alone would clear this site; the prose from both sources would not. It cannot be a pass on this evidence.",
+          "fa": "رده پهنه ۵ و «به زمستان معتدل نیاز دارد» با هم سازگار نیستند و ثبت درخت‌شناختی قطع‌شدن نهال‌های انگلیسی تا پای بن، دومی را تأیید می‌کند. عدد پهنه به‌تنهایی این سایت را تأیید می‌کرد؛ متن هر دو منبع نه. با این شواهد نمی‌تواند قبول باشد."
+        }
+      },
+      "water": {
+        "class": "low",
+        "source_text": "\"very drought resistant once established\"",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "mildly",
+        "source_text": "\"mildly acid, neutral and basic (mildly alkaline) soils\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "marginal",
+        "drought": "pass",
+        "soil": "pass",
+        "exposure": "unknown"
+      },
+      "note": {
+        "en": "Very drought resistant once established and a common Mediterranean street tree, so it appears on most dry-climate shortlists. Growth is only medium, though.",
+        "fa": "پس از استقرار بسیار مقاوم به خشکی و درخت خیابانی رایج مدیترانه، پس در بیشتر فهرست‌های اقلیم خشک هست. اما رشدش میان‌رده است."
+      },
+      "caution": {
+        "en": "Listed here as the near miss. It is the drought answer and not the winter answer, and on this site winter is the harder test. Do not plant it on the zone number alone.",
+        "fa": "اینجا به‌عنوان گزینه‌ای که کم می‌آورد فهرست شده است. پاسخ خشکی است نه پاسخ زمستان، و در این سایت زمستان آزمون سخت‌تر است. تنها به اعتبار عدد پهنه کاشته نشود."
+      },
+      "sources": [
+        "pfaf",
+        "tso"
+      ],
+      "verdict": "marginal",
+      "untested": [
+        "exposure"
+      ],
+      "crown_plan_area_m2": 79,
+      "crown_share_of_parcel_percent": 16,
+      "hardiness_zone_containing_limit": "5b",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Celtis_australis",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%AF%D8%A7%D8%BA%D8%AF%D8%A7%D8%BA%D8%A7%D9%86",
+      "image": {
+        "src": "assets/images/species/celtis-australis.jpg",
+        "author": null,
+        "licence": "Public domain",
+        "licence_url": null,
+        "source_page": "https://commons.wikimedia.org/wiki/File:Illustration_Celtis_australis0.jpg",
+        "file": "File:Illustration_Celtis_australis0.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "cydonia-oblonga",
+      "latin": "Cydonia oblonga",
+      "common": {
+        "en": "Quince",
+        "fa": "به"
+      },
+      "wikipedia": {
+        "en": "Cydonia oblonga"
+      },
+      "role": {
+        "en": "Small deciduous fruit tree",
+        "fa": "درخت میوه کوچک برگ‌ریز"
+      },
+      "deciduous": true,
+      "native_to_iran": true,
+      "mature_height_m": [
+        7.5,
+        7.5
+      ],
+      "crown_spread_m": [
+        7,
+        7
+      ],
+      "growth_rate": {
+        "class": "medium",
+        "source_text": "\"7.5 m (24 ft) tall by 7 m (23 ft) wide at a medium growth rate\"",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -23.3,
+        "derived": true,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 5-9",
+        "source_text": "USDA hardiness \"Zones 5-9\"",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "moderate",
+        "source_text": "\"dislikes very dry or waterlogged soils\"",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "mildly",
+        "source_text": "\"Suitable pH: mildly acid, neutral and basic (mildly alkaline) soils\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "pass",
+        "drought": "marginal",
+        "soil": "pass",
+        "exposure": "unknown"
+      },
+      "fruit": {
+        "crop": {
+          "en": "Quinces, ripening in November",
+          "fa": "به، رسیدن نوامبر"
+        },
+        "bloom_months": [
+          5,
+          5
+        ],
+        "bloom_source_text": "\"In flower in May, and the seeds ripen in November\"",
+        "bloom_source": "pfaf",
+        "self_fertile": "no",
+        "self_fertile_source_text": "\"Not self-fertile; requires cross-pollination with another quince or related species\"",
+        "self_fertile_source": "pfaf",
+        "bud_kill_c": null,
+        "rootstock": {
+          "note": {
+            "en": "Quince is not just a fruit here, it is the standard dwarfing rootstock for pear — and it is the rootstock the literature names as susceptible to iron-deficiency chlorosis in calcareous soils. That matters twice: it is a caution about the quince tree itself on pH 7.6, and it is the reason to ask what any pear on this parcel is grafted onto.",
+            "fa": "به اینجا فقط یک میوه نیست، پایه پاکوته‌کننده استاندارد گلابی هم هست — و همان پایه‌ای است که ادبیات علمی مستعد زردی کمبود آهن در خاک آهکی نامش می‌برد. این دو بار اهمیت دارد: هم هشداری است درباره خود درخت به روی pH ۷٫۶، هم دلیل پرسیدن اینکه هر گلابی این قطعه روی چه پایه‌ای پیوند شده است."
+          },
+          "source_text": "\"Much used as a dwarfing rootstock for pears and some other fruits\" (PFAF); quince A \"is susceptible to iron (Fe) deficiency in calcareous soils\"",
+          "source": "rootstock-chlorosis"
+        },
+        "note": {
+          "en": "One of only two entries on this register that flower in May, clear of the latest spring frost in thirty years — and the other one is the mulberry. On frost alone the quince is the safest crop here. What it costs is a second tree: it is not self-fertile, so a single quince flowers and sets nothing.",
+          "fa": "یکی از تنها دو مدخل این فهرست که در مه گل می‌دهند، بیرون از دیرترین یخبندان بهاره سی سال — و آن یکی دیگر توت است. بر پایه یخبندان تنها، به مطمئن‌ترین محصول اینجاست. بهایش یک درخت دوم است: خودبارور نیست، پس یک درخت به تنها گل می‌دهد و چیزی نمی‌بندد."
+        }
+      },
+      "note": {
+        "en": "A May bloom on a site whose latest recorded spring frost is 24 April is the single most valuable property a fruit tree can have here, and the quince has it. Its published range reaches Iran, it is small enough for the parcel, and it is at home on alkaline ground.",
+        "fa": "گلدهی مه در سایتی که دیرترین یخبندان بهاره ثبت‌شده‌اش ۲۴ آوریل است، ارزشمندترین ویژگی‌ای است که یک درخت میوه اینجا می‌تواند داشته باشد، و به آن را دارد. دامنه منتشرشده‌اش به ایران می‌رسد، برای قطعه به‌قدر کافی کوچک است و با زمین قلیایی سازگار."
+      },
+      "native_note": {
+        "en": "The published range is given as \"Armenia, Azerbaijan, Ciscaucasia, Dagestan, Russian Federation, Turkmenistan (Kopet Dagh), Iran (north)\". Iran is named, but northern Iran specifically — this parcel is in the western Zagros, so the badge means the country and not this province.",
+        "fa": "دامنه منتشرشده «ارمنستان، آذربایجان، پیش‌قفقاز، داغستان، فدراسیون روسیه، ترکمنستان (کپه‌داغ)، ایران (شمال)» داده شده است. ایران نام برده شده، اما مشخصاً شمال ایران — این قطعه در زاگرس غربی است، پس این نشان کشور را می‌گوید نه این استان را."
+      },
+      "caution": {
+        "en": "Not self-fertile is the whole cost, and on 487 m² a second crown is a real decision. It also \"dislikes very dry\" soils, so it is an irrigated tree like the rest. The rootstock note above applies to the tree itself as much as to any pear standing next to it.",
+        "fa": "خودبارور نبودن تمام بهای آن است و روی ۴۸۷ مترمربع تاج دوم تصمیمی واقعی است. خاک «بسیار خشک را هم نمی‌پسندد»، پس مثل بقیه درختی آبیاری‌شده است. یادداشت پایه بالا هم برای خود درخت به کار می‌آید هم برای هر گلابی که کنارش بایستد."
+      },
+      "sources": [
+        "pfaf",
+        "rootstock-chlorosis"
+      ],
+      "verdict": "marginal",
+      "untested": [
+        "exposure"
+      ],
+      "crop_tests": {
+        "bloom_frost": "pass",
+        "pollination": "fail"
+      },
+      "crop_verdict": "fail",
+      "crown_plan_area_m2": 38,
+      "crown_share_of_parcel_percent": 8,
+      "hardiness_zone_containing_limit": "6a",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Quince",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%A8%D9%87",
+      "image": {
+        "src": "assets/images/species/cydonia-oblonga.jpg",
+        "author": "Pancrace Bessa",
+        "licence": "Public domain",
+        "licence_url": null,
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pancrace_Bessa00.jpg",
+        "file": "File:Pancrace_Bessa00.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "juglans-regia",
+      "latin": "Juglans regia",
+      "common": {
+        "en": "Persian walnut",
+        "fa": "گردو"
+      },
+      "wikipedia": {
+        "en": "Juglans regia"
+      },
+      "role": {
+        "en": "Large deciduous shade tree with a crop",
+        "fa": "درخت سایه‌انداز بزرگ برگ‌ریز با محصول"
+      },
+      "deciduous": true,
+      "native_to_iran": true,
+      "mature_height_m": [
+        18,
+        20
+      ],
+      "crown_spread_m": [
+        15,
+        20
+      ],
+      "growth_rate": {
+        "class": "medium",
+        "source_text": "Medium rate",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -27,
+        "derived": false,
+        "disputed": true,
+        "zone_text": "USDA hardiness zone 7-9, alongside a stated tolerance of −27 °C",
+        "source_text": "\"The dormant plant is very cold tolerant, tolerating temperatures down to about -27°C without serious damage\"",
+        "source": "pfaf",
+        "dispute": {
+          "en": "One source gives both zone 7-9 and a −27 °C tolerance for the dormant tree, which cannot both be right — zone 7 stops near −18 °C. The −27 °C figure is the one used here, because it is specific, it is stated of the dormant plant, and it agrees with the peer-reviewed record that Iranian walnut growing concentrates in the Zagros highlands including Kermanshah. Spring frost on opening buds, not winter cold, is walnut's real cold problem.",
+          "fa": "یک منبع هم پهنه ۷ تا ۹ و هم تحمل منفی ۲۷ درجه برای درخت خواب می‌دهد و هر دو نمی‌توانند درست باشند — پهنه ۷ نزدیک منفی ۱۸ درجه متوقف می‌شود. عدد منفی ۲۷ درجه اینجا به کار رفته، چون مشخص است، درباره گیاه خواب گفته شده و با رکورد داوری‌شده هم‌خوان است که کشت گردوی ایران در ارتفاعات زاگرس از جمله کرمانشاه متمرکز است. مشکل سرمای واقعی گردو یخبندان بهاره روی جوانه‌های بازشده است، نه سرمای زمستان."
+        }
+      },
+      "water": {
+        "class": "high",
+        "source_text": "\"prefers moist soil\"; drought tolerance limited",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "mildly",
+        "source_text": "tolerates \"a pH in the range of 4.5 to 8.2\" and \"prefers a slightly alkaline heavy loam\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "marginal",
+        "drought": "marginal",
+        "soil": "pass",
+        "exposure": "unknown"
+      },
+      "client_reported": true,
+      "fruit": {
+        "crop": {
+          "en": "Walnuts, ripening in October",
+          "fa": "گردو، رسیدن اکتبر"
+        },
+        "bloom_months": [
+          4,
+          6
+        ],
+        "bloom_source_text": "\"In flower in June, and the seeds ripen in October\"; \"Main Bloom Time: Early spring, Late spring, Mid spring\"",
+        "bloom_source": "pfaf",
+        "self_fertile": "yes",
+        "self_fertile_source_text": "\"monoecious … is self-fertile\"; \"is pollinated by Wind\"",
+        "self_fertile_source": "pfaf",
+        "bud_kill_c": null,
+        "rootstock": null,
+        "note": {
+          "en": "Walnut is the crop the published evidence actually places here — the suitability model names Kermanshah among the six best provinces in Iran — and it is self-fertile and wind-pollinated, so a single tree bears. Its cold problem is not January but the opening bud: \"the flowers and young growths can be destroyed by even short periods down to −2 °C\", and the record on this page puts the last −2 °C night in late March, in one year of ten as late as mid-April. The same source names the escape: \"plants are usually late coming into leaf\", and \"some late-leafing cultivars have been developed, these often avoid damage from spring frosts\". That sentence is the single most useful thing in this section — ask the nursery for a late-leafing cultivar by name.",
+          "fa": "گردو محصولی است که شواهد منتشرشده واقعاً اینجا می‌گذارند — مدل تناسب اراضی کرمانشاه را میان شش استان برتر ایران نام می‌برد — و خودبارور و بادگرده‌افشان است، پس یک درخت تنها بار می‌دهد. مشکل سرمایش دی نیست، جوانه بازشده است: «گل‌ها و رشد جوان با دوره‌های کوتاه تا منفی ۲ درجه هم از بین می‌روند»، و رکورد همین صفحه آخرین شب منفی ۲ درجه را اواخر مارس می‌گذارد، و در یک سال از ده تا اواسط آوریل. همان منبع راه فرار را نام می‌برد: «گیاهان معمولاً دیر به برگ می‌آیند» و «رقم‌های دیربرگ‌ده پرورش یافته‌اند که غالباً از آسیب یخبندان بهاره می‌گریزند». همین جمله سودمندترین چیز این بخش است — از نهالستان رقم دیربرگ‌ده را به نام بخواهید."
+        }
+      },
+      "note": {
+        "en": "The one species on this list with published local evidence behind it rather than a database entry: Iranian walnut cultivation concentrates in exactly these western Zagros highlands, and Kermanshah is named among the important areas. A pH range up to 8.2 covers this soil with room to spare, the crown reaches 20 m across, and the tree pays for its water in nuts.",
+        "fa": "تنها گونه این فهرست که پشتش شاهد محلی منتشرشده هست نه مدخل پایگاه داده: کشت گردوی ایران دقیقاً در همین ارتفاعات زاگرس غربی متمرکز است و کرمانشاه میان مناطق مهم نام برده شده. بازه pH تا ۸٫۲ این خاک را با حاشیه می‌پوشاند، تاج به گستره ۲۰ متر می‌رسد و درخت بهای آبش را با گردو می‌پردازد."
+      },
+      "caution": {
+        "en": "It is a thirsty tree with limited drought tolerance, so it is fully dependent on summer irrigation here. Nut fall and husk staining under a 20 m crown is a real consideration over paving or a sitting area, and a productive walnut wants space that a 487 m² parcel with a house on it may not have twice over.",
+        "fa": "درختی پرآب با تحمل خشکی محدود است، پس اینجا کاملاً به آبیاری تابستانی وابسته است. ریزش گردو و لکه پوست سبز زیر تاجی ۲۰ متری روی سنگ‌فرش یا نشیمن ملاحظه واقعی است، و گردوی بارور جایی می‌خواهد که قطعه ۴۸۷ مترمربعی با یک ساختمان روی آن شاید دو بار نداشته باشد."
+      },
+      "sources": [
+        "pfaf",
+        "walnut-iran",
+        "walnut-suitability"
+      ],
+      "verdict": "marginal",
+      "untested": [
+        "exposure"
+      ],
+      "crop_tests": {
+        "bloom_frost": "marginal",
+        "pollination": "pass"
+      },
+      "crop_verdict": "marginal",
+      "crown_plan_area_m2": 314,
+      "crown_share_of_parcel_percent": 64,
+      "hardiness_zone_containing_limit": "5a",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Juglans_regia",
+      "wikipedia_fa": null,
+      "image": {
+        "src": "assets/images/species/juglans-regia.jpg",
+        "author": "Thesupermat",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Noyer_centenaire_en_automne.JPG",
+        "file": "File:Noyer_centenaire_en_automne.JPG"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "malus-domestica",
+      "latin": "Malus domestica",
+      "common": {
+        "en": "Apple",
+        "fa": "سیب"
+      },
+      "wikipedia": {
+        "en": "Malus domestica"
+      },
+      "role": {
+        "en": "Medium deciduous fruit tree",
+        "fa": "درخت میوه میان‌اندازه برگ‌ریز"
+      },
+      "deciduous": true,
+      "native_to_iran": false,
+      "mature_height_m": [
+        9,
+        9
+      ],
+      "crown_spread_m": null,
+      "crown_spread_note": {
+        "en": "No spread is published in the source used, and on an apple it is a rootstock decision — the same source records orchard trees anywhere from 4 to 12 m depending on the rootstock. That is chosen at the nursery, not read off a species table.",
+        "fa": "هیچ گستره‌ای در منبع به‌کاررفته منتشر نشده و در سیب این تصمیم پایه است — همان منبع درختان باغی را بسته به پایه از ۴ تا ۱۲ متر ثبت می‌کند. این در نهالستان انتخاب می‌شود، نه از جدول گونه خوانده می‌شود."
+      },
+      "growth_rate": {
+        "class": "medium",
+        "source_text": "\"growing to 9 m (29ft 6in) at a medium rate\"",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -34.4,
+        "derived": true,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 3-8",
+        "source_text": "USDA hardiness zone \"3-8\"",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "high",
+        "source_text": "\"requires evenly distributed rainfall of about 600 - 800mm per annum\"",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "mildly",
+        "source_text": "\"mildly acid, neutral and basic (mildly alkaline) soils\"; optimum given as pH 6.5 to 6.8",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "pass",
+        "drought": "marginal",
+        "soil": "marginal",
+        "exposure": "marginal"
+      },
+      "fruit": {
+        "crop": {
+          "en": "Apples",
+          "fa": "سیب"
+        },
+        "bloom_months": [
+          4,
+          6
+        ],
+        "bloom_source_text": "\"Flower from April to June\"",
+        "bloom_source": "pfaf",
+        "self_fertile": "yes",
+        "self_fertile_source_text": "\"Self-fertile,\" though cross-pollination with another variety improves fruit set",
+        "self_fertile_source": "pfaf",
+        "bud_kill_c": {
+          "kill_10": -2.2,
+          "kill_90": -3.9
+        },
+        "bud_kill_source_text": "Apples, Full Bloom: 10% kill 28 °F, 90% kill 25 °F",
+        "bud_kill_source": "msu-critical-temps",
+        "rootstock": {
+          "note": {
+            "en": "The rootstock decides the tree's final size, and the source's own 4-to-12 m range is the width of that decision. Nothing bundled here says which rootstocks a Kermanshah nursery stocks, so bring the question with you: final height, and whether the rootstock is one that copes with a calcareous soil.",
+            "fa": "پایه اندازه نهایی درخت را تعیین می‌کند و بازه ۴ تا ۱۲ متری خود منبع، پهنای همین تصمیم است. هیچ‌یک از داده‌های همراه نمی‌گوید نهالستان کرمانشاه کدام پایه را دارد، پس پرسش را با خود ببرید: ارتفاع نهایی، و اینکه آیا پایه با خاک آهکی سازگار است."
+          },
+          "source_text": "\"Orchard varieties typically range 4–12 metres tall depending on rootstock selection\"",
+          "source": "pfaf"
+        },
+        "note": {
+          "en": "The bloom is late and long — April to June — which is the best frost position of any pome or stone fruit here, and it is self-fertile. The problem is water, and the source states it as a requirement rather than a preference: \"evenly distributed rainfall of about 600 - 800mm per annum\". This site receives 760 mm, and 4.8 mm of it falls between June and September. The annual total is right and the distribution is not, which is the whole irrigation argument in one line.",
+          "fa": "گلدهی دیر و کشیده است — آوریل تا ژوئن — که بهترین موقعیت یخبندانی میان همه میوه‌های دانه‌دار و هسته‌دار اینجاست، و خودبارور است. مشکل آب است و منبع آن را به‌عنوان الزام می‌گوید نه ترجیح: «بارش یکنواخت پراکنده حدود ۶۰۰ تا ۸۰۰ میلی‌متر در سال». این سایت ۷۶۰ میلی‌متر می‌گیرد و ۴٫۸ میلی‌متر آن بین خرداد و شهریور می‌بارد. مجموع سالانه درست است و پراکنش نه، و همین یک خط تمام استدلال آبیاری است."
+        }
+      },
+      "note": {
+        "en": "Hardy from zone 3 with no cold question at all, self-fertile, and flowering later than anything else on the fruit list. If the water is settled, this is the least risky fruit tree here.",
+        "fa": "از پهنه ۳ مقاوم و بدون هیچ پرسش سرمایی، خودبارور، و دیرگل‌تر از هر چیز دیگر فهرست میوه. اگر آب حل شود، این کم‌خطرترین درخت میوه اینجاست."
+      },
+      "caution": {
+        "en": "Two site-specific warnings. The source asks for \"reasonable protection from the wind (especially cold north and east winds)\" — and the wind section of this dashboard has the cold half of the year blowing from exactly the east, which makes the shelter belt a condition of the crop rather than a nicety. And the optimum pH is given as 6.5–6.8 against 7.6 mapped here: the species tolerates alkaline ground, but this is above its optimum, so ask about a rootstock and about iron.",
+        "fa": "دو هشدار مربوط به همین سایت. منبع «حفاظت معقول در برابر باد (خصوصاً بادهای سرد شمالی و شرقی)» می‌خواهد — و بخش باد این داشبورد نیمه سرد سال را دقیقاً از شرق می‌وزاند، که کمربند بادشکن را شرط محصول می‌کند نه تجمل. و pH بهینه ۶٫۵ تا ۶٫۸ داده شده در برابر ۷٫۶ نقشه‌شده اینجا: گونه زمین قلیایی را تحمل می‌کند، اما این بالای بهینه اوست، پس درباره پایه و آهن بپرسید."
+      },
+      "sources": [
+        "pfaf",
+        "msu-critical-temps"
+      ],
+      "verdict": "marginal",
+      "untested": [],
+      "crop_tests": {
+        "bloom_frost": "marginal",
+        "pollination": "pass"
+      },
+      "crop_verdict": "marginal",
+      "crown_plan_area_m2": null,
+      "crown_share_of_parcel_percent": null,
+      "hardiness_zone_containing_limit": "4b",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Apple",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%B3%DB%8C%D8%A8",
+      "image": null,
+      "image_status": "refused-licence"
+    },
+    {
+      "id": "platanus-orientalis",
+      "latin": "Platanus orientalis",
+      "common": {
+        "en": "Oriental plane",
+        "fa": "چنار"
+      },
+      "wikipedia": {
+        "en": "Platanus orientalis"
+      },
+      "role": {
+        "en": "Very large deciduous shade tree",
+        "fa": "درخت سایه‌انداز بسیار بزرگ برگ‌ریز"
+      },
+      "deciduous": true,
+      "native_to_iran": true,
+      "mature_height_m": [
+        25,
+        30
+      ],
+      "crown_spread_m": [
+        20,
+        30
+      ],
+      "growth_rate": {
+        "class": "fast",
+        "source_text": "\"fast rate\"; \"Fast-growing, particularly when young\"",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -20.6,
+        "derived": true,
+        "disputed": true,
+        "zone_text": "USDA hardiness zone 6-9 in one source, USDA zone 7 in another",
+        "source_text": "\"USDA Hardiness Zone: 6-9\" and \"hardy to UK zone 7\" (PFAF); \"USDA Hardiness Zone: 7\" (Trees and Shrubs Online)",
+        "source": "pfaf",
+        "dispute": {
+          "en": "The two sources disagree, and the more cautious of them — zone 7, stopping near −18 °C — is 5 °C short of the coldest night on record here. Against that, the species is native to the Iranian mountains and the چنار is planted across highland Iran, so either the ratings understate hardy local provenances or the famous old trees stand in warmer, sheltered valley bottoms. This is settleable on the ground in an afternoon: if there are mature planes in Paveh, the ratings are wrong for local stock; if there are none above the town, they are not.",
+          "fa": "دو منبع اختلاف دارند و محتاط‌ترشان — پهنه ۷، که نزدیک منفی ۱۸ درجه متوقف می‌شود — ۵ درجه از سردترین شب ثبت‌شده اینجا کم می‌آورد. در برابر آن، گونه بومی کوه‌های ایران است و چنار در سراسر ایران کوهستانی کاشته می‌شود، پس یا این رده‌بندی‌ها منشأهای مقاوم محلی را کم‌برآورد می‌کنند یا آن چنارهای کهن در ته‌دره‌های گرم‌تر و پناه‌دار ایستاده‌اند. این را می‌توان در یک بعدازظهر روی زمین حل کرد: اگر در پاوه چنار بالغ هست، رده‌بندی برای نهال محلی نادرست است؛ اگر بالای شهر هیچ نیست، نادرست نیست."
+        }
+      },
+      "water": {
+        "class": "high",
+        "source_text": "\"prefers moist soil\"; \"remarkably tolerant so long as they are planted where underground water remains available throughout summer\"",
+        "source": "tso"
+      },
+      "soil": {
+        "alkaline": "mildly",
+        "source_text": "\"mildly acid, neutral and basic (mildly alkaline) soils\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "marginal",
+        "drought": "marginal",
+        "soil": "pass",
+        "exposure": "unknown"
+      },
+      "note": {
+        "en": "Everything the brief asked for, in one tree: 30 m tall, 30 m across, fast, and the most beautiful shade tree in Iranian building tradition. It is on this list because it is the right answer to the question and it would be dishonest to leave it out.",
+        "fa": "هر چه در برنامه خواسته شده، در یک درخت: ۳۰ متر بلندی، ۳۰ متر گستره، سریع‌رشد، و زیباترین درخت سایه سنت ساختمانی ایران. اینجا در فهرست است چون پاسخ درست پرسش است و حذفش نادرست می‌بود."
+      },
+      "caution": {
+        "en": "Also the two hardest problems on the page. Its water demand is not \"needs watering\" but underground water available all summer — the plane is a stream-bank tree, and this is a limestone hillside at 38%. And a 30 m crown is 707 m², larger than the whole parcel. One plane, planted low, is a landscape; two is a mistake nobody can undo. Canker stain disease is also recorded as a serious threat to the species.",
+        "fa": "و دو مسئله سخت‌تر این صفحه هم همین‌جاست. نیاز آبش «آبیاری لازم دارد» نیست، بلکه آب زیرزمینی در دسترس تمام تابستان است — چنار درخت کنار جوی است و اینجا دامنه‌ای آهکی با شیب ۳۸ درصد است. و تاج ۳۰ متری ۷۰۷ مترمربع است، بزرگ‌تر از کل قطعه. یک چنار، کاشته در پایین، یک منظر است؛ دو چنار اشتباهی است که کسی نمی‌تواند برش گرداند. بیماری شانکر رنگین هم تهدیدی جدی برای این گونه ثبت شده است."
+      },
+      "sources": [
+        "pfaf",
+        "tso",
+        "civilica-drought"
+      ],
+      "verdict": "marginal",
+      "untested": [
+        "exposure"
+      ],
+      "crown_plan_area_m2": 707,
+      "crown_share_of_parcel_percent": 145,
+      "hardiness_zone_containing_limit": "6b",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Platanus_orientalis",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%DA%86%D9%86%D8%A7%D8%B1_%D8%AE%D8%A7%D9%88%D8%B1%DB%8C",
+      "image": {
+        "src": "assets/images/species/platanus-orientalis.jpg",
+        "author": "uncredited",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Plane_tree_Grove_Tsav_River.jpg",
+        "file": "File:Plane_tree_Grove_Tsav_River.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "prunus-armeniaca",
+      "latin": "Prunus armeniaca",
+      "common": {
+        "en": "Apricot",
+        "fa": "زردآلو"
+      },
+      "wikipedia": {
+        "en": "Prunus armeniaca"
+      },
+      "role": {
+        "en": "Medium deciduous fruit tree",
+        "fa": "درخت میوه میان‌اندازه برگ‌ریز"
+      },
+      "deciduous": true,
+      "native_to_iran": false,
+      "mature_height_m": [
+        9,
+        9
+      ],
+      "crown_spread_m": [
+        6,
+        6
+      ],
+      "growth_rate": {
+        "class": "medium",
+        "source_text": "Medium",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -23.3,
+        "derived": true,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 5-7",
+        "source_text": "USDA hardiness zone \"5-7\"",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "high",
+        "source_text": "\"Trees drop their fruit buds if there is a summer drought\"",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "mildly",
+        "source_text": "\"Prefers a pH in the range 6.5 to 7.5\" and does well \"on limestone\", though \"apt to become chlorotic if too much is present\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "pass",
+        "drought": "marginal",
+        "soil": "marginal",
+        "exposure": "unknown"
+      },
+      "fruit": {
+        "crop": {
+          "en": "Apricots",
+          "fa": "زردآلو"
+        },
+        "bloom_months": [
+          3,
+          4
+        ],
+        "bloom_source_text": "\"In flower from March to April\"; \"it usually flowers very early in the spring and the flowers are then liable to be destroyed by frosts\"",
+        "bloom_source": "pfaf",
+        "self_fertile": "yes",
+        "self_fertile_source_text": "\"The plants are self-fertile\"",
+        "self_fertile_source": "pfaf",
+        "bud_kill_c": {
+          "kill_10": -2.8,
+          "kill_90": -5.6
+        },
+        "bud_kill_source_text": "Apricots, Full Bloom: 10% kill 27 °F, 90% kill 22 °F",
+        "bud_kill_source": "msu-critical-temps",
+        "rootstock": null,
+        "note": {
+          "en": "The clearest fruit verdict on the page, and the source states it without being asked: apricot \"usually flowers very early in the spring and the flowers are then liable to be destroyed by frosts\". Put that against the record on this page — a March bloom, a last −2 °C night in late March at the median, and April minima reaching −10.7 °C over thirty years — and the tree lives while the crop fails in most years. That is not a reason never to plant one; it is a reason not to count on it.",
+          "fa": "صریح‌ترین حکم میوه‌ای این صفحه، و منبع آن را بی‌آنکه بپرسند می‌گوید: زردآلو «معمولاً خیلی زود در بهار گل می‌دهد و گل‌هایش سپس در معرض نابودی با یخبندان‌اند». این را در برابر رکورد همین صفحه بگذارید — گلدهی مارس، آخرین شب منفی ۲ درجه در میانه اواخر مارس، و کمینه‌های آوریل که در سی سال به منفی ۱۰٫۷ درجه می‌رسند — و درخت زنده می‌ماند در حالی که محصول در بیشتر سال‌ها از دست می‌رود. این دلیل هرگز نکاشتن نیست؛ دلیل حساب نکردن روی آن است."
+        }
+      },
+      "note": {
+        "en": "Self-fertile, at home on limestone, and it survives here — but only just: a \"zone 5-7\" rating read at the warm end of zone 5 is −23.3 °C against −23.1 °C on record, a two-tenths margin. The apricot's real problem is not the winter, it is March.",
+        "fa": "خودبارور، سازگار با سنگ‌آهک، و اینجا زنده می‌ماند — اما فقط به‌زور: رده «پهنه ۵ تا ۷» خوانده‌شده در انتهای گرم پهنه ۵ منفی ۲۳٫۳ درجه است در برابر منفی ۲۳٫۱ ثبت‌شده، حاشیه‌ای دو دهم درجه. مشکل واقعی زردآلو زمستان نیست، مارس است."
+      },
+      "caution": {
+        "en": "Do not plant it at the downhill north-east end where the ground falls away, however tempting the space is: cold air drains downhill and collects on the low ground on a still night, and an apricot is the tree least able to afford that. If it goes in at all it goes high and open. The other caution is water — the same source records that trees drop their fruit buds in a summer drought, and this summer is 4.8 mm long.",
+        "fa": "آن را در انتهای پایین شمال‌شرقی که زمین افت می‌کند نکارید، هرچقدر هم آن جا وسوسه‌کننده باشد: هوای سرد سراشیب را پایین می‌رود و در شب آرام روی زمین پست جمع می‌شود، و زردآلو کم‌توان‌ترین درخت برای پرداخت این بهاست. اگر قرار است کاشته شود، بالا و باز کاشته شود. هشدار دیگر آب است — همان منبع ثبت می‌کند که درختان در خشکی تابستان جوانه میوه را می‌ریزند، و این تابستان ۴٫۸ میلی‌متر است."
+      },
+      "sources": [
+        "pfaf",
+        "msu-critical-temps"
+      ],
+      "verdict": "marginal",
+      "untested": [
+        "exposure"
+      ],
+      "crop_tests": {
+        "bloom_frost": "fail",
+        "pollination": "pass"
+      },
+      "crop_verdict": "fail",
+      "crown_plan_area_m2": 28,
+      "crown_share_of_parcel_percent": 6,
+      "hardiness_zone_containing_limit": "6a",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Prunus_armeniaca",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%B2%D8%B1%D8%AF%D8%A2%D9%84%D9%88",
+      "image": {
+        "src": "assets/images/species/prunus-armeniaca.jpg",
+        "author": "Fir0002",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Apricots.jpg",
+        "file": "File:Apricots.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "prunus-avium",
+      "latin": "Prunus avium",
+      "common": {
+        "en": "Sweet cherry",
+        "fa": "گیلاس"
+      },
+      "wikipedia": {
+        "en": "Prunus avium"
+      },
+      "role": {
+        "en": "Large deciduous fruit tree",
+        "fa": "درخت میوه بزرگ برگ‌ریز"
+      },
+      "deciduous": true,
+      "native_to_iran": true,
+      "mature_height_m": [
+        18,
+        18
+      ],
+      "crown_spread_m": [
+        7,
+        7
+      ],
+      "growth_rate": {
+        "class": "fast",
+        "source_text": "Fast",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -34.4,
+        "derived": true,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 3-7",
+        "source_text": "USDA hardiness zone \"3-7\"",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "moderate",
+        "source_text": "Prefers moist, well-drained soil; the shallow root plate \"limits drought tolerance\"",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "mildly",
+        "source_text": "\"mildly acid, neutral and basic (mildly alkaline) soils\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "pass",
+        "drought": "marginal",
+        "soil": "pass",
+        "exposure": "marginal"
+      },
+      "client_reported": true,
+      "fruit": {
+        "crop": {
+          "en": "Sweet cherries",
+          "fa": "گیلاس"
+        },
+        "bloom_months": [
+          4,
+          4
+        ],
+        "bloom_source_text": "Flowers in April; the bud-kill table lists sweet cherries separately from tart",
+        "bloom_source": "pfaf",
+        "self_fertile": "no",
+        "self_fertile_source_text": "\"Self-sterile; requires cross-pollination with a different cultivar for fruit production\"",
+        "self_fertile_source": "pfaf",
+        "bud_kill_c": {
+          "kill_10": -2.2,
+          "kill_90": -3.9
+        },
+        "bud_kill_source_text": "Sweet Cherries, Full Bloom: 10% kill 28 °F, 90% kill 25 °F",
+        "bud_kill_source": "msu-critical-temps",
+        "rootstock": null,
+        "note": {
+          "en": "This is the species that turns the pollination question into a site question. It is self-sterile: one sweet cherry on this parcel produces flowers and no fruit, so the crop costs two trees with overlapping bloom, and two 7 m crowns is 77 m² of a 487 m² parcel that also has to hold a house and a platform. Self-fertile cultivars exist and are the way round it — that is a question for the nursery, by cultivar name, because this register works at species level.",
+          "fa": "همین گونه است که پرسش گرده‌افشانی را به پرسش سایت تبدیل می‌کند. خودناسازگار است: یک گیلاس در این قطعه گل می‌دهد و میوه نه، پس محصول بهای دو درخت با گلدهی هم‌پوشان را دارد و دو تاج ۷ متری ۷۷ مترمربع از قطعه ۴۸۷ متری است که ساختمان و سکو هم باید در آن بنشینند. رقم‌های خودبارور وجود دارند و راه دور زدن این مسئله‌اند — این پرسشی برای نهالستان است، به نام رقم، چون این فهرست در سطح گونه کار می‌کند."
+        }
+      },
+      "note": {
+        "en": "Fast, hardy from zone 3, 18 m tall, and the only fruit tree here big enough to double as a shade tree. Its native range is given as reaching Iran, so it is not an import. On paper it is the most attractive fruit tree on the list.",
+        "fa": "سریع، از پهنه ۳ مقاوم، ۱۸ متر بلند، و تنها درخت میوه این فهرست که به‌قدر کافی بزرگ است تا نقش سایه‌انداز را هم بازی کند. دامنه بومی‌اش تا ایران داده شده، پس وارداتی نیست. روی کاغذ جذاب‌ترین درخت میوه فهرست است."
+      },
+      "native_note": {
+        "en": "The published range runs from Europe and Scandinavia through North Africa and western Asia and is listed as reaching \"Armenia, Azerbaijan, Georgia, Iran, Turkey, Afghanistan\". Iran is named at species level, which is more than most entries here can say.",
+        "fa": "دامنه منتشرشده از اروپا و اسکاندیناوی تا شمال آفریقا و غرب آسیا کشیده می‌شود و رسیدن آن به «ارمنستان، آذربایجان، گرجستان، ایران، ترکیه، افغانستان» فهرست شده است. ایران در سطح گونه نام برده شده، که بیش از آن است که بیشتر مدخل‌های اینجا می‌توانند بگویند."
+      },
+      "caution": {
+        "en": "Two reservations, and the wind one matters on this bench. The tree is recorded as shallow-rooted, forming a root plate near the surface, which both limits its drought tolerance and makes it vulnerable to wind — against a 117 km/h gust on a 38% slope that is a windthrow risk, not a cosmetic one. Keep it out of the exposed upper corner and off the cut face. The self-sterility is the other: without a second cultivar there is no crop.",
+        "fa": "دو تردید، و آنِ باد روی این سکو اهمیت دارد. برای این درخت ریشه سطحی ثبت شده که صفحه‌ای نزدیک سطح می‌سازد، و این هم تحمل خشکی‌اش را محدود می‌کند و هم در برابر باد آسیب‌پذیرش می‌سازد — در برابر تندباد ۱۱۷ کیلومتر بر ساعت روی شیب ۳۸ درصد این خطر واژگونی است نه ظاهری. از گوشه بالایی بی‌پناه و از جبهه برش دورش کنید. خودناسازگاری تردید دیگر است: بدون رقم دوم محصولی نیست."
+      },
+      "sources": [
+        "pfaf",
+        "msu-critical-temps"
+      ],
+      "verdict": "marginal",
+      "untested": [],
+      "crop_tests": {
+        "bloom_frost": "marginal",
+        "pollination": "fail"
+      },
+      "crop_verdict": "fail",
+      "crown_plan_area_m2": 38,
+      "crown_share_of_parcel_percent": 8,
+      "hardiness_zone_containing_limit": "4b",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Prunus_avium",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%DA%AF%DB%8C%D9%84%D8%A7%D8%B3_%D8%AE%D9%88%D8%AF%D8%B1%D9%88",
+      "image": {
+        "src": "assets/images/species/prunus-avium.jpg",
+        "author": "MPF",
+        "licence": "CC BY 2.5",
+        "licence_url": "https://creativecommons.org/licenses/by/2.5",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Prunus_avium_fruit.jpg",
+        "file": "File:Prunus_avium_fruit.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "prunus-cerasus",
+      "latin": "Prunus cerasus",
+      "common": {
+        "en": "Sour cherry",
+        "fa": "آلبالو"
+      },
+      "wikipedia": {
+        "en": "Prunus cerasus"
+      },
+      "role": {
+        "en": "Small deciduous fruit tree",
+        "fa": "درخت میوه کوچک برگ‌ریز"
+      },
+      "deciduous": true,
+      "native_to_iran": false,
+      "mature_height_m": [
+        6,
+        6
+      ],
+      "crown_spread_m": null,
+      "crown_spread_note": {
+        "en": "No spread is published for this species in the source used. On an orchard tree it is set by rootstock and pruning rather than by the species, which is why the figure is left out instead of estimated.",
+        "fa": "هیچ گستره تاجی برای این گونه در منبع به‌کاررفته منتشر نشده است. در درخت باغی، گستره را پایه و هرس تعیین می‌کند نه گونه، و همین دلیل حذف عدد است به‌جای تخمین آن."
+      },
+      "growth_rate": {
+        "class": "medium",
+        "source_text": "Medium",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -34.4,
+        "derived": true,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 3-7",
+        "source_text": "USDA hardiness zone \"3-7\"",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "moderate",
+        "source_text": "\"thrives in a well-drained moisture-retentive loamy soil\"; drought tolerance not stated",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "mildly",
+        "source_text": "\"mildly acid, neutral and basic (mildly alkaline) soils\"; \"prefers some lime in the soil\" but becomes chlorotic with excess lime",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "pass",
+        "drought": "marginal",
+        "soil": "marginal",
+        "exposure": "pass"
+      },
+      "client_reported": true,
+      "fruit": {
+        "crop": {
+          "en": "Sour cherries for cooking and preserving",
+          "fa": "آلبالو برای پخت و کنسرو"
+        },
+        "bloom_months": [
+          4,
+          4
+        ],
+        "bloom_source_text": "Flowers in April; the bud-kill table treats tart cherry separately from sweet",
+        "bloom_source": "pfaf",
+        "self_fertile": "yes",
+        "self_fertile_source_text": "\"The plant is self-fertile\"",
+        "self_fertile_source": "pfaf",
+        "bud_kill_c": {
+          "kill_10": -2.2,
+          "kill_90": -4.4
+        },
+        "bud_kill_source_text": "Tart Cherries, Full Bloom: 10% kill 28 °F, 90% kill 24 °F",
+        "bud_kill_source": "msu-critical-temps",
+        "rootstock": null,
+        "note": {
+          "en": "Of the two cherries this is the one to plant. It is self-fertile, so a single tree crops; it is hardy from zone 3, more than 11 °C below the coldest night on record; it succeeds \"in fairly exposed positions\" where the sweet cherry does not; and at 6 m it fits a parcel that has a house to accommodate. The cost is the frost window — an April bloom against a record whose last 0 °C night falls in early April, and whose flowers at full bloom lose one bud in ten at −2.2 °C.",
+          "fa": "از دو گیلاس، این یکی را باید کاشت. خودبارور است، پس یک درخت تنها محصول می‌دهد؛ از پهنه ۳ مقاوم است، بیش از ۱۱ درجه پایین‌تر از سردترین شب ثبت‌شده؛ «در موقعیت‌های نسبتاً بی‌پناه» موفق می‌شود، جایی که گیلاس شیرین نمی‌شود؛ و با ۶ متر در قطعه‌ای جا می‌گیرد که ساختمانی هم باید در آن بنشیند. بهایش پنجره یخبندان است — گلدهی آوریل در برابر رکوردی که آخرین شب صفر درجه‌اش ابتدای آوریل می‌افتد و گلش در تمام‌گلی یک جوانه از ده را در منفی ۲٫۲ درجه از دست می‌دهد."
+        }
+      },
+      "note": {
+        "en": "You said cherry does well here, and of the two cherry species the sour one is the answer the sources agree with: self-fertile, hardier, smaller and tolerant of an exposed position. It is a fruit tree rather than a shade tree — 6 m will not shade a terrace — so it earns its place on the list for the crop and not for the canopy.",
+        "fa": "گفتید گیلاس اینجا خوب می‌دهد و از دو گونه، آلبالو پاسخی است که منابع با آن هم‌داستان‌اند: خودبارور، مقاوم‌تر، کوچک‌تر و تحمل‌کننده موقعیت بی‌پناه. درخت میوه است نه سایه — ۶ متر تراس را سایه نمی‌کند — پس جایش در فهرست به‌خاطر محصول است نه تاج."
+      },
+      "caution": {
+        "en": "Two things to settle locally. The soil here is mapped at pH 7.6 over limestone and the source that clears this species for lime also warns it becomes chlorotic when there is too much of it, so the rootstock question is real and this register cannot answer it. And it flowers in April: the useful defence is position, not species — the highest, most open ground on the parcel, never the low downhill end where cold air collects on a still night.",
+        "fa": "دو چیز را باید محلی حل کرد. خاک اینجا pH ۷٫۶ روی سنگ‌آهک نقشه شده و همان منبعی که این گونه را برای آهک تأیید می‌کند هشدار می‌دهد با زیادی آن زرد می‌شود، پس پرسش پایه واقعی است و این فهرست پاسخش را ندارد. و در آوریل گل می‌دهد: دفاع سودمند موقعیت است نه گونه — بلندترین و بازترین زمین قطعه، هرگز انتهای پایین سراشیب که هوای سرد در شب آرام در آن جمع می‌شود."
+      },
+      "sources": [
+        "pfaf",
+        "msu-critical-temps"
+      ],
+      "verdict": "marginal",
+      "untested": [],
+      "crop_tests": {
+        "bloom_frost": "marginal",
+        "pollination": "pass"
+      },
+      "crop_verdict": "marginal",
+      "crown_plan_area_m2": null,
+      "crown_share_of_parcel_percent": null,
+      "hardiness_zone_containing_limit": "4b",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Prunus_cerasus",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%A2%D9%84%D8%A8%D8%A7%D9%84%D9%88",
+      "image": {
+        "src": "assets/images/species/prunus-cerasus.jpg",
+        "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+        "licence": "Public domain",
+        "licence_url": null,
+        "source_page": "https://commons.wikimedia.org/wiki/File:Prunus_cerasus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-113.jpg",
+        "file": "File:Prunus_cerasus_-_Köhler–s_Medizinal-Pflanzen-113.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "prunus-domestica",
+      "latin": "Prunus domestica",
+      "common": {
+        "en": "European plum",
+        "fa": "آلو"
+      },
+      "wikipedia": {
+        "en": "Prunus domestica"
+      },
+      "role": {
+        "en": "Medium deciduous fruit tree",
+        "fa": "درخت میوه میان‌اندازه برگ‌ریز"
+      },
+      "deciduous": true,
+      "native_to_iran": false,
+      "mature_height_m": [
+        12,
+        12
+      ],
+      "crown_spread_m": [
+        10,
+        10
+      ],
+      "growth_rate": {
+        "class": "medium",
+        "source_text": "Medium pace",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -28.9,
+        "derived": true,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 4-9",
+        "source_text": "USDA hardiness zone \"4-9\"",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "moderate",
+        "source_text": "Prefers moist, well-drained conditions; tolerates heavy clay",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "mildly",
+        "source_text": "\"mildly acid, neutral and basic (mildly alkaline) soils\"; \"prefers some chalk in the soil\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "pass",
+        "drought": "marginal",
+        "soil": "pass",
+        "exposure": "marginal"
+      },
+      "fruit": {
+        "crop": {
+          "en": "Plums, ripening July to November depending on cultivar",
+          "fa": "آلو، رسیدن ژوئیه تا نوامبر بسته به رقم"
+        },
+        "bloom_months": [
+          4,
+          4
+        ],
+        "bloom_source_text": "\"April, with seeds ripening July through November\"",
+        "bloom_source": "pfaf",
+        "self_fertile": "partial",
+        "self_fertile_source_text": "\"Many cultivars are fully self-fertile, though some are partially self-sterile, and others require cross-pollination\"",
+        "self_fertile_source": "pfaf",
+        "bud_kill_c": {
+          "kill_10": -2.2,
+          "kill_90": -5
+        },
+        "bud_kill_source_text": "European Plums, Full Bloom: 10% kill 28 °F, 90% kill 23 °F",
+        "bud_kill_source": "msu-critical-temps",
+        "rootstock": null,
+        "note": {
+          "en": "The plum has the widest full-bloom tolerance of the stone fruit in the bud-kill table — 90% of buds survive to −5 °C, a degree colder than the apricot's threshold — and \"prefers some chalk in the soil\", which is a useful thing to read on a limestone parcel. Whether one tree crops alone depends entirely on the cultivar, and the source says so plainly, so this is a question with a right answer that only the nursery has.",
+          "fa": "آلو در جدول تلفات جوانه، پهن‌ترین تحمل تمام‌گلی میان میوه‌های هسته‌دار را دارد — ۹۰ درصد جوانه‌ها تا منفی ۵ درجه زنده می‌مانند، یک درجه سردتر از آستانه زردآلو — و «کمی آهک در خاک را می‌پسندد» که خواندنش روی قطعه‌ای سنگ‌آهکی سودمند است. اینکه یک درخت تنها محصول می‌دهد یا نه کاملاً به رقم بستگی دارد و منبع همین را صریح می‌گوید، پس این پرسشی است با پاسخ درست که فقط نهالستان دارد."
+        }
+      },
+      "note": {
+        "en": "Hardy from zone 4, at home on chalky ground, and the toughest flower on the stone-fruit list. A 10 m crown on a 12 m tree is a real tree rather than an orchard bush, so it occupies 79 m² of plan — 16% of the parcel.",
+        "fa": "از پهنه ۴ مقاوم، سازگار با زمین آهکی، و سخت‌جان‌ترین گل فهرست میوه‌های هسته‌دار. تاج ۱۰ متری روی درختی ۱۲ متری یک درخت واقعی است نه بوته باغی، پس ۷۹ مترمربع پلان را می‌گیرد — ۱۶ درصد قطعه."
+      },
+      "caution": {
+        "en": "It \"requires a sheltered position\", which on a 38% north-east slope with a 117 km/h gust on record is a placement constraint, not a footnote. Plant it low and behind something.",
+        "fa": "«موقعیت پناه‌دار می‌خواهد» و این روی شیب ۳۸ درصدی شمال‌شرقی با تندباد ثبت‌شده ۱۱۷ کیلومتر بر ساعت قیدی برای جای‌گذاری است نه پانویس. پایین و پشت چیزی بکارید."
+      },
+      "sources": [
+        "pfaf",
+        "msu-critical-temps"
+      ],
+      "verdict": "marginal",
+      "untested": [],
+      "crop_tests": {
+        "bloom_frost": "marginal",
+        "pollination": "marginal"
+      },
+      "crop_verdict": "marginal",
+      "crown_plan_area_m2": 79,
+      "crown_share_of_parcel_percent": 16,
+      "hardiness_zone_containing_limit": "5a",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Prunus_domestica",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%A2%D9%84%D9%88_(%D8%AF%D8%B1%D8%AE%D8%AA)",
+      "image": {
+        "src": "assets/images/species/prunus-domestica.jpg",
+        "author": "YAMAMAYA",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Fruits_Prunus_domestica.jpg",
+        "file": "File:Fruits_Prunus_domestica.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "pyrus-communis",
+      "latin": "Pyrus communis",
+      "common": {
+        "en": "Pear",
+        "fa": "گلابی"
+      },
+      "wikipedia": {
+        "en": "Pyrus communis"
+      },
+      "role": {
+        "en": "Large deciduous fruit tree",
+        "fa": "درخت میوه بزرگ برگ‌ریز"
+      },
+      "deciduous": true,
+      "native_to_iran": false,
+      "mature_height_m": [
+        13,
+        13
+      ],
+      "crown_spread_m": null,
+      "crown_spread_note": {
+        "en": "No spread is published in the source used, and as with the apple it is set by the rootstock rather than the species.",
+        "fa": "هیچ گستره‌ای در منبع به‌کاررفته منتشر نشده و مانند سیب، پایه آن را تعیین می‌کند نه گونه."
+      },
+      "growth_rate": {
+        "class": "fast",
+        "source_text": "\"growing to 13 m (42ft 8in) at a fast rate\"",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -28.9,
+        "derived": true,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 4-9",
+        "source_text": "USDA hardiness zone \"4-9\"",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "moderate",
+        "source_text": "\"Established plants are drought tolerant\"",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "mildly",
+        "source_text": "\"mildly acid, neutral and basic (mildly alkaline) soils\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "pass",
+        "drought": "pass",
+        "soil": "pass",
+        "exposure": "marginal"
+      },
+      "fruit": {
+        "crop": {
+          "en": "Pears",
+          "fa": "گلابی"
+        },
+        "bloom_months": [
+          4,
+          5
+        ],
+        "bloom_source_text": "\"In flower from April to May\"",
+        "bloom_source": "pfaf",
+        "self_fertile": "partial",
+        "self_fertile_source_text": "\"The species is self-fertile, though many require cross-pollination with another compatible pear variety to produce fruit\"",
+        "self_fertile_source": "pfaf",
+        "bud_kill_c": {
+          "kill_10": -2.2,
+          "kill_90": -4.4
+        },
+        "bud_kill_source_text": "Pears, Full Bloom: 10% kill 28 °F, 90% kill 24 °F",
+        "bud_kill_source": "msu-critical-temps",
+        "rootstock": {
+          "note": {
+            "en": "Pear is the one fruit on this list where the rootstock question has a published answer, and it runs against the obvious choice. Quince is the standard dwarfing rootstock for pear, and quince A is named in the literature as susceptible to iron-deficiency chlorosis in calcareous soils — which is what pH 7.6 over limestone is. Pyrus betulifolia is named as one of the most resistant. Ask which rootstock the tree is on before buying it, and say the words \"calcareous soil\" while asking.",
+            "fa": "گلابی تنها میوه این فهرست است که پرسش پایه‌اش پاسخی منتشرشده دارد، و آن پاسخ خلاف انتخاب بدیهی است. به پایه پاکوته‌کننده استاندارد گلابی است و پایه به‌ای A در ادبیات علمی مستعد زردی کمبود آهن در خاک‌های آهکی نام برده شده — و pH ۷٫۶ روی سنگ‌آهک همین است. Pyrus betulifolia از مقاوم‌ترین‌ها نام برده شده است. پیش از خرید بپرسید درخت روی چه پایه‌ای است و هنگام پرسیدن عبارت «خاک آهکی» را بگویید."
+          },
+          "source_text": "quince A \"is susceptible to iron (Fe) deficiency in calcareous soils\"; Pyrus betulifolia \"is known as one of the most resistant rootstocks to Fe deficiency\"",
+          "source": "rootstock-chlorosis"
+        },
+        "note": {
+          "en": "The quiet best answer on the fruit list. It is the only fruit tree here whose source calls established plants drought tolerant, it is hardy from zone 4 with 5.8 °C of margin below the record, it grows fast, and it blooms April to May — later than the cherries, the plum, the apricot and the almond. What it needs is a pollination partner in most cases and the right rootstock in all of them.",
+          "fa": "پاسخ برتر و بی‌سروصدای فهرست میوه. تنها درخت میوه اینجاست که منبعش گیاهان مستقر را خشکی‌تحمل می‌خواند، از پهنه ۴ مقاوم با ۵٫۸ درجه حاشیه زیر رکورد، سریع‌رشد، و گلدهی آوریل تا مه — دیرتر از گیلاس‌ها، آلو، زردآلو و بادام. آنچه لازم دارد در بیشتر موارد گونه گرده‌افشان است و در همه موارد پایه درست."
+        }
+      },
+      "note": {
+        "en": "Fast, 13 m, hardy from zone 4, and the only fruit tree on this list whose source describes established plants as drought tolerant. On a site where the summer is rainless that single sentence puts it ahead of the apple.",
+        "fa": "سریع، ۱۳ متر، از پهنه ۴ مقاوم، و تنها درخت میوه این فهرست که منبعش گیاهان مستقر را خشکی‌تحمل توصیف می‌کند. در سایتی که تابستانش بی‌باران است همین یک جمله آن را از سیب جلو می‌اندازد."
+      },
+      "caution": {
+        "en": "It \"dislikes very exposed positions\", which the upper road frontage of this parcel is. And \"many require cross-pollination\" — the same two-tree arithmetic as the sweet cherry, so confirm at the nursery whether the cultivar offered sets fruit alone.",
+        "fa": "«موقعیت‌های بسیار بی‌پناه را نمی‌پسندد» و جبهه جاده بالایی این قطعه چنین جایی است. و «بسیاری به دگرگرده‌افشانی نیاز دارند» — همان حساب دو درختی گیلاس شیرین، پس در نهالستان تأیید کنید رقم پیشنهادی تنها میوه می‌دهد یا نه."
+      },
+      "sources": [
+        "pfaf",
+        "msu-critical-temps",
+        "rootstock-chlorosis"
+      ],
+      "verdict": "marginal",
+      "untested": [],
+      "crop_tests": {
+        "bloom_frost": "marginal",
+        "pollination": "marginal"
+      },
+      "crop_verdict": "marginal",
+      "crown_plan_area_m2": null,
+      "crown_share_of_parcel_percent": null,
+      "hardiness_zone_containing_limit": "5a",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Pyrus_communis",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%DA%AF%D9%84%D8%A7%D8%A8%DB%8C_%D8%A7%D8%B1%D9%88%D9%BE%D8%A7%DB%8C%DB%8C",
+      "image": {
+        "src": "assets/images/species/pyrus-communis.jpg",
+        "author": "Keith Weller",
+        "licence": "Public domain",
+        "licence_url": null,
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pears.jpg",
+        "file": "File:Pears.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "quercus-brantii",
+      "latin": "Quercus brantii",
+      "common": {
+        "en": "Brant's oak / Persian oak",
+        "fa": "بلوط ایرانی (برودار)"
+      },
+      "wikipedia": {
+        "en": "Quercus brantii"
+      },
+      "role": {
+        "en": "The hillside's own tree — unirrigated reference",
+        "fa": "درخت خود دامنه — مرجع بدون آبیاری"
+      },
+      "deciduous": true,
+      "native_to_iran": true,
+      "mature_height_m": [
+        6,
+        8
+      ],
+      "crown_spread_m": [
+        6,
+        8
+      ],
+      "growth_rate": {
+        "class": "slow",
+        "source_text": "One source classes it fast; the species is the slow-growing dominant of the Zagros oak forests",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": null,
+        "derived": false,
+        "disputed": true,
+        "zone_text": "USDA hardiness zone 7-9 in the one source found",
+        "source_text": "\"can withstand moderate amounts of frost, surviving temperatures around -5°C or lower when dormant\"",
+        "source": "pfaf",
+        "dispute": {
+          "en": "This is the register's own worked example of a source being wrong. Quercus brantii is the dominant forest tree of the Zagros — including these mountains, where the 30-year record holds −23.1 °C — so a −5 °C rating cannot describe the wild species. The figure is published here rather than quietly corrected, because the useful conclusion is not a number: it is that this tree already survives this climate unirrigated, and the database does not know it.",
+          "fa": "این نمونه کارشده خود این فهرست از نادرست بودن یک منبع است. بلوط ایرانی درخت غالب جنگل‌های زاگرس است — از جمله همین کوه‌ها که رکورد ۳۰ ساله منفی ۲۳٫۱ درجه دارد — پس رده منفی ۵ درجه نمی‌تواند گونه وحشی را توصیف کند. این عدد به‌جای اصلاح خاموش، همین‌جا منتشر شده، چون نتیجه سودمند یک عدد نیست: این است که این درخت پیش از این همین اقلیم را بدون آبیاری تحمل می‌کند و پایگاه داده از آن بی‌خبر است."
+        }
+      },
+      "water": {
+        "class": "low",
+        "source_text": "\"Established plants of this species are highly drought tolerant\"",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "very",
+        "source_text": "\"can grow in very alkaline soils\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "unknown",
+        "drought": "pass",
+        "soil": "pass",
+        "exposure": "unknown"
+      },
+      "note": {
+        "en": "This is what grows on these hills without anyone watering it, and it is the reference the rest of the list should be read against: 8 m by 8 m, highly drought tolerant, at home on very alkaline ground. Every faster and taller tree above buys its speed with water that this one does not need.",
+        "fa": "این چیزی است که بدون آبیاری کسی روی این تپه‌ها می‌روید و مرجعی است که باید بقیه فهرست را در برابرش خواند: ۸ در ۸ متر، بسیار مقاوم به خشکی، سازگار با زمین بسیار قلیایی. هر درخت سریع‌تر و بلندتر بالا، سرعتش را با آبی می‌خرد که این یکی لازم ندارد."
+      },
+      "caution": {
+        "en": "It will not give a family shade this decade, and oaks resent root disturbance and transplanting. It is a fifty-year decision made at the start of a build, or it is a mature tree somewhere near the boundary that simply should not be cut down.",
+        "fa": "در این دهه به خانواده سایه نمی‌دهد و بلوط از دست‌خوردن ریشه و جابه‌جایی بیزار است. این تصمیمی پنجاه‌ساله است که در آغاز ساخت گرفته می‌شود، یا درختی بالغ نزدیک مرز است که به‌سادگی نباید بریده شود."
+      },
+      "sources": [
+        "pfaf"
+      ],
+      "verdict": "marginal",
+      "untested": [
+        "cold",
+        "exposure"
+      ],
+      "crown_plan_area_m2": 50,
+      "crown_share_of_parcel_percent": 10,
+      "hardiness_zone_containing_limit": null,
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Quercus_brantii",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AF%D8%A7%D8%B1",
+      "image": {
+        "src": "assets/images/species/quercus-brantii.jpg",
+        "author": "Ashkan P.",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Persian_oak-Quercus_brantii_2.JPG",
+        "file": "File:Persian_oak-Quercus_brantii_2.JPG"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "cercis-siliquastrum",
+      "latin": "Cercis siliquastrum",
+      "common": {
+        "en": "Judas tree",
+        "fa": "ارغوان"
+      },
+      "wikipedia": {
+        "en": "Cercis siliquastrum"
+      },
+      "role": {
+        "en": "Small flowering tree",
+        "fa": "درخت کوچک گل‌دار"
+      },
+      "deciduous": true,
+      "native_to_iran": true,
+      "mature_height_m": [
+        8,
+        12
+      ],
+      "crown_spread_m": [
+        6,
+        10
+      ],
+      "growth_rate": {
+        "class": "medium",
+        "source_text": "\"to 12 m (39ft) by 10 m (32ft) at a medium rate\"",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -15,
+        "derived": false,
+        "disputed": true,
+        "zone_text": "USDA hardiness zone 6-10",
+        "source_text": "\"Dormant plants are hardy to about -15 °C\"",
+        "source": "pfaf",
+        "dispute": {
+          "en": "The stated −15 °C is 8 °C warmer than the coldest night on record here, which is a clear fail — yet the species is native to Iran, including the Zagros, and ارغوان is planted widely in Iranian cities. Either the figure describes cultivated western material rather than hardy local provenance, or the wild populations sit lower and warmer. A nursery in Kermanshah province will know which; this register cannot.",
+          "fa": "منفی ۱۵ درجه اعلام‌شده ۸ درجه گرم‌تر از سردترین شب ثبت‌شده اینجاست، که ردی روشن است — با این حال گونه بومی ایران از جمله زاگرس است و ارغوان در شهرهای ایران فراوان کاشته می‌شود. یا این عدد مواد کشت‌شده غربی را توصیف می‌کند نه منشأ مقاوم محلی، یا جمعیت‌های وحشی پایین‌تر و گرم‌تر می‌رویند. نهالستانی در استان کرمانشاه می‌داند کدام؛ این فهرست نمی‌داند."
+        }
+      },
+      "water": {
+        "class": "low",
+        "source_text": "\"highly drought-resistant once established\" and \"requires very little supplementary water after its first few years\"",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "very",
+        "source_text": "\"can grow in very alkaline soils\"; \"Thrives on chalk\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "fail",
+        "drought": "pass",
+        "soil": "pass",
+        "exposure": "unknown"
+      },
+      "note": {
+        "en": "Kept on the list for one reason: it is the most beautiful thing that will grow on limestone in this part of the world, it thrives on chalk, and it needs almost no water once established. It is a small tree, not shade.",
+        "fa": "به یک دلیل در فهرست مانده است: زیباترین چیزی است که در این گوشه جهان روی سنگ‌آهک می‌روید، با آهک سازگار است و پس از استقرار تقریباً آبی نمی‌خواهد. درختی کوچک است، نه سایه."
+      },
+      "caution": {
+        "en": "On the published figure it fails the cold test outright. Ask specifically about local provenance and about frost pockets on this slope before buying one.",
+        "fa": "بر پایه عدد منتشرشده، آزمون سرما را قطعاً رد می‌کند. پیش از خرید، مشخصاً درباره منشأ محلی و حوضچه‌های سرما در این شیب بپرسید."
+      },
+      "sources": [
+        "pfaf"
+      ],
+      "verdict": "fail",
+      "untested": [
+        "exposure"
+      ],
+      "crown_plan_area_m2": 79,
+      "crown_share_of_parcel_percent": 16,
+      "hardiness_zone_containing_limit": "7b",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Cercis_siliquastrum",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%A7%D8%B1%D8%BA%D9%88%D8%A7%D9%86",
+      "image": {
+        "src": "assets/images/species/cercis-siliquastrum.jpg",
+        "author": "אורנה לוטן",
+        "licence": "CC BY 2.5",
+        "licence_url": "https://creativecommons.org/licenses/by/2.5",
+        "source_page": "https://commons.wikimedia.org/wiki/File:PikiWiki_Israel_3421_Geography_of_Israel.jpg",
+        "file": "File:PikiWiki_Israel_3421_Geography_of_Israel.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "ficus-carica",
+      "latin": "Ficus carica",
+      "common": {
+        "en": "Fig",
+        "fa": "انجیر"
+      },
+      "wikipedia": {
+        "en": "Ficus carica"
+      },
+      "role": {
+        "en": "Small deciduous fruit tree or multi-stem bush",
+        "fa": "درخت میوه کوچک برگ‌ریز یا بوته چندساقه"
+      },
+      "deciduous": true,
+      "native_to_iran": false,
+      "mature_height_m": [
+        6,
+        6
+      ],
+      "crown_spread_m": [
+        6,
+        6
+      ],
+      "growth_rate": {
+        "class": "medium",
+        "source_text": "Medium pace",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -15,
+        "derived": false,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 6-10, with a stated tolerance for dormant plants",
+        "source_text": "\"Dormant plants are hardy to about -15°c\"; \"The top growth is susceptible to frost damage and can be killed back to the base in severe winters\"",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "low",
+        "source_text": "\"can tolerate drought\"; \"Succeeds in dry soils\"",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "very",
+        "source_text": "pH range given as \"6 - 7, but tolerates 4.3 - 8.6\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "fail",
+        "drought": "pass",
+        "soil": "pass",
+        "exposure": "unknown"
+      },
+      "fruit": {
+        "crop": {
+          "en": "Figs",
+          "fa": "انجیر"
+        },
+        "bloom_months": null,
+        "bloom_source_text": "The fig's flowers are enclosed inside the fruit and no flowering month is published in the source used, so the bloom-frost test cannot be run on it",
+        "bloom_source": "pfaf",
+        "self_fertile": "yes",
+        "self_fertile_source_text": "\"self-fertile\", though the source's own comments record that pollination requirements differ between cultivars",
+        "self_fertile_source": "pfaf",
+        "bud_kill_c": null,
+        "rootstock": null,
+        "note": {
+          "en": "The fig's problem here is not the flower, it is the wood: dormant plants are hardy to about −15 °C and the record on this page is −23.1 °C, so the source's own sentence describes what happens — the top growth \"can be killed back to the base in severe winters\". A fig on this parcel is a multi-stem bush that regrows from the root, not a tree, and a crop carried on last year's wood is lost in the winters that cut it down. Figs around Paveh are real; the ones you have seen are almost certainly lower and warmer than this bench.",
+          "fa": "مشکل انجیر اینجا گل نیست، چوب است: گیاهان خواب تا حدود منفی ۱۵ درجه مقاوم‌اند و رکورد همین صفحه منفی ۲۳٫۱ درجه است، پس جمله خود منبع همان را توصیف می‌کند — رشد فوقانی «در زمستان‌های شدید می‌تواند تا طوقه از بین برود». انجیر در این قطعه بوته‌ای چندساقه است که از ریشه دوباره می‌روید، نه درخت، و محصولی که روی چوب سال گذشته حمل می‌شود در زمستان‌هایی که آن را قطع می‌کنند از دست می‌رود. انجیرهای گرد پاوه واقعی‌اند؛ آن‌هایی که دیده‌اید تقریباً به‌یقین پایین‌تر و گرم‌تر از این سکو ایستاده‌اند."
+        }
+      },
+      "note": {
+        "en": "Genuinely drought-tolerant and genuinely lime-tolerant — a pH range up to 8.6 is the widest on the whole register, and \"succeeds in dry soils\" is a sentence almost nothing else here earns. It fails on one axis only, and it is the binding one.",
+        "fa": "به‌راستی خشکی‌تحمل و به‌راستی آهک‌تحمل — بازه pH تا ۸٫۶ پهن‌ترین کل این فهرست است و «در خاک‌های خشک موفق می‌شود» جمله‌ای است که تقریباً هیچ‌چیز دیگری اینجا به دست نمی‌آورد. تنها در یک محور رد می‌شود و همان محور، محور تعیین‌کننده است."
+      },
+      "caution": {
+        "en": "The source names a hardier cultivar rated \"reliably hardy to at least about -20°C\", which is still 3 °C short of the record, and this register does not know whether it is available in Iran. Against a wall on the warm side of the house, with the crown cut low and the base mounded, a fig here is a gamble worth taking on one plant — not a tree to design the garden around.",
+        "fa": "منبع رقمی مقاوم‌تر نام می‌برد که «به‌طور مطمئن تا حدود منفی ۲۰ درجه» ارزیابی شده و آن هم ۳ درجه کمتر از رکورد است، و این فهرست نمی‌داند در ایران موجود هست یا نه. کنار دیواری در سمت گرم خانه، با تاج کوتاه و خاک‌دهی پای بوته، انجیر اینجا شرطی است که روی یک بوته می‌ارزد — نه درختی که باغ را گردش طراحی کنند."
+      },
+      "sources": [
+        "pfaf",
+        "paveh-town"
+      ],
+      "verdict": "fail",
+      "untested": [
+        "exposure"
+      ],
+      "crop_tests": {
+        "bloom_frost": "unknown",
+        "pollination": "pass"
+      },
+      "crop_verdict": "fail",
+      "crown_plan_area_m2": 28,
+      "crown_share_of_parcel_percent": 6,
+      "hardiness_zone_containing_limit": "7b",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Fig",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%A7%D9%86%D8%AC%DB%8C%D8%B1",
+      "image": {
+        "src": "assets/images/species/ficus-carica.jpg",
+        "author": "Trew, C.J",
+        "licence": "Public domain",
+        "licence_url": null,
+        "source_page": "https://commons.wikimedia.org/wiki/File:Ficus_carica_L,_1771.jpg",
+        "file": "File:Ficus_carica_L,_1771.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "prunus-dulcis",
+      "latin": "Prunus dulcis",
+      "common": {
+        "en": "Almond",
+        "fa": "بادام"
+      },
+      "wikipedia": {
+        "en": "Prunus dulcis"
+      },
+      "role": {
+        "en": "Small deciduous fruit tree",
+        "fa": "درخت میوه کوچک برگ‌ریز"
+      },
+      "deciduous": true,
+      "native_to_iran": false,
+      "mature_height_m": [
+        6,
+        6
+      ],
+      "crown_spread_m": [
+        6,
+        6
+      ],
+      "growth_rate": {
+        "class": "medium",
+        "source_text": "Medium pace",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -17.8,
+        "derived": true,
+        "disputed": false,
+        "zone_text": "USDA hardiness zone 6-9",
+        "source_text": "USDA hardiness zone \"6-9\"",
+        "source": "pfaf"
+      },
+      "water": {
+        "class": "moderate",
+        "source_text": "\"moist soil\" preferred; drought tolerance described as moderate",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "mildly",
+        "source_text": "\"mildly acid, neutral and basic (mildly alkaline) soils\"; prefers some lime but \"may develop chlorosis if excessive lime is present\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "fail",
+        "drought": "marginal",
+        "soil": "marginal",
+        "exposure": "unknown"
+      },
+      "fruit": {
+        "crop": {
+          "en": "Almonds",
+          "fa": "بادام"
+        },
+        "bloom_months": [
+          3,
+          4
+        ],
+        "bloom_source_text": "\"March to April\"; early flowering can result in frost damage to blossoms",
+        "bloom_source": "pfaf",
+        "self_fertile": "partial",
+        "self_fertile_source_text": "\"Partially self-fertile\" with better yields when two cultivars are planted together",
+        "self_fertile_source": "pfaf",
+        "bud_kill_c": null,
+        "rootstock": null,
+        "note": {
+          "en": "Almond is the earliest-flowering fruit tree there is, which is why it fails here twice over. The bud-kill table does not cover it, so no full-bloom threshold is published above; what is published is the bloom period, March to April, and this page's own record of the last −2 °C night. It also fails the cold test outright on a \"zone 6-9\" rating: read at the warm end of zone 6 that is −17.8 °C against −23.1 °C on record.",
+          "fa": "بادام زودگل‌ترین درخت میوه موجود است و همین دلیل دوباره رد شدنش اینجاست. جدول تلفات جوانه آن را نمی‌پوشاند، پس هیچ آستانه تمام‌گلی بالا منتشر نشده؛ آنچه منتشر شده دوره گلدهی است، مارس تا آوریل، و رکورد همین صفحه از آخرین شب منفی ۲ درجه. آزمون سرما را هم بر پایه رده «پهنه ۶ تا ۹» قطعاً رد می‌کند: خوانده‌شده در انتهای گرم پهنه ۶ منفی ۱۷٫۸ درجه است در برابر منفی ۲۳٫۱ ثبت‌شده."
+        }
+      },
+      "note": {
+        "en": "On the list because it is a tree anyone would suggest for a dry Iranian hillside, and because the answer is a clear no on this parcel rather than a maybe. It is not that almonds do not grow in Kermanshah — they do, lower down and in warmer positions. It is that this bench is 1,648–1,660 m on a north-east aspect with −23.1 °C on record.",
+        "fa": "در فهرست است چون درختی است که هر کسی برای دامنه‌ای خشک در ایران پیشنهاد می‌کند، و چون پاسخ در این قطعه «نه»ی روشن است نه «شاید». مسئله این نیست که بادام در کرمانشاه نمی‌روید — می‌روید، پایین‌تر و در موقعیت‌های گرم‌تر. مسئله این است که این سکو در ارتفاع ۱٬۶۴۸ تا ۱٬۶۶۰ متر با جهت شمال‌شرقی و رکورد منفی ۲۳٫۱ درجه است."
+      },
+      "caution": {
+        "en": "If it is planted anyway, plant it knowing both things: the wood is rated 5 °C short of the record low, and the flowers open before the last frost in most years. Ask a local grower where the almonds around Paveh actually stand — the answer will be a warmer aspect at a lower elevation, and that is the useful information.",
+        "fa": "اگر باز هم کاشته شد، با دانستن هر دو چیز بکارید: چوبش ۵ درجه کمتر از کمینه رکورد ارزیابی شده و گل‌هایش در بیشتر سال‌ها پیش از آخرین یخبندان باز می‌شوند. از باغدار محلی بپرسید بادام‌های گرد پاوه واقعاً کجا ایستاده‌اند — پاسخ جهتی گرم‌تر در ارتفاعی پایین‌تر خواهد بود و همین اطلاع سودمند است."
+      },
+      "sources": [
+        "pfaf",
+        "paveh-town"
+      ],
+      "verdict": "fail",
+      "untested": [
+        "exposure"
+      ],
+      "crop_tests": {
+        "bloom_frost": "fail",
+        "pollination": "marginal"
+      },
+      "crop_verdict": "fail",
+      "crown_plan_area_m2": 28,
+      "crown_share_of_parcel_percent": 6,
+      "hardiness_zone_containing_limit": "7a",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Almond",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%A8%D8%A7%D8%AF%D8%A7%D9%85",
+      "image": {
+        "src": "assets/images/species/prunus-dulcis.jpg",
+        "author": "Ivar Leidus",
+        "licence": "CC BY-SA 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Almonds_-_in_shell,_shell_cracked_open,_shelled,_blanched.jpg",
+        "file": "File:Almonds_-_in_shell,_shell_cracked_open,_shelled,_blanched.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "punica-granatum",
+      "latin": "Punica granatum",
+      "common": {
+        "en": "Pomegranate",
+        "fa": "انار"
+      },
+      "wikipedia": {
+        "en": "Punica granatum"
+      },
+      "role": {
+        "en": "Small deciduous fruit tree or wide shrub",
+        "fa": "درخت میوه کوچک برگ‌ریز یا درختچه پهن"
+      },
+      "deciduous": true,
+      "native_to_iran": true,
+      "mature_height_m": [
+        5,
+        5
+      ],
+      "crown_spread_m": [
+        8,
+        8
+      ],
+      "growth_rate": {
+        "class": "medium",
+        "source_text": "\"growing to 5 m (16ft) by 8 m (26ft) at a medium rate\"",
+        "source": "pfaf"
+      },
+      "hardiness": {
+        "min_c": -11,
+        "derived": false,
+        "disputed": true,
+        "zone_text": "USDA hardiness zone 8-12, with a stated temperature",
+        "source_text": "\"the pomegranate tolerates temperatures down to about -11°c\"",
+        "source": "pfaf",
+        "dispute": {
+          "en": "Pomegranate is the fruit Paveh is known for, and the nearest town is nine kilometres away — so a −11 °C rating against a −23.1 °C record looks like the Quercus brantii case all over again, a database being wrong about a tree that plainly grows here. It is not the same case, and the difference is the useful part. Paveh sits at 1,560 m; this parcel is at 1,648–1,660 m on a north-east aspect, the coldest orientation available, roughly 90–100 m above the town. Pomegranate around here is a warm-terrace, sheltered-valley crop, and the valleys below Paveh drop much further than 100 m. So the published figure and the local practice are not in conflict: they are describing different ground, and this bench is on the wrong side of the difference.",
+          "fa": "انار میوه‌ای است که پاوه به آن شناخته می‌شود و نزدیک‌ترین شهر نُه کیلومتر دورتر است — پس رده منفی ۱۱ درجه در برابر رکورد منفی ۲۳٫۱ درجه شبیه همان ماجرای بلوط ایرانی به نظر می‌رسد، پایگاه داده‌ای که درباره درختی که آشکارا اینجا می‌روید اشتباه می‌کند. این همان مورد نیست و تفاوت، بخش سودمند ماجراست. پاوه در ارتفاع ۱٬۵۶۰ متر است؛ این قطعه در ۱٬۶۴۸ تا ۱٬۶۶۰ متر با جهت شمال‌شرقی، سردترین جهت ممکن، حدود ۹۰ تا ۱۰۰ متر بالاتر از شهر. انار در این حدود محصول تراس‌های گرم و دره‌های پناه‌دار است و دره‌های زیر پاوه بسیار بیشتر از ۱۰۰ متر افت می‌کنند. پس عدد منتشرشده و رویه محلی در تضاد نیستند: زمین‌های متفاوتی را توصیف می‌کنند و این سکو در سمت نامناسب آن تفاوت است."
+        }
+      },
+      "water": {
+        "class": "low",
+        "source_text": "\"A drought-tolerant tree, it is suitable for arid and semi-arid zone reforestation\"",
+        "source": "pfaf"
+      },
+      "soil": {
+        "alkaline": "mildly",
+        "source_text": "\"mildly acid, neutral and basic (mildly alkaline) soils\"",
+        "source": "pfaf"
+      },
+      "tests": {
+        "cold": "fail",
+        "drought": "pass",
+        "soil": "pass",
+        "exposure": "unknown"
+      },
+      "fruit": {
+        "crop": {
+          "en": "Pomegranates",
+          "fa": "انار"
+        },
+        "bloom_months": null,
+        "bloom_source_text": "No flowering month was retrieved for it in this build; the source records instead that it \"requires higher summer temperatures to ripen fruit and wood properly\"",
+        "bloom_source": "pfaf",
+        "self_fertile": "yes",
+        "self_fertile_source_text": "\"self-fertile; however, cross-pollination can improve fruit set and quality\"",
+        "self_fertile_source": "pfaf",
+        "bud_kill_c": null,
+        "rootstock": null,
+        "note": {
+          "en": "The crop is limited twice over here and neither limit is the flower. The wood is rated to about −11 °C against −23.1 °C on record, and the source separately records that the plant \"requires higher summer temperatures to ripen fruit and wood properly\" — which at 1,650 m on a north-east aspect is the second question, not a detail. Ask where the pomegranate gardens around Paveh actually sit. The answer is the whole answer.",
+          "fa": "محصول اینجا دو بار محدود می‌شود و هیچ‌یک از دو محدودیت گل نیست. چوب تا حدود منفی ۱۱ درجه ارزیابی شده در برابر منفی ۲۳٫۱ ثبت‌شده، و منبع جداگانه ثبت می‌کند که گیاه «برای رسیدن درست میوه و چوب به دمای تابستانی بالاتر نیاز دارد» — که در ارتفاع ۱٬۶۵۰ متر با جهت شمال‌شرقی پرسش دوم است نه جزئیات. بپرسید باغ‌های انار گرد پاوه واقعاً کجا نشسته‌اند. پاسخ، تمام پاسخ است."
+        }
+      },
+      "note": {
+        "en": "On the register because it is the fruit this district is known for, and because saying so honestly is more useful than either recommending it or leaving it out. Drought-tolerant, at home on alkaline ground, native range includes Iran — and rated to about −11 °C on a parcel with −23.1 °C on record.",
+        "fa": "در این فهرست است چون میوه‌ای است که این ناحیه به آن شناخته می‌شود، و چون گفتن صادقانه‌اش سودمندتر از توصیه کردن یا حذف کردنش است. خشکی‌تحمل، سازگار با زمین قلیایی، دامنه بومی‌اش شامل ایران — و ارزیابی‌شده تا حدود منفی ۱۱ درجه روی قطعه‌ای با رکورد منفی ۲۳٫۱ درجه."
+      },
+      "native_note": {
+        "en": "The published range is given as \"Southeast Europe to East Asia\" and names Iran directly, alongside Iraq, Turkey, Turkmenistan, Afghanistan, Dagestan and Tajikistan. Iran is named at species level; the badge says nothing about the elevation within Iran, which is exactly the question this entry turns on.",
+        "fa": "دامنه منتشرشده «جنوب‌شرق اروپا تا شرق آسیا» داده شده و ایران را مستقیم نام می‌برد، در کنار عراق، ترکیه، ترکمنستان، افغانستان، داغستان و تاجیکستان. ایران در سطح گونه نام برده شده؛ این نشان چیزی درباره ارتفاع درون ایران نمی‌گوید، و همین دقیقاً پرسشی است که این مدخل بر آن می‌گردد."
+      },
+      "caution": {
+        "en": "If it goes in, it goes in as an experiment in the warmest, most sheltered spot on the site — against a south or west wall, above the low ground, with winter protection at the base — and nothing on the plan depends on it surviving. It is also 8 m across on a 5 m plant, which is 50 m² of plan area for a shrub, more than the crown of the sour cherry.",
+        "fa": "اگر کاشته شد، به‌عنوان آزمایش در گرم‌ترین و پناه‌دارترین نقطه سایت کاشته می‌شود — کنار دیوار جنوبی یا غربی، بالاتر از زمین پست، با پوشش زمستانی پای بوته — و هیچ‌چیز نقشه به زنده ماندنش وابسته نیست. گستره‌اش هم روی گیاهی ۵ متری، ۸ متر است، یعنی ۵۰ مترمربع پلان برای یک درختچه، بیشتر از تاج آلبالو."
+      },
+      "sources": [
+        "pfaf",
+        "paveh-town"
+      ],
+      "verdict": "fail",
+      "untested": [
+        "exposure"
+      ],
+      "crop_tests": {
+        "bloom_frost": "unknown",
+        "pollination": "pass"
+      },
+      "crop_verdict": "fail",
+      "crown_plan_area_m2": 50,
+      "crown_share_of_parcel_percent": 10,
+      "hardiness_zone_containing_limit": "8a",
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Pomegranate",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%A7%D9%86%D8%A7%D8%B1",
+      "image": {
+        "src": "assets/images/species/punica-granatum.jpg",
+        "author": "Augustus Binu : flickr",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Pomegranate_Juice_(2019).jpg",
+        "file": "File:Pomegranate_Juice_(2019).jpg"
+      },
+      "image_status": "bundled"
+    }
+  ],
+  "do_not_plant": [
+    {
+      "id": "ailanthus-altissima",
+      "latin": "Ailanthus altissima",
+      "common": {
+        "en": "Tree of heaven",
+        "fa": "عرعر"
+      },
+      "wikipedia": {
+        "en": "Ailanthus altissima"
+      },
+      "growth_rate": {
+        "class": "fast",
+        "source_text": "\"fast rate\" when young, though \"rather short-lived\"",
+        "source": "pfaf"
+      },
+      "reason": {
+        "en": "The classic false answer: it will grow anywhere, fast, on any soil, which is why it is planted and why it is a problem. One source records it suckering freely into dense thickets, with brittle timber whose \"branches are very liable to break off in the wind\" and aggressive surface roots that damage drainage. Once established on a slope it is effectively permanent.",
+        "fa": "پاسخ نادرست کلاسیک: هرجا، سریع و در هر خاکی می‌روید، و همین دلیل کاشتنش و دلیل مسئله بودنش است. یک منبع ثبت می‌کند که آزادانه پاجوش می‌زند و بیشه انبوه می‌سازد، با چوب شکننده‌ای که «شاخه‌هایش به‌شدت مستعد شکستن در باد» است و ریشه‌های سطحی مهاجم که به زهکشی آسیب می‌زنند. پس از استقرار روی شیب، عملاً همیشگی است."
+      },
+      "sources": [
+        "pfaf"
+      ],
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Ailanthus_altissima",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%B9%D8%B1%D8%B9%D8%B1_(%D8%AF%D8%B1%D8%AE%D8%AA)",
+      "image": {
+        "src": "assets/images/species/ailanthus-altissima.jpg",
+        "author": "Darkone ( talk · contribs )",
+        "licence": "CC BY-SA 2.5",
+        "licence_url": "https://creativecommons.org/licenses/by-sa/2.5",
+        "source_page": "https://commons.wikimedia.org/wiki/File:G%C3%B6tterbaum_(Ailanthus_altissima).jpg",
+        "file": "File:Götterbaum_(Ailanthus_altissima).jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "robinia-pseudoacacia",
+      "latin": "Robinia pseudoacacia",
+      "common": {
+        "en": "Black locust",
+        "fa": "اقاقیا"
+      },
+      "wikipedia": {
+        "en": "Robinia pseudoacacia"
+      },
+      "growth_rate": {
+        "class": "fast",
+        "source_text": "Fast, \"for the first 30 years of its life\"",
+        "source": "pfaf"
+      },
+      "reason": {
+        "en": "Hardy enough, drought-tolerant and nitrogen-fixing, so it passes three of the five tests — and then fails the one that matters over a house. \"The branches are brittle and very liable to wind damage\", and it \"suckers freely and often form dense thickets, the suckers have vicious thorns\". A 117 km/h gust and children in the garden are the two reasons this is a no.",
+        "fa": "به‌قدر کافی مقاوم، خشکی‌تحمل و تثبیت‌کننده نیتروژن، پس سه آزمون از پنج را می‌گذراند — و بعد در همان یکی که بالای سر ساختمان مهم است رد می‌شود. «شاخه‌ها شکننده و به‌شدت مستعد آسیب باد» هستند و «آزادانه پاجوش می‌زند و بیشه انبوه می‌سازد؛ پاجوش‌ها خارهای بدجنس دارند». تندباد ۱۱۷ کیلومتر بر ساعت و بچه‌ها در باغ، دو دلیل «نه» گفتن‌اند."
+      },
+      "sources": [
+        "pfaf"
+      ],
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Robinia_pseudoacacia",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%A7%D9%82%D8%A7%D9%82%DB%8C%D8%A7%DB%8C_%D8%B3%DB%8C%D8%A7%D9%87",
+      "image": {
+        "src": "assets/images/species/robinia-pseudoacacia.jpg",
+        "author": "Pollinator at English Wikipedia",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Robina9146.JPG",
+        "file": "File:Robina9146.JPG"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "populus-nigra",
+      "latin": "Populus nigra (and 'Italica')",
+      "common": {
+        "en": "Black poplar / Lombardy poplar",
+        "fa": "تبریزی"
+      },
+      "wikipedia": {
+        "en": "Populus nigra"
+      },
+      "growth_rate": {
+        "class": "fast",
+        "source_text": "\"growing to 30 m (98ft) by 20 m (65ft)\" at a \"fast rate\"",
+        "source": "pfaf"
+      },
+      "reason": {
+        "en": "The fastest screen in the region and the wrong tree for a 487 m² parcel with a house on it. The upright 'Italica' commonly used \"is not a very suitable choice because it has fragile branches and is prone to basal rots which can cause sudden collapse\"; poplars \"have very extensive and aggressive root systems that can invade and damage drainage systems\" and \"should not be planted within 12 metres of buildings\". Twelve metres is half the width of this parcel. It also prefers moist soil, so it is thirsty as well as risky.",
+        "fa": "سریع‌ترین پرده منطقه و درخت نادرست برای قطعه ۴۸۷ مترمربعی با یک ساختمان روی آن. گونه ستونی «ایتالیکا» که معمولاً به کار می‌رود «انتخاب مناسبی نیست چون شاخه‌های شکننده دارد و مستعد پوسیدگی طوقه است که می‌تواند فروریزش ناگهانی بدهد»؛ صنوبرها «ریشه‌های بسیار گسترده و مهاجم دارند که می‌توانند به سیستم زهکشی نفوذ کنند و آسیب بزنند» و «نباید در فاصله کمتر از ۱۲ متری ساختمان کاشته شوند». دوازده متر نصف عرض این قطعه است. خاک مرطوب را هم می‌پسندد، پس هم پرآب است هم پرخطر."
+      },
+      "sources": [
+        "pfaf"
+      ],
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Populus_nigra",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%B5%D9%86%D9%88%D8%A8%D8%B1_%D8%B3%DB%8C%D8%A7%D9%87",
+      "image": {
+        "src": "assets/images/species/populus-nigra.jpg",
+        "author": "Kenraiz",
+        "licence": "CC BY-SA 3.0",
+        "licence_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Populus_nigra_kz1.jpg",
+        "file": "File:Populus_nigra_kz1.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "paulownia-tomentosa",
+      "latin": "Paulownia tomentosa",
+      "common": {
+        "en": "Foxglove tree",
+        "fa": "پائولونیا"
+      },
+      "wikipedia": {
+        "en": "Paulownia tomentosa"
+      },
+      "growth_rate": {
+        "class": "fast",
+        "source_text": "\"Growing to 15 m (49ft) by 10 m (32ft) at a fast rate\"",
+        "source": "pfaf"
+      },
+      "reason": {
+        "en": "Marketed as the fastest-growing shade tree there is, and specifically defeated by this climate. Its \"flower buds are hardy to about -15°c\", they form in autumn and \"can be excited into premature growth during mild winter weather\" — a description of a highland winter with warm spells — young plants are \"frost tender\", \"branches tend to be brittle\", and the species is flagged invasive. Fast is the only test it passes.",
+        "fa": "به‌عنوان سریع‌رشدترین درخت سایه بازاریابی می‌شود و مشخصاً همین اقلیم شکستش می‌دهد. «جوانه‌های گلش تا حدود منفی ۱۵ درجه مقاوم»اند، در پاییز تشکیل می‌شوند و «می‌توانند در هوای معتدل زمستانی به رشد نابه‌هنگام تحریک شوند» — توصیفی از زمستان کوهستانی با دوره‌های گرم — نهال جوان «حساس به یخبندان» است، «شاخه‌ها مستعد شکنندگی»اند و گونه مهاجم علامت خورده است. تنها آزمونی که می‌گذراند سرعت است."
+      },
+      "sources": [
+        "pfaf"
+      ],
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Paulownia_tomentosa",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D9%BE%D8%A7%D9%84%D9%88%D9%86%DB%8C%D8%A7%DB%8C_%D8%B4%D9%87%D8%A8%D8%A7%D9%86%D9%88",
+      "image": {
+        "src": "assets/images/species/paulownia-tomentosa.jpg",
+        "author": "Jean-Pol GRANDMONT",
+        "licence": "CC BY 2.5",
+        "licence_url": "https://creativecommons.org/licenses/by/2.5",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Paulownia_tomentosa_JPG2a.jpg",
+        "file": "File:Paulownia_tomentosa_JPG2a.jpg"
+      },
+      "image_status": "bundled"
+    }
+  ],
+  "ask_locally": [
+    {
+      "id": "ulmus-minor",
+      "latin": "Ulmus minor",
+      "common": {
+        "en": "Field elm",
+        "fa": "نارون"
+      },
+      "wikipedia": {
+        "en": "Ulmus minor"
+      },
+      "gap": {
+        "en": "A traditional Iranian street and shade tree, fast and tough, but no usable hardiness or soil record was retrieved for it in this build, and Dutch elm disease has to be asked about before any elm is planted. Left unrated rather than guessed.",
+        "fa": "درخت خیابانی و سایه‌انداز سنتی ایران، سریع و سخت‌جان، اما در این نسخه هیچ رکورد قابل استفاده‌ای از مقاومت به سرما یا خاک برایش بازیابی نشد و پیش از کاشت هر نارونی باید درباره بیماری هلندی نارون پرسید. بی‌رده مانده است، نه حدس‌زده."
+      },
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Ulmus_minor",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%A7%D9%88%D8%AC%D8%A7",
+      "image": {
+        "src": "assets/images/species/ulmus-minor.jpg",
+        "author": "Eric Collin. Original uploader was Ptelea at en.wikipedia",
+        "licence": "GFDL",
+        "licence_url": "http://www.gnu.org/copyleft/fdl.html",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Blismes_elm_2007.jpg",
+        "file": "File:Blismes_elm_2007.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "cupressus-arizonica",
+      "latin": "Cupressus arizonica",
+      "common": {
+        "en": "Arizona cypress",
+        "fa": "سرو نقره‌ای"
+      },
+      "wikipedia": {
+        "en": "Cupressus arizonica"
+      },
+      "gap": {
+        "en": "Named only because an evergreen shelter belt needs a second candidate beside Austrian pine, and a cypress is the obvious one to ask about locally. No hardiness, soil or drought figure was retrieved for it in this build, and none is asserted here — including whether it is hardier than the Mediterranean cypress, which this register does not know.",
+        "fa": "تنها به این دلیل نام برده شده که کمربند بادشکن همیشه‌سبز به گزینه دومی در کنار کاج سیاه نیاز دارد و سرو گزینه بدیهی برای پرسیدن از نهالستان است. در این نسخه هیچ عددی از مقاومت به سرما، خاک یا خشکی برایش بازیابی نشد و هیچ‌یک اینجا ادعا نمی‌شود — از جمله اینکه مقاوم‌تر از سرو مدیترانه‌ای باشد، که این فهرست آن را نمی‌داند."
+      },
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Hesperocyparis_arizonica",
+      "wikipedia_fa": null,
+      "image": {
+        "src": "assets/images/species/cupressus-arizonica.jpg",
+        "author": "Cricket Raspet https://www.inaturalist.org/people/chilipossum",
+        "licence": "CC BY 4.0",
+        "licence_url": "https://creativecommons.org/licenses/by/4.0",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Hesperocyparis_arizonica_-_Cricket_Raspet_01.jpg",
+        "file": "File:Hesperocyparis_arizonica_-_Cricket_Raspet_01.jpg"
+      },
+      "image_status": "bundled"
+    },
+    {
+      "id": "vitis-vinifera",
+      "latin": "Vitis vinifera",
+      "common": {
+        "en": "Grape vine",
+        "fa": "انگور"
+      },
+      "wikipedia": {
+        "en": "Vitis vinifera"
+      },
+      "gap": {
+        "en": "Named because it is one of the two crops the nearest town is known for, and because it is out of this register's scope rather than off the list: a grape is a vine, not a tree, and the tests above are written for trees. What was retrieved for it is worth carrying anyway — dormant shoots tolerate \"down to about -20°c\", which is 3 °C short of the record here, it tolerates soil pH \"from 4.3 to 8.6\", many varieties are self-fertile, and it flowers May to July, clear of the frost window entirely. On this parcel that reads as a trained vine on a warm wall or a pergola with winter protection at the base, not an open planting — and it is a question for a Paveh grower, who will know which local variety survives above the town. A pergola is also the one piece of shade on this whole page that can be put where the summer sun is and taken away before the winter sun arrives.",
+        "fa": "نام برده شده چون یکی از دو محصولی است که نزدیک‌ترین شهر به آن شناخته می‌شود، و چون بیرون از دامنه این فهرست است نه حذف‌شده از آن: انگور مو است نه درخت، و آزمون‌های بالا برای درخت نوشته شده‌اند. آنچه برایش بازیابی شد باز هم ارزش همراه بردن دارد — شاخه‌های خواب «تا حدود منفی ۲۰ درجه» را تحمل می‌کنند که ۳ درجه کمتر از رکورد اینجاست، pH خاک «از ۴٫۳ تا ۸٫۶» را تحمل می‌کند، بسیاری از رقم‌ها خودبارورند، و از مه تا ژوئیه گل می‌دهد، کاملاً بیرون از پنجره یخبندان. در این قطعه این یعنی موی تربیت‌شده روی دیوار گرم یا داربستی با پوشش زمستانی پای بوته، نه کاشت باز — و پرسشی است برای باغدار پاوه که می‌داند کدام رقم محلی بالاتر از شهر زنده می‌ماند. داربست تنها سایه‌ای در کل این صفحه است که می‌توان آن را جایی گذاشت که خورشید تابستان هست و پیش از رسیدن خورشید زمستان برداشت."
+      },
+      "wikipedia_en": "https://en.wikipedia.org/wiki/Vitis_vinifera",
+      "wikipedia_fa": "https://fa.wikipedia.org/wiki/%D8%A7%D9%86%DA%AF%D9%88%D8%B1_(%DA%AF%DB%8C%D8%A7%D9%87)",
+      "image": null,
+      "image_status": "refused-no-author"
+    }
+  ],
+  "placement": {
+    "status": "preliminary-inference",
+    "note": {
+      "en": "Zones are argued from this dashboard's own solar and wind figures, quoted beside each one. They are orientation guidance, not a planting plan: no position can be fixed before the house footprint and the platform level are chosen.",
+      "fa": "پهنه‌ها از همان اعداد خورشیدی و بادی این داشبورد استدلال شده‌اند و در کنار هر پهنه نقل شده‌اند. این راهنمای جهت‌گیری است نه نقشه کاشت: هیچ موقعیتی پیش از انتخاب ردپای ساختمان و تراز سکو قابل تثبیت نیست."
+    },
+    "zones": [
+      {
+        "id": "west-southwest",
+        "title": {
+          "en": "West and south‑west of the house — the shade that matters",
+          "fa": "غرب و جنوب‌غرب ساختمان — سایه‌ای که اهمیت دارد"
+        },
+        "evidence": {
+          "en": "Summer sun sets at azimuth 299.5° and noon altitude reaches 78.5°. A high midday sun is cheap to shade with a roof; the expensive gain is the low west and south‑west beam of a July afternoon at over 30 °C, which arrives under any overhang.",
+          "fa": "خورشید تابستان در سمت ۲۹۹٫۵ درجه غروب می‌کند و ارتفاع ظهر به ۷۸٫۵ درجه می‌رسد. سایه‌انداختن بر خورشید بلند ظهر با بام ارزان است؛ بهره گران، تابش کم‌ارتفاع غرب و جنوب‌غرب بعدازظهری بالای ۳۰ درجه است که از زیر هر سایبانی وارد می‌شود."
+        },
+        "guidance": {
+          "en": "This is where a large deciduous crown earns its water. Keep the trunk clear and the crown high so the summer west breeze still passes underneath — the same quarter the afternoon sun comes from also carries the season's prevailing wind.",
+          "fa": "اینجا جایی است که تاج بزرگ برگ‌ریز آبش را جبران می‌کند. تنه را آزاد و تاج را بلند نگه دارید تا نسیم غربی تابستان از زیر آن بگذرد — همان ربعی که خورشید بعدازظهر از آن می‌آید، باد غالب فصل را هم حمل می‌کند."
+        }
+      },
+      {
+        "id": "winter-aperture",
+        "title": {
+          "en": "The winter aperture — keep it clear",
+          "fa": "دهانه زمستان — بازش بگذارید"
+        },
+        "evidence": {
+          "en": "On the winter solstice the sun clears the terrain horizon at 08:10 and leaves it at 16:30, 8.5 hours in total, never higher than 31.6°, crossing from azimuth 118.6° to 241.4°.",
+          "fa": "در انقلاب زمستانی خورشید در ۰۸:۱۰ از افق زمین بالا می‌آید و در ۱۶:۳۰ آن را ترک می‌کند، در مجموع ۸٫۵ ساعت، هرگز بلندتر از ۳۱٫۶ درجه، از سمت ۱۱۸٫۶ تا ۲۴۱٫۴ درجه."
+        },
+        "guidance": {
+          "en": "Nothing evergreen belongs in that arc. A bare deciduous crown is not free either — trunk, limbs and twigs still intercept a real share of a beam this low — so keep even deciduous trees off the line between the south to south‑west sky and the main winter glazing, rather than merely choosing deciduous and considering it solved.",
+          "fa": "هیچ همیشه‌سبزی در آن کمان جا ندارد. تاج لخت برگ‌ریز هم رایگان نیست — تنه، شاخه و ترکه سهم واقعی از تابشی این‌قدر کم‌ارتفاع را می‌گیرند — پس حتی درختان برگ‌ریز را از خط میان آسمان جنوب تا جنوب‌غرب و شیشه‌های اصلی زمستانی دور نگه دارید، نه آنکه فقط برگ‌ریز انتخاب کنید و مسئله را حل‌شده بدانید."
+        }
+      },
+      {
+        "id": "east-shelter",
+        "title": {
+          "en": "East shelter belt — and the conflict in it",
+          "fa": "کمربند بادشکن شرقی — و تضاد درون آن"
+        },
+        "evidence": {
+          "en": "The cold half of the year blows from the east: 30% of winter hours from E, 14.8% from ESE, 12.7% from SE. Summer reverses to the west, 18.8% from W. But winter sunrise is at azimuth 118.6° — the same quarter as the winter wind.",
+          "fa": "نیمه سرد سال از شرق می‌وزد: ۳۰ درصد ساعات زمستان از شرق، ۱۴٫۸ درصد از شرق‌جنوب‌شرقی، ۱۲٫۷ درصد از جنوب‌شرقی. تابستان به غرب برمی‌گردد، ۱۸٫۸ درصد از غرب. اما طلوع زمستان در سمت ۱۱۸٫۶ درجه است — همان ربع باد زمستان."
+        },
+        "guidance": {
+          "en": "A dense evergreen belt is the right answer to the winter wind and the wrong answer to the winter morning. This dashboard does not resolve it: either keep the belt low and short of the sun line, push it round to the north‑east where the ground falls away anyway, or accept losing the first hour of winter sun. It is a decision for whoever fixes the house on the platform.",
+          "fa": "کمربند همیشه‌سبز انبوه پاسخ درست به باد زمستان و پاسخ نادرست به صبح زمستان است. این داشبورد آن را حل نمی‌کند: یا کمربند را کوتاه و بیرون از خط خورشید نگه دارید، یا آن را به شمال‌شرق بچرخانید که زمین همان‌جا افت می‌کند، یا از دست دادن نخستین ساعت آفتاب زمستان را بپذیرید. این تصمیم کسی است که ساختمان را روی سکو تثبیت می‌کند."
+        }
+      },
+      {
+        "id": "downhill-northeast",
+        "title": {
+          "en": "The downhill north‑east end — the cheapest place to plant",
+          "fa": "انتهای سراشیب شمال‌شرقی — کم‌هزینه‌ترین جای کاشت"
+        },
+        "evidence": {
+          "en": "Every facet of the parcel descends north‑east, and the north‑east quarter lies outside both the winter arc (118.6°–241.4°) and the summer afternoon. A tree there also stands below the platform, so its crown competes with the view long before it competes with the sun.",
+          "fa": "همه وجه‌های قطعه به شمال‌شرق نزول دارند و ربع شمال‌شرقی بیرون از کمان زمستان (۱۱۸٫۶ تا ۲۴۱٫۴ درجه) و بعدازظهر تابستان است. درختی در آنجا پایین‌تر از سکو هم می‌ایستد، پس تاجش خیلی پیش از آنکه با خورشید رقابت کند با منظر رقابت می‌کند."
+        },
+        "guidance": {
+          "en": "Put the largest crowns here first. Keep roots and crowns clear of the lower road bench and of the platform cut face: a mature root plate lifting a retaining wall or a carriageway is the expensive failure, and neither the wall nor the road has been designed yet.",
+          "fa": "بزرگ‌ترین تاج‌ها را نخست همین‌جا بگذارید. ریشه و تاج را از سکوی جاده پایین و از جبهه برش سکو دور نگه دارید: صفحه ریشه بالغی که دیوار حائل یا سواره‌رو را بالا بیاورد خرابی گران است و نه دیوار طراحی شده و نه جاده."
+        }
+      }
+    ]
+  },
+  "care": {
+    "status": "preliminary-inference",
+    "note": {
+      "en": "General practice for this climate, not a specification, and deliberately without quantities — a litres-per-week figure would need a soil test, a species list and a water source, and none of the three exists yet. Confirm planting season and irrigation with an agricultural extension office.",
+      "fa": "رویه عمومی برای این اقلیم است، نه مشخصات فنی، و آگاهانه بدون مقدار — عدد لیتر در هفته به آزمایش خاک، فهرست گونه و منبع آب نیاز دارد و هیچ‌یک از این سه هنوز موجود نیست. فصل کاشت و آبیاری را با مرکز جهاد کشاورزی تأیید کنید."
+    },
+    "items": [
+      {
+        "id": "water-source",
+        "title": {
+          "en": "Settle the water before the species",
+          "fa": "پیش از گونه، آب را تعیین کنید"
+        },
+        "body": {
+          "en": "No bundled source records a water supply at this parcel — the OSM extract within 5 km contains no building footprints at all and the nearest mapped utility is a transmission line several kilometres away. Since every fast shade tree here is an irrigated tree for life, the supply, its summer reliability and a stored buffer decide the species list. This is on the investigations register.",
+          "fa": "هیچ منبع همراهی تأمین آب در این قطعه ثبت نکرده است — برداشت OSM در شعاع ۵ کیلومتر هیچ ردپای ساختمانی ندارد و نزدیک‌ترین زیرساخت نقشه‌شده خط انتقال برقی در چند کیلومتری است. چون هر درخت سایه‌انداز سریع‌رشد اینجا تا پایان عمر آبیاری‌شده است، منبع، پایداری تابستانی آن و ذخیره میانی، فهرست گونه را تعیین می‌کند. این مورد در فهرست بررسی‌های لازم آمده است."
+        }
+      },
+      {
+        "id": "planting-season",
+        "title": {
+          "en": "Plant into the wet season, not the dry one",
+          "fa": "در فصل تر بکارید، نه خشک"
+        },
+        "body": {
+          "en": "Rain falls between October and May and effectively stops for four months. A tree planted in autumn or very early spring has a whole wet season to put roots down before its first rainless summer; one planted in June is on life support from the day it arrives.",
+          "fa": "باران بین مهر و اردیبهشت می‌بارد و چهار ماه عملاً قطع می‌شود. نهالی که در پاییز یا ابتدای بهار کاشته شود یک فصل تر کامل برای ریشه‌دواندن پیش از نخستین تابستان بی‌باران دارد؛ نهالی که در خرداد کاشته شود از روز اول وابسته به دستگاه است."
+        }
+      },
+      {
+        "id": "slope-planting",
+        "title": {
+          "en": "Plant on a slope, not into it",
+          "fa": "روی شیب بکارید، نه در دل آن"
+        },
+        "body": {
+          "en": "At 34.5–44%, water runs off a flat planting hole before it soaks in, and disturbed soil on this grade is already flagged as erosion-sensitive. Small level terraces or crescent berms on the downhill side hold irrigation where the roots are; bare disturbed ground between young trees is what a winter cloudburst removes.",
+          "fa": "در شیب ۳۴٫۵ تا ۴۴ درصد، آب پیش از نفوذ از چاله کاشت تخت سرریز می‌شود و خاک دست‌خورده در این شیب پیش‌تر فرسایش‌پذیر شناخته شده است. تراس‌های کوچک تراز یا آبگیرهای هلالی در سمت پایین‌دست، آب آبیاری را همان‌جا که ریشه است نگه می‌دارند؛ زمین لخت دست‌خورده میان نهال‌های جوان همان چیزی است که رگبار زمستانی می‌برد."
+        }
+      },
+      {
+        "id": "staking",
+        "title": {
+          "en": "Stake for the gust, then remove the stake",
+          "fa": "برای تندباد قیم بزنید، سپس قیم را بردارید"
+        },
+        "body": {
+          "en": "A 117 km/h gust is on record. Young standards need low, temporary staking that lets the stem flex — a stem held rigid never lays down the wood that keeps it standing — and the tie has to come off before it girdles the trunk.",
+          "fa": "تندباد ۱۱۷ کیلومتر بر ساعت ثبت شده است. نهال‌های پابلند به قیم کوتاه و موقت نیاز دارند که به ساقه اجازه خمش بدهد — ساقه‌ای که سخت بسته شود هرگز چوبی که سرپا نگهش دارد نمی‌سازد — و بند باید پیش از آنکه تنه را حلقه کند باز شود."
+        }
+      },
+      {
+        "id": "root-setback",
+        "title": {
+          "en": "Keep root plates off the built work",
+          "fa": "صفحه ریشه را از کارهای ساختمانی دور کنید"
+        },
+        "body": {
+          "en": "The platform will be cut into a 38% slope and two road benches sit above and below the parcel. Large trees planted close to a cut face, a retaining wall or a carriageway edge become a maintenance liability decades later, and the setback has to be agreed with whoever designs the retaining work — not chosen from a table.",
+          "fa": "سکو در شیب ۳۸ درصد بریده می‌شود و دو سکوی جاده بالا و پایین قطعه قرار دارند. درختان بزرگ کاشته‌شده نزدیک جبهه برش، دیوار حائل یا لبه سواره‌رو دهه‌ها بعد به تعهد نگهداری تبدیل می‌شوند و فاصله باید با طراح سازه نگهبان توافق شود، نه از جدول انتخاب گردد."
+        }
+      },
+      {
+        "id": "disturbed-ground",
+        "title": {
+          "en": "The cut face is a different problem",
+          "fa": "جبهه برش مسئله دیگری است"
+        },
+        "body": {
+          "en": "Trees do not hold a fresh cut. What does is close, fibrous, fast cover — shrubs, grasses, groundcover — and this register names none, because no bundled source supports a species for it and inventing one would be worse than the gap. Take it to the same extension office as the tree list, and ask about the first winter specifically: the erosion finding on this page is about disturbed soil at 34.5–44%, and bare ground between young trees is where it starts.",
+          "fa": "درخت جبهه تازه‌بریده را نگه نمی‌دارد. آنچه نگه می‌دارد پوشش متراکم، ریشه‌افشان و سریع است — درختچه، چمن، پوشش زمینی — و این فهرست هیچ‌یک را نام نمی‌برد، چون هیچ منبع همراهی گونه‌ای برای آن پشتیبانی نمی‌کند و ساختن یکی بدتر از این کمبود است. این را به همان مرکز جهاد کشاورزی ببرید که فهرست درختان را می‌برید و مشخصاً درباره زمستان اول بپرسید: یافته فرسایش این صفحه درباره خاک دست‌خورده در شیب ۳۴٫۵ تا ۴۴ درصد است و زمین لخت میان نهال‌های جوان جایی است که از آن آغاز می‌شود."
+        }
+      },
+      {
+        "id": "mixture",
+        "title": {
+          "en": "Mix the planting",
+          "fa": "کاشت را متنوع کنید"
+        },
+        "body": {
+          "en": "Several of the fastest species carry a single well-known disease between them — elm to Dutch elm disease, plane to canker stain, walnut and mulberry to their own pests. A row of one species is a row that fails together; a mixture loses one tree.",
+          "fa": "چند گونه از سریع‌رشدترین‌ها هر یک یک بیماری شناخته‌شده دارند — نارون بیماری هلندی، چنار شانکر، گردو و توت آفات خود. ردیفی از یک گونه ردیفی است که یک‌جا از بین می‌رود؛ کاشت آمیخته یک درخت را از دست می‌دهد."
+        }
+      }
+    ]
+  },
+  "image_credit_note": {
+    "en": "Photographs are bundled from Wikipedia article lead images under free licences, with the author and licence recorded beside each one. A file whose licence could not be verified ships no photograph rather than an unlicensed one.",
+    "fa": "عکس‌ها از تصویر شاخص مقاله‌های ویکی‌پدیا با پروانه آزاد همراه بسته شده‌اند و نام پدیدآور و پروانه در کنار هر یک ثبت شده است. فایلی که پروانه‌اش تأیید نشده، بی‌عکس منتشر می‌شود نه با عکس بی‌پروانه."
+  },
+  "limitations": {
+    "en": "Every figure in this section is from a published horticultural or botanical source, not from this site. No bundled source records a single plant growing on this parcel; the soil has not been sampled; frost pockets, exposure at this exact bench and the depth of soil over rock are all unknown until someone stands on it. Nursery availability and stock quality in Kermanshah province are not verified here either, and they usually decide the final list. Treat this as the question to ask a local nursery, and confirm species choice and planting season with an agricultural extension office before buying anything.",
+    "fa": "هر عدد این بخش از منبعی منتشرشده در باغبانی یا گیاه‌شناسی است، نه از این سایت. هیچ منبع همراهی رشد حتی یک گیاه را در این قطعه ثبت نکرده؛ خاک نمونه‌برداری نشده؛ حوضچه‌های سرما، مواجهه در همین سکو و عمق خاک روی سنگ تا وقتی کسی روی زمین نایستد ناشناخته‌اند. موجودی و کیفیت نهال در استان کرمانشاه هم اینجا بررسی نشده و معمولاً همان فهرست نهایی را تعیین می‌کند. این را پرسشی بدانید که باید از نهالستان محلی پرسید و پیش از خرید، انتخاب گونه و فصل کاشت را با مرکز جهاد کشاورزی تأیید کنید."
+  },
+  "illustrative_planting_note": {
+    "en": "The four trees in the 3D sun study are illustrative geometry sized to cast a shadow of building height. They are deliberately not tied to any species named here: giving them a species would turn a placeholder into a planting proposal.",
+    "fa": "چهار درخت مطالعه خورشیدی سه‌بعدی، هندسه نمایشی‌اند که برای انداختن سایه‌ای در ارتفاع ساختمان اندازه‌گذاری شده‌اند. آن‌ها آگاهانه به هیچ‌یک از گونه‌های نام‌برده اینجا گره نخورده‌اند: دادن گونه به آن‌ها یک جانگهدار را به پیشنهاد کاشت تبدیل می‌کند."
+  },
+  "sources": [
+    {
+      "id": "pfaf",
+      "label": "Plants For A Future — species database",
+      "url": "https://pfaf.org/",
+      "kind": {
+        "en": "Horticultural database",
+        "fa": "پایگاه داده باغبانی"
+      },
+      "note": {
+        "en": "Hardiness zones, mature dimensions, growth rate, soil pH range, drought and wind notes. A compiled database rather than primary research: useful, widely used, and occasionally wrong — one entry in this register contradicts the species' own native range and is flagged for it.",
+        "fa": "پهنه مقاومت، ابعاد بلوغ، سرعت رشد، بازه pH خاک و یادداشت‌های خشکی و باد. این پایگاه گردآوری‌شده است نه پژوهش دست‌اول: کاربردی و پرکاربرد، و گاه نادرست — یکی از مدخل‌های همین فهرست با دامنه بومی خود گونه در تناقض است و همان‌جا علامت خورده است."
+      }
+    },
+    {
+      "id": "tso",
+      "label": "Trees and Shrubs Online (International Dendrology Society)",
+      "url": "https://www.treesandshrubsonline.org/",
+      "kind": {
+        "en": "Dendrological reference",
+        "fa": "مرجع درخت‌شناسی"
+      },
+      "note": {
+        "en": "Native range, measured specimens, disease notes. British-centred, so its frost observations describe a maritime climate, not a continental highland one.",
+        "fa": "دامنه بومی، پایه‌های اندازه‌گیری‌شده و یادداشت بیماری‌ها. تمرکز آن بریتانیا است، پس مشاهدات یخبندانش اقلیم دریایی را توصیف می‌کند نه ارتفاعات قاره‌ای را."
+      }
+    },
+    {
+      "id": "mbg",
+      "label": "Missouri Botanical Garden — Plant Finder",
+      "url": "https://plantfinder.mobot.org/",
+      "kind": {
+        "en": "Botanical garden reference",
+        "fa": "مرجع باغ گیاه‌شناسی"
+      },
+      "note": {
+        "en": "Zone range, mature size, culture and known problems, from a garden that grows the plants it describes. Used here as the second source on the species whose cold margin is tightest, so a pass does not rest on one compiled database.",
+        "fa": "بازه پهنه، اندازه بلوغ، شرایط کشت و مشکلات شناخته‌شده، از باغی که خود گیاهان توصیف‌شده را می‌کارد. اینجا به‌عنوان منبع دوم برای گونه‌ای به کار رفته که حاشیه سرمایش از همه تنگ‌تر است، تا حکم قبول بر یک پایگاه داده گردآوری‌شده تکیه نکند."
+      }
+    },
+    {
+      "id": "wikipedia-range",
+      "label": "Wikipedia — species distribution",
+      "url": "https://en.wikipedia.org/wiki/Fraxinus_angustifolia",
+      "kind": {
+        "en": "Encyclopaedia",
+        "fa": "دانشنامه"
+      },
+      "note": {
+        "en": "Cited for one specific claim: which subspecies of narrow-leaved ash reaches Iran, and under which name. Every species below also links its own article for the reader.",
+        "fa": "برای یک ادعای مشخص نقل شده است: کدام زیرگونه زبان‌گنجشک به ایران می‌رسد و با چه نامی. هر گونه در ادامه مقاله خود را هم برای خواننده پیوند می‌دهد."
+      }
+    },
+    {
+      "id": "walnut-iran",
+      "label": "Vahdati et al. — cultivation and breeding of Persian walnut in Iran, Scientia Horticulturae",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0304423820301977",
+      "kind": {
+        "en": "Peer-reviewed review",
+        "fa": "مقاله مروری داوری‌شده"
+      },
+      "note": {
+        "en": "Records that Iranian walnut cultivation concentrates in the western and northern highlands of the Zagros and Alborz, with Kermanshah among the important areas. This is the closest thing in the register to local evidence.",
+        "fa": "ثبت می‌کند که کشت گردوی ایران در ارتفاعات غربی و شمالی زاگرس و البرز متمرکز است و کرمانشاه از مناطق مهم آن است. این نزدیک‌ترین چیز در این فهرست به شاهد محلی است."
+      }
+    },
+    {
+      "id": "civilica-drought",
+      "label": "معرفی تعدادی از درختان و درختچه‌های خشکی‌پسند جهت کاشت در فضای سبز شهری (Civilica)",
+      "url": "https://civilica.com/doc/330232/",
+      "kind": {
+        "en": "Persian-language conference paper",
+        "fa": "مقاله کنفرانسی فارسی"
+      },
+      "note": {
+        "en": "Persian-language selection of drought-tolerant trees and shrubs for urban green space, listing several of the species below. Cited as evidence of local horticultural practice, not as a hardiness authority.",
+        "fa": "گزینش فارسی درختان و درختچه‌های خشکی‌پسند برای فضای سبز شهری که چند گونه زیر را فهرست می‌کند. به‌عنوان شاهد رویه باغبانی محلی نقل شده، نه مرجع مقاومت به سرما."
+      }
+    },
+    {
+      "id": "msu-critical-temps",
+      "label": "Critical Spring Temperatures for Tree Fruit Bud Development Stages — Michigan State University Extension",
+      "url": "https://www.canr.msu.edu/fruit/uploads/files/TreeFruitCriticalTemperatures.pdf",
+      "kind": {
+        "en": "Extension bud-kill table",
+        "fa": "جدول تلفات جوانه مرکز ترویج"
+      },
+      "note": {
+        "en": "Compiled by Mark Longstroth from Washington State and Michigan State extension bulletins. Gives, per fruit and per bud stage, \"the temperature at which 10 % and 90 % of normal buds will be killed\", where the older single figure was \"the lowest temperature that can be endured for 30 minutes without damage\". It is a bud-stage table, not a hardiness table: it says what a flower survives in April, not what a trunk survives in January. It covers pome and stone fruit only — nothing here applies to walnut, mulberry, fig, quince or pomegranate.",
+        "fa": "گردآوری مارک لانگ‌استروث از بولتن‌های ترویجی دانشگاه‌های ایالتی واشینگتن و میشیگان. برای هر میوه و هر مرحله جوانه «دمایی که در آن ۱۰ و ۹۰ درصد جوانه‌های معمولی از بین می‌روند» را می‌دهد، جایی که عدد قدیمی‌تر «کمترین دمایی بود که سی دقیقه بدون آسیب تحمل می‌شود». این جدول مرحله جوانه است نه مقاومت گونه: می‌گوید گل در آوریل چه را تحمل می‌کند، نه تنه در دی. تنها میوه دانه‌دار و هسته‌دار را می‌پوشاند — هیچ‌چیز آن به گردو، توت، انجیر، به یا انار مربوط نیست."
+      }
+    },
+    {
+      "id": "walnut-suitability",
+      "label": "Rahimi et al. — land suitability for walnut cultivation in Iran under climate change, PLOS ONE 2019",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0218725",
+      "kind": {
+        "en": "Peer-reviewed land-suitability model",
+        "fa": "مدل داوری‌شده تناسب اراضی"
+      },
+      "note": {
+        "en": "Names \"Hamedan, Lorestan, Kurdistan, Kermanshah, Zanjan and West Azarbaijan\" among the provinces with the strongest conditions for walnut, and lists late-spring frost among the climate-change risks to temperate fruit. This is the strongest local evidence in the register: a modelled provincial suitability, not an observation of this parcel.",
+        "fa": "استان‌های «همدان، لرستان، کردستان، کرمانشاه، زنجان و آذربایجان غربی» را در میان مناسب‌ترین شرایط برای گردو نام می‌برد و یخبندان دیررس بهاره را از خطرهای تغییر اقلیم برای میوه معتدل فهرست می‌کند. این قوی‌ترین شاهد محلی این فهرست است: تناسب مدل‌شده استانی، نه مشاهده این قطعه."
+      }
+    },
+    {
+      "id": "paveh-town",
+      "label": "Wikipedia — Paveh",
+      "url": "https://en.wikipedia.org/wiki/Paveh",
+      "kind": {
+        "en": "Encyclopaedia — the nearest town",
+        "fa": "دانشنامه — نزدیک‌ترین شهر"
+      },
+      "note": {
+        "en": "Cited for two things and nothing more: the town's elevation, \"1,560 m (5,120 ft)\", and that \"The town is encircled by fruit gardens.\" Its climate summary also records zero precipitation from June through September, independently of the reanalysis series this dashboard uses — two unrelated sources agreeing that the summer here is rainless. Where a fruit is grown around Paveh but rated too tender for this parcel, that gap is elevation and aspect, and this is the source for the first half of it.",
+        "fa": "برای دو چیز و نه بیشتر نقل شده است: ارتفاع شهر، «۱٬۵۶۰ متر»، و اینکه «شهر را باغ‌های میوه احاطه کرده‌اند». خلاصه اقلیمی آن نیز بارش صفر از خرداد تا شهریور را ثبت می‌کند، مستقل از سری بازتحلیلی که این داشبورد به کار می‌برد — دو منبع بی‌ربط که هم‌داستان‌اند تابستان اینجا بی‌باران است. جایی که میوه‌ای گرد پاوه کاشته می‌شود اما برای این قطعه حساس‌تر از حد ارزیابی شده، آن فاصله ارتفاع و جهت شیب است و این منبع نیمه اول آن است."
+      }
+    },
+    {
+      "id": "rootstock-chlorosis",
+      "label": "Bicarbonate rather than high pH induced Fe-deficiency chlorosis in dwarfing rootstock quince A — PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10484346/",
+      "kind": {
+        "en": "Peer-reviewed rootstock physiology",
+        "fa": "فیزیولوژی پایه، داوری‌شده"
+      },
+      "note": {
+        "en": "The reason a rootstock question belongs on a page about soil pH. It records that \"Chlorosis caused by iron (Fe) deficiency is common in fruit trees, especially in alkaline and calcareous soils, limiting fruit yield and quality\", that quince A \"is susceptible to iron (Fe) deficiency in calcareous soils\", that Pyrus betulifolia \"is known as one of the most resistant rootstocks to Fe deficiency\", and that the cause is bicarbonate rather than pH itself. Cited for the mechanism and for those two named rootstocks only; nothing here says which rootstocks a Kermanshah nursery actually sells.",
+        "fa": "دلیل آنکه پرسش پایه به صفحه‌ای درباره pH خاک تعلق دارد. ثبت می‌کند که «زردی ناشی از کمبود آهن در درختان میوه شایع است، خصوصاً در خاک‌های قلیایی و آهکی، و عملکرد و کیفیت میوه را محدود می‌کند»، که پایه به‌ای A «در خاک آهکی مستعد کمبود آهن است»، که Pyrus betulifolia «از مقاوم‌ترین پایه‌ها به کمبود آهن شناخته می‌شود»، و اینکه علت بی‌کربنات است نه خود pH. تنها برای این سازوکار و همان دو پایه نام‌برده نقل شده؛ هیچ‌چیز اینجا نمی‌گوید نهالستان کرمانشاه کدام پایه را می‌فروشد."
+      }
+    }
+  ]
+}

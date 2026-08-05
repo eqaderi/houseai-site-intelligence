@@ -1,0 +1,69 @@
+{
+  "status": "requires-field-investigation",
+  "intro": {
+    "en": "Species shortlists do not replace these five site decisions. No irrigation quantity is published: litres-per-week needs soil, water quality and a chosen list.",
+    "fa": "فهرست کوتاه گونه جای این پنج تصمیم سایت را نمی‌گیرد. هیچ مقدار آبیاری منتشر نشده: لیتر در هفته به خاک، کیفیت آب و فهرست انتخاب‌شده نیاز دارد."
+  },
+  "items": [
+    {
+      "id": "soil-test",
+      "label": {
+        "en": "Soil test",
+        "fa": "آزمایش خاک"
+      },
+      "status": "unresolved",
+      "note": {
+        "en": "Texture, pH confirmation, salinity and organic matter at planting depth.",
+        "fa": "بافت، تأیید pH، شوری و ماده آلی در عمق کاشت."
+      }
+    },
+    {
+      "id": "irrigation-source",
+      "label": {
+        "en": "Irrigation source, quantity and quality",
+        "fa": "منبع، مقدار و کیفیت آبیاری"
+      },
+      "status": "unresolved",
+      "note": {
+        "en": "Summer drought is severe; every fast shade tree is a permanently irrigated tree here.",
+        "fa": "خشکی تابستان شدید است؛ هر درخت سایه سریع اینجا درخت آبیاری دائم است."
+      }
+    },
+    {
+      "id": "nursery",
+      "label": {
+        "en": "Local nursery availability",
+        "fa": "دسترسی نهالستان محلی"
+      },
+      "status": "unresolved",
+      "note": {
+        "en": "Confirm stock, rootstock and provenance before naming a cultivar.",
+        "fa": "پیش از نام بردن رقم، موجودی، پایه و منشأ را تأیید کنید."
+      }
+    },
+    {
+      "id": "retaining-roots",
+      "label": {
+        "en": "Retaining-wall and root conflicts",
+        "fa": "تعارض دیوار حائل و ریشه"
+      },
+      "status": "unresolved",
+      "note": {
+        "en": "Cut faces and platforms are not designed; root volume cannot be promised.",
+        "fa": "وجه برش و سکو طراحی نشده؛ حجم ریشه قابل وعده نیست."
+      }
+    },
+    {
+      "id": "microclimate",
+      "label": {
+        "en": "Final microclimate",
+        "fa": "ریزاقلیم نهایی"
+      },
+      "status": "unresolved",
+      "note": {
+        "en": "Cold-air pooling, wind exposure and neighbour shade need field observation.",
+        "fa": "تجمع هوای سرد، باد و سایه همسایه به مشاهده میدانی نیاز دارد."
+      }
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+{
+  "status": "gated-until-inputs",
+  "intro": {
+    "en": "Four later analysis tracks. Each is ready to host results only after its prerequisite evidence exists. Monthly reanalysis, the regional DEM horizon and the eight-point TIN are not substitutes.",
+    "fa": "چهار مسیر تحلیل بعدی. هر کدام فقط پس از فراهم شدن پیش‌نیازش نتیجه می‌گیرد. بازتحلیل ماهانه، افق DEM منطقه‌ای و TIN هشت‌نقطه‌ای جایگزین آن‌ها نیستند."
+  },
+  "modules": [
+    {
+      "id": "hourly-comfort",
+      "backlog": "P3-01",
+      "status": "blocked-missing-weather-file",
+      "title": {
+        "en": "Hourly comfort analysis",
+        "fa": "تحلیل ساعتی آسایش"
+      },
+      "summary": {
+        "en": "Psychrometric and hourly comfort studies need a defensible weather file (for example a quality-controlled EPW or local station series). Monthly ERA5-Land summaries on this page must not be converted into an EPW or a comfort verdict.",
+        "fa": "مطالعه سایکرومتریک و آسایش ساعتی به فایل هوای قابل دفاع (مثلاً EPW کنترل‌کیفیت‌شده یا سری ایستگاه محلی) نیاز دارد. خلاصه ماهانه ERA5-Land این صفحه نباید به EPW یا حکم آسایش تبدیل شود."
+      },
+      "prerequisites": [
+        {
+          "en": "Defensible hourly weather file with documented station or generation method",
+          "fa": "فایل هوای ساعتی قابل دفاع با روش ایستگاه یا تولید مستند"
+        },
+        {
+          "en": "Site elevation and exposure notes suitable for the weather file",
+          "fa": "یادداشت ارتفاع و معرض مناسب همان فایل هوا"
+        },
+        {
+          "en": "Occupancy and comfort criteria agreed with the household",
+          "fa": "معیار آسایش و الگوی سکونت مورد توافق خانوار"
+        }
+      ],
+      "withheld": [
+        {
+          "en": "No EPW derived from monthly means",
+          "fa": "هیچ EPW از میانگین ماهانه ساخته نشده"
+        },
+        {
+          "en": "No psychrometric chart or hours-of-discomfort total",
+          "fa": "هیچ نمودار سایکرومتریک یا جمع ساعات ناراحتی"
+        }
+      ],
+      "when_available": {
+        "en": "Publish hourly temperature/humidity distributions, adaptive comfort bands and explicit weather-file provenance.",
+        "fa": "توزیع ساعتی دما/رطوبت، نوار آسایش تطبیقی و منشأ صریح فایل هوا منتشر شود."
+      },
+      "research_notes": [
+        {
+          "en": "What public data already shows (not an EPW): ERA5-Land 1991–2020 at ~11 km gives HDD18 ≈ 2585 K·day, CDD18 ≈ 965 K·day, annual snowfall ≈ 156 cm, coldest daily min −23.1 °C, hottest daily max 39.1 °C. These describe climate, not hourly comfort.",
+          "fa": "آنچه داده عمومی نشان می‌دهد (نه EPW): ERA5-Land ۱۹۹۱–۲۰۲۰ در حدود ۱۱ کیلومتر HDD18 حدود ۲۵۸۵، CDD18 حدود ۹۶۵، برف سالانه حدود ۱۵۶ سانتی‌متر، سردترین کمینه روزانه −۲۳٫۱ °C و گرم‌ترین بیشینه ۳۹٫۱ °C. این‌ها اقلیم‌اند نه آسایش ساعتی."
+        },
+        {
+          "en": "A defensible weather file must be obtained or generated under engineer supervision; monthly means must not be converted into an EPW on this dashboard.",
+          "fa": "فایل هوای قابل دفاع باید با نظارت مهندس تهیه یا تولید شود؛ میانگین ماهانه نباید در این داشبورد به EPW تبدیل شود."
+        }
+      ]
+    },
+    {
+      "id": "neighbor-field-horizon",
+      "backlog": "P3-02",
+      "status": "blocked-missing-field-survey",
+      "title": {
+        "en": "Neighbour and field-horizon shadow studies",
+        "fa": "مطالعه سایه همسایه و افق میدانی"
+      },
+      "summary": {
+        "en": "The solar explorer uses a regional DEM horizon. Neighbour buildings, vegetation and a surveyed horizon are separate studies and stay off until measured.",
+        "fa": "کاوشگر خورشید از افق DEM منطقه‌ای استفاده می‌کند. ساختمان همسایه، پوشش گیاهی و افق برداشت‌شده مطالعات جدا هستند و تا اندازه‌گیری خاموش می‌مانند."
+      },
+      "prerequisites": [
+        {
+          "en": "Field horizon survey from the building platform",
+          "fa": "برداشت افق میدانی از سکوی ساختمان"
+        },
+        {
+          "en": "Neighbour heights, setbacks and openings survey",
+          "fa": "برداشت ارتفاع، عقب‌نشینی و بازشوهای همسایه"
+        },
+        {
+          "en": "Existing tree crown survey if vegetation is to cast",
+          "fa": "برداشت تاج درختان موجود اگر باید سایه بیندازند"
+        }
+      ],
+      "withheld": [
+        {
+          "en": "No neighbour massing in the 3D sun study",
+          "fa": "هیچ حجم همسایه در مطالعه خورشید سه‌بعدی"
+        },
+        {
+          "en": "Regional DEM horizon is not relabelled as surveyed",
+          "fa": "افق DEM منطقه‌ای به‌عنوان برداشت‌شده برچسب نخورده"
+        }
+      ],
+      "when_available": {
+        "en": "Separate layers: surveyed horizon ring, neighbour blockers, and the existing DEM horizon kept for comparison only.",
+        "fa": "لایه‌های جدا: حلقه افق برداشت‌شده، مانع‌های همسایه، و افق DEM موجود فقط برای مقایسه."
+      },
+      "research_notes": [
+        {
+          "en": "Already on the page: a regional DEM horizon (72 azimuths, 90 m DEM) and solar access hours. That is not a field horizon and does not include neighbours or trees.",
+          "fa": "همین حالا در صفحه: افق DEM منطقه‌ای (۷۲ سمت، DEM ۹۰ متری) و ساعات دسترسی خورشید. این افق میدانی نیست و همسایه یا درخت را ندارد."
+        },
+        {
+          "en": "Zagros oak/pasture wildfire is a documented regional issue around Paveh; fuel and setbacks still need local assessment.",
+          "fa": "آتش‌سوزی جنگل/مرتع زاگرس در اطراف پاوه مسئله منطقه‌ای مستند است؛ سوخت و عقب‌نشینی هنوز به ارزیابی محلی نیاز دارد."
+        }
+      ]
+    },
+    {
+      "id": "buildable-envelope",
+      "backlog": "P3-03",
+      "status": "blocked-missing-planning-controls",
+      "title": {
+        "en": "Abstract buildable-envelope study",
+        "fa": "مطالعه پوسته قابل‌ساخت انتزاعی"
+      },
+      "summary": {
+        "en": "An abstract envelope (setbacks, height, plan limits) can be drawn only after municipal planning controls are verified. This is not a floor plan and not a preferred house option.",
+        "fa": "پوسته انتزاعی (عقب‌نشینی، ارتفاع، حد پلان) فقط پس از تأیید ضوابط شهرداری قابل ترسیم است. این پلان نیست و گزینه ترجیحی خانه هم نیست."
+      },
+      "prerequisites": [
+        {
+          "en": "Verified zoning, setbacks, FAR/height and parking rules",
+          "fa": "ضوابط تأییدشده، عقب‌نشینی، سطح اشغال/ارتفاع و پارکینگ"
+        },
+        {
+          "en": "Legal/cadastral boundary, not only drawing geometry",
+          "fa": "مرز قانونی/ثبتی، نه فقط هندسه ترسیمی"
+        },
+        {
+          "en": "Preliminary access and slope feasibility",
+          "fa": "امکان‌سنجی اولیه دسترسی و شیب"
+        }
+      ],
+      "withheld": [
+        {
+          "en": "No schematic floor plan or room layout",
+          "fa": "هیچ پلان شماتیک یا چیدمان اتاق"
+        },
+        {
+          "en": "No ranked option A/B/C massing as a recommendation",
+          "fa": "هیچ رتبه‌بندی حجم A/B/C به‌عنوان توصیه"
+        }
+      ],
+      "when_available": {
+        "en": "Publish a non-preferential envelope diagram with cited bylaws and explicit non-selection language.",
+        "fa": "نمودار پوسته غیرترجیحی با استناد به ضوابط و زبان صریح عدم‌انتخاب منتشر شود."
+      },
+      "research_notes": [
+        {
+          "en": "Public sources do not publish parcel zoning, FAR, setbacks or height limits for Baneh Verdeh. Only the municipal authority / licensed planner can supply the applicable rules.",
+          "fa": "منابع عمومی ضوابط قطعه، سطح اشغال، عقب‌نشینی یا ارتفاع برای بانه‌ورده منتشر نمی‌کنند. فقط مرجع شهرداری / شهرساز دارای پروانه قواعد لازم را می‌دهد."
+        },
+        {
+          "en": "Drawing geometry (487.428568 m², seven outer points) is verified; legal cadastre is not.",
+          "fa": "هندسه ترسیمی (۴۸۷٫۴۲۸۵۶۸ مترمربع، هفت نقطه بیرونی) تأیید شده؛ کاداستر قانونی نه."
+        }
+      ]
+    },
+    {
+      "id": "design-weather-parameters",
+      "backlog": "P3-04",
+      "status": "blocked-missing-formal-parameters",
+      "title": {
+        "en": "Design weather and engineering parameters",
+        "fa": "پارامترهای هوای طراحی و مهندسی"
+      },
+      "summary": {
+        "en": "Snow, frost, wind, seismic and thermal design values may appear only when formally obtained, each with provenance and applicability. Regional catalogues and reanalysis means are not design loads.",
+        "fa": "مقادیر طراحی برف، یخبندان، باد، لرزه و حرارتی فقط وقتی رسماً به‌دست آیند — هر کدام با منشأ و دامنه کاربرد — ظاهر می‌شوند. فهرست منطقه‌ای و میانگین بازتحلیل بار طراحی نیستند."
+      },
+      "prerequisites": [
+        {
+          "en": "Standard 2800 parameters and geotechnical site class",
+          "fa": "پارامترهای استاندارد ۲۸۰۰ و رده ساختگاه ژئوتکنیک"
+        },
+        {
+          "en": "Code snow, wind, rain and temperature loads from the licensed document",
+          "fa": "بار برف، باد، باران و دما از سند دارای مجوز"
+        },
+        {
+          "en": "Local frost depth and frost-susceptible soil assessment",
+          "fa": "عمق یخبندان محلی و ارزیابی خاک یخ‌بندان‌پذیر"
+        }
+      ],
+      "parameters": [
+        {
+          "id": "snow-load",
+          "label": {
+            "en": "Structural snow load",
+            "fa": "بار برف سازه‌ای"
+          },
+          "value": null,
+          "unit": null,
+          "status": "unresolved",
+          "provenance": {
+            "en": "Not obtained",
+            "fa": "به‌دست نیامده"
+          },
+          "applicability": {
+            "en": "Withhold until the licensed code value is supplied",
+            "fa": "تا تأمین مقدار آیین‌نامه دارای مجوز نگه داشته شود"
+          }
+        },
+        {
+          "id": "frost-depth",
+          "label": {
+            "en": "Design frost depth",
+            "fa": "عمق یخبندان طراحی"
+          },
+          "value": null,
+          "unit": null,
+          "status": "unresolved",
+          "provenance": {
+            "en": "Not obtained",
+            "fa": "به‌دست نیامده"
+          },
+          "applicability": {
+            "en": "Withhold until local assessment exists",
+            "fa": "تا ارزیابی محلی نگه داشته شود"
+          }
+        },
+        {
+          "id": "design-wind",
+          "label": {
+            "en": "Design wind / basic wind speed",
+            "fa": "باد طراحی / سرعت مبنای باد"
+          },
+          "value": null,
+          "unit": null,
+          "status": "unresolved",
+          "provenance": {
+            "en": "Not obtained — regional gust return is not a code load",
+            "fa": "به‌دست نیامده — دوره بازگشت تندباد منطقه‌ای بار آیین‌نامه‌ای نیست"
+          },
+          "applicability": {
+            "en": "Withhold until the licensed wind load is supplied",
+            "fa": "تا تأمین بار باد آیین‌نامه‌ای نگه داشته شود"
+          }
+        },
+        {
+          "id": "seismic-spectrum",
+          "label": {
+            "en": "Seismic design spectrum / Standard 2800",
+            "fa": "طیف طراحی لرزه‌ای / استاندارد ۲۸۰۰"
+          },
+          "value": null,
+          "unit": null,
+          "status": "unresolved",
+          "provenance": {
+            "en": "Not obtained — regional event counts are context only",
+            "fa": "به‌دست نیامده — شمار رویداد منطقه‌ای فقط زمینه است"
+          },
+          "applicability": {
+            "en": "Withhold until spectrum and site class exist",
+            "fa": "تا طیف و رده ساختگاه نگه داشته شود"
+          }
+        },
+        {
+          "id": "thermal-design-temps",
+          "label": {
+            "en": "Thermal design temperatures",
+            "fa": "دماهای طراحی حرارتی"
+          },
+          "value": null,
+          "unit": null,
+          "status": "unresolved",
+          "provenance": {
+            "en": "Not obtained — climate percentiles are not design temperatures",
+            "fa": "به‌دست نیامده — صدک‌های اقلیمی دمای طراحی نیستند"
+          },
+          "applicability": {
+            "en": "Withhold until formally specified design temps exist",
+            "fa": "تا دماهای طراحی رسماً مشخص شوند نگه داشته شود"
+          }
+        }
+      ],
+      "withheld": [
+        {
+          "en": "No base acceleration, zone number or spectrum ordinate invented from USGS counts",
+          "fa": "هیچ شتاب مبنا، شماره پهنه یا مقدار طیفی از شمار USGS ساخته نشده"
+        },
+        {
+          "en": "No design snow from measured depth without density and code conversion",
+          "fa": "هیچ برف طراحی از عمق اندازه‌گیری بدون چگالی و تبدیل آیین‌نامه‌ای"
+        }
+      ],
+      "when_available": {
+        "en": "Each parameter ships value, unit, source document, access date, applicability clause and a design-use limit.",
+        "fa": "هر پارامتر با مقدار، واحد، سند منبع، تاریخ دسترسی، بند کاربرد و حد استفاده طراحی منتشر شود."
+      },
+      "research_notes": [
+        {
+          "en": "Standard 2800 (Iran seismic code) maps the country into four relative hazard zones with design base acceleration ratios A = 0.35g (very high), 0.30g (high), 0.25g (intermediate) and 0.20g (low). Western Zagros / Kermanshah is among the more active parts of the country; the bundled USGS catalogue shows a M7.3 event about 37 km from the probable parcel (2017). The official city/town table in the current 2800 edition must still be read by a structural engineer for Paveh / the parcel — this note is regional context, not A for design.",
+          "fa": "استاندارد ۲۸۰۰ کشور را به چهار پهنه با شتاب مبنای طراحی ۰٫۳۵g (خیلی زیاد)، ۰٫۳۰g (زیاد)، ۰٫۲۵g (متوسط) و ۰٫۲۰g (کم) تقسیم می‌کند. زاگرس غربی / کرمانشاه از پهنه‌های فعال‌تر است؛ فهرست USGS همراه بسته رخداد ۷٫۳ در حدود ۳۷ کیلومتری قطعه محتمل (۲۰۱۷) را نشان می‌دهد. جدول رسمی شهرها در ویرایش جاری ۲۸۰۰ را هنوز مهندس سازه برای پاوه / قطعه باید بخواند — این یادداشت زمینه منطقه‌ای است نه A طراحی."
+        },
+        {
+          "en": "National Building Code Topic 6 (loads) defines ground/base snow and wind procedures with a national snow-zone appendix. Public web extracts do not reliably state the official snow-zone cell for Baneh Verdeh; the licensed Topic 6 table + local municipality govern. Climate evidence here (≈156 cm mean annual snow, 117 km/h observed regional daily gust) is climate, not code load.",
+          "fa": "مبحث ششم مقررات ملی روش بار برف و باد مبنا را با پیوست پهنه‌بندی برف تعریف می‌کند. استخراج‌های عمومی وب پهنه رسمی برف بانه‌ورده را قابل‌اتکا بیان نمی‌کنند؛ جدول دارای مجوز مبحث ۶ + شهرداری حاکم است. شواهد اقلیمی اینجا (حدود ۱۵۶ سانتی‌متر برف سالانه، تندباد روزانه منطقه‌ای ۱۱۷ کیلومتر بر ساعت) اقلیم است نه بار آیین‌نامه‌ای."
+        },
+        {
+          "en": "Regional geology (Macrostrat): undivided Bangestan Group — mainly Cretaceous limestone and shale. SoilGrids 250 m: alkaline soils (pH ~7.6 context already on page), clayey textures possible. Neither replaces boreholes or frost-depth assessment.",
+          "fa": "زمین‌شناسی منطقه‌ای (Macrostrat): گروه بنگستان تفکیک‌نشده — عمدتاً سنگ‌آهک و شیل کرتاسه. SoilGrids ۲۵۰ متری: خاک قلیایی (زمینه pH حدود ۷٫۶ در صفحه)، بافت رسی محتمل. هیچ‌کدام جایگزین گمانه یا ارزیابی عمق یخبندان نیست."
+        },
+        {
+          "en": "Frost: reanalysis frost record is severe (last spring frost into April in many years; minima to −23.1 °C). Design frost depth for foundations is a code/local geotechnical value and is not published as a metre figure here.",
+          "fa": "یخبندان: رکورد بازتحلیل شدید است (آخرین یخبندان بهاره در بسیاری سال‌ها تا آوریل؛ کمینه تا −۲۳٫۱ °C). عمق یخبندان طراحی پی مقدار آیین‌نامه‌ای/ژئوتکنیک محلی است و اینجا به‌صورت متر منتشر نشده."
+        },
+        {
+          "en": "Wildfire (open literature, not parcel clearance): Zagros oak/pasture fires are recurring — peer-reviewed work notes Marivan and Paveh among the most affected northern-Zagros areas; multi-decade burned-area products record thousands of fire events across the southern Zagros 2000–2023 with a recent rise. Treat fuel, access and defensible space as a screening issue for this hillside parcel, not a cleared risk.",
+          "fa": "آتش‌سوزی (ادبیات باز، نه پاک‌سازی قطعه): آتش جنگل/مرتع زاگرس تکراری است — پژوهش‌ها مریوان و پاوه را از مناطق متأثر شمالی‌زاگرس می‌دانند؛ محصولات سطح سوخته هزاران رخداد در زاگرس جنوبی ۲۰۰۰–۲۰۲۳ با افزایش اخیر ثبت کرده‌اند. سوخت، دسترسی و فضای دفاع‌پذیر را مسئله غربالگری این دامنه بدانید نه ریسک پاک‌شده."
+        },
+        {
+          "en": "Radon (open literature, not parcel measurement): a 2025 cross-sectional study measured seasonal indoor radon in Kermanshah primary schools/kindergartens; other Iranian provincial studies show cold-season indoor peaks and occasional exceedance of WHO 100 Bq/m³ guidance. Parcel screening still needs on-site measurement — provincial school means are not a design input.",
+          "fa": "رادون (ادبیات باز، نه اندازه‌گیری قطعه): مطالعه مقطعی ۲۰۲۵ رادون فصلی داخل مدارس/مهدهای کرمانشاه را سنجید؛ مطالعات استانی دیگر اوج فصل سرد و گاه عبور از راهنمای WHO ۱۰۰ Bq/m³ را نشان می‌دهند. غربالگری قطعه هنوز اندازه‌گیری در محل می‌خواهد — میانگین مدرسه‌ای استانی ورودی طراحی نیست."
+        }
+      ]
+    }
+  ]
+}

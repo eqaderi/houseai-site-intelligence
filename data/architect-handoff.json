@@ -1,0 +1,200 @@
+{
+  "status": "pre-design-brief",
+  "summary": {
+    "en": "Household brief is complete for concept sketching. Use verified drawing geometry and regional climate for site strategy. Suggested parti below is direction only — fix footprint, finished levels and schematic plan only after blocking field investigations close.",
+    "fa": "شرح خانوار برای اسکچ مفهومی کامل است. از هندسه ترسیمی تأییدشده و اقلیم منطقه‌ای برای راهبرد سایت استفاده کنید. پیشنهاد حجم زیر فقط جهت است — سطح اشغال، تراز نهایی و پلان شماتیک را فقط پس از بستن بررسی‌های مانع تثبیت کنید."
+  },
+  "sections": [
+    {
+      "id": "usable-now",
+      "label": {
+        "en": "May be used now",
+        "fa": "اکنون قابل استفاده"
+      },
+      "items": [
+        {
+          "en": "Verified drawing geometry, 487.428568 m² plan area, seven outer points and Pt8",
+          "fa": "هندسه ترسیمی تأییدشده، مساحت پلان ۴۸۷٫۴۲۸۵۶۸ مترمربع، هفت نقطه بیرونی و Pt8"
+        },
+        {
+          "en": "Pt2–Pt1 road edge length and drawing +Y north assumption",
+          "fa": "طول لبه راه Pt2–Pt1 و فرض شمال ‎+Y نقشه"
+        },
+        {
+          "en": "Eight-point TIN for understanding the northeast fall — not for quantities",
+          "fa": "TIN هشت‌نقطه‌ای برای شناخت افت شمال‌شرقی — نه برای مقادیر خاکی"
+        },
+        {
+          "en": "Complete household brief (12 fields) including design-direction refinements",
+          "fa": "شرح کامل خانوار (۱۲ فیلد) شامل اصلاحات جهت طراحی"
+        },
+        {
+          "en": "Regional climate, solar, wind and hazard context for briefing only",
+          "fa": "زمینه منطقه‌ای اقلیم، خورشید، باد و مخاطره فقط برای توجیه"
+        }
+      ]
+    },
+    {
+      "id": "concept-directions",
+      "label": {
+        "en": "Suggested concept directions for the architect",
+        "fa": "پیشنهادهای مفهومی برای معمار"
+      },
+      "items": [
+        {
+          "en": "Parti: upper road band = 2-car open-ended garage (third car if garden opening allows) + shared carpentry zone when a bay is free + main entry + fire approach; house as two levels that split and step down the slope toward the northeast garden",
+          "fa": "پارت: نوار راه بالایی = گاراژ دو خودرو باز (خودروی سوم اگر دهانه باغ اجازه دهد) + پهنه نجاری مشترک وقتی جا خالی است + ورود اصلی + مسیر آتش؛ خانه دو تراز که روی شیب شکسته و به باغ شمال‌شرقی پایین می‌رود"
+        },
+        {
+          "en": "Rooms: master suite + three similar bedrooms; acoustically separated office; semi-open kitchen to living; courtyard; laundry + storage + two bathrooms",
+          "fa": "فضاها: سوئیت والدین + سه اتاق مشابه؛ دفتر جدا از نظر صوتی؛ آشپزخانه نیمه‌باز به نشیمن؛ حیاط؛ رختشوی‌خانه + انبار + دو سرویس"
+        },
+        {
+          "en": "Outdoors: keep contiguous nature-play garden on the lower half; later fountain or pool — architect proposes type/size; lower gate + stairs only if slope study allows (not hard phase 1)",
+          "fa": "بیرون: باغ بازی طبیعی پیوسته در نیمه پایین؛ بعداً فواره یا استخر — نوع/اندازه پیشنهاد معمار؛ دروازه + پله پایین فقط اگر مطالعه شیب اجازه دهد (نه الزام فاز ۱)"
+        },
+        {
+          "en": "Envelope: simple modern clean lines; RC frame + continuous external insulation briefing; gas heat when available; AC backup only; roof PV-ready (south reserve); strong west/southwest shade",
+          "fa": "پوسته: مدرن ساده؛ توجیه قاب بتن + عایق پیوسته بیرونی؛ گرمایش گاز وقتی وصل شد؛ کولر فقط پشتیبان؛ بام آماده PV (ذخیره جنوب)؛ سایه قوی غرب/جنوب‌غرب"
+        },
+        {
+          "en": "Delivery: primary occupation in 1–2 years; unlimited quality budget does not skip geotech, utilities, survey or permits; balance comfort, outdoor play, car access and speed equally",
+          "fa": "تحویل: سکونت اصلی در ۱–۲ سال؛ بودجه کیفیت نامحدود ژئوتکنیک/تأسیسات/نقشه/مجوز را حذف نمی‌کند؛ آسایش، بازی بیرون، خودرو و سرعت را برابر سبک کنید"
+        },
+        {
+          "en": "Massing studies A/B/C are in the Concepts section with brief-fit notes and isometrics. Study comparison favours C as a terrain starting point for discussion — not a selection. Expand garage/workshop for two cars + carpentry flex.",
+          "fa": "مطالعات حجم A/B/C در بخش مفاهیم با یادداشت همخوانی شرح و ایزومتریک موجودند. مقایسه مطالعه C را نقطه شروع زمین برای گفتگو می‌داند — نه انتخاب. گاراژ/کارگاه را برای دو خودرو + نجاری انعطاف‌پذیر بزرگ‌تر کنید."
+        }
+      ]
+    },
+    {
+      "id": "provisional",
+      "label": {
+        "en": "Provisional only",
+        "fa": "فقط مقدماتی"
+      },
+      "items": [
+        {
+          "en": "Probable WGS 84 / UTM 38N location near Baneh Verdeh",
+          "fa": "موقعیت محتمل WGS 84 / UTM 38N نزدیک بانه‌ورده"
+        },
+        {
+          "en": "DEM horizon, surrounding hillside blend and exploratory contours/sections",
+          "fa": "افق مدل ارتفاعی، ترکیب دامنه پیرامون و خطوط تراز/مقاطع اکتشافی"
+        },
+        {
+          "en": "Degree-days, frost dates and wind roses from gridded reanalysis",
+          "fa": "درجه-روز، تاریخ یخبندان و گل‌باد از بازتحلیل شبکه‌ای"
+        },
+        {
+          "en": "Utilities said to exist in the area (power, gas, water) but not on the parcel — probable approach from lower road, unconfirmed",
+          "fa": "تأسیسات گفته‌شده در منطقه (برق، گاز، آب) اما نه روی قطعه — نزدیک‌شدن محتمل از راه پایینی، تأییدنشده"
+        }
+      ]
+    },
+    {
+      "id": "must-not-use",
+      "label": {
+        "en": "Must not be used as design fact",
+        "fa": "نباید به‌عنوان واقعیت طراحی استفاده شود"
+      },
+      "items": [
+        {
+          "en": "Legal ownership, cadastral boundary, easements or rights-of-way",
+          "fa": "مالکیت قانونی، مرز ثبتی، حقوق ارتفاقی یا حقوق عبور"
+        },
+        {
+          "en": "Construction earthwork volumes, finished platform levels or retaining design",
+          "fa": "حجم عملیات خاکی، تراز نهایی سکو یا طراحی حائل"
+        },
+        {
+          "en": "Standard 2800 spectrum, design snow/wind loads or foundation bearing",
+          "fa": "طیف استاندارد ۲۸۰۰، بار برف/باد طراحی یا ظرفیت باربری پی"
+        },
+        {
+          "en": "Preliminary A/B/C massing as a selected or permit-ready house",
+          "fa": "حجم مقدماتی A/B/C به‌عنوان خانه انتخاب‌شده یا آماده مجوز"
+        },
+        {
+          "en": "Climate construction briefing as a stamped structural system",
+          "fa": "توجیه ساخت اقلیمی به‌عنوان سیستم سازه مُهرشده"
+        }
+      ]
+    },
+    {
+      "id": "immediate-investigations",
+      "label": {
+        "en": "Immediate investigations",
+        "fa": "بررسی‌های فوری"
+      },
+      "items": [
+        {
+          "en": "Surveyor-certified CRS + cadastral boundary / easements (title docs exist for project use — still not a certified boundary)",
+          "fa": "CRS تأییدشده نقشه‌بردار + مرز ثبتی / حقوق ارتفاقی (اسناد برای پروژه موجود است — هنوز مرز تأییدشده نیست)"
+        },
+        {
+          "en": "Preliminary geotech and slope-stability assessment",
+          "fa": "ارزیابی اولیه ژئوتکنیک و پایداری شیب"
+        },
+        {
+          "en": "Measure upper-road grade, main gate and swept path for two cars (third flexible); study lower-gate only if slope allows",
+          "fa": "اندازه‌گیری شیب راه بالایی، دروازه اصلی و مسیر گردش دو خودرو (سوم انعطاف‌پذیر)؛ مطالعه دروازه پایین فقط اگر شیب اجازه دهد"
+        },
+        {
+          "en": "Written utility capacity and connection points (power, gas, water; probable lower-road approach)",
+          "fa": "ظرفیت و نقاط انشعاب کتبی (برق، گاز، آب؛ نزدیک‌شدن محتمل از راه پایینی)"
+        }
+      ]
+    },
+    {
+      "id": "key-geometry",
+      "label": {
+        "en": "Key geometry",
+        "fa": "هندسه کلیدی"
+      },
+      "items": [
+        {
+          "en": "Plan area 487.428568 m² · relief 11.754 m · elevations 1647.899–1659.653 m",
+          "fa": "مساحت پلان ۴۸۷٫۴۲۸۵۶۸ مترمربع · اختلاف تراز ۱۱٫۷۵۴ متر · ارتفاع ۱۶۴۷٫۸۹۹–۱۶۵۹٫۶۵۳ متر"
+        },
+        {
+          "en": "Outer ring Pt2→Pt1→Pt7→Pt6→Pt5→Pt4→Pt3 · road Pt2–Pt1 10.270569 m",
+          "fa": "حلقه بیرونی Pt2→Pt1→Pt7→Pt6→Pt5→Pt4→Pt3 · راه Pt2–Pt1 به طول ۱۰٫۲۷۰۵۶۹ متر"
+        },
+        {
+          "en": "Steepest TIN facets 34.5–44.0% · descent generally northeast",
+          "fa": "تندترین وجوه TIN ۳۴٫۵–۴۴٫۰٪ · نزول عموماً شمال‌شرق"
+        },
+        {
+          "en": "Maximum survey-label association offset 3.875 m at Pt3",
+          "fa": "بیشینه فاصله ارتباط برچسب ۳٫۸۷۵ متر در Pt3"
+        }
+      ]
+    },
+    {
+      "id": "environmental-implications",
+      "label": {
+        "en": "Environmental implications",
+        "fa": "پیامدهای محیطی"
+      },
+      "items": [
+        {
+          "en": "Long heating season (HDD18 ≈ 2585 K·day) with cold snow-capable winters — insulation and gas heat when connected",
+          "fa": "فصل گرمایش طولانی (HDD18 حدود ۲۵۸۵) با زمستان سرد برف‌پذیر — عایق و گرمایش گاز وقتی وصل شد"
+        },
+        {
+          "en": "Hot dry summers (CDD18 ≈ 965 K·day) — shade west/southwest; AC only as backup",
+          "fa": "تابستان گرم خشک (CDD18 حدود ۹۶۵) — سایه غرب/جنوب‌غرب؛ کولر فقط پشتیبان"
+        },
+        {
+          "en": "Winter sun is valuable and low; reserve south roof for PV readiness",
+          "fa": "خورشید زمستان کم‌ارتفاع و ارزشمند است؛ بام جنوب را برای آمادگی PV نگه دارید"
+        },
+        {
+          "en": "Regional easterlies dominate most seasons; summer wind turns westerly on the grid",
+          "fa": "باد شرقی منطقه‌ای در بیشتر فصول غالب است؛ در تابستان روی شبکه غربی می‌شود"
+        }
+      ]
+    }
+  ]
+}

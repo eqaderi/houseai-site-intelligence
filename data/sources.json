@@ -1,0 +1,564 @@
+{
+  "generated_on": "2026-08-05",
+  "items": [
+    {
+      "dataset": {
+        "en": "Original survey DWG",
+        "fa": "نقشه DWG اولیه"
+      },
+      "organisation": {
+        "en": "Project-provided survey",
+        "fa": "نقشه‌برداری ارائه‌شده پروژه"
+      },
+      "accessed": "2026-07-29",
+      "period": {
+        "en": "single drawing",
+        "fa": "یک نقشه"
+      },
+      "resolution": {
+        "en": "drawing entities and labelled spot elevations",
+        "fa": "عناصر نقشه و ترازهای نقطه‌ای برچسب‌دار"
+      },
+      "status": "verified-integrity",
+      "limitation": {
+        "en": "No certified CRS, UTM zone, datum, north arrow or road label in active model space.",
+        "fa": "در فضای فعال مدل، CRS معتبر، زون UTM، دیتوم، پیکان شمال یا برچسب راه وجود ندارد."
+      },
+      "sha256": "5d784e17a4efeeeae61235b729369ed28786317d6bacbeb2e529db6177309898"
+    },
+    {
+      "dataset": {
+        "en": "LibreDWG local DXF conversion",
+        "fa": "تبدیل محلی DXF با LibreDWG"
+      },
+      "organisation": {
+        "en": "GNU LibreDWG 0.14.8547",
+        "fa": "GNU LibreDWG 0.14.8547"
+      },
+      "accessed": "2026-07-29",
+      "period": {
+        "en": "single conversion",
+        "fa": "یک تبدیل"
+      },
+      "resolution": {
+        "en": "ASCII R2013 DXF",
+        "fa": "DXF نوع ASCII R2013"
+      },
+      "status": "verified-integrity",
+      "limitation": {
+        "en": "Conversion preserves geometry; semantic site roles require documented interpretation.",
+        "fa": "تبدیل، هندسه را حفظ می‌کند؛ نقش‌های معنایی سایت نیازمند تفسیر مستند هستند."
+      },
+      "sha256": "4f9a98871c861b0de421126f6561c951cb35fa8725b0c04170e30de0c98f621e"
+    },
+    {
+      "dataset": {
+        "en": "Site Survey Geometry Analysis",
+        "fa": "تحلیل هندسه نقشه‌برداری سایت"
+      },
+      "organisation": {
+        "en": "HouseAI local analysis",
+        "fa": "تحلیل محلی HouseAI"
+      },
+      "accessed": "2026-07-29",
+      "period": {
+        "en": "project snapshot v1-three-fields",
+        "fa": "نسخه پروژه v1-three-fields"
+      },
+      "resolution": {
+        "en": "3 polygons, 8 point labels",
+        "fa": "۳ چندضلعی، ۸ برچسب نقطه"
+      },
+      "status": "verified",
+      "limitation": {
+        "en": "Point elevations are associated from nearest MTEXT labels; offsets are recorded.",
+        "fa": "تراز نقاط از نزدیک‌ترین برچسب MTEXT مرتبط شده و فاصله‌ها ثبت شده‌اند."
+      }
+    },
+    {
+      "dataset": {
+        "en": "Unified Site Slope Analysis",
+        "fa": "تحلیل شیب سایت یکپارچه"
+      },
+      "organisation": {
+        "en": "HouseAI local analysis",
+        "fa": "تحلیل محلی HouseAI"
+      },
+      "accessed": "2026-07-29",
+      "period": {
+        "en": "project snapshot v1-three-fields",
+        "fa": "نسخه پروژه v1-three-fields"
+      },
+      "resolution": {
+        "en": "8 points, 7 TIN facets, 1 m contours",
+        "fa": "۸ نقطه، ۷ سطح TIN، خطوط تراز ۱ متری"
+      },
+      "status": "preliminary-engineering-inference",
+      "limitation": {
+        "en": "No breaklines, soils, groundwater or construction-grade cut/fill model.",
+        "fa": "شکست‌خط، داده خاک، آب زیرزمینی یا مدل اجرایی خاک‌برداری/خاک‌ریزی وجود ندارد."
+      }
+    },
+    {
+      "dataset": {
+        "en": "Independent Node.js geometry verification",
+        "fa": "تأیید مستقل هندسه با Node.js"
+      },
+      "organisation": {
+        "en": "HouseAI reproducibility workflow",
+        "fa": "گردش‌کار بازتولیدپذیری HouseAI"
+      },
+      "accessed": "2026-07-29",
+      "period": {
+        "en": "project snapshot v1-three-fields",
+        "fa": "نسخه پروژه v1-three-fields"
+      },
+      "resolution": {
+        "en": "coordinate-level recomputation",
+        "fa": "محاسبه مجدد در سطح مختصات"
+      },
+      "status": "passed",
+      "limitation": {
+        "en": "Verifies exported geometry, not legal title or field monumentation.",
+        "fa": "هندسه خروجی را تأیید می‌کند، نه مالکیت قانونی یا نشانه‌گذاری میدانی را."
+      }
+    },
+    {
+      "id": "osm-nominatim",
+      "dataset": {
+        "en": "OpenStreetMap Nominatim reverse geocoding",
+        "fa": "ژئوکد معکوس OpenStreetMap Nominatim"
+      },
+      "organisation": {
+        "en": "OpenStreetMap contributors",
+        "fa": "مشارکت‌کنندگان OpenStreetMap"
+      },
+      "accessed": "2026-07-30",
+      "period": {
+        "en": "current database snapshot",
+        "fa": "نسخه فعلی پایگاه داده"
+      },
+      "resolution": {
+        "en": "point reverse geocode",
+        "fa": "ژئوکد نقطه‌ای"
+      },
+      "status": "regional-data",
+      "url": "https://nominatim.openstreetmap.org/",
+      "limitation": {
+        "en": "Addresses and boundaries are community mapped and approximate.",
+        "fa": "نشانی‌ها و مرزها مشارکتی و تقریبی‌اند."
+      }
+    },
+    {
+      "id": "osm-context",
+      "dataset": {
+        "en": "OpenStreetMap 5 km context extract",
+        "fa": "برداشت زمینه ۵ کیلومتری OpenStreetMap"
+      },
+      "organisation": {
+        "en": "OpenStreetMap contributors",
+        "fa": "مشارکت‌کنندگان OpenStreetMap"
+      },
+      "accessed": "2026-07-30",
+      "period": {
+        "en": "current database snapshot",
+        "fa": "نسخه فعلی پایگاه داده"
+      },
+      "resolution": {
+        "en": "vector roads, places, waterways and natural features",
+        "fa": "بردار راه، سکونتگاه، آبراه و عوارض طبیعی"
+      },
+      "status": "regional-data",
+      "url": "https://www.openstreetmap.org/copyright",
+      "limitation": {
+        "en": "Completeness varies; it is not a legal or topographic survey.",
+        "fa": "کامل‌بودن متغیر است و جایگزین نقشه قانونی یا توپوگرافی نیست."
+      }
+    },
+    {
+      "id": "era5-land-climate",
+      "dataset": {
+        "en": "ERA5-Land daily climate",
+        "fa": "اقلیم روزانه ERA5-Land"
+      },
+      "organisation": {
+        "en": "ECMWF/Copernicus via Open-Meteo",
+        "fa": "ECMWF/Copernicus از طریق Open-Meteo"
+      },
+      "accessed": "2026-07-30",
+      "period": "1991–2020",
+      "resolution": {
+        "en": "daily; 0.1° (~11 km)",
+        "fa": "روزانه؛ ۰٫۱ درجه (حدود ۱۱ کیلومتر)"
+      },
+      "status": "regional-data",
+      "url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "limitation": {
+        "en": "Reanalysis and satellite-assimilated grids are regional estimates, not a weather station on the parcel. Mountain microclimate, wind channeling, snow drifting and horizon shading require local observation.",
+        "fa": "بازتحلیل و شبکه‌های تلفیقی ماهواره‌ای برآورد منطقه‌ای‌اند، نه ایستگاه هواشناسی داخل ملک. ریزاقلیم کوهستان، کانالیزه‌شدن باد، تجمع برف و سایه افق به مشاهده محلی نیاز دارد."
+      }
+    },
+    {
+      "id": "nasa-power",
+      "dataset": {
+        "en": "NASA POWER meteorological and solar climatology",
+        "fa": "اقلیم‌نمای هواشناسی و خورشیدی NASA POWER"
+      },
+      "organisation": {
+        "en": "NASA Langley Research Center",
+        "fa": "مرکز پژوهشی لنگلی ناسا"
+      },
+      "accessed": "2026-07-30",
+      "period": "2001–2020",
+      "resolution": {
+        "en": "monthly; source-native MERRA-2 / SYN1DEG grids",
+        "fa": "ماهانه؛ شبکه‌های بومی MERRA-2 / SYN1DEG"
+      },
+      "status": "regional-data",
+      "url": "https://power.larc.nasa.gov/docs/services/api/temporal/climatology/",
+      "limitation": {
+        "en": "Gridded climatology; local terrain and horizon are unresolved.",
+        "fa": "اقلیم‌نمای شبکه‌ای؛ زمین و افق محلی حل‌نشده‌اند."
+      }
+    },
+    {
+      "id": "era5-land-wind",
+      "dataset": {
+        "en": "ERA5-Land hourly 10 m wind",
+        "fa": "باد ساعتی ۱۰ متری ERA5-Land"
+      },
+      "organisation": {
+        "en": "ECMWF/Copernicus via Open-Meteo",
+        "fa": "ECMWF/Copernicus از طریق Open-Meteo"
+      },
+      "accessed": "2026-07-30",
+      "period": "2011–2020",
+      "resolution": {
+        "en": "hourly; 0.1° (~11 km)",
+        "fa": "ساعتی؛ ۰٫۱ درجه (حدود ۱۱ کیلومتر)"
+      },
+      "status": "regional-data",
+      "url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "limitation": {
+        "en": "Does not resolve parcel-scale valley channeling, vegetation or buildings.",
+        "fa": "کانالیزه‌شدن دره، پوشش گیاهی یا ساختمان‌ها در مقیاس ملک را حل نمی‌کند."
+      }
+    },
+    {
+      "id": "cmip6",
+      "dataset": {
+        "en": "HighResMIP / CMIP6 climate projections",
+        "fa": "پیش‌نگری اقلیم HighResMIP / CMIP6"
+      },
+      "organisation": {
+        "en": "CMIP6 model centres via Open-Meteo",
+        "fa": "مراکز مدل‌سازی CMIP6 از طریق Open-Meteo"
+      },
+      "accessed": "2026-07-30",
+      "period": "2001–2020 vs 2031–2050",
+      "resolution": {
+        "en": "daily; statistically downscaled to 10 km",
+        "fa": "روزانه؛ ریزمقیاس‌نمایی آماری تا ۱۰ کیلومتر"
+      },
+      "status": "preliminary-inference",
+      "url": "https://open-meteo.com/en/docs/climate-api",
+      "limitation": {
+        "en": "High-resolution models are broadly comparable to a high-emissions pathway before 2050. Use the range, not a single deterministic forecast.",
+        "fa": "مدل‌های تفکیک‌بالا تا پیش از ۲۰۵۰ تقریباً با مسیر انتشار بالا قابل مقایسه‌اند؛ از دامنه نتایج استفاده شود، نه یک پیش‌بینی قطعی."
+      }
+    },
+    {
+      "id": "usgs-earthquakes",
+      "dataset": {
+        "en": "USGS Earthquake Catalog regional query",
+        "fa": "پرس‌وجوی منطقه‌ای فهرست زلزله USGS"
+      },
+      "organisation": {
+        "en": "U.S. Geological Survey",
+        "fa": "سازمان زمین‌شناسی ایالات متحده"
+      },
+      "accessed": "2026-07-30",
+      "period": "1900–2026",
+      "resolution": {
+        "en": "M≥4.5 events within 200 km",
+        "fa": "رخدادهای بزرگی ۴٫۵ و بیشتر در شعاع ۲۰۰ کیلومتر"
+      },
+      "status": "regional-data",
+      "url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "limitation": {
+        "en": "Catalog history and detection are non-uniform; it is not a design response spectrum.",
+        "fa": "تاریخچه و آشکارسازی فهرست یکنواخت نیست و طیف پاسخ طراحی محسوب نمی‌شود."
+      }
+    },
+    {
+      "id": "macrostrat",
+      "dataset": {
+        "en": "Macrostrat regional geologic map query",
+        "fa": "پرس‌وجوی نقشه زمین‌شناسی منطقه‌ای Macrostrat"
+      },
+      "organisation": {
+        "en": "Macrostrat; source map National Geoscience Database of Iran",
+        "fa": "Macrostrat؛ نقشه منبع پایگاه ملی علوم زمین ایران"
+      },
+      "accessed": "2026-07-30",
+      "period": {
+        "en": "published regional mapping",
+        "fa": "نقشه‌برداری منطقه‌ای منتشرشده"
+      },
+      "resolution": "1:1,000,000",
+      "status": "regional-data",
+      "url": "https://macrostrat.org/",
+      "limitation": {
+        "en": "Regional bedrock unit only; no parcel outcrop or discontinuity survey.",
+        "fa": "فقط واحد سنگ‌بستر منطقه‌ای؛ بدون برداشت رخنمون یا ناپیوستگی در ملک."
+      }
+    },
+    {
+      "id": "soilgrids",
+      "dataset": {
+        "en": "SoilGrids 2.0 predicted soil properties",
+        "fa": "ویژگی‌های پیش‌بینی‌شده خاک SoilGrids 2.0"
+      },
+      "organisation": {
+        "en": "ISRIC — World Soil Information",
+        "fa": "ISRIC — اطلاعات جهانی خاک"
+      },
+      "accessed": "2026-07-30",
+      "period": {
+        "en": "global model release 2.0",
+        "fa": "نسخه ۲٫۰ مدل جهانی"
+      },
+      "resolution": "250 m",
+      "status": "regional-data",
+      "url": "https://soilgrids.org/",
+      "limitation": {
+        "en": "Prediction intervals are wide; no bearing capacity, depth to rock or fill verification.",
+        "fa": "بازه پیش‌بینی گسترده است؛ ظرفیت باربری، عمق سنگ یا خاک‌ریزی را تأیید نمی‌کند."
+      }
+    },
+    {
+      "dataset": {
+        "en": "Open-Meteo elevation horizon ring",
+        "fa": "حلقه افق ارتفاع Open-Meteo"
+      },
+      "organisation": {
+        "en": "Open-Meteo Elevation API",
+        "fa": "API ارتفاع Open-Meteo"
+      },
+      "accessed": "2026-07-30",
+      "period": {
+        "en": "single DEM sample batch",
+        "fa": "یک دسته نمونه‌برداری DEM"
+      },
+      "resolution": {
+        "en": "72 azimuths × 15 radii to 27 km · 90 m DEM",
+        "fa": "۷۲ سمت × ۱۵ شعاع تا ۲۷ کیلومتر · DEM ۹۰ متری"
+      },
+      "status": "regional-data",
+      "limitation": {
+        "en": "Regional DEM horizon, not a surveyed field horizon; near-field cells are wider than the parcel.",
+        "fa": "افق DEM منطقه‌ای است نه افق میدانی برداشت‌شده؛ سلول‌های نزدیک پهن‌تر از قطعه هستند."
+      },
+      "href": "assets/data/environmental/raw/openmeteo-elevation-horizon-ring.json"
+    },
+    {
+      "dataset": {
+        "en": "Open-Meteo local hillside elevation grid",
+        "fa": "شبکه ارتفاع دامنه محلی Open-Meteo"
+      },
+      "organisation": {
+        "en": "Open-Meteo Elevation API",
+        "fa": "API ارتفاع Open-Meteo"
+      },
+      "accessed": "2026-07-30",
+      "period": {
+        "en": "single DEM sample batch",
+        "fa": "یک دسته نمونه‌برداری DEM"
+      },
+      "resolution": {
+        "en": "100 m square · 2.5 m grid after blend",
+        "fa": "مربع ۱۰۰ متری · شبکه ۲٫۵ متری پس از ترکیب"
+      },
+      "status": "regional-data",
+      "limitation": {
+        "en": "Near the parcel the surface is the survey plane, not the DEM; beyond 20 m it eases into the DEM.",
+        "fa": "نزدیک قطعه سطح صفحه برداشت است نه DEM؛ بعد از ۲۰ متر به DEM نرم می‌شود."
+      },
+      "href": "assets/data/environmental/raw/openmeteo-elevation-local-grid.json"
+    },
+    {
+      "dataset": {
+        "en": "CMIP6 / HighResMIP monthly files (four retained)",
+        "fa": "فایل‌های ماهانه CMIP6 / HighResMIP (چهار مورد نگه داشته‌شده)"
+      },
+      "organisation": {
+        "en": "EC-Earth3P-HR and MPI-ESM1-2-XR",
+        "fa": "EC-Earth3P-HR و MPI-ESM1-2-XR"
+      },
+      "accessed": "2026-07-30",
+      "period": {
+        "en": "2001–2020 baseline · 2031–2050 future",
+        "fa": "خط پایه ۲۰۰۱–۲۰۲۰ · آینده ۲۰۳۱–۲۰۵۰"
+      },
+      "resolution": {
+        "en": "gridded model cell, not parcel climate",
+        "fa": "سلول مدل شبکه‌ای، نه اقلیم قطعه"
+      },
+      "status": "regional-data",
+      "limitation": {
+        "en": "Future range only; not a design weather file and not downscaled to the parcel.",
+        "fa": "فقط بازه آینده؛ فایل هوای طراحی نیست و به قطعه ریزمقیاس نشده است."
+      },
+      "href": "assets/data/environmental/raw/"
+    },
+    {
+      "dataset": {
+        "en": "OpenStreetMap Nominatim reverse geocoder",
+        "fa": "ژئوکد معکوس Nominatim اوپن‌استریت‌مپ"
+      },
+      "organisation": {
+        "en": "OpenStreetMap / Nominatim",
+        "fa": "اوپن‌استریت‌مپ / Nominatim"
+      },
+      "accessed": "2026-07-29",
+      "period": {
+        "en": "single reverse lookup",
+        "fa": "یک جستجوی معکوس"
+      },
+      "resolution": {
+        "en": "place label for probable centre",
+        "fa": "برچسب مکان برای مرکز محتمل"
+      },
+      "status": "regional-data",
+      "limitation": {
+        "en": "Supports the probable location story; not surveyor CRS certification.",
+        "fa": "داستان موقعیت محتمل را پشتیبانی می‌کند؛ تأیید CRS نقشه‌بردار نیست."
+      },
+      "href": "assets/data/environmental/raw/osm-nominatim-reverse.json"
+    },
+    {
+      "dataset": {
+        "en": "Wikipedia species lead images and licences",
+        "fa": "تصاویر شاخص گونه و مجوزها در ویکی‌پدیا"
+      },
+      "organisation": {
+        "en": "Wikimedia Commons via Wikipedia pageimages",
+        "fa": "ویکی‌مدیا کامنز از طریق pageimages"
+      },
+      "accessed": "2026-08-04",
+      "period": {
+        "en": "bundled offline photographs",
+        "fa": "عکس‌های آفلاین همراه"
+      },
+      "resolution": {
+        "en": "article lead image per taxon when licence allows",
+        "fa": "تصویر شاخص مقاله برای هر تاکسون در صورت مجاز بودن مجوز"
+      },
+      "status": "verified-integrity",
+      "limitation": {
+        "en": "Two taxa ship without photographs because the lead image failed the licence allowlist.",
+        "fa": "دو تاکسون بدون عکس منتشر شده‌اند چون تصویر شاخص از فهرست مجوز عبور نکرد."
+      },
+      "href": "assets/data/environmental/raw/wikipedia-species-images.json"
+    },
+    {
+      "dataset": {
+        "en": "Client-reported lower road",
+        "fa": "راه پایین گزارش‌شده توسط کارفرما"
+      },
+      "organisation": {
+        "en": "Client report (not surveyed)",
+        "fa": "گزارش کارفرما (برداشت‌نشده)"
+      },
+      "accessed": "2026-07-29",
+      "period": {
+        "en": "project brief conversation",
+        "fa": "گفت‌وگوی شرح پروژه"
+      },
+      "resolution": {
+        "en": "presence and approximate alignment only",
+        "fa": "فقط وجود و راستا تقریبی"
+      },
+      "status": "unresolved",
+      "limitation": {
+        "en": "The survey records one road boundary (Pt2–Pt1). The lower road is client-reported and not a measured geometry.",
+        "fa": "برداشت فقط یک مرز راه (Pt2–Pt1) دارد. راه پایین گزارش کارفرما است و هندسه اندازه‌گیری‌شده نیست."
+      }
+    },
+    {
+      "dataset": {
+        "en": "Concept massing studies A / B / C",
+        "fa": "مطالعات حجم مفهومی A / B / C"
+      },
+      "organisation": {
+        "en": "Design-001 FreeCAD preliminary options",
+        "fa": "گزینه‌های مقدماتی FreeCAD design-001"
+      },
+      "accessed": "2026-07-29",
+      "period": {
+        "en": "preliminary massing studies",
+        "fa": "مطالعات حجم مقدماتی"
+      },
+      "resolution": {
+        "en": "three options · unselected · available for discussion",
+        "fa": "سه گزینه · انتخاب‌نشده · آماده گفتگو"
+      },
+      "status": "preliminary-inference",
+      "limitation": {
+        "en": "Study massing only. No construction selection, no measured road proof, no drainage design.",
+        "fa": "فقط حجم مطالعاتی. بدون انتخاب ساخت، بدون اثبات راه اندازه‌گیری‌شده، بدون طراحی زهکشی."
+      }
+    }
+  ],
+  "methods": [
+    {
+      "en": "Translated-origin shoelace plan-area calculation",
+      "fa": "محاسبه مساحت پلان با فرمول بندکفش و مبدأ انتقال‌یافته"
+    },
+    {
+      "en": "Euclidean 2D and 3D edge lengths",
+      "fa": "طول اقلیدسی دو و سه‌بعدی اضلاع"
+    },
+    {
+      "en": "Pt8-centered piecewise-linear TIN",
+      "fa": "TIN خطی قطعه‌ای با مرکز Pt8"
+    },
+    {
+      "en": "Linear 1 m contour interpolation on TIN facets",
+      "fa": "درون‌یابی خطی خطوط تراز ۱ متری روی سطوح TIN"
+    },
+    {
+      "en": "South–north and west–east centroid section sampling",
+      "fa": "نمونه‌برداری مقطع جنوب–شمال و غرب–شرق از مرکز سطح"
+    },
+    {
+      "en": "Independent Node.js and reopened FreeCAD checks",
+      "fa": "کنترل مستقل Node.js و بازگشایی مدل FreeCAD"
+    },
+    {
+      "en": "WGS 84 / UTM zone 38N inverse projection for every survey point",
+      "fa": "تبدیل معکوس WGS 84 / UTM زون ۳۸ شمالی برای همه نقاط نقشه‌برداری"
+    },
+    {
+      "en": "1991–2020 daily climate aggregation with NASA POWER humidity, cloud and radiation cross-source fields",
+      "fa": "تجمیع روزانه اقلیم ۱۹۹۱–۲۰۲۰ همراه رطوبت، ابر و تابش NASA POWER"
+    },
+    {
+      "en": "16-sector seasonal wind roses and five speed classes from 87,672 hourly records",
+      "fa": "گل‌باد فصلی ۱۶ بخشی و پنج رده سرعت از ۸۷٬۶۷۲ رکورد ساعتی"
+    },
+    {
+      "en": "NOAA solar-position equations precomputed at 10-minute intervals, against a DEM-derived terrain horizon; no buildings or vegetation modelled",
+      "fa": "معادلات موقعیت خورشید NOAA با گام ۱۰ دقیقه‌ای در برابر افق زمینِ برگرفته از مدل رقومی ارتفاع؛ ساختمان و پوشش گیاهی مدل نشده"
+    },
+    {
+      "en": "Haversine distance analysis of the USGS regional earthquake catalog",
+      "fa": "تحلیل فاصله هاورساین فهرست زلزله منطقه‌ای USGS"
+    }
+  ],
+  "reproducibility": {
+    "generator": "scripts/generate-data.mjs + scripts/environmental-data.mjs",
+    "source_version": "v1-three-fields",
+    "immutable_source_policy": "read-only input; dashboard contains safe copies"
+  }
+}

@@ -1,0 +1,874 @@
+{
+  "status": "requires-field-investigation",
+  "intro": {
+    "en": "Everything below needs a person, an instrument or a licensed document. None of it can be computed from the sources this dashboard carries, and each row says who owns it, what must come first, what to deliver, and how far the stand-in reaches.",
+    "fa": "هر مورد زیر به فرد، ابزار یا سند دارای مجوز نیاز دارد. هیچ‌کدام از منابع این داشبورد قابل محاسبه نیست. هر ردیف می‌گوید مسئول کیست، پیش‌نیاز چیست، چه تحویلی لازم است و جایگزین فعلی تا کجا معتبر است."
+  },
+  "gates": [
+    {
+      "id": "early-feasibility",
+      "label": {
+        "en": "Early feasibility",
+        "fa": "امکان‌سنجی اولیه"
+      }
+    },
+    {
+      "id": "before-concept",
+      "label": {
+        "en": "Before concept design",
+        "fa": "پیش از طراحی مفهومی"
+      }
+    },
+    {
+      "id": "before-permit",
+      "label": {
+        "en": "Before permit",
+        "fa": "پیش از پروانه"
+      }
+    },
+    {
+      "id": "before-construction",
+      "label": {
+        "en": "Before construction",
+        "fa": "پیش از اجرا"
+      }
+    }
+  ],
+  "families": [
+    {
+      "id": "legal",
+      "label": {
+        "en": "Legal & cadastral",
+        "fa": "حقوقی و ثبتی"
+      }
+    },
+    {
+      "id": "codes",
+      "label": {
+        "en": "Structural codes",
+        "fa": "آیین‌نامه‌های سازه"
+      }
+    },
+    {
+      "id": "geotechnical",
+      "label": {
+        "en": "Geotechnical",
+        "fa": "ژئوتکنیک"
+      }
+    },
+    {
+      "id": "environment",
+      "label": {
+        "en": "Environment & hazard",
+        "fa": "محیط و مخاطره"
+      }
+    },
+    {
+      "id": "utilities",
+      "label": {
+        "en": "Utilities & access",
+        "fa": "تأسیسات و دسترسی"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "crs-certification",
+      "family": "legal",
+      "gate": "before-concept",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Surveyor certification of the coordinate reference system",
+        "fa": "تأیید نقشه‌بردار برای دستگاه مختصات"
+      },
+      "procure_via": {
+        "en": "A licensed surveyor, against a known control point",
+        "fa": "نقشه‌بردار دارای پروانه، در برابر نقطه کنترل شناخته‌شده"
+      },
+      "blocks": {
+        "en": "Every geographic claim, every distance to a mapped feature, and the solar geometry",
+        "fa": "هر ادعای جغرافیایی، هر فاصله تا عارضه نقشه‌شده و هندسه خورشیدی"
+      },
+      "proxy_available": {
+        "en": "EPSG:32638 is a strong-probable interpretation that resolves the parcel coherently in Paveh County; no surveyor has confirmed it",
+        "fa": "EPSG:32638 تفسیری محتمل با اطمینان قوی است که قطعه را در شهرستان پاوه منسجم می‌نشاند؛ هیچ نقشه‌برداری آن را تأیید نکرده است"
+      },
+      "owner": {
+        "en": "Licensed surveyor / land registry",
+        "fa": "نقشه‌بردار دارای پروانه / اداره ثبت"
+      },
+      "prerequisite": {
+        "en": "Early feasibility inputs and the client brief where it affects scope",
+        "fa": "ورودی‌های امکان‌سنجی اولیه و شرح پروژه هرجا که بر محدوده اثر می‌گذارد"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Surveyor certification of the coordinate reference system» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «تأیید نقشه‌بردار برای دستگاه مختصات» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Every geographic claim, every distance to a mapped feature, and the solar geometry",
+        "fa": "هر ادعای جغرافیایی، هر فاصله تا عارضه نقشه‌شده و هندسه خورشیدی"
+      },
+      "scope_note": {
+        "en": "Scope: procure via A licensed surveyor, against a known control point. Proxy now: EPSG:32638 is a strong-probable interpretation that resolves the parcel coherently in Paveh County; no surveyor has confirmed it. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از نقشه‌بردار دارای پروانه، در برابر نقطه کنترل شناخته‌شده. جایگزین فعلی: EPSG:32638 تفسیری محتمل با اطمینان قوی است که قطعه را در شهرستان پاوه منسجم می‌نشاند؛ هیچ نقشه‌برداری آن را تأیید نکرده است. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "title-boundary",
+      "family": "legal",
+      "gate": "before-concept",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Registered title and legal boundary",
+        "fa": "سند رسمی و مرز قانونی"
+      },
+      "procure_via": {
+        "en": "The land registry and a cadastral surveyor",
+        "fa": "اداره ثبت و نقشه‌بردار ثبتی"
+      },
+      "blocks": {
+        "en": "Any ownership, cadastral-boundary, easement or right-of-way-dependent decision",
+        "fa": "هر تصمیم وابسته به مالکیت، مرز ثبتی، حق ارتفاق یا حق عبور"
+      },
+      "proxy_available": {
+        "en": "Household reports title documents exist for project use (not scanned into this offline package). Drawing geometry 487.428568 m² remains a measurement, not a cadastral boundary, easement map or ownership proof",
+        "fa": "خانوار گزارش می‌دهد اسناد مالکیت برای استفاده پروژه موجود است (در این بسته آفلاین اسکن نشده). هندسه ترسیمی ۴۸۷٫۴۲۸۵۶۸ مترمربع همچنان اندازه‌گیری است، نه مرز ثبتی، نقشه حق ارتفاق یا اثبات مالکیت"
+      },
+      "owner": {
+        "en": "Licensed surveyor / land registry",
+        "fa": "نقشه‌بردار دارای پروانه / اداره ثبت"
+      },
+      "prerequisite": {
+        "en": "Early feasibility inputs and the client brief where it affects scope",
+        "fa": "ورودی‌های امکان‌سنجی اولیه و شرح پروژه هرجا که بر محدوده اثر می‌گذارد"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Registered title and legal boundary» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «سند رسمی و مرز قانونی» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Any ownership, cadastral-boundary, easement or right-of-way-dependent decision",
+        "fa": "هر تصمیم وابسته به مالکیت، مرز ثبتی، حق ارتفاق یا حق عبور"
+      },
+      "scope_note": {
+        "en": "Scope: procure via The land registry and a cadastral surveyor. Proxy now: Household reports title documents exist for project use (not scanned into this offline package). Drawing geometry 487.428568 m² remains a measurement, not a cadastral boundary, easement map or ownership proof. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از اداره ثبت و نقشه‌بردار ثبتی. جایگزین فعلی: خانوار گزارش می‌دهد اسناد مالکیت برای استفاده پروژه موجود است (در این بسته آفلاین اسکن نشده). هندسه ترسیمی ۴۸۷٫۴۲۸۵۶۸ مترمربع همچنان اندازه‌گیری است، نه مرز ثبتی، نقشه حق ارتفاق یا اثبات مالکیت. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "zoning",
+      "family": "legal",
+      "gate": "before-concept",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Municipal zoning, height limit and floor-area ratio",
+        "fa": "ضوابط شهرداری، حد ارتفاع و سطح اشغال"
+      },
+      "procure_via": {
+        "en": "The local municipality",
+        "fa": "شهرداری محل"
+      },
+      "blocks": {
+        "en": "Massing, storey count and every area target",
+        "fa": "حجم‌پردازی، تعداد طبقه و هر هدف مساحتی"
+      },
+      "proxy_available": {
+        "en": "Household states the area is currently undeveloped and treats municipal zoning as low priority. That is a client preference, not a legal waiver — no zoning source is bundled and no massing has been tested against one",
+        "fa": "خانوار می‌گوید منطقه فعلاً ساخته‌نشده و ضوابط شهرداری را کم‌اهمیت می‌داند. این ترجیح کارفرما است نه معافیت قانونی — هیچ منبع ضوابطی همراه نیست و هیچ حجمی در برابر آن آزموده نشده"
+      },
+      "owner": {
+        "en": "Licensed surveyor / land registry",
+        "fa": "نقشه‌بردار دارای پروانه / اداره ثبت"
+      },
+      "prerequisite": {
+        "en": "Early feasibility inputs and the client brief where it affects scope",
+        "fa": "ورودی‌های امکان‌سنجی اولیه و شرح پروژه هرجا که بر محدوده اثر می‌گذارد"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Municipal zoning, height limit and floor-area ratio» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «ضوابط شهرداری، حد ارتفاع و سطح اشغال» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Massing, storey count and every area target",
+        "fa": "حجم‌پردازی، تعداد طبقه و هر هدف مساحتی"
+      },
+      "scope_note": {
+        "en": "Scope: procure via The local municipality. Proxy now: Household states the area is currently undeveloped and treats municipal zoning as low priority. That is a client preference, not a legal waiver — no zoning source is bundled and no massing has been tested against one. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از شهرداری محل. جایگزین فعلی: خانوار می‌گوید منطقه فعلاً ساخته‌نشده و ضوابط شهرداری را کم‌اهمیت می‌داند. این ترجیح کارفرما است نه معافیت قانونی — هیچ منبع ضوابطی همراه نیست و هیچ حجمی در برابر آن آزموده نشده. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "topographic-survey",
+      "family": "legal",
+      "gate": "before-concept",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Full topographic survey",
+        "fa": "نقشه‌برداری توپوگرافی کامل"
+      },
+      "procure_via": {
+        "en": "A surveyor with total station or GNSS",
+        "fa": "نقشه‌بردار با توتال‌استیشن یا GNSS"
+      },
+      "blocks": {
+        "en": "Grading design, platform levels and any earthwork estimate",
+        "fa": "طراحی تسطیح، ترازهای سکو و هر برآورد خاکی"
+      },
+      "proxy_available": {
+        "en": "A TIN interpolated from eight spot elevations, which is a surface hypothesis rather than a survey",
+        "fa": "یک TIN درون‌یابی‌شده از هشت تراز نقطه‌ای، که فرضیه سطح است نه برداشت"
+      },
+      "owner": {
+        "en": "Licensed surveyor / land registry",
+        "fa": "نقشه‌بردار دارای پروانه / اداره ثبت"
+      },
+      "prerequisite": {
+        "en": "Early feasibility inputs and the client brief where it affects scope",
+        "fa": "ورودی‌های امکان‌سنجی اولیه و شرح پروژه هرجا که بر محدوده اثر می‌گذارد"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Full topographic survey» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «نقشه‌برداری توپوگرافی کامل» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Grading design, platform levels and any earthwork estimate",
+        "fa": "طراحی تسطیح، ترازهای سکو و هر برآورد خاکی"
+      },
+      "scope_note": {
+        "en": "Scope: procure via A surveyor with total station or GNSS. Proxy now: A TIN interpolated from eight spot elevations, which is a surface hypothesis rather than a survey. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از نقشه‌بردار با توتال‌استیشن یا GNSS. جایگزین فعلی: یک TIN درون‌یابی‌شده از هشت تراز نقطه‌ای، که فرضیه سطح است نه برداشت. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "seismic-parameters",
+      "family": "codes",
+      "gate": "before-concept",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Standard 2800 seismic design parameters",
+        "fa": "پارامترهای طراحی لرزه‌ای استاندارد ۲۸۰۰"
+      },
+      "procure_via": {
+        "en": "The licensed standard and a structural engineer",
+        "fa": "استاندارد دارای مجوز و مهندس سازه"
+      },
+      "blocks": {
+        "en": "The entire lateral system",
+        "fa": "کل سامانه جانبی"
+      },
+      "proxy_available": {
+        "en": "A regional earthquake catalogue only. No base acceleration, zone or spectrum ordinate is published here, at any label: a number in that position becomes a design input regardless of its caveat",
+        "fa": "فقط فهرست منطقه‌ای زلزله. هیچ شتاب مبنا، پهنه یا مقدار طیفی اینجا منتشر نشده است، با هیچ برچسبی: عددی در آن جایگاه صرف‌نظر از هشدارش تبدیل به ورودی طراحی می‌شود"
+      },
+      "owner": {
+        "en": "Structural engineer with licensed codes",
+        "fa": "مهندس سازه با آیین‌نامه‌های دارای مجوز"
+      },
+      "prerequisite": {
+        "en": "Early feasibility inputs and the client brief where it affects scope",
+        "fa": "ورودی‌های امکان‌سنجی اولیه و شرح پروژه هرجا که بر محدوده اثر می‌گذارد"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Standard 2800 seismic design parameters» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «پارامترهای طراحی لرزه‌ای استاندارد ۲۸۰۰» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "The entire lateral system",
+        "fa": "کل سامانه جانبی"
+      },
+      "scope_note": {
+        "en": "Scope: procure via The licensed standard and a structural engineer. Proxy now: A regional earthquake catalogue only. No base acceleration, zone or spectrum ordinate is published here, at any label: a number in that position becomes a design input regardless of its caveat. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از استاندارد دارای مجوز و مهندس سازه. جایگزین فعلی: فقط فهرست منطقه‌ای زلزله. هیچ شتاب مبنا، پهنه یا مقدار طیفی اینجا منتشر نشده است، با هیچ برچسبی: عددی در آن جایگاه صرف‌نظر از هشدارش تبدیل به ورودی طراحی می‌شود. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "nbc-loads",
+      "family": "codes",
+      "gate": "before-concept",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "National Building Code Part 6 design loads",
+        "fa": "بارهای طراحی مبحث ششم مقررات ملی ساختمان"
+      },
+      "procure_via": {
+        "en": "The licensed code and a structural engineer",
+        "fa": "آیین‌نامه دارای مجوز و مهندس سازه"
+      },
+      "blocks": {
+        "en": "Snow, wind and live load design",
+        "fa": "طراحی بار برف، باد و زنده"
+      },
+      "proxy_available": {
+        "en": "Measured snow depth and a gust return period, neither of which is a code load: snow depth needs a density this project does not have, and ground load is not roof load on a 40% drifting slope",
+        "fa": "عمق برف اندازه‌گیری‌شده و دوره بازگشت تندباد، که هیچ‌کدام بار آیین‌نامه‌ای نیستند: عمق برف به چگالی‌ای نیاز دارد که این پروژه ندارد و بار زمین با بار بام روی شیب ۴۰ درصدیِ برف‌گیر یکی نیست"
+      },
+      "owner": {
+        "en": "Structural engineer with licensed codes",
+        "fa": "مهندس سازه با آیین‌نامه‌های دارای مجوز"
+      },
+      "prerequisite": {
+        "en": "Early feasibility inputs and the client brief where it affects scope",
+        "fa": "ورودی‌های امکان‌سنجی اولیه و شرح پروژه هرجا که بر محدوده اثر می‌گذارد"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «National Building Code Part 6 design loads» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «بارهای طراحی مبحث ششم مقررات ملی ساختمان» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Snow, wind and live load design",
+        "fa": "طراحی بار برف، باد و زنده"
+      },
+      "scope_note": {
+        "en": "Scope: procure via The licensed code and a structural engineer. Proxy now: Measured snow depth and a gust return period, neither of which is a code load: snow depth needs a density this project does not have, and ground load is not roof load on a 40% drifting slope. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از آیین‌نامه دارای مجوز و مهندس سازه. جایگزین فعلی: عمق برف اندازه‌گیری‌شده و دوره بازگشت تندباد، که هیچ‌کدام بار آیین‌نامه‌ای نیستند: عمق برف به چگالی‌ای نیاز دارد که این پروژه ندارد و بار زمین با بار بام روی شیب ۴۰ درصدیِ برف‌گیر یکی نیست. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "bearing-capacity",
+      "family": "geotechnical",
+      "gate": "before-concept",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Bearing capacity and foundation design parameters",
+        "fa": "ظرفیت باربری و پارامترهای طراحی پی"
+      },
+      "procure_via": {
+        "en": "A geotechnical investigation with boreholes and laboratory testing",
+        "fa": "بررسی ژئوتکنیک با گمانه و آزمایش آزمایشگاهی"
+      },
+      "blocks": {
+        "en": "Foundation type, depth and sizing",
+        "fa": "نوع، عمق و ابعاد پی"
+      },
+      "proxy_available": {
+        "en": "SoilGrids 250 m predictions of texture and pH with wide intervals, which describe soil chemistry rather than strength",
+        "fa": "پیش‌بینی ۲۵۰ متری SoilGrids از بافت و pH با بازه‌های گسترده، که شیمی خاک را توصیف می‌کند نه مقاومت را"
+      },
+      "owner": {
+        "en": "Geotechnical engineer",
+        "fa": "مهندس ژئوتکنیک"
+      },
+      "prerequisite": {
+        "en": "Early feasibility inputs and the client brief where it affects scope",
+        "fa": "ورودی‌های امکان‌سنجی اولیه و شرح پروژه هرجا که بر محدوده اثر می‌گذارد"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Bearing capacity and foundation design parameters» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «ظرفیت باربری و پارامترهای طراحی پی» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Foundation type, depth and sizing",
+        "fa": "نوع، عمق و ابعاد پی"
+      },
+      "scope_note": {
+        "en": "Scope: procure via A geotechnical investigation with boreholes and laboratory testing. Proxy now: SoilGrids 250 m predictions of texture and pH with wide intervals, which describe soil chemistry rather than strength. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از بررسی ژئوتکنیک با گمانه و آزمایش آزمایشگاهی. جایگزین فعلی: پیش‌بینی ۲۵۰ متری SoilGrids از بافت و pH با بازه‌های گسترده، که شیمی خاک را توصیف می‌کند نه مقاومت را. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "groundwater",
+      "family": "geotechnical",
+      "gate": "before-permit",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Groundwater level and seasonal variation",
+        "fa": "تراز آب زیرزمینی و نوسان فصلی"
+      },
+      "procure_via": {
+        "en": "Standpipes read across a full year",
+        "fa": "لوله‌های مشاهده‌ای با قرائت یک‌ساله"
+      },
+      "blocks": {
+        "en": "Basement viability, waterproofing and retaining design",
+        "fa": "امکان زیرزمین، عایق‌بندی و طراحی دیوار حائل"
+      },
+      "proxy_available": {
+        "en": "Nothing measured. Only a preliminary surface-drainage tendency toward the northeast",
+        "fa": "هیچ اندازه‌گیری‌ای. فقط تمایل اولیه زهکشی سطحی به‌سوی شمال‌شرق"
+      },
+      "owner": {
+        "en": "Geotechnical engineer",
+        "fa": "مهندس ژئوتکنیک"
+      },
+      "prerequisite": {
+        "en": "Concept-blocking investigations that define the legal and ground envelope",
+        "fa": "بررسی‌های مانع مفهومی که چارچوب قانونی و زمین را تعریف می‌کنند"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Groundwater level and seasonal variation» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «تراز آب زیرزمینی و نوسان فصلی» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Basement viability, waterproofing and retaining design",
+        "fa": "امکان زیرزمین، عایق‌بندی و طراحی دیوار حائل"
+      },
+      "scope_note": {
+        "en": "Scope: procure via Standpipes read across a full year. Proxy now: Nothing measured. Only a preliminary surface-drainage tendency toward the northeast. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از لوله‌های مشاهده‌ای با قرائت یک‌ساله. جایگزین فعلی: هیچ اندازه‌گیری‌ای. فقط تمایل اولیه زهکشی سطحی به‌سوی شمال‌شرق. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "frost-depth",
+      "family": "geotechnical",
+      "gate": "before-permit",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Frost penetration depth",
+        "fa": "عمق نفوذ یخبندان"
+      },
+      "procure_via": {
+        "en": "The local authority or a geotechnical report",
+        "fa": "مرجع محلی یا گزارش ژئوتکنیک"
+      },
+      "blocks": {
+        "en": "Minimum foundation depth",
+        "fa": "حداقل عمق پی"
+      },
+      "proxy_available": {
+        "en": "A frost-day count from the climate baseline, which counts days below zero and says nothing about how deep the freeze reaches",
+        "fa": "شمار روزهای یخبندان از خط پایه اقلیم، که روزهای زیر صفر را می‌شمارد و درباره عمق یخ‌زدگی چیزی نمی‌گوید"
+      },
+      "owner": {
+        "en": "Geotechnical engineer",
+        "fa": "مهندس ژئوتکنیک"
+      },
+      "prerequisite": {
+        "en": "Concept-blocking investigations that define the legal and ground envelope",
+        "fa": "بررسی‌های مانع مفهومی که چارچوب قانونی و زمین را تعریف می‌کنند"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Frost penetration depth» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «عمق نفوذ یخبندان» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Minimum foundation depth",
+        "fa": "حداقل عمق پی"
+      },
+      "scope_note": {
+        "en": "Scope: procure via The local authority or a geotechnical report. Proxy now: A frost-day count from the climate baseline, which counts days below zero and says nothing about how deep the freeze reaches. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از مرجع محلی یا گزارش ژئوتکنیک. جایگزین فعلی: شمار روزهای یخبندان از خط پایه اقلیم، که روزهای زیر صفر را می‌شمارد و درباره عمق یخ‌زدگی چیزی نمی‌گوید. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "slope-stability",
+      "family": "geotechnical",
+      "gate": "before-concept",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Slope stability assessment",
+        "fa": "ارزیابی پایداری شیب"
+      },
+      "procure_via": {
+        "en": "A geotechnical engineer, informed by the borehole log",
+        "fa": "مهندس ژئوتکنیک بر پایه گزارش گمانه"
+      },
+      "blocks": {
+        "en": "Retaining heights, terracing and construction sequence",
+        "fa": "ارتفاع دیوار حائل، پله‌بندی و توالی اجرا"
+      },
+      "proxy_available": {
+        "en": "A measured 34.5–44% grade across every facet, which establishes that stability is the question rather than answering it",
+        "fa": "شیب اندازه‌گیری‌شده ۳۴٫۵ تا ۴۴ درصد در همه وجه‌ها، که نشان می‌دهد پایداری پرسش است، نه پاسخ"
+      },
+      "owner": {
+        "en": "Geotechnical engineer",
+        "fa": "مهندس ژئوتکنیک"
+      },
+      "prerequisite": {
+        "en": "Early feasibility inputs and the client brief where it affects scope",
+        "fa": "ورودی‌های امکان‌سنجی اولیه و شرح پروژه هرجا که بر محدوده اثر می‌گذارد"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Slope stability assessment» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «ارزیابی پایداری شیب» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Retaining heights, terracing and construction sequence",
+        "fa": "ارتفاع دیوار حائل، پله‌بندی و توالی اجرا"
+      },
+      "scope_note": {
+        "en": "Scope: procure via A geotechnical engineer, informed by the borehole log. Proxy now: A measured 34.5–44% grade across every facet, which establishes that stability is the question rather than answering it. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از مهندس ژئوتکنیک بر پایه گزارش گمانه. جایگزین فعلی: شیب اندازه‌گیری‌شده ۳۴٫۵ تا ۴۴ درصد در همه وجه‌ها، که نشان می‌دهد پایداری پرسش است، نه پاسخ. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "horizon-field-survey",
+      "family": "environment",
+      "gate": "before-concept",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Field horizon survey from the building platform",
+        "fa": "برداشت میدانی افق از تراز ساختمان"
+      },
+      "procure_via": {
+        "en": "A clinometer or a fisheye survey from the intended platform level",
+        "fa": "شیب‌سنج یا برداشت لنز چشم‌ماهی از تراز سکوی موردنظر"
+      },
+      "blocks": {
+        "en": "Any winter solar-gain strategy that depends on the last hours of direct sun",
+        "fa": "هر راهبرد بهره خورشیدی زمستان که به ساعات پایانی تابش مستقیم وابسته است"
+      },
+      "proxy_available": {
+        "en": "A 90 m DEM horizon, whose cell is wider than the whole parcel and therefore cannot see the site's own upslope self-shading",
+        "fa": "افق از مدل رقومی ۹۰ متری، که سلول آن از کل قطعه پهن‌تر است و خودسایه‌اندازی شیب خود سایت را نمی‌بیند"
+      },
+      "owner": {
+        "en": "Environmental / hazard specialist",
+        "fa": "متخصص محیط و مخاطره"
+      },
+      "prerequisite": {
+        "en": "Early feasibility inputs and the client brief where it affects scope",
+        "fa": "ورودی‌های امکان‌سنجی اولیه و شرح پروژه هرجا که بر محدوده اثر می‌گذارد"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Field horizon survey from the building platform» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «برداشت میدانی افق از تراز ساختمان» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Any winter solar-gain strategy that depends on the last hours of direct sun",
+        "fa": "هر راهبرد بهره خورشیدی زمستان که به ساعات پایانی تابش مستقیم وابسته است"
+      },
+      "scope_note": {
+        "en": "Scope: procure via A clinometer or a fisheye survey from the intended platform level. Proxy now: A 90 m DEM horizon, whose cell is wider than the whole parcel and therefore cannot see the site's own upslope self-shading. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از شیب‌سنج یا برداشت لنز چشم‌ماهی از تراز سکوی موردنظر. جایگزین فعلی: افق از مدل رقومی ۹۰ متری، که سلول آن از کل قطعه پهن‌تر است و خودسایه‌اندازی شیب خود سایت را نمی‌بیند. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "neighbour-survey",
+      "family": "environment",
+      "gate": "before-concept",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Neighbouring building heights and overshadowing",
+        "fa": "ارتفاع ساختمان‌های مجاور و سایه‌اندازی"
+      },
+      "procure_via": {
+        "en": "A site visit with measured heights and positions",
+        "fa": "بازدید میدانی با اندازه‌گیری ارتفاع و موقعیت"
+      },
+      "blocks": {
+        "en": "Overshadowing, privacy and party-boundary decisions",
+        "fa": "تصمیم‌های سایه‌اندازی، حریم خصوصی و مرز مشترک"
+      },
+      "proxy_available": {
+        "en": "Household states nobody has built around the parcel yet; the 5 km OpenStreetMap extract also contains zero building footprints. Still confirm on a site visit before locking openings and privacy — absence today is not a permanent guarantee",
+        "fa": "خانوار می‌گوید هنوز کسی دور قطعه نساخته؛ استخراج ۵ کیلومتری OpenStreetMap هم ردپای ساختمانی ندارد. پیش از تثبیت بازشو و حریم، در بازدید میدانی تأیید شود — خالی بودن امروز تضمین دائمی نیست"
+      },
+      "owner": {
+        "en": "Environmental / hazard specialist",
+        "fa": "متخصص محیط و مخاطره"
+      },
+      "prerequisite": {
+        "en": "Early feasibility inputs and the client brief where it affects scope",
+        "fa": "ورودی‌های امکان‌سنجی اولیه و شرح پروژه هرجا که بر محدوده اثر می‌گذارد"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Neighbouring building heights and overshadowing» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «ارتفاع ساختمان‌های مجاور و سایه‌اندازی» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Overshadowing, privacy and party-boundary decisions",
+        "fa": "تصمیم‌های سایه‌اندازی، حریم خصوصی و مرز مشترک"
+      },
+      "scope_note": {
+        "en": "Scope: procure via A site visit with measured heights and positions. Proxy now: Household states nobody has built around the parcel yet; the 5 km OpenStreetMap extract also contains zero building footprints. Still confirm on a site visit before locking openings and privacy — absence today is not a permanent guarantee. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از بازدید میدانی با اندازه‌گیری ارتفاع و موقعیت. جایگزین فعلی: خانوار می‌گوید هنوز کسی دور قطعه نساخته؛ استخراج ۵ کیلومتری OpenStreetMap هم ردپای ساختمانی ندارد. پیش از تثبیت بازشو و حریم، در بازدید میدانی تأیید شود — خالی بودن امروز تضمین دائمی نیست. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "anemometry",
+      "family": "environment",
+      "gate": "before-permit",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "On-site wind measurement",
+        "fa": "اندازه‌گیری باد در محل"
+      },
+      "procure_via": {
+        "en": "A mast or logger through at least one windy season",
+        "fa": "دکل یا داده‌نگار در دست‌کم یک فصل بادخیز"
+      },
+      "blocks": {
+        "en": "Wind-driven rain, terrace usability and any topographic speed-up factor",
+        "fa": "باران رانده‌شده با باد، کارایی تراس و هر ضریب تشدید توپوگرافی"
+      },
+      "proxy_available": {
+        "en": "A regional 11 km reanalysis rose and a gust return period, neither of which resolves valley channeling at parcel scale",
+        "fa": "گل‌باد بازتحلیل منطقه‌ای ۱۱ کیلومتری و دوره بازگشت تندباد، که هیچ‌کدام کانالیزه‌شدن دره را در مقیاس قطعه تفکیک نمی‌کند"
+      },
+      "owner": {
+        "en": "Environmental / hazard specialist",
+        "fa": "متخصص محیط و مخاطره"
+      },
+      "prerequisite": {
+        "en": "Concept-blocking investigations that define the legal and ground envelope",
+        "fa": "بررسی‌های مانع مفهومی که چارچوب قانونی و زمین را تعریف می‌کنند"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «On-site wind measurement» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «اندازه‌گیری باد در محل» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Wind-driven rain, terrace usability and any topographic speed-up factor",
+        "fa": "باران رانده‌شده با باد، کارایی تراس و هر ضریب تشدید توپوگرافی"
+      },
+      "scope_note": {
+        "en": "Scope: procure via A mast or logger through at least one windy season. Proxy now: A regional 11 km reanalysis rose and a gust return period, neither of which resolves valley channeling at parcel scale. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از دکل یا داده‌نگار در دست‌کم یک فصل بادخیز. جایگزین فعلی: گل‌باد بازتحلیل منطقه‌ای ۱۱ کیلومتری و دوره بازگشت تندباد، که هیچ‌کدام کانالیزه‌شدن دره را در مقیاس قطعه تفکیک نمی‌کند. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "flood-drainage",
+      "family": "environment",
+      "gate": "before-permit",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Legal discharge point and flood assessment",
+        "fa": "نقطه تخلیه قانونی و ارزیابی سیلاب"
+      },
+      "procure_via": {
+        "en": "The municipality and a drainage engineer",
+        "fa": "شهرداری و مهندس زهکشی"
+      },
+      "blocks": {
+        "en": "Surface-water design and any downslope discharge",
+        "fa": "طراحی آب سطحی و هر تخلیه پایین‌دست"
+      },
+      "proxy_available": {
+        "en": "A preliminary downslope tendency toward Pt5/Pt6; no legal discharge point is established",
+        "fa": "تمایل اولیه پایین‌دست به‌سوی Pt5/Pt6؛ هیچ نقطه تخلیه قانونی تثبیت نشده است"
+      },
+      "owner": {
+        "en": "Environmental / hazard specialist",
+        "fa": "متخصص محیط و مخاطره"
+      },
+      "prerequisite": {
+        "en": "Concept-blocking investigations that define the legal and ground envelope",
+        "fa": "بررسی‌های مانع مفهومی که چارچوب قانونی و زمین را تعریف می‌کنند"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Legal discharge point and flood assessment» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «نقطه تخلیه قانونی و ارزیابی سیلاب» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Surface-water design and any downslope discharge",
+        "fa": "طراحی آب سطحی و هر تخلیه پایین‌دست"
+      },
+      "scope_note": {
+        "en": "Scope: procure via The municipality and a drainage engineer. Proxy now: A preliminary downslope tendency toward Pt5/Pt6; no legal discharge point is established. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از شهرداری و مهندس زهکشی. جایگزین فعلی: تمایل اولیه پایین‌دست به‌سوی Pt5/Pt6؛ هیچ نقطه تخلیه قانونی تثبیت نشده است. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "radon-wildfire",
+      "family": "environment",
+      "gate": "before-permit",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Radon and wildfire exposure screening",
+        "fa": "غربالگری رادون و مواجهه با آتش‌سوزی طبیعی"
+      },
+      "procure_via": {
+        "en": "Local authority mapping and a radon test kit",
+        "fa": "نقشه‌های مرجع محلی و کیت آزمون رادون"
+      },
+      "blocks": {
+        "en": "Sub-floor ventilation and defensible-space planning",
+        "fa": "تهویه زیرکف و برنامه‌ریزی فضای دفاع‌پذیر"
+      },
+      "proxy_available": {
+        "en": "Regional geology and a nearest-woodland distance, neither of which is an exposure assessment",
+        "fa": "زمین‌شناسی منطقه‌ای و فاصله تا نزدیک‌ترین جنگل، که هیچ‌کدام ارزیابی مواجهه نیستند"
+      },
+      "owner": {
+        "en": "Environmental / hazard specialist",
+        "fa": "متخصص محیط و مخاطره"
+      },
+      "prerequisite": {
+        "en": "Concept-blocking investigations that define the legal and ground envelope",
+        "fa": "بررسی‌های مانع مفهومی که چارچوب قانونی و زمین را تعریف می‌کنند"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Radon and wildfire exposure screening» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «غربالگری رادون و مواجهه با آتش‌سوزی طبیعی» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Sub-floor ventilation and defensible-space planning",
+        "fa": "تهویه زیرکف و برنامه‌ریزی فضای دفاع‌پذیر"
+      },
+      "scope_note": {
+        "en": "Scope: procure via Local authority mapping and a radon test kit. Proxy now: Regional geology and a nearest-woodland distance, neither of which is an exposure assessment. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از نقشه‌های مرجع محلی و کیت آزمون رادون. جایگزین فعلی: زمین‌شناسی منطقه‌ای و فاصله تا نزدیک‌ترین جنگل، که هیچ‌کدام ارزیابی مواجهه نیستند. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "utility-connections",
+      "family": "utilities",
+      "gate": "early-feasibility",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Electricity, water, sewer and gas connection points",
+        "fa": "نقاط انشعاب برق، آب، فاضلاب و گاز"
+      },
+      "procure_via": {
+        "en": "Each utility provider, in writing",
+        "fa": "هر شرکت خدماتی، به‌صورت مکتوب"
+      },
+      "blocks": {
+        "en": "Service routing, meter positions and connection cost",
+        "fa": "مسیر خدمات، محل کنتور و هزینه انشعاب"
+      },
+      "proxy_available": {
+        "en": "Household: electricity, gas pipeline and water exist around the area but have not reached the parcel; connection most probably from the lower road (possibility, not confirmed). Mapped power is only a transmission line 3.56 km away. Written provider enquiry still required — nearby network ≠ connected",
+        "fa": "خانوار: برق، لوله گاز و آب در منطقه هست اما به قطعه نرسیده؛ انشعاب احتمالاً از راه پایینی (احتمال، نه تأیید). برق نقشه‌شده فقط خط انتقال ۳٫۵۶ کیلومتری است. استعلام کتبی هنوز لازم است — شبکه نزدیک ≠ متصل"
+      },
+      "owner": {
+        "en": "Utility providers and access surveyor",
+        "fa": "شرکت‌های تأسیسات و نقشه‌بردار دسترسی"
+      },
+      "prerequisite": {
+        "en": "None beyond site access permission",
+        "fa": "هیچ، جز مجوز ورود به سایت"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Electricity, water, sewer and gas connection points» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «نقاط انشعاب برق، آب، فاضلاب و گاز» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Service routing, meter positions and connection cost",
+        "fa": "مسیر خدمات، محل کنتور و هزینه انشعاب"
+      },
+      "scope_note": {
+        "en": "Scope: procure via Each utility provider, in writing. Proxy now: Household: electricity, gas pipeline and water exist around the area but have not reached the parcel; connection most probably from the lower road (possibility, not confirmed). Mapped power is only a transmission line 3.56 km away. Written provider enquiry still required — nearby network ≠ connected. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از هر شرکت خدماتی، به‌صورت مکتوب. جایگزین فعلی: خانوار: برق، لوله گاز و آب در منطقه هست اما به قطعه نرسیده؛ انشعاب احتمالاً از راه پایینی (احتمال، نه تأیید). برق نقشه‌شده فقط خط انتقال ۳٫۵۶ کیلومتری است. استعلام کتبی هنوز لازم است — شبکه نزدیک ≠ متصل. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "road-gradient",
+      "family": "utilities",
+      "gate": "early-feasibility",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Road gradient and vehicle access at the Pt2–Pt1 edge",
+        "fa": "شیب راه و دسترسی خودرو در لبه Pt2–Pt1"
+      },
+      "procure_via": {
+        "en": "A site visit with levels taken along the road edge",
+        "fa": "بازدید میدانی با ترازیابی در امتداد لبه راه"
+      },
+      "blocks": {
+        "en": "Garage position, driveway gradient and turning geometry",
+        "fa": "موقعیت پارکینگ، شیب رمپ و هندسه گردش"
+      },
+      "proxy_available": {
+        "en": "Household preference: main cars and fire access from upper Pt2–Pt1 (real surveyed frontage, 10.270569 m). Optional lower gate with stairs for a necessary stop. Lower road is rough/seasonal only. Longitudinal grade, crossfall, legal width and gate geometry remain unmeasured",
+        "fa": "ترجیح خانوار: خودروهای اصلی و آتش از Pt2–Pt1 بالایی (بر واقعی، ۱۰٫۲۷۰۵۶۹ متر). دروازه اختیاری پایین با پله برای توقف ضروری. راه پایینی فقط rough/فصلی. شیب طولی، شیب عرضی، عرض قانونی و هندسه دروازه هنوز اندازه‌گیری نشده"
+      },
+      "owner": {
+        "en": "Utility providers and access surveyor",
+        "fa": "شرکت‌های تأسیسات و نقشه‌بردار دسترسی"
+      },
+      "prerequisite": {
+        "en": "None beyond site access permission",
+        "fa": "هیچ، جز مجوز ورود به سایت"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Road gradient and vehicle access at the Pt2–Pt1 edge» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «شیب راه و دسترسی خودرو در لبه Pt2–Pt1» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Garage position, driveway gradient and turning geometry",
+        "fa": "موقعیت پارکینگ، شیب رمپ و هندسه گردش"
+      },
+      "scope_note": {
+        "en": "Scope: procure via A site visit with levels taken along the road edge. Proxy now: Household preference: main cars and fire access from upper Pt2–Pt1 (real surveyed frontage, 10.270569 m). Optional lower gate with stairs for a necessary stop. Lower road is rough/seasonal only. Longitudinal grade, crossfall, legal width and gate geometry remain unmeasured. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از بازدید میدانی با ترازیابی در امتداد لبه راه. جایگزین فعلی: ترجیح خانوار: خودروهای اصلی و آتش از Pt2–Pt1 بالایی (بر واقعی، ۱۰٫۲۷۰۵۶۹ متر). دروازه اختیاری پایین با پله برای توقف ضروری. راه پایینی فقط rough/فصلی. شیب طولی، شیب عرضی، عرض قانونی و هندسه دروازه هنوز اندازه‌گیری نشده. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "construction-access",
+      "family": "utilities",
+      "gate": "early-feasibility",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Construction access and crane or plant standing",
+        "fa": "دسترسی کارگاهی و استقرار جرثقیل یا ماشین‌آلات"
+      },
+      "procure_via": {
+        "en": "A contractor method statement",
+        "fa": "روش اجرای پیمانکار"
+      },
+      "blocks": {
+        "en": "Buildability of any scheme on a 40% slope with a single 10 m road frontage",
+        "fa": "اجراپذیری هر طرح روی شیب ۴۰ درصد با تنها ۱۰ متر بر راه"
+      },
+      "proxy_available": {
+        "en": "The verified drawing geometry shows the constraint but does not resolve it",
+        "fa": "هندسه ترسیمی تأییدشده محدودیت را نشان می‌دهد اما آن را حل نمی‌کند"
+      },
+      "owner": {
+        "en": "Utility providers and access surveyor",
+        "fa": "شرکت‌های تأسیسات و نقشه‌بردار دسترسی"
+      },
+      "prerequisite": {
+        "en": "None beyond site access permission",
+        "fa": "هیچ، جز مجوز ورود به سایت"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Construction access and crane or plant standing» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «دسترسی کارگاهی و استقرار جرثقیل یا ماشین‌آلات» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Buildability of any scheme on a 40% slope with a single 10 m road frontage",
+        "fa": "اجراپذیری هر طرح روی شیب ۴۰ درصد با تنها ۱۰ متر بر راه"
+      },
+      "scope_note": {
+        "en": "Scope: procure via A contractor method statement. Proxy now: The verified drawing geometry shows the constraint but does not resolve it. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از روش اجرای پیمانکار. جایگزین فعلی: هندسه ترسیمی تأییدشده محدودیت را نشان می‌دهد اما آن را حل نمی‌کند. جایگزین را تحویل نهایی ندانید."
+      }
+    },
+    {
+      "id": "noise",
+      "family": "utilities",
+      "gate": "before-concept",
+      "status": "requires-field-investigation",
+      "title": {
+        "en": "Ambient noise from the road edge",
+        "fa": "نوفه محیطی از لبه راه"
+      },
+      "procure_via": {
+        "en": "A sound level meter over a representative period",
+        "fa": "ترازسنج صوت در بازه نماینده"
+      },
+      "blocks": {
+        "en": "Window specification and room placement on the road side",
+        "fa": "مشخصات پنجره و چیدمان اتاق در سمت راه"
+      },
+      "proxy_available": {
+        "en": "Nothing measured. Road class from OpenStreetMap only",
+        "fa": "هیچ اندازه‌گیری‌ای. فقط رده راه از OpenStreetMap"
+      },
+      "owner": {
+        "en": "Utility providers and access surveyor",
+        "fa": "شرکت‌های تأسیسات و نقشه‌بردار دسترسی"
+      },
+      "prerequisite": {
+        "en": "Early feasibility inputs and the client brief where it affects scope",
+        "fa": "ورودی‌های امکان‌سنجی اولیه و شرح پروژه هرجا که بر محدوده اثر می‌گذارد"
+      },
+      "expected_deliverable": {
+        "en": "Signed report or drawing for «Ambient noise from the road edge» suitable for design use",
+        "fa": "گزارش یا نقشه امضاشده برای «نوفه محیطی از لبه راه» مناسب استفاده طراحی"
+      },
+      "dependency": {
+        "en": "Window specification and room placement on the road side",
+        "fa": "مشخصات پنجره و چیدمان اتاق در سمت راه"
+      },
+      "scope_note": {
+        "en": "Scope: procure via A sound level meter over a representative period. Proxy now: Nothing measured. Road class from OpenStreetMap only. Do not treat the proxy as the deliverable.",
+        "fa": "دامنه: تأمین از ترازسنج صوت در بازه نماینده. جایگزین فعلی: هیچ اندازه‌گیری‌ای. فقط رده راه از OpenStreetMap. جایگزین را تحویل نهایی ندانید."
+      }
+    }
+  ]
+}

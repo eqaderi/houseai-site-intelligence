@@ -1,0 +1,1781 @@
+{
+  "unselected": true,
+  "rejected": false,
+  "revived": true,
+  "available": true,
+  "status": "preliminary-studies-for-architect",
+  "overview": {
+    "en": "What A, B and C are: three editable FreeCAD massing experiments for the same steep 487 m² parcel. All put the garage near the high Pt2–Pt1 road, step (or drop) toward the northeast garden, and sketch a full family program (four bedrooms, office, living, kitchen, two baths, laundry, storage, courtyard). They differ in how they meet the 35–44% slope — split half-levels (A), two storeys with one deep drop (B), or four stepped bars around a courtyard (C). Areas are approximate study figures, not measured as-built.",
+    "fa": "A، B و C چیستند: سه آزمایش حجم قابل‌ویرایش FreeCAD برای همان قطعه پرشیب ۴۸۷ مترمربعی. هر سه گاراژ را نزدیک راه بالای Pt2–Pt1 می‌گذارند، به‌سوی باغ شمال‌شرق پله یا افت می‌کنند، و برنامه کامل خانواده را اسکچ می‌کنند (چهار اتاق‌خواب، دفتر، نشیمن، آشپزخانه، دو سرویس، رختشوی‌خانه، انبار، حیاط). تفاوت در برخورد با شیب ۳۵–۴۴٪ است — نیم‌طبقه‌ها (A)، دو طبقه با یک افت عمیق (B)، یا چهار نوار پله‌ای دور حیاط (C). مساحت‌ها ارقام تقریبی مطالعه‌اند، نه اندازه‌گیری ساخته‌شده."
+  },
+  "selection": {
+    "selected": null,
+    "ranking_published": false,
+    "comparison_note": {
+      "en": "Among the three, option C is the strongest terrain starting point for discussion: it tracks the fall with shorter retaining pieces and a real courtyard. A is the most compact family plan with more internal area. B keeps the most garden but asks for the deepest single cut. None is selected for construction.",
+      "fa": "میان سه گزینه، C قوی‌ترین نقطه شروع زمین برای گفتگو است: افت را با حائل‌های کوتاه‌تر و حیاط واقعی دنبال می‌کند. A فشرده‌ترین پلان خانواده با مساحت داخلی بیشتر است. B بیشترین باغ را نگه می‌دارد اما عمیق‌ترین برش یک‌باره را می‌خواهد. هیچ‌کدام برای ساخت انتخاب نشده."
+    },
+    "note": {
+      "en": "Preliminary concept studies A, B and C are available for discussion with the architect. No option is selected for construction. Use them with the completed household brief; they are not finished levels, vehicle-access proof or drainage design.",
+      "fa": "مطالعات مفهومی مقدماتی A، B و C برای گفتگو با معمار در دسترس‌اند. هیچ گزینه‌ای برای ساخت انتخاب نشده. با شرح کامل خانوار استفاده کنید؛ تراز نهایی، اثبات دسترسی خودرو یا طراحی زهکشی نیستند."
+    }
+  },
+  "caveat": {
+    "en": "Concept-study massing on an eight-point TIN: useful for layout conversation, not evidence for construction, services, cost or permitting. The 1.5 m margin in the models is a temporary study line, not a legal setback. Geotech, road geometry and utility connections are still required before fixing a footprint. Original FreeCAD “pass” checks are study geometry only.",
+    "fa": "حجم مطالعاتی روی TIN هشت‌نقطه‌ای: برای گفتگوی چیدمان مفید است، نه شاهد ساخت، تأسیسات، هزینه یا مجوز. حاشیه ۱٫۵ متری مدل‌ها خط موقت مطالعه است نه عقب‌نشینی قانونی. پیش از تثبیت سطح اشغال هنوز ژئوتکنیک، هندسه راه و انشعاب لازم است. چک‌های «قبول» FreeCAD فقط هندسه مطالعه‌اند."
+  },
+  "frame": {
+    "origin_point": "Pt2",
+    "u_axis": "Pt2→Pt1 road edge",
+    "v_axis": "perpendicular, inland positive",
+    "road_span_m": 10.270569,
+    "rotation_y_rad": -0.7115978391067855,
+    "survey_round_trip_max_error_m": 0,
+    "verified_against": "all eight surveyed points"
+  },
+  "category_labels": {
+    "entry": {
+      "en": "Entry",
+      "fa": "ورودی"
+    },
+    "living": {
+      "en": "Living",
+      "fa": "نشیمن"
+    },
+    "kitchen": {
+      "en": "Kitchen",
+      "fa": "آشپزخانه"
+    },
+    "bedroom": {
+      "en": "Bedroom",
+      "fa": "خواب"
+    },
+    "bath": {
+      "en": "Bathroom",
+      "fa": "حمام"
+    },
+    "office": {
+      "en": "Office",
+      "fa": "کار"
+    },
+    "service": {
+      "en": "Service",
+      "fa": "خدمات"
+    },
+    "storage": {
+      "en": "Storage",
+      "fa": "انباری"
+    },
+    "circulation": {
+      "en": "Circulation",
+      "fa": "گردش"
+    }
+  },
+  "options": [
+    {
+      "id": "option-a",
+      "letter": "A",
+      "title": {
+        "en": "Option A — Compact split-level house",
+        "fa": "گزینه A — خانه نیم‌طبقه فشرده"
+      },
+      "concept": {
+        "en": "A compact half-level sequence stepping northeast with the terrain.",
+        "fa": "توالی فشرده نیم‌طبقه که همراه شیب زمین به‌سوی شمال‌شرق پله می‌خورد."
+      },
+      "levels": [
+        {
+          "name": {
+            "en": "Road / quiet level",
+            "fa": "تراز راه / آرام"
+          },
+          "elevation_m": 1659.2
+        },
+        {
+          "name": {
+            "en": "Family level",
+            "fa": "تراز خانوادگی"
+          },
+          "elevation_m": 1657.7
+        },
+        {
+          "name": {
+            "en": "Bedroom level",
+            "fa": "تراز خواب"
+          },
+          "elevation_m": 1656.2
+        }
+      ],
+      "metrics": {
+        "internal_area_m2": 148.21,
+        "garage_workshop_area_m2": 35.34,
+        "courtyard_area_m2": 15.6,
+        "footprint_m2": 231.08
+      },
+      "rooms": [
+        {
+          "u": 0.1,
+          "v": 7.8,
+          "width_m": 2.2,
+          "depth_m": 2.4,
+          "x_m": 623738.6898,
+          "y_m": 3870701.8203,
+          "name": {
+            "en": "Entry",
+            "fa": "ورودی"
+          },
+          "category": "entry",
+          "category_label": {
+            "en": "Entry",
+            "fa": "ورودی"
+          },
+          "level_m": 1659.2,
+          "level_name": {
+            "en": "Road / quiet level",
+            "fa": "تراز راه / آرام"
+          },
+          "window": false,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 2.6,
+          "v": 7.8,
+          "width_m": 3.4,
+          "depth_m": 3.4,
+          "x_m": 623741.364,
+          "y_m": 3870700.1745,
+          "name": {
+            "en": "Home office",
+            "fa": "اتاق کار"
+          },
+          "category": "office",
+          "category_label": {
+            "en": "Office",
+            "fa": "کار"
+          },
+          "level_m": 1659.2,
+          "level_name": {
+            "en": "Road / quiet level",
+            "fa": "تراز راه / آرام"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 6.3,
+          "v": 7.8,
+          "width_m": 2.1,
+          "depth_m": 2.1,
+          "x_m": 623743.2494,
+          "y_m": 3870697.6905,
+          "name": {
+            "en": "Storage",
+            "fa": "انباری"
+          },
+          "category": "storage",
+          "category_label": {
+            "en": "Storage",
+            "fa": "انباری"
+          },
+          "level_m": 1659.2,
+          "level_name": {
+            "en": "Road / quiet level",
+            "fa": "تراز راه / آرام"
+          },
+          "window": false,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 8.7,
+          "v": 7.8,
+          "width_m": 2.1,
+          "depth_m": 3.4,
+          "x_m": 623745.4914,
+          "y_m": 3870696.6155,
+          "name": {
+            "en": "Circulation A1",
+            "fa": "راهرو A۱"
+          },
+          "category": "circulation",
+          "category_label": {
+            "en": "Circulation",
+            "fa": "گردش"
+          },
+          "level_m": 1659.2,
+          "level_name": {
+            "en": "Road / quiet level",
+            "fa": "تراز راه / آرام"
+          },
+          "window": false,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": -0.8,
+          "v": 10.7,
+          "width_m": 6.2,
+          "depth_m": 4.8,
+          "x_m": 623742.2003,
+          "y_m": 3870704.207,
+          "name": {
+            "en": "Living / dining",
+            "fa": "نشیمن / غذاخوری"
+          },
+          "category": "living",
+          "category_label": {
+            "en": "Living",
+            "fa": "نشیمن"
+          },
+          "level_m": 1657.7,
+          "level_name": {
+            "en": "Family level",
+            "fa": "تراز خانوادگی"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 5.7,
+          "v": 10.7,
+          "width_m": 3.4,
+          "depth_m": 4,
+          "x_m": 623745.8014,
+          "y_m": 3870700.5735,
+          "name": {
+            "en": "Kitchen",
+            "fa": "آشپزخانه"
+          },
+          "category": "kitchen",
+          "category_label": {
+            "en": "Kitchen",
+            "fa": "آشپزخانه"
+          },
+          "level_m": 1657.7,
+          "level_name": {
+            "en": "Family level",
+            "fa": "تراز خانوادگی"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 9.3,
+          "v": 10.7,
+          "width_m": 2.1,
+          "depth_m": 2.3,
+          "x_m": 623747.4805,
+          "y_m": 3870698.0033,
+          "name": {
+            "en": "Laundry",
+            "fa": "رختشویخانه"
+          },
+          "category": "service",
+          "category_label": {
+            "en": "Service",
+            "fa": "خدمات"
+          },
+          "level_m": 1657.7,
+          "level_name": {
+            "en": "Family level",
+            "fa": "تراز خانوادگی"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 9.3,
+          "v": 13.2,
+          "width_m": 2.1,
+          "depth_m": 2.3,
+          "x_m": 623749.1131,
+          "y_m": 3870699.8966,
+          "name": {
+            "en": "Bathroom 1",
+            "fa": "حمام ۱"
+          },
+          "category": "bath",
+          "category_label": {
+            "en": "Bathroom",
+            "fa": "حمام"
+          },
+          "level_m": 1657.7,
+          "level_name": {
+            "en": "Family level",
+            "fa": "تراز خانوادگی"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 5.7,
+          "v": 14.9,
+          "width_m": 3.4,
+          "depth_m": 1.2,
+          "x_m": 623747.63,
+          "y_m": 3870702.694,
+          "name": {
+            "en": "Circulation A2",
+            "fa": "راهرو A۲"
+          },
+          "category": "circulation",
+          "category_label": {
+            "en": "Circulation",
+            "fa": "گردش"
+          },
+          "level_m": 1657.7,
+          "level_name": {
+            "en": "Family level",
+            "fa": "تراز خانوادگی"
+          },
+          "window": false,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": -1.5,
+          "v": 15.8,
+          "width_m": 3.9,
+          "depth_m": 4,
+          "x_m": 623743.8686,
+          "y_m": 3870708.9745,
+          "name": {
+            "en": "Master bedroom",
+            "fa": "اتاق خواب اصلی"
+          },
+          "category": "bedroom",
+          "category_label": {
+            "en": "Bedroom",
+            "fa": "خواب"
+          },
+          "level_m": 1656.2,
+          "level_name": {
+            "en": "Bedroom level",
+            "fa": "تراز خواب"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 8,
+          "v": 15.8,
+          "width_m": 3.1,
+          "depth_m": 3.4,
+          "x_m": 623750.5643,
+          "y_m": 3870702.8046,
+          "name": {
+            "en": "Bedroom 2",
+            "fa": "اتاق خواب ۲"
+          },
+          "category": "bedroom",
+          "category_label": {
+            "en": "Bedroom",
+            "fa": "خواب"
+          },
+          "level_m": 1656.2,
+          "level_name": {
+            "en": "Bedroom level",
+            "fa": "تراز خواب"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": -1.2,
+          "v": 20,
+          "width_m": 3.1,
+          "depth_m": 3.4,
+          "x_m": 623746.3397,
+          "y_m": 3870711.9934,
+          "name": {
+            "en": "Bedroom 3",
+            "fa": "اتاق خواب ۳"
+          },
+          "category": "bedroom",
+          "category_label": {
+            "en": "Bedroom",
+            "fa": "خواب"
+          },
+          "level_m": 1656.2,
+          "level_name": {
+            "en": "Bedroom level",
+            "fa": "تراز خواب"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 2.2,
+          "v": 20,
+          "width_m": 3.1,
+          "depth_m": 3.4,
+          "x_m": 623748.9146,
+          "y_m": 3870709.773,
+          "name": {
+            "en": "Bedroom 4",
+            "fa": "اتاق خواب ۴"
+          },
+          "category": "bedroom",
+          "category_label": {
+            "en": "Bedroom",
+            "fa": "خواب"
+          },
+          "level_m": 1656.2,
+          "level_name": {
+            "en": "Bedroom level",
+            "fa": "تراز خواب"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 5.6,
+          "v": 20,
+          "width_m": 2.6,
+          "depth_m": 2.5,
+          "x_m": 623751.0063,
+          "y_m": 3870707.3751,
+          "name": {
+            "en": "Bathroom 2",
+            "fa": "حمام ۲"
+          },
+          "category": "bath",
+          "category_label": {
+            "en": "Bathroom",
+            "fa": "حمام"
+          },
+          "level_m": 1656.2,
+          "level_name": {
+            "en": "Bedroom level",
+            "fa": "تراز خواب"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 8.5,
+          "v": 19.4,
+          "width_m": 2.5,
+          "depth_m": 3.6,
+          "x_m": 623753.132,
+          "y_m": 3870705.4761,
+          "name": {
+            "en": "Circulation A3",
+            "fa": "راهرو A۳"
+          },
+          "category": "circulation",
+          "category_label": {
+            "en": "Circulation",
+            "fa": "گردش"
+          },
+          "level_m": 1656.2,
+          "level_name": {
+            "en": "Bedroom level",
+            "fa": "تراز خواب"
+          },
+          "window": false,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        }
+      ],
+      "roofs": [
+        {
+          "u": -0.4,
+          "v": 7.5,
+          "width_m": 11.6,
+          "depth_m": 4.1,
+          "x_m": 623742.2297,
+          "y_m": 3870699.4941,
+          "elevation_m": 1662.28,
+          "slope_percent": 5
+        },
+        {
+          "u": -1.3,
+          "v": 10.3,
+          "width_m": 12.8,
+          "depth_m": 5.6,
+          "x_m": 623744.3208,
+          "y_m": 3870702.3785,
+          "elevation_m": 1660.78,
+          "slope_percent": 5
+        },
+        {
+          "u": -1.9,
+          "v": 15.4,
+          "width_m": 13.2,
+          "depth_m": 8.3,
+          "x_m": 623748.23,
+          "y_m": 3870707.5244,
+          "elevation_m": 1659.28,
+          "slope_percent": 5
+        }
+      ],
+      "garage": {
+        "u": 2,
+        "v": 1.8,
+        "width_m": 6.2,
+        "depth_m": 5.7,
+        "x_m": 623738.8026,
+        "y_m": 3870695.9791,
+        "level_m": 1659.2,
+        "height_m": null,
+        "height_source": "nothing-above"
+      },
+      "courtyard": {
+        "u": 3.6,
+        "v": 15.8,
+        "width_m": 4,
+        "depth_m": 3.9,
+        "x_m": 623747.7361,
+        "y_m": 3870705.5735,
+        "level_m": 1657.66,
+        "drainage_open": true
+      },
+      "retaining": [
+        {
+          "u": 1.7,
+          "v": 7.35,
+          "width_m": 6.8,
+          "depth_m": 0.25,
+          "x_m": 623740.6475,
+          "y_m": 3870698.1185,
+          "level_m": 1657.8,
+          "height_m": 1.6,
+          "height_source": "given-in-concept-data"
+        },
+        {
+          "u": -1,
+          "v": 10.35,
+          "width_m": 10.5,
+          "depth_m": 0.25,
+          "x_m": 623741.9629,
+          "y_m": 3870700.9456,
+          "level_m": 1656.3,
+          "height_m": 1.4,
+          "height_source": "given-in-concept-data"
+        }
+      ],
+      "stairs": [
+        {
+          "u": 8.8,
+          "v": 8,
+          "x_m": 623743.7924,
+          "y_m": 3870696.0999,
+          "top_m": 1659.2,
+          "bottom_m": 1657.7,
+          "risers": 9,
+          "going_m": 0.28,
+          "width_m": 0.95
+        },
+        {
+          "u": 8.6,
+          "v": 15,
+          "x_m": 623748.2122,
+          "y_m": 3870701.5317,
+          "top_m": 1657.7,
+          "bottom_m": 1656.2,
+          "risers": 9,
+          "going_m": 0.28,
+          "width_m": 0.95
+        }
+      ],
+      "validation": [],
+      "source_validation_withheld": {
+        "en": "Workspace pass/fail claims that depend on unmeasured road, ground or drainage evidence are withheld. Geometry containment and room-schedule checks remain study-level only.",
+        "fa": "ادعاهای قبول/رد فضای کار که به شواهد اندازه‌گیری‌نشده راه، زمین یا زهکشی وابسته‌اند منتشر نمی‌شوند. کنترل هندسه و جدول اتاق فقط در سطح مطالعه است."
+      },
+      "brief_alignment": {
+        "en": "Fits: house steps with the slope; compact for six; largest internal area; quiet/road band for office. Gaps vs brief: several daily half-level stairs; garage/workshop bay (~35 m²) is small for two cars plus open carpentry flex; semi-open kitchen not fixed in this massing. Useful as a compact split-level reference.",
+        "fa": "سازگار: خانه با شیب پله می‌خورد؛ فشرده برای شش نفر؛ بیشترین مساحت داخلی؛ نوار آرام/راه برای دفتر. فاصله با شرح: چند نیم‌طبقه روزانه؛ گاراژ/کارگاه (~۳۵ m²) برای دو خودرو + نجاری انعطاف‌پذیر تنگ است؛ آشپزخانه نیمه‌باز در این حجم تثبیت نشده. مرجع مفید برای نیم‌طبقه فشرده."
+      },
+      "isometric_image": "assets/diagrams/concepts/option-a-isometric.png",
+      "profile": {
+        "what_it_is": {
+          "en": "A compact split-level family house that climbs down the slope in short half-level steps from the high southern road edge toward the northeast. Garage/workshop stays at the road; living and kitchen sit on a mid family level; four bedrooms and a second bath sit one step lower. About 148 m² internal, 35 m² garage/workshop, 16 m² courtyard, ~231 m² footprint.",
+          "fa": "خانه خانوادگی فشرده نیم‌طبقه که از لبه بالای راه جنوبی با پله‌های کوتاه به‌سوی شمال‌شرق پایین می‌رود. گاراژ/کارگاه در تراز راه می‌ماند؛ نشیمن و آشپزخانه در تراز میانی خانواده؛ چهار اتاق‌خواب و حمام دوم یک پله پایین‌تر. حدود ۱۴۸ مترمربع داخلی، ۳۵ مترمربع گاراژ/کارگاه، ۱۶ مترمربع حیاط، حدود ۲۳۱ مترمربع سطح اشغال."
+        },
+        "how_it_works": {
+          "en": "Three main finished levels: Road / quiet (~1659.2 m) holds entry, home office and storage next to the road. Family level (~1657.7 m) holds living/dining, kitchen, laundry and bath 1. Bedroom level (~1656.2 m) holds master + three bedrooms and bath 2. Daily life uses several short stair flights instead of one long flight. Courtyard is small and open to the sky with a conceptual NE drainage fall.",
+          "fa": "سه تراز اصلی: راه / آرام (~۱۶۵۹٫۲ m) ورودی، دفتر خانگی و انبار کنار راه. تراز خانواده (~۱۶۵۷٫۷ m) نشیمن/ناهارخوری، آشپزخانه، رختشوی‌خانه و حمام ۱. تراز خواب (~۱۶۵۶٫۲ m) سوئیت والدین + سه اتاق و حمام ۲. زندگی روزانه چند پرواز کوتاه پله دارد نه یک پرواز بلند. حیاط کوچک و باز به آسمان با شیب مفهومی زهکشی به‌سوی شمال‌شرق."
+        },
+        "program": {
+          "en": "Program covered: entry, office, living/dining, kitchen, laundry, storage, two bathrooms, four bedrooms (master + three), garage/workshop, small courtyard, circulation. Matches a family of six in outline; garage bay is still modest (~one car plus work zone in the original study).",
+          "fa": "برنامه پوشش‌داده‌شده: ورودی، دفتر، نشیمن/ناهارخوری، آشپزخانه، رختشوی‌خانه، انبار، دو سرویس، چهار اتاق‌خواب (اصلی + سه)، گاراژ/کارگاه، حیاط کوچک، گردش. در کلیات با خانواده شش‌نفره جور است؛ گاراژ در مطالعه اصلی هنوز متوسط است (حدود یک خودرو + فضای کار)."
+        },
+        "strengths": [
+          {
+            "en": "Largest internal area of the three (~148 m²)",
+            "fa": "بیشترین مساحت داخلی میان سه گزینه (~۱۴۸ m²)"
+          },
+          {
+            "en": "Short day-to-day routes between rooms",
+            "fa": "مسیرهای کوتاه روزمره بین فضاها"
+          },
+          {
+            "en": "Steps with the terrain rather than one deep cut",
+            "fa": "با زمین پله می‌خورد نه یک برش عمیق"
+          },
+          {
+            "en": "Office and entry stay near the road / quiet band",
+            "fa": "دفتر و ورودی نزدیک نوار راه / آرام می‌مانند"
+          }
+        ],
+        "tradeoffs": [
+          {
+            "en": "Several half-level stairs every day — hard for step-free living",
+            "fa": "چند نیم‌طبقه هر روز — زندگی بدون پله سخت است"
+          },
+          {
+            "en": "Split-level junctions need careful waterproofing and detailing",
+            "fa": "اتصالات نیم‌طبقه به آب‌بندی و جزئیات دقیق نیاز دارند"
+          },
+          {
+            "en": "Garage/workshop area needs enlarging for two cars + carpentry flex",
+            "fa": "مساحت گاراژ/کارگاه برای دو خودرو + نجاری انعطاف‌پذیر باید بزرگ‌تر شود"
+          }
+        ]
+      }
+    },
+    {
+      "id": "option-b",
+      "letter": "B",
+      "title": {
+        "en": "Option B — Two-storey house with road-level garage",
+        "fa": "گزینه B — خانه دوطبقه با پارکینگ هم‌تراز راه"
+      },
+      "concept": {
+        "en": "A compact two-storey downhill volume, with the quiet sleeping level over a garden family level.",
+        "fa": "حجم فشرده دوطبقه در جهت شیب؛ طبقه آرام خواب روی طبقه خانوادگی مرتبط با باغ."
+      },
+      "levels": [
+        {
+          "name": {
+            "en": "Road / bedroom level",
+            "fa": "تراز راه / خواب"
+          },
+          "elevation_m": 1659.2
+        },
+        {
+          "name": {
+            "en": "Garden / family level",
+            "fa": "تراز باغ / خانوادگی"
+          },
+          "elevation_m": 1656.1
+        }
+      ],
+      "metrics": {
+        "internal_area_m2": 138.4,
+        "garage_workshop_area_m2": 35.96,
+        "courtyard_area_m2": 16.8,
+        "footprint_m2": 198.92
+      },
+      "rooms": [
+        {
+          "u": -0.1,
+          "v": 7.9,
+          "width_m": 2.2,
+          "depth_m": 2.2,
+          "x_m": 623738.5383,
+          "y_m": 3870701.9509,
+          "name": {
+            "en": "Entry",
+            "fa": "ورودی"
+          },
+          "category": "entry",
+          "category_label": {
+            "en": "Entry",
+            "fa": "ورودی"
+          },
+          "level_m": 1659.2,
+          "level_name": {
+            "en": "Road / bedroom level",
+            "fa": "تراز راه / خواب"
+          },
+          "window": false,
+          "height_m": 3.1,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 2.4,
+          "v": 7.9,
+          "width_m": 3.4,
+          "depth_m": 3.4,
+          "x_m": 623741.2779,
+          "y_m": 3870700.3809,
+          "name": {
+            "en": "Home office",
+            "fa": "اتاق کار"
+          },
+          "category": "office",
+          "category_label": {
+            "en": "Office",
+            "fa": "کار"
+          },
+          "level_m": 1659.2,
+          "level_name": {
+            "en": "Road / bedroom level",
+            "fa": "تراز راه / خواب"
+          },
+          "window": true,
+          "height_m": 3.1,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 6.1,
+          "v": 7.9,
+          "width_m": 3.7,
+          "depth_m": 3.6,
+          "x_m": 623744.2588,
+          "y_m": 3870697.9424,
+          "name": {
+            "en": "Master bedroom",
+            "fa": "اتاق خواب اصلی"
+          },
+          "category": "bedroom",
+          "category_label": {
+            "en": "Bedroom",
+            "fa": "خواب"
+          },
+          "level_m": 1659.2,
+          "level_name": {
+            "en": "Road / bedroom level",
+            "fa": "تراز راه / خواب"
+          },
+          "window": true,
+          "height_m": 3.1,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": -0.2,
+          "v": 11.6,
+          "width_m": 3.2,
+          "depth_m": 3.6,
+          "x_m": 623741.7147,
+          "y_m": 3870705.0219,
+          "name": {
+            "en": "Bedroom 2",
+            "fa": "اتاق خواب ۲"
+          },
+          "category": "bedroom",
+          "category_label": {
+            "en": "Bedroom",
+            "fa": "خواب"
+          },
+          "level_m": 1659.2,
+          "level_name": {
+            "en": "Road / bedroom level",
+            "fa": "تراز راه / خواب"
+          },
+          "window": true,
+          "height_m": 3.1,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 3,
+          "v": 11.6,
+          "width_m": 3.1,
+          "depth_m": 3.6,
+          "x_m": 623744.1002,
+          "y_m": 3870702.9648,
+          "name": {
+            "en": "Bedroom 3",
+            "fa": "اتاق خواب ۳"
+          },
+          "category": "bedroom",
+          "category_label": {
+            "en": "Bedroom",
+            "fa": "خواب"
+          },
+          "level_m": 1659.2,
+          "level_name": {
+            "en": "Road / bedroom level",
+            "fa": "تراز راه / خواب"
+          },
+          "window": true,
+          "height_m": 3.1,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 6.3,
+          "v": 11.9,
+          "width_m": 3.1,
+          "depth_m": 3.6,
+          "x_m": 623746.7953,
+          "y_m": 3870701.037,
+          "name": {
+            "en": "Bedroom 4",
+            "fa": "اتاق خواب ۴"
+          },
+          "category": "bedroom",
+          "category_label": {
+            "en": "Bedroom",
+            "fa": "خواب"
+          },
+          "level_m": 1659.2,
+          "level_name": {
+            "en": "Road / bedroom level",
+            "fa": "تراز راه / خواب"
+          },
+          "window": true,
+          "height_m": 3.1,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 9.5,
+          "v": 12,
+          "width_m": 1.6,
+          "depth_m": 2.8,
+          "x_m": 623748.4548,
+          "y_m": 3870699.2098,
+          "name": {
+            "en": "Bathroom 2",
+            "fa": "حمام ۲"
+          },
+          "category": "bath",
+          "category_label": {
+            "en": "Bathroom",
+            "fa": "حمام"
+          },
+          "level_m": 1659.2,
+          "level_name": {
+            "en": "Road / bedroom level",
+            "fa": "تراز راه / خواب"
+          },
+          "window": true,
+          "height_m": 3.1,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 10.1,
+          "v": 7.9,
+          "width_m": 1,
+          "depth_m": 3.8,
+          "x_m": 623746.331,
+          "y_m": 3870696.2876,
+          "name": {
+            "en": "Circulation B1",
+            "fa": "راهرو B۱"
+          },
+          "category": "circulation",
+          "category_label": {
+            "en": "Circulation",
+            "fa": "گردش"
+          },
+          "level_m": 1659.2,
+          "level_name": {
+            "en": "Road / bedroom level",
+            "fa": "تراز راه / خواب"
+          },
+          "window": false,
+          "height_m": 3.1,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": -1.2,
+          "v": 16.2,
+          "width_m": 6.8,
+          "depth_m": 4.7,
+          "x_m": 623745.6837,
+          "y_m": 3870708.3997,
+          "name": {
+            "en": "Living / dining",
+            "fa": "نشیمن / غذاخوری"
+          },
+          "category": "living",
+          "category_label": {
+            "en": "Living",
+            "fa": "نشیمن"
+          },
+          "level_m": 1656.1,
+          "level_name": {
+            "en": "Garden / family level",
+            "fa": "تراز باغ / خانوادگی"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 6.6,
+          "v": 12,
+          "width_m": 3.6,
+          "depth_m": 4,
+          "x_m": 623747.4077,
+          "y_m": 3870700.905,
+          "name": {
+            "en": "Kitchen",
+            "fa": "آشپزخانه"
+          },
+          "category": "kitchen",
+          "category_label": {
+            "en": "Kitchen",
+            "fa": "آشپزخانه"
+          },
+          "level_m": 1656.1,
+          "level_name": {
+            "en": "Garden / family level",
+            "fa": "تراز باغ / خانوادگی"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 6.6,
+          "v": 16.2,
+          "width_m": 2.2,
+          "depth_m": 2.3,
+          "x_m": 623749.0653,
+          "y_m": 3870703.8992,
+          "name": {
+            "en": "Laundry",
+            "fa": "رختشویخانه"
+          },
+          "category": "service",
+          "category_label": {
+            "en": "Service",
+            "fa": "خدمات"
+          },
+          "level_m": 1656.1,
+          "level_name": {
+            "en": "Garden / family level",
+            "fa": "تراز باغ / خانوادگی"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 9,
+          "v": 16.2,
+          "width_m": 2,
+          "depth_m": 2.1,
+          "x_m": 623750.7418,
+          "y_m": 3870702.3214,
+          "name": {
+            "en": "Storage",
+            "fa": "انباری"
+          },
+          "category": "storage",
+          "category_label": {
+            "en": "Storage",
+            "fa": "انباری"
+          },
+          "level_m": 1656.1,
+          "level_name": {
+            "en": "Garden / family level",
+            "fa": "تراز باغ / خانوادگی"
+          },
+          "window": false,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 8.9,
+          "v": 18.5,
+          "width_m": 2.2,
+          "depth_m": 2.3,
+          "x_m": 623752.3091,
+          "y_m": 3870704.139,
+          "name": {
+            "en": "Bathroom 1",
+            "fa": "حمام ۱"
+          },
+          "category": "bath",
+          "category_label": {
+            "en": "Bathroom",
+            "fa": "حمام"
+          },
+          "level_m": 1656.1,
+          "level_name": {
+            "en": "Garden / family level",
+            "fa": "تراز باغ / خانوادگی"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 5.8,
+          "v": 18.8,
+          "width_m": 2.8,
+          "depth_m": 2.1,
+          "x_m": 623750.3193,
+          "y_m": 3870706.119,
+          "name": {
+            "en": "Circulation B2",
+            "fa": "راهرو B۲"
+          },
+          "category": "circulation",
+          "category_label": {
+            "en": "Circulation",
+            "fa": "گردش"
+          },
+          "level_m": 1656.1,
+          "level_name": {
+            "en": "Garden / family level",
+            "fa": "تراز باغ / خانوادگی"
+          },
+          "window": false,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        }
+      ],
+      "roofs": [
+        {
+          "u": -0.7,
+          "v": 7.5,
+          "width_m": 12.4,
+          "depth_m": 8.5,
+          "x_m": 623743.7421,
+          "y_m": 3870701.0949,
+          "elevation_m": 1662.3,
+          "slope_percent": 12
+        },
+        {
+          "u": -1.6,
+          "v": 15.8,
+          "width_m": 13.1,
+          "depth_m": 5.4,
+          "x_m": 623747.7337,
+          "y_m": 3870706.5659,
+          "elevation_m": 1659.18,
+          "slope_percent": 2
+        }
+      ],
+      "garage": {
+        "u": 2,
+        "v": 1.8,
+        "width_m": 6.2,
+        "depth_m": 5.8,
+        "x_m": 623738.8353,
+        "y_m": 3870696.017,
+        "level_m": 1659.2,
+        "height_m": null,
+        "height_source": "nothing-above"
+      },
+      "courtyard": {
+        "u": 2.2,
+        "v": 12,
+        "width_m": 4.2,
+        "depth_m": 4,
+        "x_m": 623744.3027,
+        "y_m": 3870703.5825,
+        "level_m": 1656.06,
+        "drainage_open": true
+      },
+      "retaining": [
+        {
+          "u": -0.5,
+          "v": 11.45,
+          "width_m": 11.8,
+          "depth_m": 0.3,
+          "x_m": 623743.5685,
+          "y_m": 3870701.0466,
+          "level_m": 1655.9,
+          "height_m": 3.3,
+          "height_source": "given-in-concept-data"
+        },
+        {
+          "u": 1.8,
+          "v": 7.5,
+          "width_m": 7,
+          "depth_m": 0.25,
+          "x_m": 623740.8969,
+          "y_m": 3870698.1015,
+          "level_m": 1657.6,
+          "height_m": 1.8,
+          "height_source": "given-in-concept-data"
+        }
+      ],
+      "stairs": [
+        {
+          "u": 10,
+          "v": 8,
+          "x_m": 623744.7012,
+          "y_m": 3870695.3162,
+          "top_m": 1659.2,
+          "bottom_m": 1656.1,
+          "risers": 18,
+          "going_m": 0.28,
+          "width_m": 1
+        }
+      ],
+      "validation": [],
+      "source_validation_withheld": {
+        "en": "Workspace pass/fail claims that depend on unmeasured road, ground or drainage evidence are withheld. Geometry containment and room-schedule checks remain study-level only.",
+        "fa": "ادعاهای قبول/رد فضای کار که به شواهد اندازه‌گیری‌نشده راه، زمین یا زهکشی وابسته‌اند منتشر نمی‌شوند. کنترل هندسه و جدول اتاق فقط در سطح مطالعه است."
+      },
+      "brief_alignment": {
+        "en": "Fits: garage at high road level; two clear storeys; smallest footprint leaves more garden for nature play. Gaps vs brief: single deep downhill façade and larger retaining study zone conflict with minimising excavation; less stepped than the preferred split-down-the-slope form. Useful as the most compact superstructure option.",
+        "fa": "سازگار: گاراژ در تراز بالای راه؛ دو طبقه روشن؛ کوچک‌ترین سطح اشغال فضای بیشتری برای بازی در طبیعت می‌گذارد. فاصله با شرح: نمای عمیق پایین‌دست و منطقه حائل بزرگ‌تر با کمینه‌کردن گودبرداری ناسازگار است؛ کمتر از فرم ترجیحی پله‌ای روی شیب است. گزینه فشرده‌ترین اسکلت فوقانی."
+      },
+      "isometric_image": "assets/diagrams/concepts/option-b-isometric.png",
+      "profile": {
+        "what_it_is": {
+          "en": "A compact two-storey house with the garage and quiet/sleeping rooms at the high road level, and living, kitchen and service rooms on a lower garden level. About 138 m² internal, 36 m² garage/workshop, 17 m² courtyard, ~199 m² footprint — the smallest plan of the three.",
+          "fa": "خانه فشرده دوطبقه با گاراژ و فضاهای آرام/خواب در تراز بالای راه، و نشیمن، آشپزخانه و خدمات در تراز پایین باغ. حدود ۱۳۸ مترمربع داخلی، ۳۶ مترمربع گاراژ/کارگاه، ۱۷ مترمربع حیاط، حدود ۱۹۹ مترمربع سطح اشغال — کوچک‌ترین پلان میان سه گزینه."
+        },
+        "how_it_works": {
+          "en": "Two clear storeys. Road / bedroom level (~1659.2 m): entry, office, master + three bedrooms, bath 2, circulation. Garden / family level (~1656.1 m): living/dining, kitchen, laundry, storage, bath 1. The house drops about 3 m in one main step, so the downhill façade is taller and the retaining study zone is more concentrated (~3.3 m conceptual).",
+          "fa": "دو طبقه روشن. تراز راه / خواب (~۱۶۵۹٫۲ m): ورودی، دفتر، سوئیت + سه اتاق، حمام ۲، گردش. تراز باغ / خانواده (~۱۶۵۶٫۱ m): نشیمن/ناهارخوری، آشپزخانه، رختشوی‌خانه، انبار، حمام ۱. خانه حدود ۳ متر در یک پله اصلی پایین می‌آید؛ نمای پایین‌دست بلندتر و منطقه حائل متمرکزتر است (~۳٫۳ متر مفهومی)."
+        },
+        "program": {
+          "en": "Same family program outline as A: four bedrooms, office, living/kitchen, two baths, laundry, storage, garage/workshop, courtyard. Bedrooms cluster at road level (quiet side); family life opens to the garden below.",
+          "fa": "همان کلیات برنامه خانواده مانند A: چهار اتاق‌خواب، دفتر، نشیمن/آشپزخانه، دو سرویس، رختشوی‌خانه، انبار، گاراژ/کارگاه، حیاط. اتاق‌خواب‌ها در تراز راه (سمت آرام)؛ زندگی خانواده به باغ پایین باز می‌شود."
+        },
+        "strengths": [
+          {
+            "en": "Smallest footprint — most contiguous outdoor garden for children",
+            "fa": "کوچک‌ترین سطح اشغال — بیشترین باغ پیوسته برای کودکان"
+          },
+          {
+            "en": "Simple two-storey superstructure and clear zoning (sleep up / live down)",
+            "fa": "اسکلت دوطبقه ساده و منطقه‌بندی روشن (خواب بالا / زندگی پایین)"
+          },
+          {
+            "en": "Garage sits naturally at the high road edge",
+            "fa": "گاراژ طبیعی در لبه بالای راه می‌نشیند"
+          }
+        ],
+        "tradeoffs": [
+          {
+            "en": "Deepest single downhill cut and tallest garden façade of the three",
+            "fa": "عمیق‌ترین برش یک‌باره پایین‌دست و بلندترین نمای باغ میان سه گزینه"
+          },
+          {
+            "en": "Least forgiving if geotech or retaining is difficult",
+            "fa": "اگر ژئوتکنیک یا حائل سخت باشد، کم‌تحمل‌ترین گزینه است"
+          },
+          {
+            "en": "Less “split following the slope” than the household’s preferred form",
+            "fa": "کمتر از فرم ترجیحی «شکسته روی شیب» خانوار است"
+          },
+          {
+            "en": "Garage/workshop still modest for two cars + open carpentry",
+            "fa": "گاراژ/کارگاه هنوز برای دو خودرو + نجاری باز متوسط است"
+          }
+        ]
+      }
+    },
+    {
+      "id": "option-c",
+      "letter": "C",
+      "title": {
+        "en": "Option C — Stepped courtyard house",
+        "fa": "گزینه C — خانه حیاط‌دار پله‌ای"
+      },
+      "concept": {
+        "en": "Four terrain-following bars distributed down the slope around an open courtyard.",
+        "fa": "چهار نوار هم‌سو با زمین که در شیب توزیع شده‌اند و حیاط بازی را در میان می‌گیرند."
+      },
+      "levels": [
+        {
+          "name": {
+            "en": "Road / garage level",
+            "fa": "تراز راه / پارکینگ"
+          },
+          "elevation_m": 1659.2
+        },
+        {
+          "name": {
+            "en": "Quiet / guest level",
+            "fa": "تراز آرام / مهمان"
+          },
+          "elevation_m": 1657.4
+        },
+        {
+          "name": {
+            "en": "Courtyard / family level",
+            "fa": "تراز حیاط / خانوادگی"
+          },
+          "elevation_m": 1655.6
+        },
+        {
+          "name": {
+            "en": "Lower bedroom level",
+            "fa": "تراز پایین خواب"
+          },
+          "elevation_m": 1653.8
+        }
+      ],
+      "metrics": {
+        "internal_area_m2": 137.92,
+        "garage_workshop_area_m2": 35.96,
+        "courtyard_area_m2": 17.64,
+        "footprint_m2": 233.67
+      },
+      "rooms": [
+        {
+          "u": -0.1,
+          "v": 8,
+          "width_m": 2.2,
+          "depth_m": 2.2,
+          "x_m": 623738.6036,
+          "y_m": 3870702.0267,
+          "name": {
+            "en": "Entry",
+            "fa": "ورودی"
+          },
+          "category": "entry",
+          "category_label": {
+            "en": "Entry",
+            "fa": "ورودی"
+          },
+          "level_m": 1657.4,
+          "level_name": {
+            "en": "Quiet / guest level",
+            "fa": "تراز آرام / مهمان"
+          },
+          "window": false,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 2.4,
+          "v": 8,
+          "width_m": 3.4,
+          "depth_m": 3.4,
+          "x_m": 623741.3432,
+          "y_m": 3870700.4566,
+          "name": {
+            "en": "Home office",
+            "fa": "اتاق کار"
+          },
+          "category": "office",
+          "category_label": {
+            "en": "Office",
+            "fa": "کار"
+          },
+          "level_m": 1657.4,
+          "level_name": {
+            "en": "Quiet / guest level",
+            "fa": "تراز آرام / مهمان"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 5.9,
+          "v": 8,
+          "width_m": 3.1,
+          "depth_m": 3.5,
+          "x_m": 623743.9128,
+          "y_m": 3870698.3068,
+          "name": {
+            "en": "Bedroom 4",
+            "fa": "اتاق خواب ۴"
+          },
+          "category": "bedroom",
+          "category_label": {
+            "en": "Bedroom",
+            "fa": "خواب"
+          },
+          "level_m": 1657.4,
+          "level_name": {
+            "en": "Quiet / guest level",
+            "fa": "تراز آرام / مهمان"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 9.3,
+          "v": 8,
+          "width_m": 1.9,
+          "depth_m": 2.9,
+          "x_m": 623745.8374,
+          "y_m": 3870696.2511,
+          "name": {
+            "en": "Bathroom 1",
+            "fa": "حمام ۱"
+          },
+          "category": "bath",
+          "category_label": {
+            "en": "Bathroom",
+            "fa": "حمام"
+          },
+          "level_m": 1657.4,
+          "level_name": {
+            "en": "Quiet / guest level",
+            "fa": "تراز آرام / مهمان"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": -0.1,
+          "v": 10.4,
+          "width_m": 1.8,
+          "depth_m": 2.2,
+          "x_m": 623740.0195,
+          "y_m": 3870703.9748,
+          "name": {
+            "en": "Storage",
+            "fa": "انباری"
+          },
+          "category": "storage",
+          "category_label": {
+            "en": "Storage",
+            "fa": "انباری"
+          },
+          "level_m": 1657.4,
+          "level_name": {
+            "en": "Quiet / guest level",
+            "fa": "تراز آرام / مهمان"
+          },
+          "window": false,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 9.5,
+          "v": 11.1,
+          "width_m": 1.7,
+          "depth_m": 1.7,
+          "x_m": 623747.5458,
+          "y_m": 3870698.0791,
+          "name": {
+            "en": "Laundry",
+            "fa": "رختشویخانه"
+          },
+          "category": "service",
+          "category_label": {
+            "en": "Service",
+            "fa": "خدمات"
+          },
+          "level_m": 1657.4,
+          "level_name": {
+            "en": "Quiet / guest level",
+            "fa": "تراز آرام / مهمان"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 6.1,
+          "v": 11.7,
+          "width_m": 3.3,
+          "depth_m": 1.1,
+          "x_m": 623745.7726,
+          "y_m": 3870700.0042,
+          "name": {
+            "en": "Circulation C1",
+            "fa": "راهرو C۱"
+          },
+          "category": "circulation",
+          "category_label": {
+            "en": "Circulation",
+            "fa": "گردش"
+          },
+          "level_m": 1657.4,
+          "level_name": {
+            "en": "Quiet / guest level",
+            "fa": "تراز آرام / مهمان"
+          },
+          "window": false,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": -1.5,
+          "v": 13,
+          "width_m": 5.8,
+          "depth_m": 5,
+          "x_m": 623743.0861,
+          "y_m": 3870706.6123,
+          "name": {
+            "en": "Living / dining",
+            "fa": "نشیمن / غذاخوری"
+          },
+          "category": "living",
+          "category_label": {
+            "en": "Living",
+            "fa": "نشیمن"
+          },
+          "level_m": 1655.6,
+          "level_name": {
+            "en": "Courtyard / family level",
+            "fa": "تراز حیاط / خانوادگی"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 9,
+          "v": 13,
+          "width_m": 3.2,
+          "depth_m": 4.2,
+          "x_m": 623749.7922,
+          "y_m": 3870700.3014,
+          "name": {
+            "en": "Kitchen",
+            "fa": "آشپزخانه"
+          },
+          "category": "kitchen",
+          "category_label": {
+            "en": "Kitchen",
+            "fa": "آشپزخانه"
+          },
+          "level_m": 1655.6,
+          "level_name": {
+            "en": "Courtyard / family level",
+            "fa": "تراز حیاط / خانوادگی"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 4.5,
+          "v": 17.4,
+          "width_m": 4.3,
+          "depth_m": 1,
+          "x_m": 623748.6293,
+          "y_m": 3870705.0014,
+          "name": {
+            "en": "Circulation C2",
+            "fa": "راهرو C۲"
+          },
+          "category": "circulation",
+          "category_label": {
+            "en": "Circulation",
+            "fa": "گردش"
+          },
+          "level_m": 1655.6,
+          "level_name": {
+            "en": "Courtyard / family level",
+            "fa": "تراز حیاط / خانوادگی"
+          },
+          "window": false,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": -2.2,
+          "v": 18.5,
+          "width_m": 4.2,
+          "depth_m": 4,
+          "x_m": 623745.2153,
+          "y_m": 3870711.3785,
+          "name": {
+            "en": "Master bedroom",
+            "fa": "اتاق خواب اصلی"
+          },
+          "category": "bedroom",
+          "category_label": {
+            "en": "Bedroom",
+            "fa": "خواب"
+          },
+          "level_m": 1653.8,
+          "level_name": {
+            "en": "Lower bedroom level",
+            "fa": "تراز پایین خواب"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 2.3,
+          "v": 18.5,
+          "width_m": 3.2,
+          "depth_m": 3.5,
+          "x_m": 623748.0813,
+          "y_m": 3870708.5769,
+          "name": {
+            "en": "Bedroom 2",
+            "fa": "اتاق خواب ۲"
+          },
+          "category": "bedroom",
+          "category_label": {
+            "en": "Bedroom",
+            "fa": "خواب"
+          },
+          "level_m": 1653.8,
+          "level_name": {
+            "en": "Lower bedroom level",
+            "fa": "تراز پایین خواب"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 5.8,
+          "v": 18.5,
+          "width_m": 3.2,
+          "depth_m": 3.5,
+          "x_m": 623750.7319,
+          "y_m": 3870706.2913,
+          "name": {
+            "en": "Bedroom 3",
+            "fa": "اتاق خواب ۳"
+          },
+          "category": "bedroom",
+          "category_label": {
+            "en": "Bedroom",
+            "fa": "خواب"
+          },
+          "level_m": 1653.8,
+          "level_name": {
+            "en": "Lower bedroom level",
+            "fa": "تراز پایین خواب"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 9.3,
+          "v": 18.5,
+          "width_m": 2.3,
+          "depth_m": 2.5,
+          "x_m": 623752.7152,
+          "y_m": 3870703.9208,
+          "name": {
+            "en": "Bathroom 2",
+            "fa": "حمام ۲"
+          },
+          "category": "bath",
+          "category_label": {
+            "en": "Bathroom",
+            "fa": "حمام"
+          },
+          "level_m": 1653.8,
+          "level_name": {
+            "en": "Lower bedroom level",
+            "fa": "تراز پایین خواب"
+          },
+          "window": true,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        },
+        {
+          "u": 9.3,
+          "v": 21.2,
+          "width_m": 2.3,
+          "depth_m": 1.3,
+          "x_m": 623754.0866,
+          "y_m": 3870705.5112,
+          "name": {
+            "en": "Circulation C3",
+            "fa": "راهرو C۳"
+          },
+          "category": "circulation",
+          "category_label": {
+            "en": "Circulation",
+            "fa": "گردش"
+          },
+          "level_m": 1653.8,
+          "level_name": {
+            "en": "Lower bedroom level",
+            "fa": "تراز پایین خواب"
+          },
+          "window": false,
+          "height_m": 3.08,
+          "height_source": "underside-of-mono-pitch-roof"
+        }
+      ],
+      "roofs": [
+        {
+          "u": -0.5,
+          "v": 7.7,
+          "width_m": 12.2,
+          "depth_m": 5.4,
+          "x_m": 623742.9363,
+          "y_m": 3870700.0072,
+          "elevation_m": 1660.48,
+          "slope_percent": 6
+        },
+        {
+          "u": -1.9,
+          "v": 12.6,
+          "width_m": 14.3,
+          "depth_m": 6,
+          "x_m": 623746.067,
+          "y_m": 3870704.1738,
+          "elevation_m": 1658.68,
+          "slope_percent": 6
+        },
+        {
+          "u": -2.6,
+          "v": 18.1,
+          "width_m": 14.5,
+          "depth_m": 5,
+          "x_m": 623748.8779,
+          "y_m": 3870708.3522,
+          "elevation_m": 1656.88,
+          "slope_percent": 6
+        }
+      ],
+      "garage": {
+        "u": 2,
+        "v": 1.8,
+        "width_m": 6.2,
+        "depth_m": 5.8,
+        "x_m": 623738.8353,
+        "y_m": 3870696.017,
+        "level_m": 1659.2,
+        "height_m": null,
+        "height_source": "nothing-above"
+      },
+      "courtyard": {
+        "u": 4.6,
+        "v": 13,
+        "width_m": 4.2,
+        "depth_m": 4.2,
+        "x_m": 623746.8386,
+        "y_m": 3870702.8482,
+        "level_m": 1655.56,
+        "drainage_open": true
+      },
+      "retaining": [
+        {
+          "u": -0.2,
+          "v": 7.65,
+          "width_m": 10.8,
+          "depth_m": 0.25,
+          "x_m": 623740.9191,
+          "y_m": 3870698.2804,
+          "level_m": 1656,
+          "height_m": 1.6,
+          "height_source": "given-in-concept-data"
+        },
+        {
+          "u": -1.5,
+          "v": 12.55,
+          "width_m": 12.4,
+          "depth_m": 0.25,
+          "x_m": 623743.7404,
+          "y_m": 3870702.3178,
+          "level_m": 1654.2,
+          "height_m": 1.6,
+          "height_source": "given-in-concept-data"
+        },
+        {
+          "u": -2.1,
+          "v": 18.05,
+          "width_m": 12.8,
+          "depth_m": 0.25,
+          "x_m": 623747.0292,
+          "y_m": 3870706.7443,
+          "level_m": 1652.4,
+          "height_m": 1.6,
+          "height_source": "given-in-concept-data"
+        }
+      ],
+      "stairs": [
+        {
+          "u": 0.5,
+          "v": 5.8,
+          "x_m": 623736.0699,
+          "y_m": 3870699.854,
+          "top_m": 1659.2,
+          "bottom_m": 1657.4,
+          "risers": 11,
+          "going_m": 0.28,
+          "width_m": 0.95
+        },
+        {
+          "u": 6.2,
+          "v": 10.8,
+          "x_m": 623743.6519,
+          "y_m": 3870699.9183,
+          "top_m": 1657.4,
+          "bottom_m": 1655.6,
+          "risers": 11,
+          "going_m": 0.28,
+          "width_m": 0.95
+        },
+        {
+          "u": 9.4,
+          "v": 16,
+          "x_m": 623749.4711,
+          "y_m": 3870701.7666,
+          "top_m": 1655.6,
+          "bottom_m": 1653.8,
+          "risers": 11,
+          "going_m": 0.28,
+          "width_m": 0.95
+        }
+      ],
+      "validation": [],
+      "source_validation_withheld": {
+        "en": "Workspace pass/fail claims that depend on unmeasured road, ground or drainage evidence are withheld. Geometry containment and room-schedule checks remain study-level only.",
+        "fa": "ادعاهای قبول/رد فضای کار که به شواهد اندازه‌گیری‌نشده راه، زمین یا زهکشی وابسته‌اند منتشر نمی‌شوند. کنترل هندسه و جدول اتاق فقط در سطح مطالعه است."
+      },
+      "brief_alignment": {
+        "en": "Fits best with the household brief: stepped bars track the slope; garage at upper road; courtyard for outdoor life; living–kitchen–courtyard composition; closest to “two levels split following the slope.” Gaps: longer circulation; more roof/drainage junctions; garage bay still modest for two cars + workshop flex; outdoor water feature not modelled. Strongest starting sketch for discussion — still not a selected design.",
+        "fa": "بهترین همخوانی با شرح خانوار: نوارهای پله‌ای شیب را دنبال می‌کنند؛ گاراژ در راه بالایی؛ حیاط برای زندگی بیرون؛ ترکیب نشیمن–آشپزخانه–حیاط؛ نزدیک‌ترین به «دو تراز شکسته روی شیب». فاصله‌ها: گردش طولانی‌تر؛ اتصالات بام/زهکشی بیشتر؛ گاراژ هنوز برای دو خودرو + کارگاه تنگ؛ عنصر آبی مدل نشده. قوی‌ترین اسکچ آغازین برای گفتگو — هنوز طرح انتخاب‌شده نیست."
+      },
+      "isometric_image": "assets/diagrams/concepts/option-c-isometric.png",
+      "profile": {
+        "what_it_is": {
+          "en": "A stepped courtyard house: four smaller bars/pavilions follow the slope down from the road — garage, quiet/guest wing, living–courtyard wing, and bedroom wing — around an open-to-sky courtyard. About 138 m² internal, 36 m² garage/workshop, 18 m² courtyard, ~234 m² footprint.",
+          "fa": "خانه حیاط‌دار پله‌ای: چهار نوار/غرفه کوچک‌تر شیب را از راه پایین می‌آیند — گاراژ، بال آرام/مهمان، بال نشیمن–حیاط، و بال خواب — دور یک حیاط باز به آسمان. حدود ۱۳۸ مترمربع داخلی، ۳۶ مترمربع گاراژ/کارگاه، ۱۸ مترمربع حیاط، حدود ۲۳۴ مترمربع سطح اشغال."
+        },
+        "how_it_works": {
+          "en": "Three main finished bands. Quiet / guest (~1657.4 m): entry, office, bedroom 4, bath 1, storage, laundry. Courtyard / family (~1655.6 m): living/dining and kitchen opening to the courtyard. Lower bedroom (~1653.8 m): master + bedrooms 2–3 and bath 2. Garage stays high at the road. Retaining is distributed in shorter walls rather than one deep cut. Courtyard falls conceptually to a NE slot drain.",
+          "fa": "سه نوار اصلی. آرام / مهمان (~۱۶۵۷٫۴ m): ورودی، دفتر، اتاق‌خواب ۴، حمام ۱، انبار، رختشوی‌خانه. حیاط / خانواده (~۱۶۵۵٫۶ m): نشیمن/ناهارخوری و آشپزخانه رو به حیاط. خواب پایین (~۱۶۵۳٫۸ m): سوئیت + اتاق‌های ۲–۳ و حمام ۲. گاراژ بالا در راه می‌ماند. حائل در دیوارهای کوتاه‌تر پخش است نه یک برش عمیق. حیاط مفهومی به زهکش شمال‌شرق می‌ریزد."
+        },
+        "program": {
+          "en": "Full family program with the strongest outdoor room: living and kitchen share the courtyard level; bedrooms split between quiet upper guest and lower bedroom wing. Closest spatial idea to “two levels split following the slope” plus a real courtyard for children and outdoor life.",
+          "fa": "برنامه کامل خانواده با قوی‌ترین فضای بیرونی: نشیمن و آشپزخانه در تراز حیاط؛ اتاق‌خواب‌ها بین بال آرام بالایی و بال خواب پایین تقسیم می‌شوند. نزدیک‌ترین ایده فضایی به «دو تراز شکسته روی شیب» به‌همراه حیاط واقعی برای کودکان و زندگی بیرون."
+        },
+        "strengths": [
+          {
+            "en": "Closest fit to the steep terrain and household “stepped” preference",
+            "fa": "نزدیک‌ترین به زمین پرشیب و ترجیح «پله‌ای» خانوار"
+          },
+          {
+            "en": "Best living–kitchen–courtyard relationship for outdoor play",
+            "fa": "بهترین رابطه نشیمن–آشپزخانه–حیاط برای بازی بیرون"
+          },
+          {
+            "en": "Shorter distributed retaining instead of one deep wall",
+            "fa": "حائل کوتاه و پخش‌شده به‌جای یک دیوار عمیق"
+          },
+          {
+            "en": "Garage remains at the high usable upper road",
+            "fa": "گاراژ در راه بالایی قابل‌استفاده می‌ماند"
+          }
+        ],
+        "tradeoffs": [
+          {
+            "en": "Largest distributed footprint and longest indoor circulation",
+            "fa": "بزرگ‌ترین سطح اشغال پخش‌شده و طولانی‌ترین گردش داخلی"
+          },
+          {
+            "en": "More roof edges, stairs and drainage junctions to detail",
+            "fa": "لبه‌های بام، پله و اتصالات زهکشی بیشتر برای جزئیات"
+          },
+          {
+            "en": "Garage/workshop still needs upsizing for two cars + carpentry flex",
+            "fa": "گاراژ/کارگاه هنوز برای دو خودرو + نجاری باید بزرگ‌تر شود"
+          },
+          {
+            "en": "Outdoor fountain/pool not modelled — later garden phase",
+            "fa": "فواره/استخر مدل نشده — فاز بعدی باغ"
+          }
+        ]
+      }
+    }
+  ]
+}

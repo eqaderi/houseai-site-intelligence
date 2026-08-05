@@ -1,0 +1,272 @@
+{
+  "coordinate_units": "metres",
+  "coordinate_reference_system": {
+    "status": "strong-probable",
+    "epsg": "EPSG:32638",
+    "name": "WGS 84 / UTM zone 38N",
+    "note": {
+      "en": "Interpreting the survey as WGS 84 / UTM zone 38N places every point coherently near Baneh Verdeh, Paveh County. This is a strong-probable project location for regional analysis; the CRS is not surveyor-certified.",
+      "fa": "اگر مختصات نقشه را WGS 84 / UTM زون ۳۸ شمالی در نظر بگیریم، همه نقاط نزدیک بانه‌ورده در شهرستان پاوه قرار می‌گیرند. می‌توان از این موقعیت برای بررسی داده‌های منطقه‌ای استفاده کرد، اما نقشه‌بردار هنوز CRS را تأیید نکرده است."
+    }
+  },
+  "points": [
+    {
+      "id": "Pt1",
+      "number": 1,
+      "x_m": 623739.6817193344,
+      "y_m": 3870689.080965455,
+      "latitude": 34.97120697,
+      "longitude": 46.35550831,
+      "elevation_m": 1659.363,
+      "role": "outer-boundary",
+      "association_distance_m": 1.2728468498211927,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2AE"
+    },
+    {
+      "id": "Pt2",
+      "number": 2,
+      "x_m": 623731.9036181533,
+      "y_m": 3870695.788106064,
+      "latitude": 34.97126839,
+      "longitude": 46.35542412,
+      "elevation_m": 1659.653,
+      "role": "outer-boundary",
+      "association_distance_m": 2.9746758667703075,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2AF"
+    },
+    {
+      "id": "Pt3",
+      "number": 3,
+      "x_m": 623736.7070000051,
+      "y_m": 3870706.66,
+      "latitude": 34.97136581,
+      "longitude": 46.35547834,
+      "elevation_m": 1655.849,
+      "role": "outer-boundary",
+      "association_distance_m": 3.8751853782533336,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2B0"
+    },
+    {
+      "id": "Pt4",
+      "number": 4,
+      "x_m": 623742.2007102777,
+      "y_m": 3870719.094371719,
+      "latitude": 34.97147723,
+      "longitude": 46.35554035,
+      "elevation_m": 1650.149,
+      "role": "outer-boundary",
+      "association_distance_m": 1.6700151215891386,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2B1"
+    },
+    {
+      "id": "Pt5",
+      "number": 5,
+      "x_m": 623752.3461939534,
+      "y_m": 3870715.027711411,
+      "latitude": 34.97143933,
+      "longitude": 46.35565086,
+      "elevation_m": 1648.989,
+      "role": "outer-boundary",
+      "association_distance_m": 1.440719638592631,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2B3"
+    },
+    {
+      "id": "Pt6",
+      "number": 6,
+      "x_m": 623760.626660687,
+      "y_m": 3870711.476096191,
+      "latitude": 34.9714063,
+      "longitude": 46.35574102,
+      "elevation_m": 1647.899,
+      "role": "outer-boundary",
+      "association_distance_m": 1.4513394384486917,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2B4"
+    },
+    {
+      "id": "Pt7",
+      "number": 7,
+      "x_m": 623754.4539255477,
+      "y_m": 3870697.717217947,
+      "latitude": 34.97128302,
+      "longitude": 46.35567137,
+      "elevation_m": 1653.485,
+      "role": "outer-boundary",
+      "association_distance_m": 0.65179352645141,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2B5"
+    },
+    {
+      "id": "Pt8",
+      "number": 8,
+      "x_m": 623747.3029420283,
+      "y_m": 3870701.320644192,
+      "latitude": 34.97131638,
+      "longitude": 46.35559359,
+      "elevation_m": 1654.509,
+      "role": "interior-terrain",
+      "association_distance_m": 1.9003950521239086,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2B6"
+    }
+  ],
+  "original_polygons": [
+    {
+      "id": "A",
+      "name": "Polygon A",
+      "point_order": [
+        "Pt3",
+        "Pt8",
+        "Pt5",
+        "Pt4"
+      ],
+      "area_m2": 160.33038740936678,
+      "perimeter_m": 50.99468165766218,
+      "side_lengths_m": [
+        11.865188907302484,
+        14.605412754480618,
+        10.93016765993551,
+        13.593912335943568
+      ],
+      "source_handle": "271",
+      "source_layer": "0",
+      "source_type": "LWPOLYLINE",
+      "source_closed_flag": false,
+      "repeated_endpoint_closure": true,
+      "embedded_area_label_m2": 160.33,
+      "embedded_area_delta_m2": 0.0003874093667661782
+    },
+    {
+      "id": "B",
+      "name": "Polygon B",
+      "point_order": [
+        "Pt8",
+        "Pt7",
+        "Pt6",
+        "Pt5"
+      ],
+      "area_m2": 126.02255589621514,
+      "perimeter_m": 46.70308616916363,
+      "side_lengths_m": [
+        8.007574289258201,
+        15.080099125553835,
+        9.009999999870981,
+        14.605412754480618
+      ],
+      "source_handle": "272",
+      "source_layer": "0",
+      "source_type": "LWPOLYLINE",
+      "source_closed_flag": false,
+      "repeated_endpoint_closure": true,
+      "embedded_area_label_m2": 126.02,
+      "embedded_area_delta_m2": 0.002555896215142184
+    },
+    {
+      "id": "C",
+      "name": "Polygon C",
+      "point_order": [
+        "Pt8",
+        "Pt3",
+        "Pt2",
+        "Pt1",
+        "Pt7"
+      ],
+      "area_m2": 201.07562464064412,
+      "perimeter_m": 59.14054694005294,
+      "side_lengths_m": [
+        11.865188907302484,
+        11.885729046886786,
+        10.270569269952304,
+        17.111485426653168,
+        8.007574289258201
+      ],
+      "source_handle": "273",
+      "source_layer": "0",
+      "source_type": "LWPOLYLINE",
+      "source_closed_flag": true,
+      "repeated_endpoint_closure": false,
+      "embedded_area_label_m2": 201.07,
+      "embedded_area_delta_m2": 0.005624640644128931
+    }
+  ],
+  "unified_edges": [
+    {
+      "from": "Pt2",
+      "to": "Pt1",
+      "length_m": 10.270569269952302,
+      "role": "road-boundary"
+    },
+    {
+      "from": "Pt1",
+      "to": "Pt7",
+      "length_m": 17.111485426653168,
+      "role": "property-boundary"
+    },
+    {
+      "from": "Pt7",
+      "to": "Pt6",
+      "length_m": 15.080099125553833,
+      "role": "property-boundary"
+    },
+    {
+      "from": "Pt6",
+      "to": "Pt5",
+      "length_m": 9.00999999987098,
+      "role": "property-boundary"
+    },
+    {
+      "from": "Pt5",
+      "to": "Pt4",
+      "length_m": 10.93016765993551,
+      "role": "property-boundary"
+    },
+    {
+      "from": "Pt4",
+      "to": "Pt3",
+      "length_m": 13.593912335943568,
+      "role": "property-boundary"
+    },
+    {
+      "from": "Pt3",
+      "to": "Pt2",
+      "length_m": 11.885729046886786,
+      "role": "property-boundary"
+    }
+  ],
+  "label_association": {
+    "method": {
+      "en": "Each SurveyPoint MTEXT label is associated with its nearest vertex; the offset is published, not hidden.",
+      "fa": "هر برچسب MTEXT از نوع SurveyPoint به نزدیک‌ترین رأس مرتبط می‌شود؛ فاصله اعلام می‌شود و پنهان نمی‌ماند."
+    },
+    "max_offset_m": 3.8751853782533336,
+    "max_offset_point_id": "Pt3",
+    "note": {
+      "en": "Maximum elevation-label association offset is 3.875 m at Pt3. Contours and TIN facets inherit that geometric uncertainty.",
+      "fa": "بیشینه فاصله ارتباط برچسب تراز 3.875 متر در Pt3 است. خطوط تراز و وجوه TIN همان عدم‌قطعیت هندسی را به ارث می‌برند."
+    }
+  },
+  "methodology": {
+    "en": "Eight SurveyPoint MTEXT labels were uniquely associated with their nearest boundary vertices. Plan areas use translated-origin shoelace calculations; distances use independent Euclidean checks.",
+    "fa": "هشت برچسب MTEXT از نوع SurveyPoint به نزدیک‌ترین رأس مرز به‌طور یکتا مرتبط شدند. مساحت‌ها با فرمول بندکفش و مبدأ انتقال‌یافته و فاصله‌ها با کنترل مستقل اقلیدسی محاسبه شدند."
+  },
+  "integrity": {
+    "dwg_sha256": "5d784e17a4efeeeae61235b729369ed28786317d6bacbeb2e529db6177309898",
+    "dxf_sha256": "4f9a98871c861b0de421126f6561c951cb35fa8725b0c04170e30de0c98f621e",
+    "version_manifest": "assets/data/site-base-SHA256SUMS.txt",
+    "original_verification_passed": true,
+    "unified_verification_passed": true
+  }
+}

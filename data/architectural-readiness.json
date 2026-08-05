@@ -1,0 +1,123 @@
+{
+  "status": "concept-design-blocked",
+  "summary": {
+    "en": "The household brief is complete enough for concept sketching: house high near the upper road, six people, 2–3-car garage and workshop, climate-first insulated envelope, 1–2 year primary build, unlimited budget preference for quality. Formal concept still waits on geotech, measured road geometry, utility connection agreements, and survey/cadastral certification. Unlimited budget does not remove those gates.",
+    "fa": "شرح خانوار برای اسکچ مفهومی کامل است: خانه بالا نزدیک راه بالایی، شش نفر، گاراژ دو–سه خودرو و کارگاه، پوسته عایق‌دار اقلیمی، ساخت اصلی یک تا دو سال، بودجه نامحدود برای کیفیت. مفهوم رسمی هنوز به ژئوتکنیک، هندسه اندازه‌گیری‌شده راه، توافق انشعاب و تأیید نقشه‌برداری/ثبت نیاز دارد. بودجه نامحدود آن دروازه‌ها را برنمی‌دارد."
+  },
+  "states": [
+    {
+      "id": "usable-now",
+      "status": "usable-now",
+      "label": {
+        "en": "Usable now",
+        "fa": "قابل استفاده اکنون"
+      },
+      "purpose": {
+        "en": "Site strategy and consultant briefing",
+        "fa": "راهبرد سایت و توجیه مشاوران"
+      },
+      "evidence": [
+        {
+          "en": "Verified drawing geometry and 487.428568 m² plan-area calculation",
+          "fa": "هندسه ترسیمی و محاسبه مساحت پلان ۴۸۷٫۴۲۸۵۶۸ مترمربع"
+        },
+        {
+          "en": "Seven outer drawing points, Pt8 terrain point, Pt2–Pt1 road edge and drawing +Y north",
+          "fa": "هفت نقطه بیرونی نقشه، نقطه زمین Pt8، لبه راه Pt2–Pt1 و شمال ‎+Y نقشه"
+        },
+        {
+          "en": "Eight spot elevations and seven TIN facets for understanding the general northeast fall",
+          "fa": "هشت تراز نقطه‌ای و هفت وجه TIN برای شناخت افت عمومی شمال‌شرقی"
+        },
+        {
+          "en": "Traceable regional climate, solar, wind and hazard evidence for briefing—not design loads",
+          "fa": "شواهد قابل‌ردیابی منطقه‌ای اقلیم، خورشید، باد و مخاطرات برای توجیه—نه بارگذاری طراحی"
+        },
+        {
+          "en": "Complete household brief: six people; high upper-road house; 2–3 cars + workshop; high insulation + passive summer comfort; 1–2 year primary timeline; unlimited budget for envelope quality",
+          "fa": "شرح کامل خانوار: شش نفر؛ خانه بالا نزدیک راه بالایی؛ دو–سه خودرو + کارگاه؛ عایق قوی + آسایش تابستانی غیرفعال؛ افق اصلی ۱–۲ سال؛ بودجه نامحدود برای کیفیت پوسته"
+        }
+      ]
+    },
+    {
+      "id": "preliminary-only",
+      "status": "preliminary-only",
+      "label": {
+        "en": "Preliminary only",
+        "fa": "فقط مقدماتی"
+      },
+      "purpose": {
+        "en": "Questions and options to test",
+        "fa": "پرسش‌ها و گزینه‌های قابل آزمون"
+      },
+      "evidence": [
+        {
+          "en": "Probable WGS 84 / UTM 38N interpretation and probable project location",
+          "fa": "تفسیر محتمل WGS 84 / UTM 38N و موقعیت محتمل پروژه"
+        },
+        {
+          "en": "Eight-point TIN, one-metre contours, sections and exploratory platform-depth table",
+          "fa": "TIN هشت‌نقطه‌ای، خطوط تراز یک‌متری، مقاطع و جدول اکتشافی عمق سکو"
+        },
+        {
+          "en": "Regional-grid climate, solar, wind, soil, geology and seismic context",
+          "fa": "زمینه شبکه‌ای منطقه‌ای اقلیم، خورشید، باد، خاک، زمین‌شناسی و زلزله"
+        },
+        {
+          "en": "Main vehicle entry and fire access preferred from upper Pt2–Pt1; optional lower pedestrian/gate access with stairs",
+          "fa": "ورود اصلی خودرو و دسترسی آتش از Pt2–Pt1 بالایی؛ دسترسی اختیاری پایین با دروازه و پله"
+        },
+        {
+          "en": "Utilities (electricity, gas, water) said to exist in the area but not yet to the parcel; connection route most probably from the lower road — unconfirmed",
+          "fa": "تأسیسات (برق، گاز، آب) در منطقه گفته می‌شود هست اما هنوز به قطعه نرسیده؛ مسیر انشعاب احتمالاً از راه پایینی — تأییدنشده"
+        },
+        {
+          "en": "Climate-first construction briefing: RC frame + continuous external insulation (not a stamped structural design)",
+          "fa": "توجیه ساخت اقلیمی: قاب بتن‌آرمه + عایق پیوسته بیرونی (نه طرح سازه مُهرشده)"
+        },
+        {
+          "en": "Household reports title documents exist for project use — not cadastral verification or ownership proof",
+          "fa": "خانوار گزارش می‌دهد اسناد مالکیت برای استفاده پروژه موجود است — نه تأیید کاداستر و نه اثبات مالکیت"
+        }
+      ]
+    },
+    {
+      "id": "blocks-concept",
+      "status": "blocks-concept",
+      "label": {
+        "en": "Blocks concept design",
+        "fa": "مانع طراحی مفهومی"
+      },
+      "purpose": {
+        "en": "Resolve before fixing a building footprint or plan",
+        "fa": "پیش از تثبیت سطح اشغال یا پلان حل شود"
+      },
+      "evidence": [
+        {
+          "en": "Certified cadastral boundary geometry, easements, rights-of-way and surveyor-certified CRS — drawing area is not a title",
+          "fa": "هندسه مرز ثبتی/قانونی، حقوق ارتفاقی و عبور و CRS تأییدشده نقشه‌بردار — مساحت ترسیمی سند نیست"
+        },
+        {
+          "en": "Preliminary geotechnical and slope-stability assessment — required before concept",
+          "fa": "ارزیابی اولیه ژئوتکنیک و پایداری شیب — پیش از مفهومی الزامی است"
+        },
+        {
+          "en": "Utility connection agreements (capacity, meter points, cost) — networks nearby ≠ connected to parcel",
+          "fa": "توافق انشعاب تأسیسات (ظرفیت، محل کنتور، هزینه) — شبکه در منطقه ≠ اتصال به قطعه"
+        },
+        {
+          "en": "Measured upper-road grade, gate geometry, swept path for 2–3 cars; lower-gate feasibility on steep ground",
+          "fa": "شیب اندازه‌گیری‌شده راه بالایی، هندسه دروازه، مسیر گردش برای دو–سه خودرو؛ امکان دروازه پایین روی زمین پرشیب"
+        },
+        {
+          "en": "Municipal permit route still applies even if the area is currently undeveloped",
+          "fa": "مسیر مجوز شهرداری حتی اگر منطقه فعلاً خالی باشد برقرار است"
+        },
+        {
+          "en": "Structural and envelope detailing must follow Standard 2800, Topic 6 loads and local geotech — not the dashboard climate briefing alone",
+          "fa": "جزئیات سازه و پوسته باید از استاندارد ۲۸۰۰، بارهای مبحث ۶ و ژئوتکنیک محلی پیروی کند — نه فقط توجیه اقلیمی داشبورد"
+        }
+      ]
+    }
+  ]
+}

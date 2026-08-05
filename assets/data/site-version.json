@@ -1,0 +1,26 @@
+{
+  "site_version": "v1-three-fields",
+  "created_at": "2026-07-29T15:13:17+02:00",
+  "status": "immutable verified master site base",
+  "site_area_m2": 487.428568,
+  "outer_boundary_order": [
+    "Pt2",
+    "Pt1",
+    "Pt7",
+    "Pt6",
+    "Pt5",
+    "Pt4",
+    "Pt3",
+    "Pt2"
+  ],
+  "north_direction": "+Y",
+  "road_boundary": "Pt2-Pt1",
+  "road_boundary_length_m": 10.270569,
+  "elevation_min_m": 1647.899,
+  "elevation_max_m": 1659.653,
+  "total_relief_m": 11.754,
+  "interior_terrain_points": [
+    "Pt8"
+  ],
+  "geometry_policy": "Do not edit this version in place"
+}

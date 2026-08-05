@@ -1,0 +1,157 @@
+{
+  "intro": {
+    "en": "Important claims mapped to source, resolution, period, access date, calculation, confidence and design-use limit.",
+    "fa": "ادعاهای مهم با منبع، تفکیک، دوره، تاریخ دسترسی، محاسبه، اطمینان و حد استفاده طراحی."
+  },
+  "rows": [
+    {
+      "claim": {
+        "en": "Verified plan area 487.428568 m²",
+        "fa": "مساحت پلان تأییدشده ۴۸۷٫۴۲۸۵۶۸ مترمربع"
+      },
+      "source": {
+        "en": "Survey drawing + shoelace recomputation",
+        "fa": "نقشه برداشت + محاسبه بندکفش"
+      },
+      "resolution": {
+        "en": "drawing geometry",
+        "fa": "هندسه ترسیمی"
+      },
+      "period": {
+        "en": "project snapshot v1-three-fields",
+        "fa": "نسخه v1-three-fields"
+      },
+      "accessed": "2026-07-29",
+      "calculation": {
+        "en": "Translated-origin shoelace on seven outer points",
+        "fa": "بندکفش با مبدأ انتقال‌یافته روی هفت نقطه بیرونی"
+      },
+      "confidence": {
+        "en": "verified drawing geometry",
+        "fa": "هندسه ترسیمی تأییدشده"
+      },
+      "design_use": {
+        "en": "Site strategy only — not legal area or title",
+        "fa": "فقط راهبرد سایت — نه مساحت قانونی یا سند"
+      }
+    },
+    {
+      "claim": {
+        "en": "Probable project location near Baneh Verdeh",
+        "fa": "موقعیت محتمل پروژه نزدیک بانه‌ورده"
+      },
+      "source": {
+        "en": "UTM 38N interpretation + Nominatim",
+        "fa": "تفسیر UTM 38N + Nominatim"
+      },
+      "resolution": {
+        "en": "parcel centre",
+        "fa": "مرکز قطعه"
+      },
+      "period": {
+        "en": "2026-07-29 lookup",
+        "fa": "جستجوی ۲۰۲۶-۰۷-۲۹"
+      },
+      "accessed": "2026-07-29",
+      "calculation": {
+        "en": "Survey coordinates read as EPSG:32638",
+        "fa": "مختصات برداشت به‌صورت EPSG:32638"
+      },
+      "confidence": {
+        "en": "strong-probable · not surveyor-certified",
+        "fa": "محتمل قوی · تأیید نقشه‌بردار نیست"
+      },
+      "design_use": {
+        "en": "Regional context only — not cadastral",
+        "fa": "فقط زمینه منطقه‌ای — نه ثبتی"
+      }
+    },
+    {
+      "claim": {
+        "en": "HDD18 ≈ 2585 K·day / CDD18 ≈ 965 K·day",
+        "fa": "HDD18 حدود ۲۵۸۵ و CDD18 حدود ۹۶۵ K·day"
+      },
+      "source": {
+        "en": "ERA5-Land daily 1991–2020",
+        "fa": "ERA5-Land روزانه ۱۹۹۱–۲۰۲۰"
+      },
+      "resolution": {
+        "en": "~11 km grid",
+        "fa": "شبکه حدود ۱۱ کیلومتر"
+      },
+      "period": "1991-01-01/2020-12-31",
+      "accessed": "2026-07-30",
+      "calculation": {
+        "en": "Daily mean against base, summed / 30 years",
+        "fa": "میانگین روزانه نسبت به مبنا، جمع / ۳۰ سال"
+      },
+      "confidence": {
+        "en": "regional climate description",
+        "fa": "توصیف اقلیم منطقه‌ای"
+      },
+      "design_use": {
+        "en": "Briefing only — not energy demand",
+        "fa": "فقط توجیه — نه تقاضای انرژی"
+      }
+    },
+    {
+      "claim": {
+        "en": "Terrain horizon and effective sun hours",
+        "fa": "افق زمین و ساعات خورشید مؤثر"
+      },
+      "source": {
+        "en": "NOAA solar + Open-Meteo DEM ring",
+        "fa": "خورشید NOAA + حلقه DEM Open-Meteo"
+      },
+      "resolution": {
+        "en": "10-minute samples · 90 m DEM",
+        "fa": "نمونه‌های ۱۰ دقیقه‌ای · DEM ۹۰ متری"
+      },
+      "period": {
+        "en": "three season arcs",
+        "fa": "سه قوس فصلی"
+      },
+      "accessed": "2026-07-30",
+      "calculation": {
+        "en": "Precomputed positions with linear interpolation bounds",
+        "fa": "موقعیت‌های پیش‌محاسبه با حد درون‌یابی خطی"
+      },
+      "confidence": {
+        "en": "preliminary — no surveyed horizon or neighbours",
+        "fa": "مقدماتی — بدون افق برداشت یا همسایه"
+      },
+      "design_use": {
+        "en": "Solar study context — not final aperture design",
+        "fa": "زمینه مطالعه خورشید — نه طراحی نهایی بازشو"
+      }
+    },
+    {
+      "claim": {
+        "en": "Seasonal wind roses and summer westerlies",
+        "fa": "گل‌باد فصلی و باد غربی تابستان"
+      },
+      "source": {
+        "en": "ERA5-Land hourly wind 2011–2020",
+        "fa": "باد ساعتی ERA5-Land ۲۰۱۱–۲۰۲۰"
+      },
+      "resolution": {
+        "en": "11 km · 10 m height",
+        "fa": "۱۱ کیلومتر · ارتفاع ۱۰ متر"
+      },
+      "period": "2011-01-01/2020-12-31",
+      "accessed": "2026-07-30",
+      "calculation": {
+        "en": "16-direction roses by season",
+        "fa": "گل‌باد ۱۶ جهتی بر حسب فصل"
+      },
+      "confidence": {
+        "en": "regional grid only",
+        "fa": "فقط شبکه منطقه‌ای"
+      },
+      "design_use": {
+        "en": "Not parcel wind, dust or cold-air drainage",
+        "fa": "نه باد قطعه، نه غبار، نه زهکشی هوای سرد"
+      }
+    }
+  ]
+}

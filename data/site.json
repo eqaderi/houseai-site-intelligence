@@ -1,0 +1,245 @@
+{
+  "verified_area_m2": 487.428568,
+  "calculated_area_m2": 487.428567946226,
+  "parcel_sum_m2": 487.42856794622605,
+  "area_verification_passed": true,
+  "property_verification": {
+    "scope": {
+      "en": "Verification applies to geometry extracted from the supplied survey drawing and to its plan-area calculation. It does not establish a legal interest in land.",
+      "fa": "راستی‌آزمایی فقط به هندسه استخراج‌شده از نقشه برداشت ارائه‌شده و محاسبه مساحت پلان آن مربوط است و هیچ حق قانونی نسبت به زمین را اثبات نمی‌کند."
+    },
+    "items": [
+      {
+        "id": "drawing-geometry",
+        "label": {
+          "en": "Drawing geometry",
+          "fa": "هندسه ترسیمی"
+        },
+        "status": "verified"
+      },
+      {
+        "id": "plan-area-calculation",
+        "label": {
+          "en": "Plan-area calculation",
+          "fa": "محاسبه مساحت پلان"
+        },
+        "status": "verified"
+      },
+      {
+        "id": "legal-ownership",
+        "label": {
+          "en": "Legal ownership",
+          "fa": "مالکیت قانونی"
+        },
+        "status": "unresolved"
+      },
+      {
+        "id": "cadastral-boundary",
+        "label": {
+          "en": "Cadastral boundary",
+          "fa": "مرز ثبتی"
+        },
+        "status": "unresolved"
+      },
+      {
+        "id": "easements",
+        "label": {
+          "en": "Easements",
+          "fa": "حقوق ارتفاقی"
+        },
+        "status": "unresolved"
+      },
+      {
+        "id": "rights-of-way",
+        "label": {
+          "en": "Rights-of-way",
+          "fa": "حقوق عبور"
+        },
+        "status": "unresolved"
+      }
+    ]
+  },
+  "outer_boundary_order": [
+    "Pt2",
+    "Pt1",
+    "Pt7",
+    "Pt6",
+    "Pt5",
+    "Pt4",
+    "Pt3",
+    "Pt2"
+  ],
+  "outer_boundary_points": [
+    {
+      "id": "Pt2",
+      "number": 2,
+      "x_m": 623731.9036181533,
+      "y_m": 3870695.788106064,
+      "latitude": 34.97126839,
+      "longitude": 46.35542412,
+      "elevation_m": 1659.653,
+      "role": "outer-boundary",
+      "association_distance_m": 2.9746758667703075,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2AF"
+    },
+    {
+      "id": "Pt1",
+      "number": 1,
+      "x_m": 623739.6817193344,
+      "y_m": 3870689.080965455,
+      "latitude": 34.97120697,
+      "longitude": 46.35550831,
+      "elevation_m": 1659.363,
+      "role": "outer-boundary",
+      "association_distance_m": 1.2728468498211927,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2AE"
+    },
+    {
+      "id": "Pt7",
+      "number": 7,
+      "x_m": 623754.4539255477,
+      "y_m": 3870697.717217947,
+      "latitude": 34.97128302,
+      "longitude": 46.35567137,
+      "elevation_m": 1653.485,
+      "role": "outer-boundary",
+      "association_distance_m": 0.65179352645141,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2B5"
+    },
+    {
+      "id": "Pt6",
+      "number": 6,
+      "x_m": 623760.626660687,
+      "y_m": 3870711.476096191,
+      "latitude": 34.9714063,
+      "longitude": 46.35574102,
+      "elevation_m": 1647.899,
+      "role": "outer-boundary",
+      "association_distance_m": 1.4513394384486917,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2B4"
+    },
+    {
+      "id": "Pt5",
+      "number": 5,
+      "x_m": 623752.3461939534,
+      "y_m": 3870715.027711411,
+      "latitude": 34.97143933,
+      "longitude": 46.35565086,
+      "elevation_m": 1648.989,
+      "role": "outer-boundary",
+      "association_distance_m": 1.440719638592631,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2B3"
+    },
+    {
+      "id": "Pt4",
+      "number": 4,
+      "x_m": 623742.2007102777,
+      "y_m": 3870719.094371719,
+      "latitude": 34.97147723,
+      "longitude": 46.35554035,
+      "elevation_m": 1650.149,
+      "role": "outer-boundary",
+      "association_distance_m": 1.6700151215891386,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2B1"
+    },
+    {
+      "id": "Pt3",
+      "number": 3,
+      "x_m": 623736.7070000051,
+      "y_m": 3870706.66,
+      "latitude": 34.97136581,
+      "longitude": 46.35547834,
+      "elevation_m": 1655.849,
+      "role": "outer-boundary",
+      "association_distance_m": 3.8751853782533336,
+      "source_layer": "SurveyPoint",
+      "source_type": "MTEXT",
+      "source_handle": "2B0"
+    }
+  ],
+  "interior_terrain_points": [
+    "Pt8"
+  ],
+  "perimeter_m": 87.88196286479615,
+  "outer_edges": [
+    {
+      "from": "Pt2",
+      "to": "Pt1",
+      "length_m": 10.270569269952302,
+      "role": "road-boundary"
+    },
+    {
+      "from": "Pt1",
+      "to": "Pt7",
+      "length_m": 17.111485426653168,
+      "role": "property-boundary"
+    },
+    {
+      "from": "Pt7",
+      "to": "Pt6",
+      "length_m": 15.080099125553833,
+      "role": "property-boundary"
+    },
+    {
+      "from": "Pt6",
+      "to": "Pt5",
+      "length_m": 9.00999999987098,
+      "role": "property-boundary"
+    },
+    {
+      "from": "Pt5",
+      "to": "Pt4",
+      "length_m": 10.93016765993551,
+      "role": "property-boundary"
+    },
+    {
+      "from": "Pt4",
+      "to": "Pt3",
+      "length_m": 13.593912335943568,
+      "role": "property-boundary"
+    },
+    {
+      "from": "Pt3",
+      "to": "Pt2",
+      "length_m": 11.885729046886786,
+      "role": "property-boundary"
+    }
+  ],
+  "north": {
+    "direction": "+Y",
+    "label": {
+      "en": "Drawing +Y (confirmed project assumption)",
+      "fa": "جهت ‎+Y نقشه (فرض تأییدشده پروژه)"
+    },
+    "survey_certified": false
+  },
+  "road": {
+    "edge": "Pt2–Pt1",
+    "length_m": 10.270569,
+    "access": {
+      "en": "Main vehicle and everyday entry from the upper Pt2–Pt1 frontage (household preference). Exact gate geometry not surveyed. Optional lower pedestrian/secondary gate remains unconfirmed.",
+      "fa": "ورود اصلی خودرو و روزمره از بر بالایی Pt2–Pt1 (ترجیح خانوار). هندسه دقیق دروازه برداشت نشده. دروازه اختیاری پایین/ثانویه هنوز تأیید نشده."
+    }
+  },
+  "elevation": {
+    "min_m": 1647.899,
+    "max_m": 1659.653,
+    "relief_m": 11.754
+  },
+  "terrain_direction": {
+    "en": "Steepest descent is consistently toward the northeast",
+    "fa": "جهت تندترین نزول در تمام سطوح به سوی شمال‌شرق است"
+  }
+}

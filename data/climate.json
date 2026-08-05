@@ -1,0 +1,809 @@
+{
+  "availability": "available-regional-grid",
+  "confidence": "regional-data",
+  "location": {
+    "latitude": 34.97131638,
+    "longitude": 46.35559359,
+    "utm": {
+      "epsg": "EPSG:32638",
+      "zone": 38,
+      "hemisphere": "N",
+      "datum": "WGS 84"
+    },
+    "timezone": "Asia/Tehran",
+    "utc_offset_hours": 3.5,
+    "confidence": "strong-probable",
+    "certification": "not-surveyor-certified"
+  },
+  "baseline": {
+    "dataset": "ERA5-Land via Open-Meteo Historical Weather API",
+    "period": "1991–2020",
+    "temporal_resolution": "daily",
+    "spatial_resolution": "0.1° (approximately 11 km)",
+    "grid_point": {
+      "latitude": 34.973637,
+      "longitude": 46.31512,
+      "elevation_m": 1640
+    }
+  },
+  "monthly": [
+    {
+      "month": 1,
+      "label": {
+        "en": "Jan",
+        "fa": "ژانویه"
+      },
+      "label_short": {
+        "en": "Jan",
+        "fa": "۱"
+      },
+      "temperature_mean_c": -0.8,
+      "temperature_max_c": 3.3,
+      "temperature_min_c": -4.8,
+      "precipitation_mm": 121.2,
+      "rainfall_mm": 47.5,
+      "snowfall_cm": 52.4,
+      "relative_humidity_percent": 69.1,
+      "solar_radiation_kwh_m2_day": 2.69,
+      "clear_sky_radiation_kwh_m2_day": 3.73,
+      "cloud_cover_percent": 63.5,
+      "sunshine_hours_day": 7.9,
+      "frost_days": 26.2,
+      "hot_days_ge_30c": 0
+    },
+    {
+      "month": 2,
+      "label": {
+        "en": "Feb",
+        "fa": "فوریه"
+      },
+      "label_short": {
+        "en": "Feb",
+        "fa": "۲"
+      },
+      "temperature_mean_c": 0.6,
+      "temperature_max_c": 4.6,
+      "temperature_min_c": -3.4,
+      "precipitation_mm": 125.4,
+      "rainfall_mm": 60.6,
+      "snowfall_cm": 46.1,
+      "relative_humidity_percent": 68,
+      "solar_radiation_kwh_m2_day": 3.62,
+      "clear_sky_radiation_kwh_m2_day": 4.79,
+      "cloud_cover_percent": 62.4,
+      "sunshine_hours_day": 8.5,
+      "frost_days": 21.5,
+      "hot_days_ge_30c": 0
+    },
+    {
+      "month": 3,
+      "label": {
+        "en": "Mar",
+        "fa": "مارس"
+      },
+      "label_short": {
+        "en": "Mar",
+        "fa": "۳"
+      },
+      "temperature_mean_c": 5.3,
+      "temperature_max_c": 9.7,
+      "temperature_min_c": 1,
+      "precipitation_mm": 127.9,
+      "rainfall_mm": 93.9,
+      "snowfall_cm": 24.1,
+      "relative_humidity_percent": 60.9,
+      "solar_radiation_kwh_m2_day": 4.79,
+      "clear_sky_radiation_kwh_m2_day": 6.12,
+      "cloud_cover_percent": 58.4,
+      "sunshine_hours_day": 9.8,
+      "frost_days": 12.6,
+      "hot_days_ge_30c": 0
+    },
+    {
+      "month": 4,
+      "label": {
+        "en": "Apr",
+        "fa": "آوریل"
+      },
+      "label_short": {
+        "en": "Apr",
+        "fa": "۴"
+      },
+      "temperature_mean_c": 11.3,
+      "temperature_max_c": 16,
+      "temperature_min_c": 6.3,
+      "precipitation_mm": 106.5,
+      "rainfall_mm": 103.9,
+      "snowfall_cm": 1.8,
+      "relative_humidity_percent": 56.7,
+      "solar_radiation_kwh_m2_day": 5.8,
+      "clear_sky_radiation_kwh_m2_day": 7.26,
+      "cloud_cover_percent": 58.8,
+      "sunshine_hours_day": 10.8,
+      "frost_days": 1.2,
+      "hot_days_ge_30c": 0
+    },
+    {
+      "month": 5,
+      "label": {
+        "en": "May",
+        "fa": "مه"
+      },
+      "label_short": {
+        "en": "May",
+        "fa": "۵"
+      },
+      "temperature_mean_c": 17.3,
+      "temperature_max_c": 22,
+      "temperature_min_c": 11.7,
+      "precipitation_mm": 45.5,
+      "rainfall_mm": 45.5,
+      "snowfall_cm": 0,
+      "relative_humidity_percent": 44,
+      "solar_radiation_kwh_m2_day": 7.08,
+      "clear_sky_radiation_kwh_m2_day": 8.09,
+      "cloud_cover_percent": 48.6,
+      "sunshine_hours_day": 12.7,
+      "frost_days": 0,
+      "hot_days_ge_30c": 0.1
+    },
+    {
+      "month": 6,
+      "label": {
+        "en": "Jun",
+        "fa": "ژوئن"
+      },
+      "label_short": {
+        "en": "Jun",
+        "fa": "۶"
+      },
+      "temperature_mean_c": 23.7,
+      "temperature_max_c": 29.1,
+      "temperature_min_c": 17.1,
+      "precipitation_mm": 2.5,
+      "rainfall_mm": 2.5,
+      "snowfall_cm": 0,
+      "relative_humidity_percent": 24.6,
+      "solar_radiation_kwh_m2_day": 8.39,
+      "clear_sky_radiation_kwh_m2_day": 8.6,
+      "cloud_cover_percent": 30,
+      "sunshine_hours_day": 13.9,
+      "frost_days": 0,
+      "hot_days_ge_30c": 12.7
+    },
+    {
+      "month": 7,
+      "label": {
+        "en": "Jul",
+        "fa": "ژوئیه"
+      },
+      "label_short": {
+        "en": "Jul",
+        "fa": "۷"
+      },
+      "temperature_mean_c": 27.6,
+      "temperature_max_c": 33.5,
+      "temperature_min_c": 20.3,
+      "precipitation_mm": 0.5,
+      "rainfall_mm": 0.5,
+      "snowfall_cm": 0,
+      "relative_humidity_percent": 20.3,
+      "solar_radiation_kwh_m2_day": 7.84,
+      "clear_sky_radiation_kwh_m2_day": 8.13,
+      "cloud_cover_percent": 29.8,
+      "sunshine_hours_day": 13.8,
+      "frost_days": 0,
+      "hot_days_ge_30c": 29.4
+    },
+    {
+      "month": 8,
+      "label": {
+        "en": "Aug",
+        "fa": "اوت"
+      },
+      "label_short": {
+        "en": "Aug",
+        "fa": "۸"
+      },
+      "temperature_mean_c": 27.6,
+      "temperature_max_c": 33.6,
+      "temperature_min_c": 20.4,
+      "precipitation_mm": 0.3,
+      "rainfall_mm": 0.3,
+      "snowfall_cm": 0,
+      "relative_humidity_percent": 20,
+      "solar_radiation_kwh_m2_day": 7.24,
+      "clear_sky_radiation_kwh_m2_day": 7.51,
+      "cloud_cover_percent": 29,
+      "sunshine_hours_day": 12.6,
+      "frost_days": 0,
+      "hot_days_ge_30c": 30.1
+    },
+    {
+      "month": 9,
+      "label": {
+        "en": "Sep",
+        "fa": "سپتامبر"
+      },
+      "label_short": {
+        "en": "Sep",
+        "fa": "۹"
+      },
+      "temperature_mean_c": 23,
+      "temperature_max_c": 28.7,
+      "temperature_min_c": 16.7,
+      "precipitation_mm": 1.5,
+      "rainfall_mm": 1.5,
+      "snowfall_cm": 0,
+      "relative_humidity_percent": 23.2,
+      "solar_radiation_kwh_m2_day": 6.26,
+      "clear_sky_radiation_kwh_m2_day": 6.48,
+      "cloud_cover_percent": 30.2,
+      "sunshine_hours_day": 11.8,
+      "frost_days": 0,
+      "hot_days_ge_30c": 10
+    },
+    {
+      "month": 10,
+      "label": {
+        "en": "Oct",
+        "fa": "اکتبر"
+      },
+      "label_short": {
+        "en": "Oct",
+        "fa": "۱۰"
+      },
+      "temperature_mean_c": 16.2,
+      "temperature_max_c": 21.6,
+      "temperature_min_c": 11,
+      "precipitation_mm": 42.2,
+      "rainfall_mm": 42.2,
+      "snowfall_cm": 0,
+      "relative_humidity_percent": 36.3,
+      "solar_radiation_kwh_m2_day": 4.47,
+      "clear_sky_radiation_kwh_m2_day": 5.03,
+      "cloud_cover_percent": 45.4,
+      "sunshine_hours_day": 10.3,
+      "frost_days": 0,
+      "hot_days_ge_30c": 0
+    },
+    {
+      "month": 11,
+      "label": {
+        "en": "Nov",
+        "fa": "نوامبر"
+      },
+      "label_short": {
+        "en": "Nov",
+        "fa": "۱۱"
+      },
+      "temperature_mean_c": 7.9,
+      "temperature_max_c": 12.5,
+      "temperature_min_c": 3.7,
+      "precipitation_mm": 84.5,
+      "rainfall_mm": 79.3,
+      "snowfall_cm": 3.7,
+      "relative_humidity_percent": 57.9,
+      "solar_radiation_kwh_m2_day": 3.18,
+      "clear_sky_radiation_kwh_m2_day": 3.91,
+      "cloud_cover_percent": 52.1,
+      "sunshine_hours_day": 8.7,
+      "frost_days": 4.1,
+      "hot_days_ge_30c": 0
+    },
+    {
+      "month": 12,
+      "label": {
+        "en": "Dec",
+        "fa": "دسامبر"
+      },
+      "label_short": {
+        "en": "Dec",
+        "fa": "۱۲"
+      },
+      "temperature_mean_c": 2.4,
+      "temperature_max_c": 6.7,
+      "temperature_min_c": -1.5,
+      "precipitation_mm": 102,
+      "rainfall_mm": 62.5,
+      "snowfall_cm": 28,
+      "relative_humidity_percent": 66.9,
+      "solar_radiation_kwh_m2_day": 2.52,
+      "clear_sky_radiation_kwh_m2_day": 3.35,
+      "cloud_cover_percent": 57,
+      "sunshine_hours_day": 7.8,
+      "frost_days": 18.1,
+      "hot_days_ge_30c": 0
+    }
+  ],
+  "annual": {
+    "mean_temperature_c": 13.6,
+    "precipitation_mm": 760,
+    "rainfall_mm": 540,
+    "snowfall_cm": 156.1,
+    "frost_days": 84,
+    "hot_days_ge_30c": 82,
+    "solar_radiation_kwh_m2_day": 5.33,
+    "relative_humidity_percent": 45.5,
+    "cloud_cover_percent": 47
+  },
+  "extremes_1991_2020": {
+    "highest_daily_max_c": 39.1,
+    "lowest_daily_min_c": -23.1,
+    "highest_daily_precipitation_mm": 83,
+    "highest_daily_gust_kmh": 117
+  },
+  "seasons": {
+    "heating_months": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      10,
+      11,
+      12
+    ],
+    "cooling_months": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "summary": {
+      "en": "Long heating season with cold, snow-capable winters; hot, very dry summers create afternoon overheating and water-stress risk.",
+      "fa": "فصل گرمایش طولانی با زمستان‌های سرد و برف‌پذیر؛ تابستان‌های گرم و بسیار خشک، خطر بیش‌گرمایش بعدازظهر و تنش آبی ایجاد می‌کنند."
+    }
+  },
+  "classification": {
+    "label": {
+      "en": "Mountain Mediterranean pattern: wet/cold winter, hot/dry summer",
+      "fa": "الگوی مدیترانه‌ای کوهستانی: زمستان مرطوب/سرد و تابستان گرم/خشک"
+    },
+    "method_note": {
+      "en": "Descriptive classification from the 1991–2020 monthly record; not a statutory Iranian climate-zone designation.",
+      "fa": "رده‌بندی توصیفی بر پایه رکورد ماهانه ۱۹۹۱–۲۰۲۰ است و جایگزین پهنه‌بندی قانونی اقلیم ایران نیست."
+    }
+  },
+  "future": {
+    "source": "Open-Meteo Climate API; HighResMIP / CMIP6, ERA5-Land statistical downscaling",
+    "scenario_note": {
+      "en": "High-resolution models are broadly comparable to a high-emissions pathway before 2050. Use the range, not a single deterministic forecast.",
+      "fa": "مدل‌های تفکیک‌بالا تا پیش از ۲۰۵۰ تقریباً با مسیر انتشار بالا قابل مقایسه‌اند؛ از دامنه نتایج استفاده شود، نه یک پیش‌بینی قطعی."
+    },
+    "models": [
+      {
+        "model": "EC-Earth3P-HR",
+        "baseline_period": "2001–2020",
+        "future_period": "2031–2050",
+        "mean_temperature_change_c": 1.1,
+        "annual_precipitation_change_percent": -3.5
+      },
+      {
+        "model": "MPI-ESM1-2-XR",
+        "baseline_period": "2001–2020",
+        "future_period": "2031–2050",
+        "mean_temperature_change_c": 1.7,
+        "annual_precipitation_change_percent": -10.8
+      }
+    ]
+  },
+  "limitations": {
+    "en": "Reanalysis and satellite-assimilated grids are regional estimates, not a weather station on the parcel. Mountain microclimate, wind channeling, snow drifting and horizon shading require local observation.",
+    "fa": "بازتحلیل و شبکه‌های تلفیقی ماهواره‌ای برآورد منطقه‌ای‌اند، نه ایستگاه هواشناسی داخل ملک. ریزاقلیم کوهستان، کانالیزه‌شدن باد، تجمع برف و سایه افق به مشاهده محلی نیاز دارد."
+  },
+  "derived": {
+    "status": "derived-regional-statistic",
+    "source_period": "1991–2020 daily ERA5-Land, 10,958 days",
+    "degree_days": {
+      "method": "Daily mean temperature against each base, summed and divided by 30 years.",
+      "note": {
+        "en": "Degree-days describe the climate, not the building. They are not an energy demand, and converting them into one needs a fabric, a system and an occupancy that do not exist yet.",
+        "fa": "درجه-روز اقلیم را توصیف می‌کند، نه ساختمان را. این عدد تقاضای انرژی نیست و تبدیل آن به تقاضا نیازمند پوسته، سامانه و الگوی سکونتی است که هنوز وجود ندارند."
+      },
+      "totals": [
+        {
+          "id": "hdd18",
+          "kind": "hdd",
+          "base_c": 18,
+          "annual_k_day": 2585,
+          "monthly_k_day": [
+            583,
+            492,
+            392,
+            203,
+            54,
+            0,
+            0,
+            0,
+            1,
+            72,
+            303,
+            484
+          ]
+        },
+        {
+          "id": "hdd15_5",
+          "kind": "hdd",
+          "base_c": 15.5,
+          "annual_k_day": 2062,
+          "monthly_k_day": [
+            506,
+            421,
+            315,
+            133,
+            21,
+            0,
+            0,
+            0,
+            0,
+            31,
+            229,
+            406
+          ]
+        },
+        {
+          "id": "cdd10",
+          "kind": "cdd",
+          "base_c": 10,
+          "annual_k_day": 2399,
+          "monthly_k_day": [
+            0,
+            0,
+            8,
+            64,
+            226,
+            411,
+            546,
+            545,
+            389,
+            194,
+            16,
+            1
+          ]
+        },
+        {
+          "id": "cdd18",
+          "kind": "cdd",
+          "base_c": 18,
+          "annual_k_day": 965,
+          "monthly_k_day": [
+            0,
+            0,
+            0,
+            1,
+            31,
+            171,
+            298,
+            297,
+            150,
+            18,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "temperature_percentiles": {
+      "method_note": {
+        "en": "These are empirical percentiles of a 30-year gridded daily series. They are not ASHRAE design conditions, which are defined against station observations and a specified derivation.",
+        "fa": "این‌ها صدک‌های تجربی یک سری روزانه شبکه‌ای ۳۰ ساله‌اند. شرایط طراحی ASHRAE نیستند، که بر پایه مشاهدات ایستگاهی و روش تعریف‌شده مشخص می‌شوند."
+      },
+      "percentile_daily_min_c": -16.3,
+      "percentile_daily_max_c": 37.2,
+      "percentile_daily_mean_low_c": -9.7,
+      "percentile_daily_mean_high_c": 30.8,
+      "absolute_min_c": -23.1,
+      "absolute_max_c": 39.1
+    },
+    "spring_frost": {
+      "status": "derived-regional-statistic",
+      "series": "daily temperature_2m_min, 1991–2020",
+      "method": "Last day at or below each threshold before day 200 of a fixed 365-day calendar, and the first day after it; quantiles across the 30 years.",
+      "dem_elevation_m": 1640,
+      "thresholds": [
+        {
+          "threshold_c": 0,
+          "years_with_a_spring_frost": 30,
+          "last_spring_frost": {
+            "earliest": "03-17",
+            "median": "04-05",
+            "later_than_in_9_years_of_10": "04-17",
+            "latest": "04-24"
+          },
+          "first_autumn_frost": {
+            "earliest": "11-02",
+            "median": "11-21"
+          },
+          "frost_free_days_median": 231
+        },
+        {
+          "threshold_c": -2,
+          "years_with_a_spring_frost": 30,
+          "last_spring_frost": {
+            "earliest": "02-11",
+            "median": "03-25",
+            "later_than_in_9_years_of_10": "04-13",
+            "latest": "04-24"
+          },
+          "first_autumn_frost": {
+            "earliest": "11-06",
+            "median": "11-25"
+          },
+          "frost_free_days_median": 244
+        },
+        {
+          "threshold_c": -4,
+          "years_with_a_spring_frost": 30,
+          "last_spring_frost": {
+            "earliest": "02-11",
+            "median": "03-17",
+            "later_than_in_9_years_of_10": "03-26",
+            "latest": "04-13"
+          },
+          "first_autumn_frost": {
+            "earliest": "11-13",
+            "median": "12-09"
+          },
+          "frost_free_days_median": 268
+        }
+      ],
+      "spring_month_minima": [
+        {
+          "month": 3,
+          "lowest_daily_min_c": -13.1,
+          "mean_daily_min_c": 1
+        },
+        {
+          "month": 4,
+          "lowest_daily_min_c": -10.7,
+          "mean_daily_min_c": 6.3
+        },
+        {
+          "month": 5,
+          "lowest_daily_min_c": 2.2,
+          "mean_daily_min_c": 11.7
+        }
+      ],
+      "chill_hours": null,
+      "chill_note": {
+        "en": "Winter chill is not quantified here: chill hours are defined on hourly temperature and only the daily series is bundled. At this elevation, with the frost record below, chill accumulation is not the factor that limits temperate fruit here — the date of the last spring frost is.",
+        "fa": "سرمانیاز زمستانه اینجا کمّی نشده است: ساعات سرما بر پایه دمای ساعتی تعریف می‌شود و تنها سری روزانه همراه بسته شده است. در این ارتفاع و با رکورد یخبندان زیر، انباشت سرما عامل محدودکننده میوه معتدل اینجا نیست — تاریخ آخرین یخبندان بهاره است."
+      },
+      "bias_note": {
+        "en": "These dates are a floor on the risk, not a bound on it, and the reason is the same one that made the hourly wind fit unusable: the series is an area-averaged reanalysis cell. A single cell cannot resolve cold air draining downhill and pooling on a bench at night, and it averages a whole grid box of terrain into one minimum. The real last frost on this parcel is therefore at least as late as the date given, and the real minimum at least as cold — never the other way round. Treat a date here as the earliest a bud is safe, not the day it is.",
+        "fa": "این تاریخ‌ها کف خطرند، نه سقف آن، و دلیلش همان چیزی است که برازش باد ساعتی را بی‌استفاده کرد: این سری یک سلول بازتحلیل با میانگین پهنه‌ای است. یک سلول نمی‌تواند فرونشست شبانه هوای سرد و جمع‌شدنش روی یک سکو را تفکیک کند و یک جعبه کامل از زمین را به یک کمینه میانگین می‌گیرد. پس آخرین یخبندان واقعی این قطعه دست‌کم به‌اندازه تاریخ داده‌شده دیر است و کمینه واقعی دست‌کم به همان اندازه سرد — هرگز برعکس. هر تاریخ اینجا را زودترین زمان ایمنی جوانه بدانید، نه روز ایمنی آن."
+      },
+      "elevation_note": {
+        "en": "The reanalysis cell sits at 1640 m. The surveyed parcel is above it, and it faces north-east — the coldest aspect available — so the cell describes the neighbourhood rather than this bench.",
+        "fa": "سلول بازتحلیل در ارتفاع 1640 متر قرار دارد. قطعه برداشت‌شده بالاتر از آن است و رو به شمال‌شرق — سردترین جهت ممکن — پس این سلول محله را توصیف می‌کند نه این سکو را."
+      }
+    },
+    "wind_return_periods": {
+      "status": "derived-regional-statistic",
+      "series": "daily wind_gusts_10m_max, 30 annual maxima",
+      "distribution": "Gumbel, method of moments",
+      "observed_max_kmh": 117,
+      "gust_return_period_kmh": {
+        "10": 104.8,
+        "25": 111.3,
+        "50": 116.2,
+        "100": 121
+      },
+      "factors_applied": [],
+      "factors_required": [
+        {
+          "en": "terrain and exposure category",
+          "fa": "رده زمین و مواجهه"
+        },
+        {
+          "en": "topographic speed-up over the ridge",
+          "fa": "ضریب تشدید توپوگرافی روی یال"
+        },
+        {
+          "en": "directionality and importance factors from the applicable code",
+          "fa": "ضرایب جهت و اهمیت از آیین‌نامه مربوط"
+        },
+        {
+          "en": "gust-to-mean conversion appropriate to the code's reference averaging time",
+          "fa": "تبدیل تندباد به میانگین متناسب با زمان میانگین‌گیری مرجع آیین‌نامه"
+        }
+      ],
+      "rejected_fit": {
+        "series": "hourly wind_speed_10m, 2011–2020",
+        "result_50_year_ms": 7,
+        "reason": {
+          "en": "Fitting annual maxima of the hourly mean series gives about 7 m/s at 50 years — roughly four times too low. Hourly means of an already area-averaged reanalysis field smooth away the peaks a return period is meant to capture.",
+          "fa": "برازش بیشینه‌های سالانه سری میانگین ساعتی حدود ۷ متر بر ثانیه در دوره بازگشت ۵۰ ساله می‌دهد — نزدیک به یک‌چهارم مقدار درست. میانگین ساعتیِ میدانی که خود میانگین‌گیری پهنه‌ای شده، قله‌هایی را که دوره بازگشت باید بگیرد هموار می‌کند."
+        }
+      }
+    },
+    "context": {
+      "status": "regional-data",
+      "extract": "OpenStreetMap 5 km bounding box",
+      "nearest_amenities": [
+        {
+          "kind": "place_of_worship",
+          "name": "مسجد جامع بانه وره",
+          "distance_km": 0.215
+        },
+        {
+          "kind": "bank",
+          "name": "Bank Melli Iran",
+          "distance_km": 0.263
+        },
+        {
+          "kind": "place:town",
+          "name": "Baneh Verdeh",
+          "distance_km": 0.411
+        },
+        {
+          "kind": "atm",
+          "name": "Post Bank of Iran",
+          "distance_km": 0.429
+        },
+        {
+          "kind": "atm",
+          "name": null,
+          "distance_km": 0.464
+        },
+        {
+          "kind": "clinic",
+          "name": "درمانگاه",
+          "distance_km": 0.602
+        },
+        {
+          "kind": "school",
+          "name": "دبیرستان پسرانه ابوذرغفاری",
+          "distance_km": 0.687
+        },
+        {
+          "kind": "townhall",
+          "name": "شهرداری بانه وره",
+          "distance_km": 0.688
+        }
+      ],
+      "nearest_power_infrastructure": [
+        {
+          "kind": "line",
+          "voltage": null,
+          "distance_km": 3.558
+        },
+        {
+          "kind": "line",
+          "voltage": "63000",
+          "distance_km": 4.053
+        },
+        {
+          "kind": "line",
+          "voltage": "63000",
+          "distance_km": 4.206
+        }
+      ],
+      "nearest_vegetation": [
+        {
+          "kind": "wood",
+          "distance_km": 1.08
+        },
+        {
+          "kind": "wood",
+          "distance_km": 5.18
+        }
+      ],
+      "building_footprints_in_extract": 0,
+      "building_note": {
+        "en": "The 5 km extract contains no building footprints at all. Neighbour heights, overshadowing and party boundaries therefore cannot be assessed from this source at any confidence, and need a field survey.",
+        "fa": "استخراج ۵ کیلومتری هیچ ردپای ساختمانی ندارد. بنابراین ارتفاع همسایه، سایه‌اندازی و مرزهای مشترک از این منبع با هیچ درجه اطمینانی ارزیابی‌پذیر نیست و برداشت میدانی لازم دارد."
+      },
+      "utility_note": {
+        "en": "The nearest mapped power infrastructure is a transmission line several kilometres away that imposes no easement here. It is not a connection point, and no distribution network is mapped near the parcel.",
+        "fa": "نزدیک‌ترین زیرساخت برق نقشه‌شده، خط انتقالی در چند کیلومتری است که حریمی بر این قطعه تحمیل نمی‌کند. نقطه انشعاب نیست و هیچ شبکه توزیعی نزدیک قطعه نقشه نشده است."
+      }
+    }
+  },
+  "fields": [
+    {
+      "field": "monthly temperature",
+      "label": {
+        "en": "monthly temperature",
+        "fa": "دمای ماهانه"
+      },
+      "value": "°C",
+      "status": "regional-data"
+    },
+    {
+      "field": "rainfall",
+      "label": {
+        "en": "rainfall",
+        "fa": "بارش"
+      },
+      "value": "mm",
+      "status": "regional-data"
+    },
+    {
+      "field": "snowfall",
+      "label": {
+        "en": "snowfall",
+        "fa": "برف"
+      },
+      "value": "cm",
+      "status": "regional-data"
+    },
+    {
+      "field": "humidity",
+      "label": {
+        "en": "humidity",
+        "fa": "رطوبت"
+      },
+      "value": "%",
+      "status": "regional-data"
+    },
+    {
+      "field": "solar radiation",
+      "label": {
+        "en": "solar radiation",
+        "fa": "تابش خورشیدی"
+      },
+      "value": "kWh/m²/day",
+      "status": "regional-data"
+    },
+    {
+      "field": "cloud cover",
+      "label": {
+        "en": "cloud cover",
+        "fa": "پوشش ابر"
+      },
+      "value": "%",
+      "status": "regional-data"
+    },
+    {
+      "field": "frost",
+      "label": {
+        "en": "frost",
+        "fa": "یخبندان"
+      },
+      "value": "days/year",
+      "status": "regional-data"
+    },
+    {
+      "field": "heating and cooling seasons",
+      "label": {
+        "en": "heating and cooling seasons",
+        "fa": "فصل گرمایش و سرمایش"
+      },
+      "value": "months",
+      "status": "regional-data"
+    },
+    {
+      "field": "extreme conditions",
+      "label": {
+        "en": "extreme conditions",
+        "fa": "شرایط حدی"
+      },
+      "value": "1991–2020",
+      "status": "regional-data"
+    },
+    {
+      "field": "climate classification",
+      "label": {
+        "en": "climate classification",
+        "fa": "رده‌بندی اقلیمی"
+      },
+      "value": "descriptive",
+      "status": "regional-data"
+    },
+    {
+      "field": "future climate scenario",
+      "label": {
+        "en": "future climate scenario",
+        "fa": "سناریوی اقلیم آینده"
+      },
+      "value": "2 CMIP6 models",
+      "status": "regional-data"
+    }
+  ],
+  "warning": {
+    "en": "Reanalysis and satellite-assimilated grids are regional estimates, not a weather station on the parcel. Mountain microclimate, wind channeling, snow drifting and horizon shading require local observation.",
+    "fa": "بازتحلیل و شبکه‌های تلفیقی ماهواره‌ای برآورد منطقه‌ای‌اند، نه ایستگاه هواشناسی داخل ملک. ریزاقلیم کوهستان، کانالیزه‌شدن باد، تجمع برف و سایه افق به مشاهده محلی نیاز دارد."
+  }
+}

@@ -1,0 +1,946 @@
+{
+  "availability": "available-regional-grid",
+  "confidence": "regional-data",
+  "dataset": "ERA5-Land via Open-Meteo Historical Weather API",
+  "period": "2011–2020",
+  "height_m": 10,
+  "temporal_resolution": "hourly",
+  "spatial_resolution": "0.1° (approximately 11 km)",
+  "direction_convention": "meteorological direction from which wind blows",
+  "direction_vocabulary": {
+    "N": {
+      "en": "N",
+      "fa": "شمال"
+    },
+    "NNE": {
+      "en": "NNE",
+      "fa": "شمال‌شمال‌شرقی"
+    },
+    "NE": {
+      "en": "NE",
+      "fa": "شمال‌شرقی"
+    },
+    "ENE": {
+      "en": "ENE",
+      "fa": "شرق‌شمال‌شرقی"
+    },
+    "E": {
+      "en": "E",
+      "fa": "شرق"
+    },
+    "ESE": {
+      "en": "ESE",
+      "fa": "شرق‌جنوب‌شرقی"
+    },
+    "SE": {
+      "en": "SE",
+      "fa": "جنوب‌شرقی"
+    },
+    "SSE": {
+      "en": "SSE",
+      "fa": "جنوب‌جنوب‌شرقی"
+    },
+    "S": {
+      "en": "S",
+      "fa": "جنوب"
+    },
+    "SSW": {
+      "en": "SSW",
+      "fa": "جنوب‌جنوب‌غربی"
+    },
+    "SW": {
+      "en": "SW",
+      "fa": "جنوب‌غربی"
+    },
+    "WSW": {
+      "en": "WSW",
+      "fa": "غرب‌جنوب‌غربی"
+    },
+    "W": {
+      "en": "W",
+      "fa": "غرب"
+    },
+    "WNW": {
+      "en": "WNW",
+      "fa": "غرب‌شمال‌غربی"
+    },
+    "NW": {
+      "en": "NW",
+      "fa": "شمال‌غربی"
+    },
+    "NNW": {
+      "en": "NNW",
+      "fa": "شمال‌شمال‌غربی"
+    }
+  },
+  "seasons": [
+    {
+      "season": "annual",
+      "status": "regional-data",
+      "sample_hours": 87672,
+      "mean_speed_ms": 1.7,
+      "p90_speed_ms": 2.9,
+      "calm_percent": 20.4,
+      "prevailing_direction": "E",
+      "prevailing_direction_label": {
+        "en": "E",
+        "fa": "شرق"
+      },
+      "direction_distribution": [
+        {
+          "direction": "N",
+          "label": {
+            "en": "N",
+            "fa": "شمال"
+          },
+          "percent": 2.1
+        },
+        {
+          "direction": "NNE",
+          "label": {
+            "en": "NNE",
+            "fa": "شمال‌شمال‌شرقی"
+          },
+          "percent": 2.1
+        },
+        {
+          "direction": "NE",
+          "label": {
+            "en": "NE",
+            "fa": "شمال‌شرقی"
+          },
+          "percent": 4.5
+        },
+        {
+          "direction": "ENE",
+          "label": {
+            "en": "ENE",
+            "fa": "شرق‌شمال‌شرقی"
+          },
+          "percent": 9.1
+        },
+        {
+          "direction": "E",
+          "label": {
+            "en": "E",
+            "fa": "شرق"
+          },
+          "percent": 21.2
+        },
+        {
+          "direction": "ESE",
+          "label": {
+            "en": "ESE",
+            "fa": "شرق‌جنوب‌شرقی"
+          },
+          "percent": 9.3
+        },
+        {
+          "direction": "SE",
+          "label": {
+            "en": "SE",
+            "fa": "جنوب‌شرقی"
+          },
+          "percent": 6.9
+        },
+        {
+          "direction": "SSE",
+          "label": {
+            "en": "SSE",
+            "fa": "جنوب‌جنوب‌شرقی"
+          },
+          "percent": 3.3
+        },
+        {
+          "direction": "S",
+          "label": {
+            "en": "S",
+            "fa": "جنوب"
+          },
+          "percent": 3.1
+        },
+        {
+          "direction": "SSW",
+          "label": {
+            "en": "SSW",
+            "fa": "جنوب‌جنوب‌غربی"
+          },
+          "percent": 3.2
+        },
+        {
+          "direction": "SW",
+          "label": {
+            "en": "SW",
+            "fa": "جنوب‌غربی"
+          },
+          "percent": 5.3
+        },
+        {
+          "direction": "WSW",
+          "label": {
+            "en": "WSW",
+            "fa": "غرب‌جنوب‌غربی"
+          },
+          "percent": 8.1
+        },
+        {
+          "direction": "W",
+          "label": {
+            "en": "W",
+            "fa": "غرب"
+          },
+          "percent": 10.3
+        },
+        {
+          "direction": "WNW",
+          "label": {
+            "en": "WNW",
+            "fa": "غرب‌شمال‌غربی"
+          },
+          "percent": 5.8
+        },
+        {
+          "direction": "NW",
+          "label": {
+            "en": "NW",
+            "fa": "شمال‌غربی"
+          },
+          "percent": 3.7
+        },
+        {
+          "direction": "NNW",
+          "label": {
+            "en": "NNW",
+            "fa": "شمال‌شمال‌غربی"
+          },
+          "percent": 2.1
+        }
+      ],
+      "speed_distribution": [
+        {
+          "label_ms": "<1",
+          "percent": 20.4
+        },
+        {
+          "label_ms": "1–3",
+          "percent": 70
+        },
+        {
+          "label_ms": "3–5",
+          "percent": 9.6
+        },
+        {
+          "label_ms": "5–8",
+          "percent": 0.1
+        },
+        {
+          "label_ms": "≥8",
+          "percent": 0
+        }
+      ],
+      "season_label": {
+        "en": "Annual",
+        "fa": "سالانه"
+      }
+    },
+    {
+      "season": "winter",
+      "status": "regional-data",
+      "sample_hours": 21672,
+      "mean_speed_ms": 1.6,
+      "p90_speed_ms": 2.6,
+      "calm_percent": 21.8,
+      "prevailing_direction": "E",
+      "prevailing_direction_label": {
+        "en": "E",
+        "fa": "شرق"
+      },
+      "direction_distribution": [
+        {
+          "direction": "N",
+          "label": {
+            "en": "N",
+            "fa": "شمال"
+          },
+          "percent": 1
+        },
+        {
+          "direction": "NNE",
+          "label": {
+            "en": "NNE",
+            "fa": "شمال‌شمال‌شرقی"
+          },
+          "percent": 1.1
+        },
+        {
+          "direction": "NE",
+          "label": {
+            "en": "NE",
+            "fa": "شمال‌شرقی"
+          },
+          "percent": 2.6
+        },
+        {
+          "direction": "ENE",
+          "label": {
+            "en": "ENE",
+            "fa": "شرق‌شمال‌شرقی"
+          },
+          "percent": 8.8
+        },
+        {
+          "direction": "E",
+          "label": {
+            "en": "E",
+            "fa": "شرق"
+          },
+          "percent": 30
+        },
+        {
+          "direction": "ESE",
+          "label": {
+            "en": "ESE",
+            "fa": "شرق‌جنوب‌شرقی"
+          },
+          "percent": 14.8
+        },
+        {
+          "direction": "SE",
+          "label": {
+            "en": "SE",
+            "fa": "جنوب‌شرقی"
+          },
+          "percent": 12.7
+        },
+        {
+          "direction": "SSE",
+          "label": {
+            "en": "SSE",
+            "fa": "جنوب‌جنوب‌شرقی"
+          },
+          "percent": 4.8
+        },
+        {
+          "direction": "S",
+          "label": {
+            "en": "S",
+            "fa": "جنوب"
+          },
+          "percent": 3.8
+        },
+        {
+          "direction": "SSW",
+          "label": {
+            "en": "SSW",
+            "fa": "جنوب‌جنوب‌غربی"
+          },
+          "percent": 3.8
+        },
+        {
+          "direction": "SW",
+          "label": {
+            "en": "SW",
+            "fa": "جنوب‌غربی"
+          },
+          "percent": 5.1
+        },
+        {
+          "direction": "WSW",
+          "label": {
+            "en": "WSW",
+            "fa": "غرب‌جنوب‌غربی"
+          },
+          "percent": 3.9
+        },
+        {
+          "direction": "W",
+          "label": {
+            "en": "W",
+            "fa": "غرب"
+          },
+          "percent": 3
+        },
+        {
+          "direction": "WNW",
+          "label": {
+            "en": "WNW",
+            "fa": "غرب‌شمال‌غربی"
+          },
+          "percent": 2.1
+        },
+        {
+          "direction": "NW",
+          "label": {
+            "en": "NW",
+            "fa": "شمال‌غربی"
+          },
+          "percent": 1.7
+        },
+        {
+          "direction": "NNW",
+          "label": {
+            "en": "NNW",
+            "fa": "شمال‌شمال‌غربی"
+          },
+          "percent": 0.8
+        }
+      ],
+      "speed_distribution": [
+        {
+          "label_ms": "<1",
+          "percent": 21.8
+        },
+        {
+          "label_ms": "1–3",
+          "percent": 74
+        },
+        {
+          "label_ms": "3–5",
+          "percent": 4.2
+        },
+        {
+          "label_ms": "5–8",
+          "percent": 0
+        },
+        {
+          "label_ms": "≥8",
+          "percent": 0
+        }
+      ],
+      "season_label": {
+        "en": "Winter",
+        "fa": "زمستان"
+      }
+    },
+    {
+      "season": "spring",
+      "status": "regional-data",
+      "sample_hours": 22080,
+      "mean_speed_ms": 1.7,
+      "p90_speed_ms": 2.9,
+      "calm_percent": 20.1,
+      "prevailing_direction": "E",
+      "prevailing_direction_label": {
+        "en": "E",
+        "fa": "شرق"
+      },
+      "direction_distribution": [
+        {
+          "direction": "N",
+          "label": {
+            "en": "N",
+            "fa": "شمال"
+          },
+          "percent": 1.6
+        },
+        {
+          "direction": "NNE",
+          "label": {
+            "en": "NNE",
+            "fa": "شمال‌شمال‌شرقی"
+          },
+          "percent": 1.7
+        },
+        {
+          "direction": "NE",
+          "label": {
+            "en": "NE",
+            "fa": "شمال‌شرقی"
+          },
+          "percent": 4.1
+        },
+        {
+          "direction": "ENE",
+          "label": {
+            "en": "ENE",
+            "fa": "شرق‌شمال‌شرقی"
+          },
+          "percent": 6.7
+        },
+        {
+          "direction": "E",
+          "label": {
+            "en": "E",
+            "fa": "شرق"
+          },
+          "percent": 19.4
+        },
+        {
+          "direction": "ESE",
+          "label": {
+            "en": "ESE",
+            "fa": "شرق‌جنوب‌شرقی"
+          },
+          "percent": 11.4
+        },
+        {
+          "direction": "SE",
+          "label": {
+            "en": "SE",
+            "fa": "جنوب‌شرقی"
+          },
+          "percent": 7.9
+        },
+        {
+          "direction": "SSE",
+          "label": {
+            "en": "SSE",
+            "fa": "جنوب‌جنوب‌شرقی"
+          },
+          "percent": 4.1
+        },
+        {
+          "direction": "S",
+          "label": {
+            "en": "S",
+            "fa": "جنوب"
+          },
+          "percent": 3.9
+        },
+        {
+          "direction": "SSW",
+          "label": {
+            "en": "SSW",
+            "fa": "جنوب‌جنوب‌غربی"
+          },
+          "percent": 4.3
+        },
+        {
+          "direction": "SW",
+          "label": {
+            "en": "SW",
+            "fa": "جنوب‌غربی"
+          },
+          "percent": 7.3
+        },
+        {
+          "direction": "WSW",
+          "label": {
+            "en": "WSW",
+            "fa": "غرب‌جنوب‌غربی"
+          },
+          "percent": 9.4
+        },
+        {
+          "direction": "W",
+          "label": {
+            "en": "W",
+            "fa": "غرب"
+          },
+          "percent": 8.7
+        },
+        {
+          "direction": "WNW",
+          "label": {
+            "en": "WNW",
+            "fa": "غرب‌شمال‌غربی"
+          },
+          "percent": 5.1
+        },
+        {
+          "direction": "NW",
+          "label": {
+            "en": "NW",
+            "fa": "شمال‌غربی"
+          },
+          "percent": 3
+        },
+        {
+          "direction": "NNW",
+          "label": {
+            "en": "NNW",
+            "fa": "شمال‌شمال‌غربی"
+          },
+          "percent": 1.4
+        }
+      ],
+      "speed_distribution": [
+        {
+          "label_ms": "<1",
+          "percent": 20.1
+        },
+        {
+          "label_ms": "1–3",
+          "percent": 71.3
+        },
+        {
+          "label_ms": "3–5",
+          "percent": 8.4
+        },
+        {
+          "label_ms": "5–8",
+          "percent": 0.2
+        },
+        {
+          "label_ms": "≥8",
+          "percent": 0
+        }
+      ],
+      "season_label": {
+        "en": "Spring",
+        "fa": "بهار"
+      }
+    },
+    {
+      "season": "summer",
+      "status": "regional-data",
+      "sample_hours": 22080,
+      "mean_speed_ms": 1.9,
+      "p90_speed_ms": 3.3,
+      "calm_percent": 17.8,
+      "prevailing_direction": "W",
+      "prevailing_direction_label": {
+        "en": "W",
+        "fa": "غرب"
+      },
+      "direction_distribution": [
+        {
+          "direction": "N",
+          "label": {
+            "en": "N",
+            "fa": "شمال"
+          },
+          "percent": 3.5
+        },
+        {
+          "direction": "NNE",
+          "label": {
+            "en": "NNE",
+            "fa": "شمال‌شمال‌شرقی"
+          },
+          "percent": 3.6
+        },
+        {
+          "direction": "NE",
+          "label": {
+            "en": "NE",
+            "fa": "شمال‌شرقی"
+          },
+          "percent": 6.5
+        },
+        {
+          "direction": "ENE",
+          "label": {
+            "en": "ENE",
+            "fa": "شرق‌شمال‌شرقی"
+          },
+          "percent": 10.4
+        },
+        {
+          "direction": "E",
+          "label": {
+            "en": "E",
+            "fa": "شرق"
+          },
+          "percent": 13.7
+        },
+        {
+          "direction": "ESE",
+          "label": {
+            "en": "ESE",
+            "fa": "شرق‌جنوب‌شرقی"
+          },
+          "percent": 2.7
+        },
+        {
+          "direction": "SE",
+          "label": {
+            "en": "SE",
+            "fa": "جنوب‌شرقی"
+          },
+          "percent": 1.5
+        },
+        {
+          "direction": "SSE",
+          "label": {
+            "en": "SSE",
+            "fa": "جنوب‌جنوب‌شرقی"
+          },
+          "percent": 1.4
+        },
+        {
+          "direction": "S",
+          "label": {
+            "en": "S",
+            "fa": "جنوب"
+          },
+          "percent": 1.7
+        },
+        {
+          "direction": "SSW",
+          "label": {
+            "en": "SSW",
+            "fa": "جنوب‌جنوب‌غربی"
+          },
+          "percent": 1.8
+        },
+        {
+          "direction": "SW",
+          "label": {
+            "en": "SW",
+            "fa": "جنوب‌غربی"
+          },
+          "percent": 3.6
+        },
+        {
+          "direction": "WSW",
+          "label": {
+            "en": "WSW",
+            "fa": "غرب‌جنوب‌غربی"
+          },
+          "percent": 10.6
+        },
+        {
+          "direction": "W",
+          "label": {
+            "en": "W",
+            "fa": "غرب"
+          },
+          "percent": 18.8
+        },
+        {
+          "direction": "WNW",
+          "label": {
+            "en": "WNW",
+            "fa": "غرب‌شمال‌غربی"
+          },
+          "percent": 10
+        },
+        {
+          "direction": "NW",
+          "label": {
+            "en": "NW",
+            "fa": "شمال‌غربی"
+          },
+          "percent": 6.3
+        },
+        {
+          "direction": "NNW",
+          "label": {
+            "en": "NNW",
+            "fa": "شمال‌شمال‌غربی"
+          },
+          "percent": 3.8
+        }
+      ],
+      "speed_distribution": [
+        {
+          "label_ms": "<1",
+          "percent": 17.8
+        },
+        {
+          "label_ms": "1–3",
+          "percent": 65.9
+        },
+        {
+          "label_ms": "3–5",
+          "percent": 16.3
+        },
+        {
+          "label_ms": "5–8",
+          "percent": 0
+        },
+        {
+          "label_ms": "≥8",
+          "percent": 0
+        }
+      ],
+      "season_label": {
+        "en": "Summer",
+        "fa": "تابستان"
+      }
+    },
+    {
+      "season": "autumn",
+      "status": "regional-data",
+      "sample_hours": 21840,
+      "mean_speed_ms": 1.7,
+      "p90_speed_ms": 2.9,
+      "calm_percent": 21.8,
+      "prevailing_direction": "E",
+      "prevailing_direction_label": {
+        "en": "E",
+        "fa": "شرق"
+      },
+      "direction_distribution": [
+        {
+          "direction": "N",
+          "label": {
+            "en": "N",
+            "fa": "شمال"
+          },
+          "percent": 2.3
+        },
+        {
+          "direction": "NNE",
+          "label": {
+            "en": "NNE",
+            "fa": "شمال‌شمال‌شرقی"
+          },
+          "percent": 2
+        },
+        {
+          "direction": "NE",
+          "label": {
+            "en": "NE",
+            "fa": "شمال‌شرقی"
+          },
+          "percent": 4.7
+        },
+        {
+          "direction": "ENE",
+          "label": {
+            "en": "ENE",
+            "fa": "شرق‌شمال‌شرقی"
+          },
+          "percent": 10.5
+        },
+        {
+          "direction": "E",
+          "label": {
+            "en": "E",
+            "fa": "شرق"
+          },
+          "percent": 21.9
+        },
+        {
+          "direction": "ESE",
+          "label": {
+            "en": "ESE",
+            "fa": "شرق‌جنوب‌شرقی"
+          },
+          "percent": 8.2
+        },
+        {
+          "direction": "SE",
+          "label": {
+            "en": "SE",
+            "fa": "جنوب‌شرقی"
+          },
+          "percent": 5.6
+        },
+        {
+          "direction": "SSE",
+          "label": {
+            "en": "SSE",
+            "fa": "جنوب‌جنوب‌شرقی"
+          },
+          "percent": 3
+        },
+        {
+          "direction": "S",
+          "label": {
+            "en": "S",
+            "fa": "جنوب"
+          },
+          "percent": 2.9
+        },
+        {
+          "direction": "SSW",
+          "label": {
+            "en": "SSW",
+            "fa": "جنوب‌جنوب‌غربی"
+          },
+          "percent": 2.9
+        },
+        {
+          "direction": "SW",
+          "label": {
+            "en": "SW",
+            "fa": "جنوب‌غربی"
+          },
+          "percent": 5
+        },
+        {
+          "direction": "WSW",
+          "label": {
+            "en": "WSW",
+            "fa": "غرب‌جنوب‌غربی"
+          },
+          "percent": 8.5
+        },
+        {
+          "direction": "W",
+          "label": {
+            "en": "W",
+            "fa": "غرب"
+          },
+          "percent": 10.3
+        },
+        {
+          "direction": "WNW",
+          "label": {
+            "en": "WNW",
+            "fa": "غرب‌شمال‌غربی"
+          },
+          "percent": 5.9
+        },
+        {
+          "direction": "NW",
+          "label": {
+            "en": "NW",
+            "fa": "شمال‌غربی"
+          },
+          "percent": 4
+        },
+        {
+          "direction": "NNW",
+          "label": {
+            "en": "NNW",
+            "fa": "شمال‌شمال‌غربی"
+          },
+          "percent": 2.3
+        }
+      ],
+      "speed_distribution": [
+        {
+          "label_ms": "<1",
+          "percent": 21.8
+        },
+        {
+          "label_ms": "1–3",
+          "percent": 68.9
+        },
+        {
+          "label_ms": "3–5",
+          "percent": 9.2
+        },
+        {
+          "label_ms": "5–8",
+          "percent": 0.1
+        },
+        {
+          "label_ms": "≥8",
+          "percent": 0
+        }
+      ],
+      "season_label": {
+        "en": "Autumn",
+        "fa": "پاییز"
+      }
+    }
+  ],
+  "exposure_notes": [
+    {
+      "en": "The 11 km regional grid states prevailing direction and seasonal speed only. Parcel-scale rotation, cold-air drainage, turbulence and slope acceleration are unresolved and must not be inferred from this grid alone.",
+      "fa": "شبکه منطقه‌ای ۱۱ کیلومتری فقط جهت غالب و سرعت فصلی را بیان می‌کند. چرخش در مقیاس ملک، زهکشی هوای سرد، آشفتگی و شتاب شیب حل‌نشده‌اند و نباید فقط از این شبکه استنباط شوند."
+    },
+    {
+      "en": "Cold-wind and hot-wind design claims require temporary on-site anemometer readings before openings are fixed; regional means are not parcel design wind.",
+      "fa": "ادعاهای طراحی درباره باد سرد یا گرم پیش از تثبیت بازشوها به خوانش بادسنج موقت در محل نیاز دارند؛ میانگین منطقه‌ای باد طراحی ملک نیست."
+    },
+    {
+      "en": "Dust concentration, dusty-wind corridors and local deposition are not available from this dataset and remain unresolved.",
+      "fa": "غلظت گردوغبار، کریدور باد غبارآلود و ته‌نشست محلی در این مجموعه‌داده موجود نیست و همچنان حل‌نشده است."
+    }
+  ],
+  "season_for_solar_date": {
+    "winter": "winter",
+    "equinox": "spring",
+    "summer": "summer"
+  },
+  "warning": {
+    "en": "Regional hourly evidence is available; parcel-scale flow still requires short-term on-site measurement.",
+    "fa": "شواهد ساعتی منطقه‌ای موجود است؛ جریان باد در مقیاس ملک همچنان به اندازه‌گیری کوتاه‌مدت در محل نیاز دارد."
+  }
+}

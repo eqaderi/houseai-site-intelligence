@@ -1,0 +1,386 @@
+{
+  "status": "preliminary-engineering-inference",
+  "design_use": {
+    "status": "exploratory-not-for-pricing",
+    "label": {
+      "en": "Exploratory terrain reading — not for quantities or pricing",
+      "fa": "خوانش اکتشافی زمین — نامناسب برای متره یا قیمت‌گذاری"
+    },
+    "note": {
+      "en": "This eight-point, seven-facet TIN has no surveyed breaklines. Its one-metre contours, 0.5 m platform-level steps, areas rounded to 0.1 m², and cut/fill depths are exploratory sensitivity outputs only. They cannot establish construction levels, retaining geometry, earthwork quantities, tender quantities or price.",
+      "fa": "این مدل فقط هشت نقطه و هفت وجه دارد و شکست‌خط‌های واقعی زمین در آن نیست. خطوط تراز یک‌متری، گام ۰٫۵ متری سکو، مساحت‌های ۰٫۱ مترمربعی و عمق برداشت یا خاک‌ریزی فقط برای مقایسه اولیه‌اند. از این اعداد برای تعیین تراز ساخت، دیوار حائل، حجم خاک، متره یا قیمت استفاده نکنید."
+    }
+  },
+  "plan_area_m2": 487.428568,
+  "surface_area_m2": 522.4189,
+  "surface_excess_m2": 34.9903,
+  "surface_excess_percent": 7.18,
+  "level_platform_area_basis": "plan",
+  "difference_note": {
+    "en": "The verified 487.428568 m² is a plan area — a horizontal projection, which is what planning coverage is measured in and what a level slab occupies. The ground's own tilted skin is 522.4189 m², 7.18% more. That excess is not extra buildable land: a level platform cut into a slope has plan area only. It is real in other ways — more topsoil to strip, more area to drain and to retain — but it never becomes floor.",
+    "fa": "مساحت ۴۸۷٫۴۲۸۵۶۸ مترمربع، مساحت افقی قطعه است؛ همان عددی که برای سطح اشغال استفاده می‌شود. سطح شیب‌دار زمین ۵۲۲٫۴۱۸۹ مترمربع است، یعنی ۷٫۱۸ درصد بیشتر. این تفاوت به معنی زمین قابل ساخت بیشتر نیست. فقط نشان می‌دهد سطح بیشتری برای خاک‌برداری سطحی، زهکشی و حفاظت وجود دارد."
+  },
+  "raster": {
+    "cell_m": 0.25,
+    "cell_count": 7799,
+    "area_m2": 487.438,
+    "raster_error_m2": 0.009,
+    "note": {
+      "en": "Areas below are counted on a 0.25 m plan raster whose elevations are interpolated on the surveyed TIN. The raster's own total is published against the verified plan area so the discretisation error is visible.",
+      "fa": "مساحت‌های زیر روی شبکه‌ای افقی با سلول ۰٫۲۵ متر شمرده شده‌اند که ترازهایش روی TIN برداشت‌شده درون‌یابی می‌شود. جمع خود شبکه در برابر مساحت افقی تأییدشده منتشر شده تا خطای گسسته‌سازی دیده شود."
+    }
+  },
+  "ground_range_m": [
+    1647.931,
+    1659.642
+  ],
+  "balance_level_m": 1653.907,
+  "balance_note": {
+    "en": "The area-weighted mean ground level. A platform at this height has equal mean cut and mean fill depth. It is not a recommendation and it carries no volume: cut and fill quantities need a survey this TIN's eight points cannot stand in for.",
+    "fa": "این عدد، میانگین تراز زمین با در نظر گرفتن مساحت است. در این تراز، میانگین عمق برداشت و خاک‌ریزی برابر می‌شود. این تراز پیشنهادی نیست و حجم خاک را نشان نمی‌دهد. برای محاسبه حجم به نقشه‌برداری دقیق‌تری نیاز است."
+  },
+  "depth_bands_m": [
+    1,
+    1.5,
+    2,
+    3
+  ],
+  "level_step_m": 0.5,
+  "published_area_precision_m2": 0.1,
+  "levels": [
+    {
+      "level_m": 1648,
+      "cut_area_m2": 487.3,
+      "fill_area_m2": 0.2,
+      "max_cut_depth_m": 11.64,
+      "max_fill_depth_m": 0.07,
+      "area_within_depth_m2": {
+        "1": 13.1,
+        "2": 49.1,
+        "3": 100.4,
+        "1.5": 28.1
+      }
+    },
+    {
+      "level_m": 1648.5,
+      "cut_area_m2": 483.5,
+      "fill_area_m2": 3.9,
+      "max_cut_depth_m": 11.14,
+      "max_fill_depth_m": 0.57,
+      "area_within_depth_m2": {
+        "1": 28.1,
+        "2": 74.7,
+        "3": 126.1,
+        "1.5": 49.1
+      }
+    },
+    {
+      "level_m": 1649,
+      "cut_area_m2": 474.4,
+      "fill_area_m2": 13.1,
+      "max_cut_depth_m": 10.64,
+      "max_fill_depth_m": 1.07,
+      "area_within_depth_m2": {
+        "1": 48.9,
+        "2": 100.4,
+        "3": 151.6,
+        "1.5": 74.7
+      }
+    },
+    {
+      "level_m": 1649.5,
+      "cut_area_m2": 459.4,
+      "fill_area_m2": 28.1,
+      "max_cut_depth_m": 10.14,
+      "max_fill_depth_m": 1.57,
+      "area_within_depth_m2": {
+        "1": 70.8,
+        "2": 126.1,
+        "3": 177.6,
+        "1.5": 100.3
+      }
+    },
+    {
+      "level_m": 1650,
+      "cut_area_m2": 438.3,
+      "fill_area_m2": 49.1,
+      "max_cut_depth_m": 9.64,
+      "max_fill_depth_m": 2.07,
+      "area_within_depth_m2": {
+        "1": 87.4,
+        "2": 151.4,
+        "3": 203.2,
+        "1.5": 122.1
+      }
+    },
+    {
+      "level_m": 1650.5,
+      "cut_area_m2": 412.8,
+      "fill_area_m2": 74.7,
+      "max_cut_depth_m": 9.14,
+      "max_fill_depth_m": 2.57,
+      "area_within_depth_m2": {
+        "1": 98,
+        "2": 173.6,
+        "3": 228.1,
+        "1.5": 138.6
+      }
+    },
+    {
+      "level_m": 1651,
+      "cut_area_m2": 387,
+      "fill_area_m2": 100.4,
+      "max_cut_depth_m": 8.64,
+      "max_fill_depth_m": 3.07,
+      "area_within_depth_m2": {
+        "1": 102.5,
+        "2": 190.1,
+        "3": 252.7,
+        "1.5": 149.5
+      }
+    },
+    {
+      "level_m": 1651.5,
+      "cut_area_m2": 361.4,
+      "fill_area_m2": 126.1,
+      "max_cut_depth_m": 8.14,
+      "max_fill_depth_m": 3.57,
+      "area_within_depth_m2": {
+        "1": 102.9,
+        "2": 200.1,
+        "3": 273.2,
+        "1.5": 154.1
+      }
+    },
+    {
+      "level_m": 1652,
+      "cut_area_m2": 335.8,
+      "fill_area_m2": 151.6,
+      "max_cut_depth_m": 7.64,
+      "max_fill_depth_m": 4.07,
+      "area_within_depth_m2": {
+        "1": 102.8,
+        "2": 203.8,
+        "3": 288.1,
+        "1.5": 153.4
+      }
+    },
+    {
+      "level_m": 1652.5,
+      "cut_area_m2": 309.9,
+      "fill_area_m2": 177.6,
+      "max_cut_depth_m": 7.14,
+      "max_fill_depth_m": 4.57,
+      "area_within_depth_m2": {
+        "1": 102.1,
+        "2": 202.4,
+        "3": 297.6,
+        "1.5": 152.4
+      }
+    },
+    {
+      "level_m": 1653,
+      "cut_area_m2": 284.3,
+      "fill_area_m2": 203.2,
+      "max_cut_depth_m": 6.64,
+      "max_fill_depth_m": 5.07,
+      "area_within_depth_m2": {
+        "1": 101.3,
+        "2": 200.8,
+        "3": 300.9,
+        "1.5": 151.1
+      }
+    },
+    {
+      "level_m": 1653.5,
+      "cut_area_m2": 259.3,
+      "fill_area_m2": 228.1,
+      "max_cut_depth_m": 6.14,
+      "max_fill_depth_m": 5.57,
+      "area_within_depth_m2": {
+        "1": 99.6,
+        "2": 199.6,
+        "3": 298.8,
+        "1.5": 149.6
+      }
+    },
+    {
+      "level_m": 1654,
+      "cut_area_m2": 234.6,
+      "fill_area_m2": 252.9,
+      "max_cut_depth_m": 5.64,
+      "max_fill_depth_m": 6.07,
+      "area_within_depth_m2": {
+        "1": 98,
+        "2": 198.4,
+        "3": 295.5,
+        "1.5": 148.1
+      }
+    },
+    {
+      "level_m": 1654.5,
+      "cut_area_m2": 210.3,
+      "fill_area_m2": 277.1,
+      "max_cut_depth_m": 5.14,
+      "max_fill_depth_m": 6.57,
+      "area_within_depth_m2": {
+        "1": 97.5,
+        "2": 195.9,
+        "3": 290.9,
+        "1.5": 146.8
+      }
+    },
+    {
+      "level_m": 1655,
+      "cut_area_m2": 186.3,
+      "fill_area_m2": 301.2,
+      "max_cut_depth_m": 4.64,
+      "max_fill_depth_m": 7.07,
+      "area_within_depth_m2": {
+        "1": 97.1,
+        "2": 192.8,
+        "3": 284.9,
+        "1.5": 145.3
+      }
+    },
+    {
+      "level_m": 1655.5,
+      "cut_area_m2": 161.8,
+      "fill_area_m2": 325.6,
+      "max_cut_depth_m": 4.14,
+      "max_fill_depth_m": 7.57,
+      "area_within_depth_m2": {
+        "1": 96.3,
+        "2": 188.8,
+        "3": 277.1,
+        "1.5": 143.1
+      }
+    },
+    {
+      "level_m": 1656,
+      "cut_area_m2": 137.4,
+      "fill_area_m2": 350,
+      "max_cut_depth_m": 3.64,
+      "max_fill_depth_m": 8.07,
+      "area_within_depth_m2": {
+        "1": 94.8,
+        "2": 183.7,
+        "3": 268,
+        "1.5": 139.8
+      }
+    },
+    {
+      "level_m": 1656.5,
+      "cut_area_m2": 114,
+      "fill_area_m2": 373.4,
+      "max_cut_depth_m": 3.14,
+      "max_fill_depth_m": 8.57,
+      "area_within_depth_m2": {
+        "1": 91.3,
+        "2": 177.5,
+        "3": 257.8,
+        "1.5": 135.4
+      }
+    },
+    {
+      "level_m": 1657,
+      "cut_area_m2": 91.5,
+      "fill_area_m2": 395.9,
+      "max_cut_depth_m": 2.64,
+      "max_fill_depth_m": 9.07,
+      "area_within_depth_m2": {
+        "1": 86.6,
+        "2": 170,
+        "3": 234.6,
+        "1.5": 129
+      }
+    },
+    {
+      "level_m": 1657.5,
+      "cut_area_m2": 70.5,
+      "fill_area_m2": 416.9,
+      "max_cut_depth_m": 2.14,
+      "max_fill_depth_m": 9.57,
+      "area_within_depth_m2": {
+        "1": 81.2,
+        "2": 160.3,
+        "3": 210.3,
+        "1.5": 121.2
+      }
+    },
+    {
+      "level_m": 1658,
+      "cut_area_m2": 50.9,
+      "fill_area_m2": 436.6,
+      "max_cut_depth_m": 1.64,
+      "max_fill_depth_m": 10.07,
+      "area_within_depth_m2": {
+        "1": 75.3,
+        "2": 137.4,
+        "3": 186.3,
+        "1.5": 112.4
+      }
+    },
+    {
+      "level_m": 1658.5,
+      "cut_area_m2": 32.8,
+      "fill_area_m2": 454.6,
+      "max_cut_depth_m": 1.14,
+      "max_fill_depth_m": 10.57,
+      "area_within_depth_m2": {
+        "1": 68.9,
+        "2": 114,
+        "3": 161.8,
+        "1.5": 91.5
+      }
+    },
+    {
+      "level_m": 1659,
+      "cut_area_m2": 16.3,
+      "fill_area_m2": 471.2,
+      "max_cut_depth_m": 0.64,
+      "max_fill_depth_m": 11.07,
+      "area_within_depth_m2": {
+        "1": 50.9,
+        "2": 91.5,
+        "3": 137.4,
+        "1.5": 70.5
+      }
+    },
+    {
+      "level_m": 1659.5,
+      "cut_area_m2": 1.6,
+      "fill_area_m2": 485.9,
+      "max_cut_depth_m": 0.14,
+      "max_fill_depth_m": 11.57,
+      "area_within_depth_m2": {
+        "1": 32.8,
+        "2": 70.5,
+        "3": 114,
+        "1.5": 50.9
+      }
+    }
+  ],
+  "best_level_for_band": {
+    "1": {
+      "level_m": 1651.5,
+      "area_m2": 102.9
+    },
+    "2": {
+      "level_m": 1652,
+      "area_m2": 203.8
+    },
+    "3": {
+      "level_m": 1653,
+      "area_m2": 300.9
+    },
+    "1.5": {
+      "level_m": 1651.5,
+      "area_m2": 154.1
+    }
+  },
+  "limits": {
+    "en": "Every facet of this parcel is in the 33–50% slope band, so a level platform is a cut-and-fill decision at any position. These figures bound the depth involved; they are not a foundation design, a retaining design, or an earthwork estimate, and none of the three can be read out of them.",
+    "fa": "شیب همه وجه‌های مدل بین ۳۳ تا ۵۰ درصد است. هر سکوی تراز به برداشت و خاک‌ریزی نیاز دارد. جدول فقط اندازه تقریبی عمق‌ها را نشان می‌دهد؛ از آن نمی‌توان پی، دیوار حائل یا مقدار عملیات خاکی را طراحی و محاسبه کرد."
+  }
+}
